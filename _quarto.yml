@@ -1,0 +1,163 @@
+project:
+  type: book
+  output-dir: _book
+  preview:
+    browser: true
+    navigate: true
+  render:
+    - "*.qmd"
+
+title-prefix: "noprefix"
+
+website:
+  title: ICTINUS
+  sidebar:
+    - title: "Home"
+      style: "docked"
+      background: light
+      contents:
+        - index.qmd
+
+  comments:
+    hypothesis:
+      theme: clean
+      openSidebar: true
+
+  cookie-consent:
+    type: express
+    style: headline
+    palette: dark
+
+  # google analytics
+  google-analytics:
+  #  tracking-id: "GTM-KR35D82P"
+    tracking-id: "GTM-T85X8W6J"
+  # tracking-id: "G-0FZGXTBQCS"
+    anonymize-ip: true
+    version: 4
+
+book:
+  navbar:
+    search: true
+    pinned: false
+    collapse: true
+    back-to-top-navigation: true
+    left:
+      - text: Home
+        href: index.qmd
+      - text: More
+        menu:
+          - text: "Livro Grafcet"
+            href: "https://ictinus.com.br/grafcet/index.html"
+    right:
+      - icon: instagram
+        href: https://www.instagram.com/ictinusengenharia/
+      - icon: facebook
+        href: https://www.facebook.com/ictinusengenharia
+      - icon: linkedin
+        href: https://www.linkedin.com/company/ictinus-engenharia/
+
+  sidebar:
+    search: true
+    collapse-level: 2
+    border: false
+    pinned: false
+    tools:
+      - icon: instagram
+        href: https://www.instagram.com/ictinusengenharia/
+      - icon: facebook
+        href: https://www.facebook.com/ictinusengenharia
+      - icon: linkedin
+        href: https://www.linkedin.com/company/ictinus-engenharia/
+
+  editor: visual
+  page-navigation: true
+  title: "ICTINUS"
+  subtitle: "Solução em Automação Industrial e Engenharia"
+  abstract: A **{{< var title.long >}}** é uma empresa fundada em **2016** e oferece soluções em engenharia e automação industrial, empregando **boas práticas em engenharia**, com qualidade, afim de encontrar a melhor solução para sua necessidade. Empregamos soluções dos mais conhecidos fabricantes de mercado, assim oferecendo uma ampla gama de soluções em controle e aquisição de dados, gerenciamento de produção, projetos e montagem de painéis elétricos. Nossa paixão é empregar o conhecimento de forma ética, comprometimento, eficácia e sustentabilidade.
+  # author: "Eng. Luciano Cardoso Vasconcelos"
+  search: true
+  site-url: https://ictinus.com.br/index.html
+  repo-url: https://github.com/ICTINUS-Engenharia/ictinus
+  # repo-actions: [edit, issue, source]
+  repo-actions: [issue]
+  sharing: [twitter, facebook, linkedin]
+  reader-mode: true
+  cover-image: capaLivro.png
+  #favicon: favicon.png
+  page-footer:
+    left: "por Eng. Luciano Vasconcelos (CEO Ictinus Engenharia)"
+    center:
+      - text: "Quarto"
+        url: "https://quarto.org/"
+    right:
+      - icon: instagram
+        url: https://www.instagram.com/ictinusengenharia/
+      - icon: facebook
+        url: https://www.facebook.com/ictinusengenharia
+      - icon: linkedin
+        url: https://www.linkedin.com/company/ictinus-engenharia/
+
+  chapters:
+    - text: "---"
+    - part: Sobre a EMPRESA
+      chapters:
+        - index.qmd
+    - text: "---"
+    - part: Contato
+    - text: "---"
+
+citation: true
+
+reference-location: margin
+citation-location: margin
+
+keywords:
+  - grafcet
+  - PLC
+  - STL
+  - ICTINUS
+  - ladder
+  - Simatic
+  - TIA Portal
+
+#license: CC-BY-NC-SA
+
+crossref:
+  appendix-title: "Apêndice"
+  appendix-delim: ":"
+
+format:
+  html:
+    theme:
+      light:
+        - cosmo
+        - style.scss
+        - style-light.scss
+      dark:
+        - darkly
+        - style.scss
+        - style-dark.scss
+    mainfont: Nunito
+    highlight-style: github
+    code-link: true
+    link-external-icon: false
+    link-external-newwindow: true
+    callout-appearance: simple
+    anchor-sections: true
+    smooth-scroll: false
+    citations-hover: true
+    footnotes-hover: false
+    fig-width: 8
+    fig-height: 6
+    number-depth: 3
+    toc: true
+    toc-depth: 4
+    include-in-header:
+    #  text: <script async src="https://www.googletagmanager.com/gtag/js?id=G-0FZGXTBQCS"></script>
+    #  text: <script async src="https://www.googletagmanager.com/gtag/js?id=GTM-KR35D82P"></script>
+      text: <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-T85X8W6J');</script>
+    #  text: <script async src="https://www.googletagmanager.com/gtag/js?id=G-0FZGXTBQCS"></script><script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'G-0FZGXTBQCS');</script>
+
+editor:
+  render-on-save: true

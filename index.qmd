@@ -1,0 +1,9 @@
+# Novidades {.unnumbered}
+
+A **{{< var title.long >}}** compartilha com os visitantes o projeto do livro, em formato digital, **[{{< var livro.title >}}](https://ictinus.com.br/grafcet/index.html)**. 
+
+Assumimos o compromisso de atualizar o mesmo, com frequência até sua versão final, e como resultado, esperamos que o mesmo venha a ser um repositório de informações para iniciantes e estudante, no mundo acelerado dos sistemas de automação, através do uso das mais variadas soluções industriais.
+
+Objetivamos com esse projeto incentivar o esforço colaborativo que reúna insights de estudantes, profissionais e da comunidade mais ampla de profissionais da indústria do país. Bem como, criar um repositório pesquisável, que se aprofunde nos detalhes básicos dos sistemas de automação industrial e seus muitos usos.
+
+> *"Sabedoria é aplicar o conhecimento de forma sensata, com benevolência e comportamento ético."*

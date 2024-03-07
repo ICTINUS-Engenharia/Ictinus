@@ -1,0 +1,16 @@
+email:
+  #  contact: vj@eecs.harvard.edu
+  #  subject: [MLSys Book]
+  #  info: mailto:vj@eecs.harvard.edu?subject="CS249r%20MLSys%20with%20TinyML%20Book%20-%20"
+  contact: luciano@ictinus.com.br
+  subject: [Ictinus Contato]
+  info: mailto:luciano@ictinus.com.br?subject="Contato & Suporte"
+
+title:
+  #  long: "Machine Learning Systems with TinyML"
+  #  short: "Machine Learning Systems"
+  long: "ICTINUS Engenharia e Automação Ltda"
+  short: "ICTINUS"
+
+livro:
+  title: "Grafcet do Básico ao Avançado"
