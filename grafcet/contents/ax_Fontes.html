@@ -8,7 +8,7 @@
 
 <meta name="keywords" content="grafcet, PLC, STL, ICTINUS, ladder, Simatic, TIA Portal, OOP">
 
-<title>Grafcet do Básico ao Avançado - Colaboradores</title>
+<title>Grafcet do Básico ao Avançado - Arquivos Fonte</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -31,8 +31,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../contents/conventions.html" rel="next">
-<link href="../contents/reconhecimentos.html" rel="prev">
+<link href="../contents/ap_Configuração/ap_Configuração.html" rel="next">
+<link href="../contents/ex_plantaCIP/plantaCIP.html" rel="prev">
 <link href="../ictinus.png" rel="icon" type="image/png">
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
@@ -161,7 +161,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../contents/introduction.html">INTRODUÇÃO</a></li><li class="breadcrumb-item"><a href="../contents/contributors.html">Colaboradores</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../contents/ax_Fontes.html">ANEXOS</a></li><li class="breadcrumb-item"><a href="../contents/ax_Fontes.html">Arquivos Fonte</a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -216,7 +216,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../contents/contributors.html" class="sidebar-item-text sidebar-link active">
+  <a href="../contents/contributors.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Colaboradores</span></a>
   </div>
 </li>
@@ -287,7 +287,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../contents/ax_Fontes.html" class="sidebar-item-text sidebar-link">
+  <a href="../contents/ax_Fontes.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Arquivos Fonte</span></a>
   </div>
 </li>
@@ -328,14 +328,20 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#fontes-dos-exercícios" id="toc-fontes-dos-exercícios" class="nav-link active" data-scroll-target="#fontes-dos-exercícios">Fontes dos Exercícios</a></li>
+  </ul>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/ICTINUS-Engenharia/ictinus/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Colaboradores</h1>
+<h1 class="title">Arquivos Fonte</h1>
 </div>
 
 
@@ -350,99 +356,36 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p>Estendemos nossos sinceros agradecimentos à todos os indivíduos que generosamente contribuíram com sua experiência, insights e tempo para aprimorar o conteúdo esse projeto.</p>
-<p>Abaixo você encontrará uma lista de todos os colaboradores. Se você gostaria de contribuir com este projeto, consulte nossa página <a href="https://github.com/ICTINUS-Engenharia">GitHub</a>.</p>
-
-<style>
-
-  /* Base styles for the contributors' table */
-.contributors-table {
-  width: 100%;
-  text-align: center;
-}
-
-/* Styles for the table cells */
-.contributors-table td {
-  vertical-align: top;
-}
-
-/* Media query for screens smaller than a certain width (e.g., 768px) */
-@media (max-width: 768px) {
-  /* Convert table rows and cells to block elements */
-  .contributors-table,
-  .contributors-table tbody,
-  .contributors-table tr,
-  .contributors-table td {
-    display: block;
-    width: 100%;
-  }
-
-  /* Hide the redundant td elements that are empty or not needed */
-  .contributors-table td:empty {
-    display: none;
-  }
-
-  /* Adjust padding and margins for mobile view */
-  .contributors-table td {
-    /* Adjust padding and margins as needed */
-    padding: 10px;
-    margin-bottom: 10px;
-    /* Create a border or separator effect */
-    border-bottom: 1px solid #eaeaea;
-  }
-
-  /* Ensure images and content scale correctly */
-  .contributors-table img {
-    width: 100px; /* or any other appropriate size */
-    height: auto;
-    margin: 0 auto; /* centers the image */
-  }
-
-  /* Optional: Style the name to be more prominent on mobile */
-  .contributors-table sub {
-    display: block;
-    margin-top: 5px;
-    font-size: larger; /* makes the name larger */
-  }
-}
-
-/* Ensure the class is added to the table element */
-.contributors-table {
-  /* Additional styling if needed */
-}
-  </style>
-<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
-<!-- prettier-ignore-start -->
-<!-- markdownlint-disable -->
-
-<table>
+<p>Arquivos fonte dos exercicios e exemplos propostos no Livro.</p>
+<section id="fontes-dos-exercícios" class="level2">
+<h2 class="anchored" data-anchor-id="fontes-dos-exercícios">Fontes dos Exercícios</h2>
+<table class="table">
+<colgroup>
+<col style="width: 2%">
+<col style="width: 17%">
+<col style="width: 49%">
+<col style="width: 30%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>No</th>
+<th>Arquivo</th>
+<th>Descrição</th>
+<th>Especificação</th>
+</tr>
+</thead>
 <tbody>
-<tr>
-<td align="center" valign="top" width="20%">
-<a href="https://github.com/ICTINUS-Engenharia"><img src="https://avatars.githubusercontent.com/ICTINUS-Engenharia?s=100" width="100px;" alt="ICTINUS Engenharia"><br><sub><b>ICTINUS-Engenharia</b></sub></a><br>
-</td>
+<tr class="odd">
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
 </tr>
 </tbody>
-
 </table>
-<!-- markdownlint-restore -->
-<!-- prettier-ignore-end -->
-<!-- ALL-CONTRIBUTORS-LIST:END -->
-
-<script>
-document.addEventListener('DOMContentLoaded', (event) => {
-  // Query the table using a distinctive feature, like an embedded GitHub link within a table cell.
-  var githubTables = document.querySelectorAll('table a[href^="https://github.com/"]');
-  githubTables.forEach(function(githubLink) {
-    var table = githubLink.closest('table'); // Find the closest table ancestor
-    if (table) {
-      table.classList.add('contributors-table'); // Add the 'contributors-table' class
-    }
-  });
-});
-</script>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -797,13 +740,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../contents/reconhecimentos.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Reconhecimentos</span>
+      <a href="../contents/ex_plantaCIP/plantaCIP.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Planta CIP</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../contents/conventions.html" class="pagination-link">
-        <span class="nav-page-text">Convenções</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../contents/ap_Configuração/ap_Configuração.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Configuração</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -817,7 +760,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     <a class="nav-link" href="https://quarto.org/">Quarto</a>
   </li>  
 </ul>
-    <div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/ICTINUS-Engenharia/ictinus/issues/new" class="toc-action">Report an issue</a></p></div></div></div>
+    </div>
     <div class="nav-footer-right">
       <ul class="footer-items list-unstyled">
     <li class="nav-item compact">

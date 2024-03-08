@@ -172,32 +172,32 @@
     "href": "contents/ex_plantaCIP/plantaCIP.html#objetivo",
     "title": "Planta CIP",
     "section": "Objetivo",
-    "text": "Objetivo\nEm construção"
+    "text": "Objetivo\n#emConstrução"
   },
   {
     "objectID": "contents/ex_plantaCIP/plantaCIP.html#descrição-do-processo",
     "href": "contents/ex_plantaCIP/plantaCIP.html#descrição-do-processo",
     "title": "Planta CIP",
     "section": "Descrição do Processo",
-    "text": "Descrição do Processo\nEm construção"
+    "text": "Descrição do Processo\n#emConstrução"
   },
   {
     "objectID": "contents/ex_plantaCIP/plantaCIP.html#restrições",
     "href": "contents/ex_plantaCIP/plantaCIP.html#restrições",
     "title": "Planta CIP",
     "section": "Restrições",
-    "text": "Restrições\nEm construção"
+    "text": "Restrições\n#emConstrução"
   },
   {
     "objectID": "contents/ex_plantaCIP/plantaCIP.html#exceções",
     "href": "contents/ex_plantaCIP/plantaCIP.html#exceções",
     "title": "Planta CIP",
     "section": "Exceções",
-    "text": "Exceções\nEm construção"
+    "text": "Exceções\n#emConstrução"
   },
   {
-    "objectID": "contents/anxFontes.html#fontes-dos-exercícios",
-    "href": "contents/anxFontes.html#fontes-dos-exercícios",
+    "objectID": "contents/ax_Fontes.html#fontes-dos-exercícios",
+    "href": "contents/ax_Fontes.html#fontes-dos-exercícios",
     "title": "Arquivos Fonte",
     "section": "Fontes dos Exercícios",
     "text": "Fontes dos Exercícios\n\n\n\n\n\n\n\n\n\nNo\nArquivo\nDescrição\nEspecificação\n\n\n\n\n1"
@@ -273,24 +273,31 @@
     "text": "C.4 Subnetting IPv4\n\nC.4.1 Subnet Mask\nÉ a máscara de sub-rede, é um número que define a separação entre a parte da rede e a parte do host em um endereço IP. Ela é usada para identificar a sub-rede a qual um endereço IP pertence.(Systems, n.d.)\n\n\n\nSubnetting\n\n\n\n\n\n\n\n\n    MASK        &gt;  128  |  64  |  32  |  16  |  8   |  4  |  2  |  1 \n    HOST.NET    &gt;  256  | 128  |  64  |  32  |  16  |  8  |  4  |  2 \n\n    INCREMENTO: É o ultimo bit roubado.\n\n    /25 &gt; .128\n    /26 &gt; .192\n    /27 &gt; .224\n    /28 &gt; .240\n    /29 &gt; .248\n    /30 &gt; .252\n    /31 &gt; .254\n    /32 &gt; .255\n\n\n\n\n\nC.4.2 Endereços Reservados\nOs dois endereços IP reservados em cada sub-rede são o endereço de rede (primeiro) e o endereço de broadcast (ultimo).\n\n\n\n\n\n\nEndereços disponíveis\n\n\n\nLogo a quantidade de endereços disponíveis são o total de endereços, menos 2 endereços, de rede e broadcast. Lembrando que um endereço, normalmente o primeiro é o endereço usado para o default gateway da rede.\nAssim a quantidade disponível será o total da rede, menos 3 endereços."
   },
   {
+    "objectID": "contents/ap_Networking/ap_Networking.html#port-troubleshooting-tcpudp-open-ports",
+    "href": "contents/ap_Networking/ap_Networking.html#port-troubleshooting-tcpudp-open-ports",
+    "title": "Apêndice C: Network",
+    "section": "C.5 Port Troubleshooting (TCP/UDP open ports)",
+    "text": "C.5 Port Troubleshooting (TCP/UDP open ports)\nCaso não tenha a sua disposição ferramentas de diagnostico de rede como SPLUNK, é possivel utilizar comandos do PowerShell, como o cmdlet Test-NetConnection para verificar se uma porta está disponível (aberta) em um computador remoto.\nVocê pode usar este cmdlet para verificar a resposta e a disponibilidade de um servidor remoto ou serviço de rede, testar se a porta TCP está bloqueada por um firewall, verificar a disponibilidade do ICMP e o roteamento.\nEste comando, substitui várias ferramentas populares de administração de Test-NetConnectionrede, como ping, scanner de porta TCP, tracert, telnet e pathping\n\n\n\n\n\n\nNotas do comando Test-NetConnection\n\n\n\n\nRestrição do comando: Comando usado para testar apenas a conectividade de uma porta TCP. Logo, não é possível usar o cmdlet para verificar a disponibilidade das portas UDP remotas.\nVersão Abreviada do comando Test-NetConnection: TNC é a versão abreviada do mesmo.\n\n\n\n\nC.5.1 Exemplos\n\nComando para verificar se porta remota esta aberta\n\nComando2 verificar se a porta 253 está aberta no servidor remoto ny-msg01, e sua versão abreviada:\n\n2 Executar no powershell3 TCP 25: Protocolo SMTPTest-NetConnection -ComputerName ny-msg01 -Port 25\n\n#Versão abreviada\n\nTNC ny-msg01 -Port 25\n#emConstrução"
+  },
+  {
     "objectID": "contents/ap_Networking/ap_Networking.html#fontes-de-informação",
     "href": "contents/ap_Networking/ap_Networking.html#fontes-de-informação",
     "title": "Apêndice C: Network",
-    "section": "C.5 Fontes de informação",
-    "text": "C.5 Fontes de informação\n\nC.5.1 Playlist - Your suck at subnetting"
+    "section": "C.6 Fontes de informação",
+    "text": "C.6 Fontes de informação\n\nC.6.1 Playlist - Your suck at subnetting"
   },
   {
     "objectID": "contents/ap_Networking/ap_Networking.html#f.q.a---perguntas-frequentes",
     "href": "contents/ap_Networking/ap_Networking.html#f.q.a---perguntas-frequentes",
     "title": "Apêndice C: Network",
-    "section": "C.6 F.Q.A - Perguntas frequentes",
-    "text": "C.6 F.Q.A - Perguntas frequentes\n\nC.6.1 Como você encontra o endereço IP dos seus dispositivos?\n\n\nC.6.2 Como saber seu endereço IP\n\n\nC.6.3 Desmistificando sub-redes\n\n\nC.6.4 Gateway padrão\n\n\nC.6.5 Desafio\n\n\nC.6.6 Solução do desafio\n\n\nC.6.7 Recapitulando\n\n\nC.6.8 O que aconteceu com todos os endereços IP?\n\n\nC.6.9 Quais são os intervalos das classes?\n\n\nC.6.10 Quem divulgou todos esses endereços?\n\n\nC.6.11 O que são redes sem classes\n\n\nC.6.12 Isso me deixa louco (Classe D e E)\n\n\nC.6.13 O que é loopback\n\n\nC.6.14 O que é o Ping?"
+    "section": "C.7 F.Q.A - Perguntas frequentes",
+    "text": "C.7 F.Q.A - Perguntas frequentes\n\nC.7.1 Como você encontra o endereço IP dos seus dispositivos?\n\n\nC.7.2 Como saber seu endereço IP\n\n\nC.7.3 Desmistificando sub-redes\n\n\nC.7.4 Gateway padrão\n\n\nC.7.5 Desafio\n\n\nC.7.6 Solução do desafio\n\n\nC.7.7 Recapitulando\n\n\nC.7.8 O que aconteceu com todos os endereços IP?\n\n\nC.7.9 Quais são os intervalos das classes?\n\n\nC.7.10 Quem divulgou todos esses endereços?\n\n\nC.7.11 O que são redes sem classes\n\n\nC.7.12 Isso me deixa louco (Classe D e E)\n\n\nC.7.13 O que é loopback\n\n\nC.7.14 O que é o Ping?"
   },
   {
     "objectID": "contents/ap_Networking/ap_Networking.html#references",
     "href": "contents/ap_Networking/ap_Networking.html#references",
     "title": "Apêndice C: Network",
-    "section": "C.7 References",
-    "text": "C.7 References\n(Systems, n.d.)\n\nSystems, Cisco. n.d. “Basic IP Addressing and Troubleshooting Guide.” In. http://penta2.ufrgs.br/trouble/ts_ip.htm.\n\nMoskowitz, Robert, Daniel Karrenberg, Yakov Rekhter, Eliot Lear, and Geert Jan de Groot. 1996. “Address Allocation for Private Internets.” Request for Comments. RFC 1918; RFC Editor. https://doi.org/10.17487/RFC1918.\n(Moskowitz et al. 1996)\n(RFC1918 2024)\n\n\n\nRFC1918. 2024. “Rede Privada - RFC 1918.” Wikipédia. https://pt.wikipedia.org/wiki/Rede_privada."
+    "section": "C.8 References",
+    "text": "C.8 References\n(Systems, n.d.)\n\nSystems, Cisco. n.d. “Basic IP Addressing and Troubleshooting Guide.” In. http://penta2.ufrgs.br/trouble/ts_ip.htm.\n\nMoskowitz, Robert, Daniel Karrenberg, Yakov Rekhter, Eliot Lear, and Geert Jan de Groot. 1996. “Address Allocation for Private Internets.” Request for Comments. RFC 1918; RFC Editor. https://doi.org/10.17487/RFC1918.\n(Moskowitz et al. 1996)\n(RFC1918 2024)\n\n\n\nRFC1918. 2024. “Rede Privada - RFC 1918.” Wikipédia. https://pt.wikipedia.org/wiki/Rede_privada."
   }
 ]
