@@ -249,14 +249,7 @@
     "href": "contents/ap_instrumentation/ap_instrumentation.html#sistemas-instrumentados-de-segurança-sis",
     "title": "Apêndice C: Instrumentação",
     "section": "C.1 Sistemas instrumentados de segurança (SIS)",
-    "text": "C.1 Sistemas instrumentados de segurança (SIS)\nExistem lógicas de votação 1oo1, 1oo2, 2oo2, 2oo3 etc1. na arquitetura do sistema instrumentado de segurança.1 #emConstrução, https://instrumentationtools.com/voting-logic-safety-instrumented-system/\nA arquitetura lógica de votação normalmente utilizada no instrumento de campo e/ou elementos de controle finais para atingir determinado  ou para atingir determinada redução de custos devido ao desligamento da plataforma. Em geral, quando devemos usar a arquitetura lógica de votação 1oo1, 1oo2, 2oo2 ou 2oo3?\n#emConstrução"
-  },
-  {
-    "objectID": "contents/ap_instrumentation/ap_instrumentation.html#lógica-de-votação",
-    "href": "contents/ap_instrumentation/ap_instrumentation.html#lógica-de-votação",
-    "title": "Apêndice C: Instrumentação",
-    "section": "C.2 Lógica de votação",
-    "text": "C.2 Lógica de votação\n\n\n\nlógica de votação.\n\n\nConforme mencionado acima, há dois propósitos pelos quais determinadas arquiteturas  foram escolhidas: o primeiro é atingir determinado SIL e, em segundo lugar, alcançar certa redução de custos devido ao desligamento espúrio da plataforma.\n#emConstrução"
+    "text": "C.1 Sistemas instrumentados de segurança (SIS)\nExistem lógicas de votação 1oo1, 1oo2, 2oo2, 2oo3 etc1. na arquitetura do sistema instrumentado de segurança.1 #emConstrução, https://instrumentationtools.com/voting-logic-safety-instrumented-system/\nA arquitetura lógica de votação normalmente utilizada no instrumento de campo e/ou elementos de controle finais para atingir determinado Nível de Integridade de Segurança (SIL) ou para atingir determinada redução de custos devido ao desligamento da plataforma. Em geral, quando devemos usar a arquitetura lógica de votação 1oo1, 1oo2, 2oo2 ou 2oo3?\nEm Construção\n\nC.1.1 Lógica de votação\n\n\n\nlógica de votação.\n\n\nConforme mencionado acima, há dois propósitos pelos quais determinadas arquiteturas lógicas de votação foram escolhidas: o primeiro é atingir determinado SIL e, em segundo lugar, alcançar certa redução de custos devido ao desligamento espúrio da plataforma.\nEm Construção"
   },
   {
     "objectID": "contents/ap_Networking/ap_Networking.html#endereços-ip-privados-redes-locais",
