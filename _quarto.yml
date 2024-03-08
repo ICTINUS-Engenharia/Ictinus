@@ -85,6 +85,7 @@ book:
   reader-mode: true
   cover-image: capaLivro.png
   #favicon: favicon.png
+  favicon: ictinus.png
   page-footer:
     left: "por Eng. Luciano Vasconcelos (CEO Ictinus Engenharia)"
     center:
