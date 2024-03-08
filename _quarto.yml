@@ -43,7 +43,7 @@ book:
     collapse: true
     back-to-top-navigation: true
     left:
-      - text: Home
+      - text: Home'
         href: index.qmd
       - text: More
         menu:
