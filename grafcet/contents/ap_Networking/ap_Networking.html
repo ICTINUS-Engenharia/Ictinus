@@ -8,7 +8,7 @@
 
 <meta name="keywords" content="grafcet, PLC, STL, ICTINUS, ladder, Simatic, TIA Portal, OOP">
 
-<title>Grafcet do Básico ao Avançado - Apêndice C: Network</title>
+<title>Grafcet do Básico ao Avançado - Apêndice D: Network</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -50,7 +50,7 @@ div.csl-indent {
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
-<link href="../../contents/ap_tools.html" rel="prev">
+<link href="../../contents/ap_instrumentation/ap_instrumentation.html" rel="prev">
 <link href="../../ictinus.png" rel="icon" type="image/png">
 <script src="../../site_libs/quarto-html/quarto.js"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
@@ -145,7 +145,7 @@ div.csl-indent {
       <a href="" title="Share" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Share"><i class="bi bi-share"></i></a>
       <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="quarto-navigation-tool-dropdown-0">
           <li>
-            <a class="dropdown-item quarto-navbar-tools-item" href="https://twitter.com/intent/tweet?url=https://ictinus.com.br/grafcet/index.html" 
+            <a class="dropdown-item quarto-navbar-tools-item" href="https://twitter.com/intent/tweet?url=https://ictinus.com.br/grafcet/index.html">
               <i class="bi bi-bi-twitter pe-1"></i>
             Twitter
             </a>
@@ -179,7 +179,7 @@ div.csl-indent {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../contents/ap_Configuração/ap_Configuração.html">Appendices</a></li><li class="breadcrumb-item"><a href="../../contents/ap_Networking/ap_Networking.html"><span class="chapter-number">C</span>&nbsp; <span class="chapter-title">Network</span></a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../contents/ap_Configuração/ap_Configuração.html">Appendices</a></li><li class="breadcrumb-item"><a href="../../contents/ap_Networking/ap_Networking.html"><span class="chapter-number">D</span>&nbsp; <span class="chapter-title">Network</span></a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -334,8 +334,14 @@ div.csl-indent {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../../contents/ap_instrumentation/ap_instrumentation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">C</span>&nbsp; <span class="chapter-title">Instrumentação</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../../contents/ap_Networking/ap_Networking.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">C</span>&nbsp; <span class="chapter-title">Network</span></span></a>
+ <span class="menu-text"><span class="chapter-number">D</span>&nbsp; <span class="chapter-title">Network</span></span></a>
   </div>
 </li>
       </ul>
@@ -350,54 +356,54 @@ div.csl-indent {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#endereços-ip-privados-redes-locais" id="toc-endereços-ip-privados-redes-locais" class="nav-link active" data-scroll-target="#endereços-ip-privados-redes-locais"><span class="header-section-number">C.1</span> Endereços IP Privados ( Redes Locais )</a>
+  <li><a href="#endereços-ip-privados-redes-locais" id="toc-endereços-ip-privados-redes-locais" class="nav-link active" data-scroll-target="#endereços-ip-privados-redes-locais"><span class="header-section-number">D.1</span> Endereços IP Privados ( Redes Locais )</a>
   <ul>
-  <li><a href="#loopback---127.0.0.0" id="toc-loopback---127.0.0.0" class="nav-link" data-scroll-target="#loopback---127.0.0.0"><span class="header-section-number">C.1.1</span> Loopback - 127.0.0.0</a></li>
+  <li><a href="#loopback---127.0.0.0" id="toc-loopback---127.0.0.0" class="nav-link" data-scroll-target="#loopback---127.0.0.0"><span class="header-section-number">D.1.1</span> Loopback - 127.0.0.0</a></li>
   </ul></li>
-  <li><a href="#entidades-de-rede" id="toc-entidades-de-rede" class="nav-link" data-scroll-target="#entidades-de-rede"><span class="header-section-number">C.2</span> Entidades de Rede</a>
+  <li><a href="#entidades-de-rede" id="toc-entidades-de-rede" class="nav-link" data-scroll-target="#entidades-de-rede"><span class="header-section-number">D.2</span> Entidades de Rede</a>
   <ul>
-  <li><a href="#roteadores" id="toc-roteadores" class="nav-link" data-scroll-target="#roteadores"><span class="header-section-number">C.2.1</span> Roteadores</a></li>
-  <li><a href="#switches" id="toc-switches" class="nav-link" data-scroll-target="#switches"><span class="header-section-number">C.2.2</span> Switches</a></li>
-  <li><a href="#default-gateway" id="toc-default-gateway" class="nav-link" data-scroll-target="#default-gateway"><span class="header-section-number">C.2.3</span> Default Gateway</a></li>
+  <li><a href="#roteadores" id="toc-roteadores" class="nav-link" data-scroll-target="#roteadores"><span class="header-section-number">D.2.1</span> Roteadores</a></li>
+  <li><a href="#switches" id="toc-switches" class="nav-link" data-scroll-target="#switches"><span class="header-section-number">D.2.2</span> Switches</a></li>
+  <li><a href="#default-gateway" id="toc-default-gateway" class="nav-link" data-scroll-target="#default-gateway"><span class="header-section-number">D.2.3</span> Default Gateway</a></li>
   </ul></li>
-  <li><a href="#comandos-úteis" id="toc-comandos-úteis" class="nav-link" data-scroll-target="#comandos-úteis"><span class="header-section-number">C.3</span> Comandos úteis</a>
+  <li><a href="#comandos-úteis" id="toc-comandos-úteis" class="nav-link" data-scroll-target="#comandos-úteis"><span class="header-section-number">D.3</span> Comandos úteis</a>
   <ul>
-  <li><a href="#ipconfig-windows" id="toc-ipconfig-windows" class="nav-link" data-scroll-target="#ipconfig-windows"><span class="header-section-number">C.3.1</span> ipconfig ( Windows )</a></li>
+  <li><a href="#ipconfig-windows" id="toc-ipconfig-windows" class="nav-link" data-scroll-target="#ipconfig-windows"><span class="header-section-number">D.3.1</span> ipconfig ( Windows )</a></li>
   </ul></li>
-  <li><a href="#subnetting-ipv4" id="toc-subnetting-ipv4" class="nav-link" data-scroll-target="#subnetting-ipv4"><span class="header-section-number">C.4</span> Subnetting IPv4</a>
+  <li><a href="#subnetting-ipv4" id="toc-subnetting-ipv4" class="nav-link" data-scroll-target="#subnetting-ipv4"><span class="header-section-number">D.4</span> Subnetting IPv4</a>
   <ul>
-  <li><a href="#subnet-mask" id="toc-subnet-mask" class="nav-link" data-scroll-target="#subnet-mask"><span class="header-section-number">C.4.1</span> Subnet Mask</a></li>
-  <li><a href="#endereços-reservados" id="toc-endereços-reservados" class="nav-link" data-scroll-target="#endereços-reservados"><span class="header-section-number">C.4.2</span> Endereços Reservados</a></li>
+  <li><a href="#subnet-mask" id="toc-subnet-mask" class="nav-link" data-scroll-target="#subnet-mask"><span class="header-section-number">D.4.1</span> Subnet Mask</a></li>
+  <li><a href="#endereços-reservados" id="toc-endereços-reservados" class="nav-link" data-scroll-target="#endereços-reservados"><span class="header-section-number">D.4.2</span> Endereços Reservados</a></li>
   </ul></li>
-  <li><a href="#troubleshooting" id="toc-troubleshooting" class="nav-link" data-scroll-target="#troubleshooting"><span class="header-section-number">C.5</span> Troubleshooting</a>
+  <li><a href="#troubleshooting" id="toc-troubleshooting" class="nav-link" data-scroll-target="#troubleshooting"><span class="header-section-number">D.5</span> Troubleshooting</a>
   <ul>
-  <li><a href="#tcpudp-open-ports" id="toc-tcpudp-open-ports" class="nav-link" data-scroll-target="#tcpudp-open-ports"><span class="header-section-number">C.5.1</span> TCP/UDP open ports</a>
+  <li><a href="#tcpudp-open-ports" id="toc-tcpudp-open-ports" class="nav-link" data-scroll-target="#tcpudp-open-ports"><span class="header-section-number">D.5.1</span> TCP/UDP open ports</a>
   <ul class="collapse">
-  <li><a href="#exemplos-comando-para-verificar-se-porta-remota-esta-aberta" id="toc-exemplos-comando-para-verificar-se-porta-remota-esta-aberta" class="nav-link" data-scroll-target="#exemplos-comando-para-verificar-se-porta-remota-esta-aberta">Exemplos: Comando para verificar se porta remota esta aberta</a></li>
+  <li><a href="#exemplo-1-comando-para-verificar-se-porta-remota-esta-aberta" id="toc-exemplo-1-comando-para-verificar-se-porta-remota-esta-aberta" class="nav-link" data-scroll-target="#exemplo-1-comando-para-verificar-se-porta-remota-esta-aberta">Exemplo #1: Comando para verificar se porta remota esta aberta</a></li>
   </ul></li>
   </ul></li>
-  <li><a href="#fontes-de-informação" id="toc-fontes-de-informação" class="nav-link" data-scroll-target="#fontes-de-informação"><span class="header-section-number">C.6</span> Fontes de informação</a>
+  <li><a href="#fontes-de-informação" id="toc-fontes-de-informação" class="nav-link" data-scroll-target="#fontes-de-informação"><span class="header-section-number">D.6</span> Fontes de informação</a>
   <ul>
-  <li><a href="#playlist---your-suck-at-subnetting" id="toc-playlist---your-suck-at-subnetting" class="nav-link" data-scroll-target="#playlist---your-suck-at-subnetting"><span class="header-section-number">C.6.1</span> Playlist - Your suck at subnetting</a></li>
+  <li><a href="#playlist---your-suck-at-subnetting" id="toc-playlist---your-suck-at-subnetting" class="nav-link" data-scroll-target="#playlist---your-suck-at-subnetting"><span class="header-section-number">D.6.1</span> Playlist - Your suck at subnetting</a></li>
   </ul></li>
-  <li><a href="#f.q.a---perguntas-frequentes" id="toc-f.q.a---perguntas-frequentes" class="nav-link" data-scroll-target="#f.q.a---perguntas-frequentes"><span class="header-section-number">C.7</span> F.Q.A - Perguntas frequentes</a>
+  <li><a href="#f.q.a---perguntas-frequentes" id="toc-f.q.a---perguntas-frequentes" class="nav-link" data-scroll-target="#f.q.a---perguntas-frequentes"><span class="header-section-number">D.7</span> F.Q.A - Perguntas frequentes</a>
   <ul>
-  <li><a href="#como-você-encontra-o-endereço-ip-dos-seus-dispositivos" id="toc-como-você-encontra-o-endereço-ip-dos-seus-dispositivos" class="nav-link" data-scroll-target="#como-você-encontra-o-endereço-ip-dos-seus-dispositivos"><span class="header-section-number">C.7.1</span> Como você encontra o endereço IP dos seus dispositivos?</a></li>
-  <li><a href="#como-saber-seu-endereço-ip" id="toc-como-saber-seu-endereço-ip" class="nav-link" data-scroll-target="#como-saber-seu-endereço-ip"><span class="header-section-number">C.7.2</span> Como saber seu endereço IP</a></li>
-  <li><a href="#desmistificando-sub-redes" id="toc-desmistificando-sub-redes" class="nav-link" data-scroll-target="#desmistificando-sub-redes"><span class="header-section-number">C.7.3</span> Desmistificando sub-redes</a></li>
-  <li><a href="#gateway-padrão" id="toc-gateway-padrão" class="nav-link" data-scroll-target="#gateway-padrão"><span class="header-section-number">C.7.4</span> Gateway padrão</a></li>
-  <li><a href="#desafio" id="toc-desafio" class="nav-link" data-scroll-target="#desafio"><span class="header-section-number">C.7.5</span> Desafio</a></li>
-  <li><a href="#solução-do-desafio" id="toc-solução-do-desafio" class="nav-link" data-scroll-target="#solução-do-desafio"><span class="header-section-number">C.7.6</span> Solução do desafio</a></li>
-  <li><a href="#recapitulando" id="toc-recapitulando" class="nav-link" data-scroll-target="#recapitulando"><span class="header-section-number">C.7.7</span> Recapitulando</a></li>
-  <li><a href="#o-que-aconteceu-com-todos-os-endereços-ip" id="toc-o-que-aconteceu-com-todos-os-endereços-ip" class="nav-link" data-scroll-target="#o-que-aconteceu-com-todos-os-endereços-ip"><span class="header-section-number">C.7.8</span> O que aconteceu com todos os endereços IP?</a></li>
-  <li><a href="#quais-são-os-intervalos-das-classes" id="toc-quais-são-os-intervalos-das-classes" class="nav-link" data-scroll-target="#quais-são-os-intervalos-das-classes"><span class="header-section-number">C.7.9</span> Quais são os intervalos das classes?</a></li>
-  <li><a href="#quem-divulgou-todos-esses-endereços" id="toc-quem-divulgou-todos-esses-endereços" class="nav-link" data-scroll-target="#quem-divulgou-todos-esses-endereços"><span class="header-section-number">C.7.10</span> Quem divulgou todos esses endereços?</a></li>
-  <li><a href="#o-que-são-redes-sem-classes" id="toc-o-que-são-redes-sem-classes" class="nav-link" data-scroll-target="#o-que-são-redes-sem-classes"><span class="header-section-number">C.7.11</span> O que são redes sem classes</a></li>
-  <li><a href="#isso-me-deixa-louco-classe-d-e-e" id="toc-isso-me-deixa-louco-classe-d-e-e" class="nav-link" data-scroll-target="#isso-me-deixa-louco-classe-d-e-e"><span class="header-section-number">C.7.12</span> Isso me deixa louco (Classe D e E)</a></li>
-  <li><a href="#o-que-é-loopback" id="toc-o-que-é-loopback" class="nav-link" data-scroll-target="#o-que-é-loopback"><span class="header-section-number">C.7.13</span> O que é loopback</a></li>
-  <li><a href="#o-que-é-o-ping" id="toc-o-que-é-o-ping" class="nav-link" data-scroll-target="#o-que-é-o-ping"><span class="header-section-number">C.7.14</span> O que é o Ping?</a></li>
+  <li><a href="#como-você-encontra-o-endereço-ip-dos-seus-dispositivos" id="toc-como-você-encontra-o-endereço-ip-dos-seus-dispositivos" class="nav-link" data-scroll-target="#como-você-encontra-o-endereço-ip-dos-seus-dispositivos"><span class="header-section-number">D.7.1</span> Como você encontra o endereço IP dos seus dispositivos?</a></li>
+  <li><a href="#como-saber-seu-endereço-ip" id="toc-como-saber-seu-endereço-ip" class="nav-link" data-scroll-target="#como-saber-seu-endereço-ip"><span class="header-section-number">D.7.2</span> Como saber seu endereço IP</a></li>
+  <li><a href="#desmistificando-sub-redes" id="toc-desmistificando-sub-redes" class="nav-link" data-scroll-target="#desmistificando-sub-redes"><span class="header-section-number">D.7.3</span> Desmistificando sub-redes</a></li>
+  <li><a href="#gateway-padrão" id="toc-gateway-padrão" class="nav-link" data-scroll-target="#gateway-padrão"><span class="header-section-number">D.7.4</span> Gateway padrão</a></li>
+  <li><a href="#desafio" id="toc-desafio" class="nav-link" data-scroll-target="#desafio"><span class="header-section-number">D.7.5</span> Desafio</a></li>
+  <li><a href="#solução-do-desafio" id="toc-solução-do-desafio" class="nav-link" data-scroll-target="#solução-do-desafio"><span class="header-section-number">D.7.6</span> Solução do desafio</a></li>
+  <li><a href="#recapitulando" id="toc-recapitulando" class="nav-link" data-scroll-target="#recapitulando"><span class="header-section-number">D.7.7</span> Recapitulando</a></li>
+  <li><a href="#o-que-aconteceu-com-todos-os-endereços-ip" id="toc-o-que-aconteceu-com-todos-os-endereços-ip" class="nav-link" data-scroll-target="#o-que-aconteceu-com-todos-os-endereços-ip"><span class="header-section-number">D.7.8</span> O que aconteceu com todos os endereços IP?</a></li>
+  <li><a href="#quais-são-os-intervalos-das-classes" id="toc-quais-são-os-intervalos-das-classes" class="nav-link" data-scroll-target="#quais-são-os-intervalos-das-classes"><span class="header-section-number">D.7.9</span> Quais são os intervalos das classes?</a></li>
+  <li><a href="#quem-divulgou-todos-esses-endereços" id="toc-quem-divulgou-todos-esses-endereços" class="nav-link" data-scroll-target="#quem-divulgou-todos-esses-endereços"><span class="header-section-number">D.7.10</span> Quem divulgou todos esses endereços?</a></li>
+  <li><a href="#o-que-são-redes-sem-classes" id="toc-o-que-são-redes-sem-classes" class="nav-link" data-scroll-target="#o-que-são-redes-sem-classes"><span class="header-section-number">D.7.11</span> O que são redes sem classes</a></li>
+  <li><a href="#isso-me-deixa-louco-classe-d-e-e" id="toc-isso-me-deixa-louco-classe-d-e-e" class="nav-link" data-scroll-target="#isso-me-deixa-louco-classe-d-e-e"><span class="header-section-number">D.7.12</span> Isso me deixa louco (Classe D e E)</a></li>
+  <li><a href="#o-que-é-loopback" id="toc-o-que-é-loopback" class="nav-link" data-scroll-target="#o-que-é-loopback"><span class="header-section-number">D.7.13</span> O que é loopback</a></li>
+  <li><a href="#o-que-é-o-ping" id="toc-o-que-é-o-ping" class="nav-link" data-scroll-target="#o-que-é-o-ping"><span class="header-section-number">D.7.14</span> O que é o Ping?</a></li>
   </ul></li>
-  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references"><span class="header-section-number">C.8</span> References</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references"><span class="header-section-number">D.8</span> References</a></li>
   </ul>
 <div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/ICTINUS-Engenharia/ictinus/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
     </div>
@@ -406,7 +412,7 @@ div.csl-indent {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Apêndice C: Network</h1>
+<h1 class="title">Apêndice D: Network</h1>
 </div>
 
 
@@ -422,8 +428,8 @@ div.csl-indent {
 </header>
 
 <p>Conjunto de dispositivos como computadores, servidores, telefones celulares, etc., que estão conectados e podem compartilhar informações e recursos entre si. As redes podem ser pequenas e locais (como uma rede doméstica) ou abranger uma grande área geográfica (como a Internet).</p>
-<section id="endereços-ip-privados-redes-locais" class="level2 page-columns page-full" data-number="C.1">
-<h2 data-number="C.1" class="anchored" data-anchor-id="endereços-ip-privados-redes-locais"><span class="header-section-number">C.1</span> Endereços IP Privados ( Redes Locais )</h2>
+<section id="endereços-ip-privados-redes-locais" class="level2 page-columns page-full" data-number="D.1">
+<h2 data-number="D.1" class="anchored" data-anchor-id="endereços-ip-privados-redes-locais"><span class="header-section-number">D.1</span> Endereços IP Privados ( Redes Locais )</h2>
 <p>Os endereços reservados para redes locais, também conhecidos como endereços IP privados, são:</p>
 <ul>
 <li>10.0.0.0 a 10.255.255.255</li>
@@ -439,34 +445,34 @@ div.csl-indent {
 <li><strong>Classe D:</strong> Esta classe é reservada para multicast. Os endereços variam de 224.0.0.0 a 239.255.255.255.</li>
 <li><strong>Classe E:</strong> Esta classe é reservada para uso futuro ou experiências de pesquisa. Os endereços variam de 240.0.0.0 a 255.255.255.255.</li>
 </ul>
-<section id="loopback---127.0.0.0" class="level3 page-columns page-full" data-number="C.1.1">
-<h3 data-number="C.1.1" class="anchored" data-anchor-id="loopback---127.0.0.0"><span class="header-section-number">C.1.1</span> Loopback - 127.0.0.0</h3>
+<section id="loopback---127.0.0.0" class="level3 page-columns page-full" data-number="D.1.1">
+<h3 data-number="D.1.1" class="anchored" data-anchor-id="loopback---127.0.0.0"><span class="header-section-number">D.1.1</span> Loopback - 127.0.0.0</h3>
 <p>O range 127.0.0.0 é reservado para comunicações de <strong>loopback</strong>. Isso significa que é usado para <strong>testar a rede de um computador</strong>. Qualquer tráfego enviado para um endereço dentro deste range é redirecionado de volta para o próprio computador.</p>
 <div class="page-columns page-full"><p>Exemplo, uma forma de testar se a porta Ethernet esta ok é fazer um loopback nela, conforme abaixo:<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p><div class="no-row-height column-margin column-container"><li id="fn1"><p><sup>1</sup>&nbsp;Usar o CMD do Windows</p></li></div></div>
 <pre><code>ping 127.0.0.1</code></pre>
 </section>
 </section>
-<section id="entidades-de-rede" class="level2" data-number="C.2">
-<h2 data-number="C.2" class="anchored" data-anchor-id="entidades-de-rede"><span class="header-section-number">C.2</span> Entidades de Rede</h2>
-<section id="roteadores" class="level3" data-number="C.2.1">
-<h3 data-number="C.2.1" class="anchored" data-anchor-id="roteadores"><span class="header-section-number">C.2.1</span> Roteadores</h3>
+<section id="entidades-de-rede" class="level2" data-number="D.2">
+<h2 data-number="D.2" class="anchored" data-anchor-id="entidades-de-rede"><span class="header-section-number">D.2</span> Entidades de Rede</h2>
+<section id="roteadores" class="level3" data-number="D.2.1">
+<h3 data-number="D.2.1" class="anchored" data-anchor-id="roteadores"><span class="header-section-number">D.2.1</span> Roteadores</h3>
 <p>Roteadores, também conhecidos como routers, são dispositivos que <strong>encaminham pacotes de dados entre redes de computadores</strong>. Eles têm a capacidade de “rotear” informações de um lugar para outro, fazendo conexões eficientes entre diferentes redes. Isso é crucial para a internet, onde os pacotes de dados podem ter que passar por várias redes antes de chegar ao seu destino final.</p>
 </section>
-<section id="switches" class="level3" data-number="C.2.2">
-<h3 data-number="C.2.2" class="anchored" data-anchor-id="switches"><span class="header-section-number">C.2.2</span> Switches</h3>
+<section id="switches" class="level3" data-number="D.2.2">
+<h3 data-number="D.2.2" class="anchored" data-anchor-id="switches"><span class="header-section-number">D.2.2</span> Switches</h3>
 <p>Switches, também conhecidos como comutadores, são dispositivos de rede que conectam vários dispositivos em uma rede de computadores. Eles usam endereços MAC para encaminhar dados para o dispositivo de destino, permitindo a comunicação de dados de alta velocidade entre os dispositivos conectados. Ao contrário dos roteadores, que encaminham os dados para redes diferentes, os switches operam principalmente dentro de uma única rede.</p>
 </section>
-<section id="default-gateway" class="level3" data-number="C.2.3">
-<h3 data-number="C.2.3" class="anchored" data-anchor-id="default-gateway"><span class="header-section-number">C.2.3</span> Default Gateway</h3>
+<section id="default-gateway" class="level3" data-number="D.2.3">
+<h3 data-number="D.2.3" class="anchored" data-anchor-id="default-gateway"><span class="header-section-number">D.2.3</span> Default Gateway</h3>
 <p>O Default Gateway, ou Gateway Padrão, é um dispositivo de rede que serve como um ponto de acesso ou IP que os dispositivos usam para enviar informações para redes fora da sua rede local. Em geral, é o endereço do seu roteador na rede.</p>
 </section>
 </section>
-<section id="comandos-úteis" class="level2" data-number="C.3">
-<h2 data-number="C.3" class="anchored" data-anchor-id="comandos-úteis"><span class="header-section-number">C.3</span> Comandos úteis</h2>
-<section id="ipconfig-windows" class="level3" data-number="C.3.1">
-<h3 data-number="C.3.1" class="anchored" data-anchor-id="ipconfig-windows"><span class="header-section-number">C.3.1</span> ipconfig ( Windows )</h3>
+<section id="comandos-úteis" class="level2" data-number="D.3">
+<h2 data-number="D.3" class="anchored" data-anchor-id="comandos-úteis"><span class="header-section-number">D.3</span> Comandos úteis</h2>
+<section id="ipconfig-windows" class="level3" data-number="D.3.1">
+<h3 data-number="D.3.1" class="anchored" data-anchor-id="ipconfig-windows"><span class="header-section-number">D.3.1</span> ipconfig ( Windows )</h3>
 <p>O <strong>ipconfig</strong> é um comando disponível em muitos sistemas operacionais baseados em Unix e em sistemas Microsoft Windows. Ele é usado para exibir as configurações atuais de rede do sistema, como endereços IP, máscaras de sub-rede, gateways padrão e muito mais.</p>
-<div class="callout callout-style-simple callout-tip callout-titled">
+<div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
@@ -481,10 +487,10 @@ ifconfig ( Linux )
 </div>
 </section>
 </section>
-<section id="subnetting-ipv4" class="level2 page-columns page-full" data-number="C.4">
-<h2 data-number="C.4" class="anchored" data-anchor-id="subnetting-ipv4"><span class="header-section-number">C.4</span> Subnetting IPv4</h2>
-<section id="subnet-mask" class="level3 page-columns page-full" data-number="C.4.1">
-<h3 data-number="C.4.1" class="anchored" data-anchor-id="subnet-mask"><span class="header-section-number">C.4.1</span> Subnet Mask</h3>
+<section id="subnetting-ipv4" class="level2 page-columns page-full" data-number="D.4">
+<h2 data-number="D.4" class="anchored" data-anchor-id="subnetting-ipv4"><span class="header-section-number">D.4</span> Subnetting IPv4</h2>
+<section id="subnet-mask" class="level3 page-columns page-full" data-number="D.4.1">
+<h3 data-number="D.4.1" class="anchored" data-anchor-id="subnet-mask"><span class="header-section-number">D.4.1</span> Subnet Mask</h3>
 <p>É a máscara de sub-rede, é um número que define a separação entre a parte da rede e a parte do host em um endereço IP. Ela é usada para identificar a sub-rede a qual um endereço IP pertence.<span class="citation" data-cites="networkingPortion">(<a href="../ap_Configuração/ap_Configuração.html#ref-networkingPortion" role="doc-biblioref">Systems, n.d.</a>)</span></p>
 <div class="no-row-height column-margin column-container"></div><div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -492,12 +498,16 @@ ifconfig ( Linux )
 <figcaption class="figure-caption"><em>Subnetting</em></figcaption>
 </figure>
 </div>
-<div class="callout callout-style-simple callout-note">
-<div class="callout-body d-flex">
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-body-container">
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <pre><code>    MASK        &gt;  128  |  64  |  32  |  16  |  8   |  4  |  2  |  1 
     HOST.NET    &gt;  256  | 128  |  64  |  32  |  16  |  8  |  4  |  2 
 
@@ -513,12 +523,11 @@ ifconfig ( Linux )
     /32 &gt; .255</code></pre>
 </div>
 </div>
-</div>
 </section>
-<section id="endereços-reservados" class="level3" data-number="C.4.2">
-<h3 data-number="C.4.2" class="anchored" data-anchor-id="endereços-reservados"><span class="header-section-number">C.4.2</span> Endereços Reservados</h3>
+<section id="endereços-reservados" class="level3" data-number="D.4.2">
+<h3 data-number="D.4.2" class="anchored" data-anchor-id="endereços-reservados"><span class="header-section-number">D.4.2</span> Endereços Reservados</h3>
 <p>Os dois endereços IP reservados em cada sub-rede são o <strong>endereço de rede</strong> (primeiro) e o <strong>endereço de broadcast</strong> (ultimo).</p>
-<div class="callout callout-style-simple callout-tip callout-titled">
+<div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
@@ -534,14 +543,14 @@ Endereços disponíveis
 </div>
 </section>
 </section>
-<section id="troubleshooting" class="level2 page-columns page-full" data-number="C.5">
-<h2 data-number="C.5" class="anchored" data-anchor-id="troubleshooting"><span class="header-section-number">C.5</span> Troubleshooting</h2>
-<section id="tcpudp-open-ports" class="level3 page-columns page-full" data-number="C.5.1">
-<h3 data-number="C.5.1" class="anchored" data-anchor-id="tcpudp-open-ports"><span class="header-section-number">C.5.1</span> TCP/UDP open ports</h3>
-<p>Caso não tenha a sua disposição ferramentas de diagnostico de rede como <strong>SPLUNK</strong>, é possivel utilizar comandos do <strong>PowerShell</strong>, como o cmdlet <strong>Test-NetConnection</strong> para verificar se uma porta está disponível (aberta) em um computador remoto.</p>
+<section id="troubleshooting" class="level2 page-columns page-full" data-number="D.5">
+<h2 data-number="D.5" class="anchored" data-anchor-id="troubleshooting"><span class="header-section-number">D.5</span> Troubleshooting</h2>
+<section id="tcpudp-open-ports" class="level3 page-columns page-full" data-number="D.5.1">
+<h3 data-number="D.5.1" class="anchored" data-anchor-id="tcpudp-open-ports"><span class="header-section-number">D.5.1</span> TCP/UDP open ports</h3>
+<p>Caso não tenha a sua disposição ferramentas de diagnostico de rede como <a href="https://ictinus.com.br/grafcet/contents/ap_tools.html#kits-de-diagn%C3%B3stico-e-recupera%C3%A7%C3%A3o"><strong>Splunk</strong></a>, é possivel utilizar comandos do <strong>PowerShell</strong>, como o cmdlet <strong>Test-NetConnection</strong> para verificar se uma porta está disponível (aberta) em um computador remoto.</p>
 <p>Você pode usar este cmdlet para verificar a resposta e a disponibilidade de um servidor remoto ou serviço de rede, <span style="background-color: yellow"><strong>testar se a porta TCP está bloqueada por um firewall</strong></span>, verificar a disponibilidade do ICMP e o roteamento.</p>
 <p>Este comando, substitui várias ferramentas populares de administração de Test-NetConnectionrede, como ping, scanner de porta TCP, tracert, telnet e pathping</p>
-<div class="callout callout-style-simple callout-tip callout-titled">
+<div class="callout callout-style-default callout-important callout-titled" title="Notas do comando Test-NetConnection">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
@@ -552,13 +561,13 @@ Notas do comando Test-NetConnection
 </div>
 <div class="callout-body-container callout-body">
 <ul>
-<li><strong>Restrição do comando:</strong> Comando usado para testar apenas a conectividade de uma porta TCP. Logo, não é possível usar o cmdlet para verificar a disponibilidade das portas UDP remotas.</li>
-<li><strong>Versão Abreviada do comando Test-NetConnection:</strong> TNC é a versão abreviada do mesmo.</li>
+<li><strong>Restrição do comando:</strong> comando usado para testar apenas a conectividade de uma porta TCP. Logo, não é possível usar o cmdlet para verificar a disponibilidade das portas UDP remotas.</li>
+<li><strong>Versão abreviada do comando Test-NetConnection:</strong> TNC é a versão abreviada do mesmo.</li>
 </ul>
 </div>
 </div>
-<section id="exemplos-comando-para-verificar-se-porta-remota-esta-aberta" class="level4 page-columns page-full">
-<h4 class="anchored" data-anchor-id="exemplos-comando-para-verificar-se-porta-remota-esta-aberta">Exemplos: Comando para verificar se porta remota esta aberta</h4>
+<section id="exemplo-1-comando-para-verificar-se-porta-remota-esta-aberta" class="level4 page-columns page-full">
+<h4 class="anchored" data-anchor-id="exemplo-1-comando-para-verificar-se-porta-remota-esta-aberta">Exemplo #1: Comando para verificar se porta remota esta aberta</h4>
 <ol type="1">
 <li>Como exemplo, segue abaixo, comando<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> para verificar se a porta 25<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a> está aberta no servidor remoto <strong>ny-msg01</strong>, e sua versão abreviada:</li>
 </ol>
@@ -567,64 +576,64 @@ Notas do comando Test-NetConnection
 #Versão abreviada
 
 TNC ny-msg01 -Port 25</code></pre>
-<p><strong><em><span style="color:red">#emConstrução</span></em></strong></p>
+<p><strong><em><span style="color:red">Em Construção</span></em></strong></p>
 </section>
 </section>
 </section>
-<section id="fontes-de-informação" class="level2" data-number="C.6">
-<h2 data-number="C.6" class="anchored" data-anchor-id="fontes-de-informação"><span class="header-section-number">C.6</span> Fontes de informação</h2>
-<section id="playlist---your-suck-at-subnetting" class="level3" data-number="C.6.1">
-<h3 data-number="C.6.1" class="anchored" data-anchor-id="playlist---your-suck-at-subnetting"><span class="header-section-number">C.6.1</span> Playlist - Your suck at subnetting</h3>
+<section id="fontes-de-informação" class="level2" data-number="D.6">
+<h2 data-number="D.6" class="anchored" data-anchor-id="fontes-de-informação"><span class="header-section-number">D.6</span> Fontes de informação</h2>
+<section id="playlist---your-suck-at-subnetting" class="level3" data-number="D.6.1">
+<h3 data-number="D.6.1" class="anchored" data-anchor-id="playlist---your-suck-at-subnetting"><span class="header-section-number">D.6.1</span> Playlist - Your suck at subnetting</h3>
 <div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/5WfiTHiU4x8" title="You Suck at Subnetting | NetworkChuck" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
 </section>
 </section>
-<section id="f.q.a---perguntas-frequentes" class="level2" data-number="C.7">
-<h2 data-number="C.7" class="anchored" data-anchor-id="f.q.a---perguntas-frequentes"><span class="header-section-number">C.7</span> F.Q.A - Perguntas frequentes</h2>
-<section id="como-você-encontra-o-endereço-ip-dos-seus-dispositivos" class="level3" data-number="C.7.1">
-<h3 data-number="C.7.1" class="anchored" data-anchor-id="como-você-encontra-o-endereço-ip-dos-seus-dispositivos"><span class="header-section-number">C.7.1</span> <a href="https://www.youtube.com/watch?v=5WfiTHiU4x8&amp;list=PLIhvC56v63IKrRHh3gvZZBAGvsvOhwrRF&amp;index=1&amp;t=140s">Como você encontra o endereço IP dos seus dispositivos?</a></h3>
+<section id="f.q.a---perguntas-frequentes" class="level2" data-number="D.7">
+<h2 data-number="D.7" class="anchored" data-anchor-id="f.q.a---perguntas-frequentes"><span class="header-section-number">D.7</span> F.Q.A - Perguntas frequentes</h2>
+<section id="como-você-encontra-o-endereço-ip-dos-seus-dispositivos" class="level3" data-number="D.7.1">
+<h3 data-number="D.7.1" class="anchored" data-anchor-id="como-você-encontra-o-endereço-ip-dos-seus-dispositivos"><span class="header-section-number">D.7.1</span> <a href="https://www.youtube.com/watch?v=5WfiTHiU4x8&amp;list=PLIhvC56v63IKrRHh3gvZZBAGvsvOhwrRF&amp;index=1&amp;t=140s">Como você encontra o endereço IP dos seus dispositivos?</a></h3>
 </section>
-<section id="como-saber-seu-endereço-ip" class="level3" data-number="C.7.2">
-<h3 data-number="C.7.2" class="anchored" data-anchor-id="como-saber-seu-endereço-ip"><span class="header-section-number">C.7.2</span> <a href="https://www.youtube.com/watch?v=5WfiTHiU4x8&amp;list=PLIhvC56v63IKrRHh3gvZZBAGvsvOhwrRF&amp;index=1&amp;t=285s">Como saber seu endereço IP</a></h3>
+<section id="como-saber-seu-endereço-ip" class="level3" data-number="D.7.2">
+<h3 data-number="D.7.2" class="anchored" data-anchor-id="como-saber-seu-endereço-ip"><span class="header-section-number">D.7.2</span> <a href="https://www.youtube.com/watch?v=5WfiTHiU4x8&amp;list=PLIhvC56v63IKrRHh3gvZZBAGvsvOhwrRF&amp;index=1&amp;t=285s">Como saber seu endereço IP</a></h3>
 </section>
-<section id="desmistificando-sub-redes" class="level3" data-number="C.7.3">
-<h3 data-number="C.7.3" class="anchored" data-anchor-id="desmistificando-sub-redes"><span class="header-section-number">C.7.3</span> <a href="https://www.youtube.com/watch?v=5WfiTHiU4x8&amp;list=PLIhvC56v63IKrRHh3gvZZBAGvsvOhwrRF&amp;index=1&amp;t=320s">Desmistificando sub-redes</a></h3>
+<section id="desmistificando-sub-redes" class="level3" data-number="D.7.3">
+<h3 data-number="D.7.3" class="anchored" data-anchor-id="desmistificando-sub-redes"><span class="header-section-number">D.7.3</span> <a href="https://www.youtube.com/watch?v=5WfiTHiU4x8&amp;list=PLIhvC56v63IKrRHh3gvZZBAGvsvOhwrRF&amp;index=1&amp;t=320s">Desmistificando sub-redes</a></h3>
 </section>
-<section id="gateway-padrão" class="level3" data-number="C.7.4">
-<h3 data-number="C.7.4" class="anchored" data-anchor-id="gateway-padrão"><span class="header-section-number">C.7.4</span> <a href="https://www.youtube.com/watch?v=5WfiTHiU4x8&amp;list=PLIhvC56v63IKrRHh3gvZZBAGvsvOhwrRF&amp;index=1&amp;t=610s">Gateway padrão</a></h3>
+<section id="gateway-padrão" class="level3" data-number="D.7.4">
+<h3 data-number="D.7.4" class="anchored" data-anchor-id="gateway-padrão"><span class="header-section-number">D.7.4</span> <a href="https://www.youtube.com/watch?v=5WfiTHiU4x8&amp;list=PLIhvC56v63IKrRHh3gvZZBAGvsvOhwrRF&amp;index=1&amp;t=610s">Gateway padrão</a></h3>
 </section>
-<section id="desafio" class="level3" data-number="C.7.5">
-<h3 data-number="C.7.5" class="anchored" data-anchor-id="desafio"><span class="header-section-number">C.7.5</span> <a href="https://www.youtube.com/watch?v=5WfiTHiU4x8&amp;list=PLIhvC56v63IKrRHh3gvZZBAGvsvOhwrRF&amp;index=1&amp;t=666s">Desafio</a></h3>
+<section id="desafio" class="level3" data-number="D.7.5">
+<h3 data-number="D.7.5" class="anchored" data-anchor-id="desafio"><span class="header-section-number">D.7.5</span> <a href="https://www.youtube.com/watch?v=5WfiTHiU4x8&amp;list=PLIhvC56v63IKrRHh3gvZZBAGvsvOhwrRF&amp;index=1&amp;t=666s">Desafio</a></h3>
 </section>
-<section id="solução-do-desafio" class="level3" data-number="C.7.6">
-<h3 data-number="C.7.6" class="anchored" data-anchor-id="solução-do-desafio"><span class="header-section-number">C.7.6</span> <a href="https://www.youtube.com/watch?v=5WfiTHiU4x8&amp;list=PLIhvC56v63IKrRHh3gvZZBAGvsvOhwrRF&amp;index=1&amp;t=705s">Solução do desafio</a></h3>
+<section id="solução-do-desafio" class="level3" data-number="D.7.6">
+<h3 data-number="D.7.6" class="anchored" data-anchor-id="solução-do-desafio"><span class="header-section-number">D.7.6</span> <a href="https://www.youtube.com/watch?v=5WfiTHiU4x8&amp;list=PLIhvC56v63IKrRHh3gvZZBAGvsvOhwrRF&amp;index=1&amp;t=705s">Solução do desafio</a></h3>
 </section>
-<section id="recapitulando" class="level3" data-number="C.7.7">
-<h3 data-number="C.7.7" class="anchored" data-anchor-id="recapitulando"><span class="header-section-number">C.7.7</span> <a href="https://www.youtube.com/watch?v=5WfiTHiU4x8&amp;list=PLIhvC56v63IKrRHh3gvZZBAGvsvOhwrRF&amp;index=1&amp;t=843s">Recapitulando</a></h3>
+<section id="recapitulando" class="level3" data-number="D.7.7">
+<h3 data-number="D.7.7" class="anchored" data-anchor-id="recapitulando"><span class="header-section-number">D.7.7</span> <a href="https://www.youtube.com/watch?v=5WfiTHiU4x8&amp;list=PLIhvC56v63IKrRHh3gvZZBAGvsvOhwrRF&amp;index=1&amp;t=843s">Recapitulando</a></h3>
 </section>
-<section id="o-que-aconteceu-com-todos-os-endereços-ip" class="level3" data-number="C.7.8">
-<h3 data-number="C.7.8" class="anchored" data-anchor-id="o-que-aconteceu-com-todos-os-endereços-ip"><span class="header-section-number">C.7.8</span> <a href="https://www.youtube.com/watch?v=tcae4TSSMo8&amp;list=PLIhvC56v63IKrRHh3gvZZBAGvsvOhwrRF&amp;index=2&amp;t=188s">O que aconteceu com todos os endereços IP?</a></h3>
+<section id="o-que-aconteceu-com-todos-os-endereços-ip" class="level3" data-number="D.7.8">
+<h3 data-number="D.7.8" class="anchored" data-anchor-id="o-que-aconteceu-com-todos-os-endereços-ip"><span class="header-section-number">D.7.8</span> <a href="https://www.youtube.com/watch?v=tcae4TSSMo8&amp;list=PLIhvC56v63IKrRHh3gvZZBAGvsvOhwrRF&amp;index=2&amp;t=188s">O que aconteceu com todos os endereços IP?</a></h3>
 </section>
-<section id="quais-são-os-intervalos-das-classes" class="level3" data-number="C.7.9">
-<h3 data-number="C.7.9" class="anchored" data-anchor-id="quais-são-os-intervalos-das-classes"><span class="header-section-number">C.7.9</span> <a href="https://www.youtube.com/watch?v=tcae4TSSMo8&amp;list=PLIhvC56v63IKrRHh3gvZZBAGvsvOhwrRF&amp;index=2&amp;t=255s">Quais são os intervalos das classes?</a></h3>
+<section id="quais-são-os-intervalos-das-classes" class="level3" data-number="D.7.9">
+<h3 data-number="D.7.9" class="anchored" data-anchor-id="quais-são-os-intervalos-das-classes"><span class="header-section-number">D.7.9</span> <a href="https://www.youtube.com/watch?v=tcae4TSSMo8&amp;list=PLIhvC56v63IKrRHh3gvZZBAGvsvOhwrRF&amp;index=2&amp;t=255s">Quais são os intervalos das classes?</a></h3>
 </section>
-<section id="quem-divulgou-todos-esses-endereços" class="level3" data-number="C.7.10">
-<h3 data-number="C.7.10" class="anchored" data-anchor-id="quem-divulgou-todos-esses-endereços"><span class="header-section-number">C.7.10</span> <a href="https://www.youtube.com/watch?v=tcae4TSSMo8&amp;list=PLIhvC56v63IKrRHh3gvZZBAGvsvOhwrRF&amp;index=2&amp;t=421s">Quem divulgou todos esses endereços?</a></h3>
+<section id="quem-divulgou-todos-esses-endereços" class="level3" data-number="D.7.10">
+<h3 data-number="D.7.10" class="anchored" data-anchor-id="quem-divulgou-todos-esses-endereços"><span class="header-section-number">D.7.10</span> <a href="https://www.youtube.com/watch?v=tcae4TSSMo8&amp;list=PLIhvC56v63IKrRHh3gvZZBAGvsvOhwrRF&amp;index=2&amp;t=421s">Quem divulgou todos esses endereços?</a></h3>
 </section>
-<section id="o-que-são-redes-sem-classes" class="level3" data-number="C.7.11">
-<h3 data-number="C.7.11" class="anchored" data-anchor-id="o-que-são-redes-sem-classes"><span class="header-section-number">C.7.11</span> <a href="https://www.youtube.com/watch?v=tcae4TSSMo8&amp;list=PLIhvC56v63IKrRHh3gvZZBAGvsvOhwrRF&amp;index=2&amp;t=487s">O que são redes sem classes</a></h3>
+<section id="o-que-são-redes-sem-classes" class="level3" data-number="D.7.11">
+<h3 data-number="D.7.11" class="anchored" data-anchor-id="o-que-são-redes-sem-classes"><span class="header-section-number">D.7.11</span> <a href="https://www.youtube.com/watch?v=tcae4TSSMo8&amp;list=PLIhvC56v63IKrRHh3gvZZBAGvsvOhwrRF&amp;index=2&amp;t=487s">O que são redes sem classes</a></h3>
 </section>
-<section id="isso-me-deixa-louco-classe-d-e-e" class="level3" data-number="C.7.12">
-<h3 data-number="C.7.12" class="anchored" data-anchor-id="isso-me-deixa-louco-classe-d-e-e"><span class="header-section-number">C.7.12</span> <a href="https://www.youtube.com/watch?v=tcae4TSSMo8&amp;list=PLIhvC56v63IKrRHh3gvZZBAGvsvOhwrRF&amp;index=2&amp;t=680s">Isso me deixa louco (Classe D e E)</a></h3>
+<section id="isso-me-deixa-louco-classe-d-e-e" class="level3" data-number="D.7.12">
+<h3 data-number="D.7.12" class="anchored" data-anchor-id="isso-me-deixa-louco-classe-d-e-e"><span class="header-section-number">D.7.12</span> <a href="https://www.youtube.com/watch?v=tcae4TSSMo8&amp;list=PLIhvC56v63IKrRHh3gvZZBAGvsvOhwrRF&amp;index=2&amp;t=680s">Isso me deixa louco (Classe D e E)</a></h3>
 </section>
-<section id="o-que-é-loopback" class="level3" data-number="C.7.13">
-<h3 data-number="C.7.13" class="anchored" data-anchor-id="o-que-é-loopback"><span class="header-section-number">C.7.13</span> <a href="https://www.youtube.com/watch?v=tcae4TSSMo8&amp;list=PLIhvC56v63IKrRHh3gvZZBAGvsvOhwrRF&amp;index=2&amp;t=743s">O que é loopback</a></h3>
+<section id="o-que-é-loopback" class="level3" data-number="D.7.13">
+<h3 data-number="D.7.13" class="anchored" data-anchor-id="o-que-é-loopback"><span class="header-section-number">D.7.13</span> <a href="https://www.youtube.com/watch?v=tcae4TSSMo8&amp;list=PLIhvC56v63IKrRHh3gvZZBAGvsvOhwrRF&amp;index=2&amp;t=743s">O que é loopback</a></h3>
 </section>
-<section id="o-que-é-o-ping" class="level3" data-number="C.7.14">
-<h3 data-number="C.7.14" class="anchored" data-anchor-id="o-que-é-o-ping"><span class="header-section-number">C.7.14</span> <a href="https://www.youtube.com/watch?v=tcae4TSSMo8&amp;list=PLIhvC56v63IKrRHh3gvZZBAGvsvOhwrRF&amp;index=2&amp;t=800s">O que é o Ping?</a></h3>
+<section id="o-que-é-o-ping" class="level3" data-number="D.7.14">
+<h3 data-number="D.7.14" class="anchored" data-anchor-id="o-que-é-o-ping"><span class="header-section-number">D.7.14</span> <a href="https://www.youtube.com/watch?v=tcae4TSSMo8&amp;list=PLIhvC56v63IKrRHh3gvZZBAGvsvOhwrRF&amp;index=2&amp;t=800s">O que é o Ping?</a></h3>
 </section>
 </section>
-<section id="references" class="level2 page-columns page-full" data-number="C.8">
-<h2 data-number="C.8" class="anchored" data-anchor-id="references"><span class="header-section-number">C.8</span> References</h2>
+<section id="references" class="level2 page-columns page-full" data-number="D.8">
+<h2 data-number="D.8" class="anchored" data-anchor-id="references"><span class="header-section-number">D.8</span> References</h2>
 <p><span class="citation" data-cites="networkingPortion">(<a href="../ap_Configuração/ap_Configuração.html#ref-networkingPortion" role="doc-biblioref">Systems, n.d.</a>)</span></p>
 <div class="no-row-height column-margin column-container"><div id="ref-networkingPortion" class="csl-entry" role="listitem">
 Systems, Cisco. n.d. <span>“Basic IP Addressing and Troubleshooting Guide.”</span> In. <a href="http://penta2.ufrgs.br/trouble/ts_ip.htm">http://penta2.ufrgs.br/trouble/ts_ip.htm</a>.
@@ -993,8 +1002,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../../contents/ap_tools.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">B</span>&nbsp; <span class="chapter-title">Ferramentas</span></span>
+      <a href="../../contents/ap_instrumentation/ap_instrumentation.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">C</span>&nbsp; <span class="chapter-title">Instrumentação</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
