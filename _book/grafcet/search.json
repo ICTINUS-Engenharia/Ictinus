@@ -172,28 +172,28 @@
     "href": "contents/ex_plantaCIP/plantaCIP.html#objetivo",
     "title": "Planta CIP",
     "section": "Objetivo",
-    "text": "Objetivo\n#emConstrução"
+    "text": "Objetivo\nEm Construção"
   },
   {
     "objectID": "contents/ex_plantaCIP/plantaCIP.html#descrição-do-processo",
     "href": "contents/ex_plantaCIP/plantaCIP.html#descrição-do-processo",
     "title": "Planta CIP",
     "section": "Descrição do Processo",
-    "text": "Descrição do Processo\n#emConstrução"
+    "text": "Descrição do Processo\nEm Construção"
   },
   {
     "objectID": "contents/ex_plantaCIP/plantaCIP.html#restrições",
     "href": "contents/ex_plantaCIP/plantaCIP.html#restrições",
     "title": "Planta CIP",
     "section": "Restrições",
-    "text": "Restrições\n#emConstrução"
+    "text": "Restrições\nEm Construção"
   },
   {
     "objectID": "contents/ex_plantaCIP/plantaCIP.html#exceções",
     "href": "contents/ex_plantaCIP/plantaCIP.html#exceções",
     "title": "Planta CIP",
     "section": "Exceções",
-    "text": "Exceções\n#emConstrução"
+    "text": "Exceções\nEm Construção"
   },
   {
     "objectID": "contents/ax_Fontes.html#fontes-dos-exercícios",
@@ -245,59 +245,73 @@
     "text": "B.3 IDEs e ambientes de desenvolvimento\n\n\n\nNo\nIDE/Ambientes de Desenvolvimento\nDescrição\nCaracteristicas\n\n\n\n\n1\nTIA Portal\nPortal de Automação Totalmente Integrado. Ele oferece acesso irrestrito à gama completa de serviços de automação digitalizada, desde planejamento digital até engenharia integrada e operação transparente.\nAmbiente de desenvolvimento de Automação para plataforma de PLC Siemens"
   },
   {
+    "objectID": "contents/ap_instrumentation/ap_instrumentation.html#sistemas-instrumentados-de-segurança-sis",
+    "href": "contents/ap_instrumentation/ap_instrumentation.html#sistemas-instrumentados-de-segurança-sis",
+    "title": "Apêndice C: Instrumentação",
+    "section": "C.1 Sistemas instrumentados de segurança (SIS)",
+    "text": "C.1 Sistemas instrumentados de segurança (SIS)\nExistem lógicas de votação 1oo1, 1oo2, 2oo2, 2oo3 etc1. na arquitetura do sistema instrumentado de segurança.1 #emConstrução, https://instrumentationtools.com/voting-logic-safety-instrumented-system/\nA arquitetura lógica de votação normalmente utilizada no instrumento de campo e/ou elementos de controle finais para atingir determinado  ou para atingir determinada redução de custos devido ao desligamento da plataforma. Em geral, quando devemos usar a arquitetura lógica de votação 1oo1, 1oo2, 2oo2 ou 2oo3?\n#emConstrução"
+  },
+  {
+    "objectID": "contents/ap_instrumentation/ap_instrumentation.html#lógica-de-votação",
+    "href": "contents/ap_instrumentation/ap_instrumentation.html#lógica-de-votação",
+    "title": "Apêndice C: Instrumentação",
+    "section": "C.2 Lógica de votação",
+    "text": "C.2 Lógica de votação\n\n\n\nlógica de votação.\n\n\nConforme mencionado acima, há dois propósitos pelos quais determinadas arquiteturas  foram escolhidas: o primeiro é atingir determinado SIL e, em segundo lugar, alcançar certa redução de custos devido ao desligamento espúrio da plataforma.\n#emConstrução"
+  },
+  {
     "objectID": "contents/ap_Networking/ap_Networking.html#endereços-ip-privados-redes-locais",
     "href": "contents/ap_Networking/ap_Networking.html#endereços-ip-privados-redes-locais",
-    "title": "Apêndice C: Network",
-    "section": "C.1 Endereços IP Privados ( Redes Locais )",
-    "text": "C.1 Endereços IP Privados ( Redes Locais )\nOs endereços reservados para redes locais, também conhecidos como endereços IP privados, são:\n\n10.0.0.0 a 10.255.255.255\n172.16.0.0 a 172.31.255.255\n192.168.0.0 a 192.168.255.255\n\n(RFC1918 2024; Moskowitz et al. 1996)\nAs classes de endereços IP são diferentes em termos de quantidade de redes e hosts que podem acomodar:\n\nClasse A: Este é o maior tipo de rede, pois pode acomodar mais de 16 milhões de hosts. Os endereços de Classe A variam de 1.0.0.0 a 126.0.0.0.\nClasse B: Estas redes podem acomodar até aproximadamente 65.000 hosts. Os endereços de Classe B variam de 128.0.0.0 a 191.255.0.0.\nClasse C: Estas redes são menores, acomodando até 254 hosts. Os endereços de Classe C variam de 192.0.0.0 a 223.255.255.0.\nClasse D: Esta classe é reservada para multicast. Os endereços variam de 224.0.0.0 a 239.255.255.255.\nClasse E: Esta classe é reservada para uso futuro ou experiências de pesquisa. Os endereços variam de 240.0.0.0 a 255.255.255.255.\n\n\nC.1.1 Loopback - 127.0.0.0\nO range 127.0.0.0 é reservado para comunicações de loopback. Isso significa que é usado para testar a rede de um computador. Qualquer tráfego enviado para um endereço dentro deste range é redirecionado de volta para o próprio computador.\nExemplo, uma forma de testar se a porta Ethernet esta ok é fazer um loopback nela, conforme abaixo:11 Usar o CMD do Windows\nping 127.0.0.1"
+    "title": "Apêndice D: Network",
+    "section": "D.1 Endereços IP Privados ( Redes Locais )",
+    "text": "D.1 Endereços IP Privados ( Redes Locais )\nOs endereços reservados para redes locais, também conhecidos como endereços IP privados, são:\n\n10.0.0.0 a 10.255.255.255\n172.16.0.0 a 172.31.255.255\n192.168.0.0 a 192.168.255.255\n\n(RFC1918 2024; Moskowitz et al. 1996)\nAs classes de endereços IP são diferentes em termos de quantidade de redes e hosts que podem acomodar:\n\nClasse A: Este é o maior tipo de rede, pois pode acomodar mais de 16 milhões de hosts. Os endereços de Classe A variam de 1.0.0.0 a 126.0.0.0.\nClasse B: Estas redes podem acomodar até aproximadamente 65.000 hosts. Os endereços de Classe B variam de 128.0.0.0 a 191.255.0.0.\nClasse C: Estas redes são menores, acomodando até 254 hosts. Os endereços de Classe C variam de 192.0.0.0 a 223.255.255.0.\nClasse D: Esta classe é reservada para multicast. Os endereços variam de 224.0.0.0 a 239.255.255.255.\nClasse E: Esta classe é reservada para uso futuro ou experiências de pesquisa. Os endereços variam de 240.0.0.0 a 255.255.255.255.\n\n\nD.1.1 Loopback - 127.0.0.0\nO range 127.0.0.0 é reservado para comunicações de loopback. Isso significa que é usado para testar a rede de um computador. Qualquer tráfego enviado para um endereço dentro deste range é redirecionado de volta para o próprio computador.\nExemplo, uma forma de testar se a porta Ethernet esta ok é fazer um loopback nela, conforme abaixo:11 Usar o CMD do Windows\nping 127.0.0.1"
   },
   {
     "objectID": "contents/ap_Networking/ap_Networking.html#entidades-de-rede",
     "href": "contents/ap_Networking/ap_Networking.html#entidades-de-rede",
-    "title": "Apêndice C: Network",
-    "section": "C.2 Entidades de Rede",
-    "text": "C.2 Entidades de Rede\n\nC.2.1 Roteadores\nRoteadores, também conhecidos como routers, são dispositivos que encaminham pacotes de dados entre redes de computadores. Eles têm a capacidade de “rotear” informações de um lugar para outro, fazendo conexões eficientes entre diferentes redes. Isso é crucial para a internet, onde os pacotes de dados podem ter que passar por várias redes antes de chegar ao seu destino final.\n\n\nC.2.2 Switches\nSwitches, também conhecidos como comutadores, são dispositivos de rede que conectam vários dispositivos em uma rede de computadores. Eles usam endereços MAC para encaminhar dados para o dispositivo de destino, permitindo a comunicação de dados de alta velocidade entre os dispositivos conectados. Ao contrário dos roteadores, que encaminham os dados para redes diferentes, os switches operam principalmente dentro de uma única rede.\n\n\nC.2.3 Default Gateway\nO Default Gateway, ou Gateway Padrão, é um dispositivo de rede que serve como um ponto de acesso ou IP que os dispositivos usam para enviar informações para redes fora da sua rede local. Em geral, é o endereço do seu roteador na rede."
+    "title": "Apêndice D: Network",
+    "section": "D.2 Entidades de Rede",
+    "text": "D.2 Entidades de Rede\n\nD.2.1 Roteadores\nRoteadores, também conhecidos como routers, são dispositivos que encaminham pacotes de dados entre redes de computadores. Eles têm a capacidade de “rotear” informações de um lugar para outro, fazendo conexões eficientes entre diferentes redes. Isso é crucial para a internet, onde os pacotes de dados podem ter que passar por várias redes antes de chegar ao seu destino final.\n\n\nD.2.2 Switches\nSwitches, também conhecidos como comutadores, são dispositivos de rede que conectam vários dispositivos em uma rede de computadores. Eles usam endereços MAC para encaminhar dados para o dispositivo de destino, permitindo a comunicação de dados de alta velocidade entre os dispositivos conectados. Ao contrário dos roteadores, que encaminham os dados para redes diferentes, os switches operam principalmente dentro de uma única rede.\n\n\nD.2.3 Default Gateway\nO Default Gateway, ou Gateway Padrão, é um dispositivo de rede que serve como um ponto de acesso ou IP que os dispositivos usam para enviar informações para redes fora da sua rede local. Em geral, é o endereço do seu roteador na rede."
   },
   {
     "objectID": "contents/ap_Networking/ap_Networking.html#comandos-úteis",
     "href": "contents/ap_Networking/ap_Networking.html#comandos-úteis",
-    "title": "Apêndice C: Network",
-    "section": "C.3 Comandos úteis",
-    "text": "C.3 Comandos úteis\n\nC.3.1 ipconfig ( Windows )\nO ipconfig é um comando disponível em muitos sistemas operacionais baseados em Unix e em sistemas Microsoft Windows. Ele é usado para exibir as configurações atuais de rede do sistema, como endereços IP, máscaras de sub-rede, gateways padrão e muito mais.\n\n\n\n\n\n\nifconfig ( Linux )\n\n\n\nO comando ifconfig é uma ferramenta de linha de comando que é usada para configurar, gerenciar e consultar as configurações de rede em sistemas operacionais Unix/Linux. Ele permite configurar (ou exibir) as interfaces de rede do sistema, como endereços IP, máscaras de sub-rede, entre outros."
+    "title": "Apêndice D: Network",
+    "section": "D.3 Comandos úteis",
+    "text": "D.3 Comandos úteis\n\nD.3.1 ipconfig ( Windows )\nO ipconfig é um comando disponível em muitos sistemas operacionais baseados em Unix e em sistemas Microsoft Windows. Ele é usado para exibir as configurações atuais de rede do sistema, como endereços IP, máscaras de sub-rede, gateways padrão e muito mais.\n\n\n\n\n\n\nifconfig ( Linux )\n\n\n\nO comando ifconfig é uma ferramenta de linha de comando que é usada para configurar, gerenciar e consultar as configurações de rede em sistemas operacionais Unix/Linux. Ele permite configurar (ou exibir) as interfaces de rede do sistema, como endereços IP, máscaras de sub-rede, entre outros."
   },
   {
     "objectID": "contents/ap_Networking/ap_Networking.html#subnetting-ipv4",
     "href": "contents/ap_Networking/ap_Networking.html#subnetting-ipv4",
-    "title": "Apêndice C: Network",
-    "section": "C.4 Subnetting IPv4",
-    "text": "C.4 Subnetting IPv4\n\nC.4.1 Subnet Mask\nÉ a máscara de sub-rede, é um número que define a separação entre a parte da rede e a parte do host em um endereço IP. Ela é usada para identificar a sub-rede a qual um endereço IP pertence.(Systems, n.d.)\n\n\n\nSubnetting\n\n\n\n\n\n\n\n\n    MASK        &gt;  128  |  64  |  32  |  16  |  8   |  4  |  2  |  1 \n    HOST.NET    &gt;  256  | 128  |  64  |  32  |  16  |  8  |  4  |  2 \n\n    INCREMENTO: É o ultimo bit roubado.\n\n    /25 &gt; .128\n    /26 &gt; .192\n    /27 &gt; .224\n    /28 &gt; .240\n    /29 &gt; .248\n    /30 &gt; .252\n    /31 &gt; .254\n    /32 &gt; .255\n\n\n\n\n\nC.4.2 Endereços Reservados\nOs dois endereços IP reservados em cada sub-rede são o endereço de rede (primeiro) e o endereço de broadcast (ultimo).\n\n\n\n\n\n\nEndereços disponíveis\n\n\n\nLogo a quantidade de endereços disponíveis são o total de endereços, menos 2 endereços, de rede e broadcast. Lembrando que um endereço, normalmente o primeiro é o endereço usado para o default gateway da rede.\nAssim a quantidade disponível será o total da rede, menos 3 endereços."
+    "title": "Apêndice D: Network",
+    "section": "D.4 Subnetting IPv4",
+    "text": "D.4 Subnetting IPv4\n\nD.4.1 Subnet Mask\nÉ a máscara de sub-rede, é um número que define a separação entre a parte da rede e a parte do host em um endereço IP. Ela é usada para identificar a sub-rede a qual um endereço IP pertence.(Systems, n.d.)\n\n\n\nSubnetting\n\n\n\n\n\n\n\n\nNote\n\n\n\n    MASK        &gt;  128  |  64  |  32  |  16  |  8   |  4  |  2  |  1 \n    HOST.NET    &gt;  256  | 128  |  64  |  32  |  16  |  8  |  4  |  2 \n\n    INCREMENTO: É o ultimo bit roubado.\n\n    /25 &gt; .128\n    /26 &gt; .192\n    /27 &gt; .224\n    /28 &gt; .240\n    /29 &gt; .248\n    /30 &gt; .252\n    /31 &gt; .254\n    /32 &gt; .255\n\n\n\n\nD.4.2 Endereços Reservados\nOs dois endereços IP reservados em cada sub-rede são o endereço de rede (primeiro) e o endereço de broadcast (ultimo).\n\n\n\n\n\n\nEndereços disponíveis\n\n\n\nLogo a quantidade de endereços disponíveis são o total de endereços, menos 2 endereços, de rede e broadcast. Lembrando que um endereço, normalmente o primeiro é o endereço usado para o default gateway da rede.\nAssim a quantidade disponível será o total da rede, menos 3 endereços."
   },
   {
     "objectID": "contents/ap_Networking/ap_Networking.html#troubleshooting",
     "href": "contents/ap_Networking/ap_Networking.html#troubleshooting",
-    "title": "Apêndice C: Network",
-    "section": "C.5 Troubleshooting",
-    "text": "C.5 Troubleshooting\n\nC.5.1 TCP/UDP open ports\nCaso não tenha a sua disposição ferramentas de diagnostico de rede como SPLUNK, é possivel utilizar comandos do PowerShell, como o cmdlet Test-NetConnection para verificar se uma porta está disponível (aberta) em um computador remoto.\nVocê pode usar este cmdlet para verificar a resposta e a disponibilidade de um servidor remoto ou serviço de rede, testar se a porta TCP está bloqueada por um firewall, verificar a disponibilidade do ICMP e o roteamento.\nEste comando, substitui várias ferramentas populares de administração de Test-NetConnectionrede, como ping, scanner de porta TCP, tracert, telnet e pathping\n\n\n\n\n\n\nNotas do comando Test-NetConnection\n\n\n\n\nRestrição do comando: Comando usado para testar apenas a conectividade de uma porta TCP. Logo, não é possível usar o cmdlet para verificar a disponibilidade das portas UDP remotas.\nVersão Abreviada do comando Test-NetConnection: TNC é a versão abreviada do mesmo.\n\n\n\n\nExemplos: Comando para verificar se porta remota esta aberta\n\nComo exemplo, segue abaixo, comando2 para verificar se a porta 253 está aberta no servidor remoto ny-msg01, e sua versão abreviada:\n\n2 Executar no powershell3 TCP 25: Protocolo SMTPTest-NetConnection -ComputerName ny-msg01 -Port 25\n\n#Versão abreviada\n\nTNC ny-msg01 -Port 25\n#emConstrução"
+    "title": "Apêndice D: Network",
+    "section": "D.5 Troubleshooting",
+    "text": "D.5 Troubleshooting\n\nD.5.1 TCP/UDP open ports\nCaso não tenha a sua disposição ferramentas de diagnostico de rede como Splunk, é possivel utilizar comandos do PowerShell, como o cmdlet Test-NetConnection para verificar se uma porta está disponível (aberta) em um computador remoto.\nVocê pode usar este cmdlet para verificar a resposta e a disponibilidade de um servidor remoto ou serviço de rede, testar se a porta TCP está bloqueada por um firewall, verificar a disponibilidade do ICMP e o roteamento.\nEste comando, substitui várias ferramentas populares de administração de Test-NetConnectionrede, como ping, scanner de porta TCP, tracert, telnet e pathping\n\n\n\n\n\n\nNotas do comando Test-NetConnection\n\n\n\n\nRestrição do comando: comando usado para testar apenas a conectividade de uma porta TCP. Logo, não é possível usar o cmdlet para verificar a disponibilidade das portas UDP remotas.\nVersão abreviada do comando Test-NetConnection: TNC é a versão abreviada do mesmo.\n\n\n\n\nExemplo #1: Comando para verificar se porta remota esta aberta\n\nComo exemplo, segue abaixo, comando2 para verificar se a porta 253 está aberta no servidor remoto ny-msg01, e sua versão abreviada:\n\n2 Executar no powershell3 TCP 25: Protocolo SMTPTest-NetConnection -ComputerName ny-msg01 -Port 25\n\n#Versão abreviada\n\nTNC ny-msg01 -Port 25\nEm Construção"
   },
   {
     "objectID": "contents/ap_Networking/ap_Networking.html#fontes-de-informação",
     "href": "contents/ap_Networking/ap_Networking.html#fontes-de-informação",
-    "title": "Apêndice C: Network",
-    "section": "C.6 Fontes de informação",
-    "text": "C.6 Fontes de informação\n\nC.6.1 Playlist - Your suck at subnetting"
+    "title": "Apêndice D: Network",
+    "section": "D.6 Fontes de informação",
+    "text": "D.6 Fontes de informação\n\nD.6.1 Playlist - Your suck at subnetting"
   },
   {
     "objectID": "contents/ap_Networking/ap_Networking.html#f.q.a---perguntas-frequentes",
     "href": "contents/ap_Networking/ap_Networking.html#f.q.a---perguntas-frequentes",
-    "title": "Apêndice C: Network",
-    "section": "C.7 F.Q.A - Perguntas frequentes",
-    "text": "C.7 F.Q.A - Perguntas frequentes\n\nC.7.1 Como você encontra o endereço IP dos seus dispositivos?\n\n\nC.7.2 Como saber seu endereço IP\n\n\nC.7.3 Desmistificando sub-redes\n\n\nC.7.4 Gateway padrão\n\n\nC.7.5 Desafio\n\n\nC.7.6 Solução do desafio\n\n\nC.7.7 Recapitulando\n\n\nC.7.8 O que aconteceu com todos os endereços IP?\n\n\nC.7.9 Quais são os intervalos das classes?\n\n\nC.7.10 Quem divulgou todos esses endereços?\n\n\nC.7.11 O que são redes sem classes\n\n\nC.7.12 Isso me deixa louco (Classe D e E)\n\n\nC.7.13 O que é loopback\n\n\nC.7.14 O que é o Ping?"
+    "title": "Apêndice D: Network",
+    "section": "D.7 F.Q.A - Perguntas frequentes",
+    "text": "D.7 F.Q.A - Perguntas frequentes\n\nD.7.1 Como você encontra o endereço IP dos seus dispositivos?\n\n\nD.7.2 Como saber seu endereço IP\n\n\nD.7.3 Desmistificando sub-redes\n\n\nD.7.4 Gateway padrão\n\n\nD.7.5 Desafio\n\n\nD.7.6 Solução do desafio\n\n\nD.7.7 Recapitulando\n\n\nD.7.8 O que aconteceu com todos os endereços IP?\n\n\nD.7.9 Quais são os intervalos das classes?\n\n\nD.7.10 Quem divulgou todos esses endereços?\n\n\nD.7.11 O que são redes sem classes\n\n\nD.7.12 Isso me deixa louco (Classe D e E)\n\n\nD.7.13 O que é loopback\n\n\nD.7.14 O que é o Ping?"
   },
   {
     "objectID": "contents/ap_Networking/ap_Networking.html#references",
     "href": "contents/ap_Networking/ap_Networking.html#references",
-    "title": "Apêndice C: Network",
-    "section": "C.8 References",
-    "text": "C.8 References\n(Systems, n.d.)\n\nSystems, Cisco. n.d. “Basic IP Addressing and Troubleshooting Guide.” In. http://penta2.ufrgs.br/trouble/ts_ip.htm.\n\nMoskowitz, Robert, Daniel Karrenberg, Yakov Rekhter, Eliot Lear, and Geert Jan de Groot. 1996. “Address Allocation for Private Internets.” Request for Comments. RFC 1918; RFC Editor. https://doi.org/10.17487/RFC1918.\n(Moskowitz et al. 1996)\n(RFC1918 2024)\n\n\n\nRFC1918. 2024. “Rede Privada - RFC 1918.” Wikipédia. https://pt.wikipedia.org/wiki/Rede_privada."
+    "title": "Apêndice D: Network",
+    "section": "D.8 References",
+    "text": "D.8 References\n(Systems, n.d.)\n\nSystems, Cisco. n.d. “Basic IP Addressing and Troubleshooting Guide.” In. http://penta2.ufrgs.br/trouble/ts_ip.htm.\n\nMoskowitz, Robert, Daniel Karrenberg, Yakov Rekhter, Eliot Lear, and Geert Jan de Groot. 1996. “Address Allocation for Private Internets.” Request for Comments. RFC 1918; RFC Editor. https://doi.org/10.17487/RFC1918.\n(Moskowitz et al. 1996)\n(RFC1918 2024)\n\n\n\nRFC1918. 2024. “Rede Privada - RFC 1918.” Wikipédia. https://pt.wikipedia.org/wiki/Rede_privada."
   }
 ]
