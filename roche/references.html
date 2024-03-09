@@ -8,7 +8,7 @@
 
 <meta name="keywords" content="grafcet, PLC, STL, ICTINUS, ladder, Simatic, TIA Portal">
 
-<title>noprefix – bconfiguração</title>
+<title>noprefix – references</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -43,26 +43,26 @@ div.csl-indent {
 }</style>
 
 
-<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../../">
-<script src="../../site_libs/cookie-consent/cookie-consent.js"></script>
-<link href="../../site_libs/cookie-consent/cookie-consent.css" rel="stylesheet">
-<script src="../../site_libs/quarto-html/quarto.js"></script>
-<script src="../../site_libs/quarto-html/popper.min.js"></script>
-<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/cookie-consent/cookie-consent.js"></script>
+<link href="site_libs/cookie-consent/cookie-consent.css" rel="stylesheet">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -110,7 +110,7 @@ cookieconsent.run({
 
 </head>
 
-<body class="nav-sidebar docked slimcontent">
+<body class="nav-sidebar docked">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -136,7 +136,7 @@ cookieconsent.run({
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation docked overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
-      <a href="../../">Home</a> 
+      <a href="./">Home</a> 
         <div class="sidebar-tools-main">
   <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
@@ -151,7 +151,7 @@ cookieconsent.run({
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../index.html" class="sidebar-item-text sidebar-link">
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Prefácio</span></a>
   </div>
 </li>
@@ -165,201 +165,20 @@ cookieconsent.run({
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#configuração" id="toc-configuração" class="nav-link active" data-scroll-target="#configuração">Configuração</a>
-  <ul>
-  <li><a href="#obs-de-interrupção" id="toc-obs-de-interrupção" class="nav-link" data-scroll-target="#obs-de-interrupção">OBs de Interrupção</a>
-  <ul class="collapse">
-  <li><a href="#tipos-de-interrupção-ob" id="toc-tipos-de-interrupção-ob" class="nav-link" data-scroll-target="#tipos-de-interrupção-ob">Tipos de Interrupção OB</a></li>
-  <li><a href="#interrupção-cíclica-ob30-ob38" id="toc-interrupção-cíclica-ob30-ob38" class="nav-link" data-scroll-target="#interrupção-cíclica-ob30-ob38">Interrupção Cíclica (OB30, OB38)</a></li>
-  <li><a href="#interrupção-de-hardware-ob40" id="toc-interrupção-de-hardware-ob40" class="nav-link" data-scroll-target="#interrupção-de-hardware-ob40">Interrupção de Hardware (OB40)</a></li>
-  <li><a href="#interrupção-por-tempo-ob20" id="toc-interrupção-por-tempo-ob20" class="nav-link" data-scroll-target="#interrupção-por-tempo-ob20">Interrupção por Tempo (OB20)</a></li>
-  <li><a href="#interrupção-de-inicializção-ob100" id="toc-interrupção-de-inicializção-ob100" class="nav-link" data-scroll-target="#interrupção-de-inicializção-ob100">Interrupção de Inicializção (OB100)</a></li>
-  <li><a href="#prioridade-das-interrupções" id="toc-prioridade-das-interrupções" class="nav-link" data-scroll-target="#prioridade-das-interrupções">Prioridade das Interrupções</a></li>
-  <li><a href="#interrupções-cíclicas-no-portal-tia" id="toc-interrupções-cíclicas-no-portal-tia" class="nav-link" data-scroll-target="#interrupções-cíclicas-no-portal-tia">Interrupções cíclicas no Portal TIA</a></li>
-  </ul></li>
-  <li><a href="#obs-de-erros" id="toc-obs-de-erros" class="nav-link" data-scroll-target="#obs-de-erros">OBs de Erros</a>
-  <ul class="collapse">
-  <li><a href="#ob121---erro-de-programação" id="toc-ob121---erro-de-programação" class="nav-link" data-scroll-target="#ob121---erro-de-programação"><strong>OB121 - Erro de programação</strong></a></li>
-  <li><a href="#ob122---erro-de-acesso-perférico" id="toc-ob122---erro-de-acesso-perférico" class="nav-link" data-scroll-target="#ob122---erro-de-acesso-perférico"><strong>OB122 - Erro de acesso perférico</strong></a></li>
-  </ul></li>
-  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
-  </ul></li>
+  <li><a href="#references" id="toc-references" class="nav-link active" data-scroll-target="#references">References</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
-<main class="content page-columns page-full" id="quarto-document-content">
+<main class="content" id="quarto-document-content">
 
 
 
-<section id="configuração" class="level1 page-columns page-full">
-<h1>Configuração</h1>
-<p>Coletânea de informações sobre configuração de PLC, necessário para otimizar os recusrsos do PLC afim de atender as necessidades do projeto.</p>
-<section id="obs-de-interrupção" class="level2 page-columns page-full">
-<h2 class="anchored" data-anchor-id="obs-de-interrupção">OBs de Interrupção</h2>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="./images/understand-basic-concepts-about-TIA-portal.webp" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption"><em>Árvore de Interrupções: Ilustração da arvore de interrupções da Siemens, como exemplo.</em></figcaption>
-</figure>
-</div>
-<p>Esta palavra não é exclusividade da Siemens, interrupções cíclicas são algumas rotinas específicas e críticas que o programador deseja que sejam executadas em um determinado horário e evento, por <span class="citation" data-cites="intCiclicaOB30">(<a href="#ref-intCiclicaOB30" role="doc-biblioref">Ghareb 2021</a>)</span>.</p>
-<div class="no-row-height column-margin column-container"></div><p>As interrupções não esperam que o programa principal termine seu ciclo. Uma vez que as interrupções ocorrem, ele para o OB principal ( <strong>OB1</strong> ) no ponto de interrupção e executa sua rotina, então o OB principal retoma o programa do ponto de interrupção novamente.</p>
-<p>Dominar o uso do recurso de interrupção é importante para solucionar problemas práticos que somente o uso das mesmas resulta em solução confiável e eficiente.</p>
-<section id="tipos-de-interrupção-ob" class="level3">
-<h3 class="anchored" data-anchor-id="tipos-de-interrupção-ob">Tipos de Interrupção OB</h3>
-<p>Existem quatro tipos de interrupção OB usados, listados abaixo:</p>
-<ol type="1">
-<li><p><strong>Interrupção Cíclica:</strong> OB30, OB38</p></li>
-<li><p><strong>Interrupção de Erro de Hardware:</strong> OB40</p></li>
-<li><p><strong>Interrupção da Hora do Dia:</strong> OB20</p></li>
-<li><p><strong>Interrupção de Inicialização:</strong> OB100</p></li>
-</ol>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="./images/Simatic-S7-Organization-Blocks.webp" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption"><em>No CLP Siemens , para executar os programas do CLP é utilizado o Bloco Organizacional. No OB1 que é utilizado para executar lógica e chamamos outros blocos de programação deste OB1.Em muitas aplicações pequenas requer apenas o bloco OB1. Mas na aplicação grande, você também precisa usar outros blocos de organização que a Siemens oferece no software de programação.</em></figcaption>
-</figure>
-</div>
-</section>
-<section id="interrupção-cíclica-ob30-ob38" class="level3">
-<h3 class="anchored" data-anchor-id="interrupção-cíclica-ob30-ob38">Interrupção Cíclica (OB30, OB38)</h3>
-<p>A interrupção cíclica é usada quando há um requisito de execução cíclica.A ideia por trás dessa interrupção é que você pode configurar uma delas para ser executada com determinados tempos cíclicos que independem do tempo do ciclo de varredura do seu programa principal.</p>
-<p>As interrupções cíclicas no portal TIA geralmente têm a prioridade de (30: 38) que depende da CPU que você possui. Nem todas têm a mesma interrupção cíclica, algumas CPUs têm apenas (32: 35) outras CPUs podem ter outro grupo de interrupções do ciclo.</p>
-<p>O programa principal OB1 para sua execução toda vez que uma interrupção cíclica é executada, e o programa volta ao ponto da chamada da interrupção no bloco principal ao final da execução da interrupção cíclica.</p>
-<p><strong>Aplicações de interrupções cíclicas</strong></p>
-<ol type="1">
-<li><p><strong>Controladores PID:</strong> O tempo do ciclo de varredura principal pode afetar a precisão de suas ações PID, então você não deseja relacionar suas ações com o tempo do ciclo de varredura, então você empurra suas instruções PID para uma interrupção cíclica para ser executado periodicamente com determinados tempos cíclicos.</p></li>
-<li><p><strong>Segurança:</strong> Segurança está em primeiro lugar , portanto durante o seu processo você pode precisar de algumas ações de segurança que devem ser verificadas periodicamente em determinados horários.</p></li>
-</ol>
-<p>O tempo de interrupção padrão no PLC S7 é de 100 milissegundos. Mas você pode alterá-lo na visualização de Hardware.</p>
-<p>Para adicionar interrupção cíclica ao OB, abra o portal TIA e siga os passos abaixo.</p>
-<p><strong>Passo 1:</strong></p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="./images/Organization-Blocks-in-Tia-Portal.webp" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption"><em>crie um novo projeto e selecione o tipo de CPU. Clique em “visualização do projeto”.</em></figcaption>
-</figure>
-</div>
-<p><strong>Passo 2:</strong></p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="./images/cyclic-interrupt-OB-in-TIA-portal.webp" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption"><em>Na janela seguinte expanda “bloco de programa” e clique duas vezes em “Adicionar novo bloco”.</em></figcaption>
-</figure>
-</div>
-<p><strong>Passo 3:</strong></p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="./images/Hardware-interrupt-in-Siemens-Tia-Portal.webp" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption"><em>Uma nova janela aparecerá. Selecione “bloco organizacional” e você encontrará todos os tipos de interrupção de hardware disponíveis. Clique duas vezes em qualquer um para acessar o ambiente de programação.</em></figcaption>
-</figure>
-</div>
-</section>
-<section id="interrupção-de-hardware-ob40" class="level3">
-<h3 class="anchored" data-anchor-id="interrupção-de-hardware-ob40">Interrupção de Hardware (OB40)</h3>
-<p>Este tipo de interrupção OB é executada quando a CPU detecta algum erro no módulo de entrada, ou devido a circuitos residentes no módulo de entrada. É preciso que o módulo de entrada contenha o recurso de interrupção de hardware e o mesmo, OB40, seja configurado.</p>
-</section>
-<section id="interrupção-por-tempo-ob20" class="level3">
-<h3 class="anchored" data-anchor-id="interrupção-por-tempo-ob20">Interrupção por Tempo (OB20)</h3>
-<p>Este tipo de interrupção será executado com base em um determinado horário do dia para realizar uma tarefa.</p>
-<p>É necessário configurar o OB20 para usar a interrupção por tempo. Neste bloco você pode especificar um tempo e escrever a lógica de execução da interrupção por atraso de tempo.</p>
-</section>
-<section id="interrupção-de-inicializção-ob100" class="level3">
-<h3 class="anchored" data-anchor-id="interrupção-de-inicializção-ob100">Interrupção de Inicializção (OB100)</h3>
-<p>Exemplos de chamada da interrupão de inicialização são, falha de energia, se o PLC entrar no modo de parada quando a energia estiver disponível, a transição da CPU de parada para operação será executada. O OB100 de inicialização será executado, o que redefinirá a entrada para não iniciar o equipamento automaticamente.</p>
-<p>Este tipo de interrupção é utilizado para realizar uma inicialização da CPU de forma mais suave.</p>
-</section>
-<section id="prioridade-das-interrupções" class="level3">
-<h3 class="anchored" data-anchor-id="prioridade-das-interrupções">Prioridade das Interrupções</h3>
-<p>Uma observação muito importante que você deve estar ciente disso é a prioridade da interrupção que você está usando.</p>
-<p>Cada interrupção no portal TIA possui um número denominado prioridade que se refere à disposição daquela interrupção entre todas as interrupções, supondo que duas interrupções ocorram ao mesmo tempo.</p>
-<p>O PLC executará primeiro a maior prioridade e depois a Segunda interrupção (que tem menor prioridade) e depois voltará novamente para o OB Principal.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="./images/Interrupting-the-Cyclic-Program-in-Siemens-Tia-Portal.webp" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption"><em>Exemplo de interrupção do programa cíclico, OB1.</em></figcaption>
-</figure>
-</div>
-</section>
-<section id="interrupções-cíclicas-no-portal-tia" class="level3">
-<h3 class="anchored" data-anchor-id="interrupções-cíclicas-no-portal-tia">Interrupções cíclicas no Portal TIA</h3>
-<p>Uma observação muito importante que você deve estar ciente disso é a prioridade da interrupção que você está usando.</p>
-<ol type="1">
-<li><strong>Selecione a CPU desejada:</strong></li>
-</ol>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="./images/Configuring-and-Usage-of-Cyclic-Interrupts-TIA-Portal-OB-30.webp" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption"><em>Configurar um novo dispositivo.</em></figcaption>
-</figure>
-</div>
-<ol start="2" type="1">
-<li><strong>Selecione adicionar novo bloco organizacional:</strong></li>
-</ol>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="./images/Select-add-new-organization-block-in-Tia-Portal.webp" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption"><em>Selecionar adicionar novo bloco organizacional.</em></figcaption>
-</figure>
-</div>
-<ol start="3" type="1">
-<li><strong>Selecione qualquer interrupção e pressione OK:</strong></li>
-</ol>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="./images/Select-any-interrupt-in-Tia-Portal.webp" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption"><em>Selecionar a interrupção desejada.</em></figcaption>
-</figure>
-</div>
-<ol start="4" type="1">
-<li><strong>Depois de selecionar o desejado, ele será mostrado nos blocos do programa:</strong></li>
-</ol>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="./images/Select-the-program-blocks-in-Tia-Portal.webp" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption"><em>Conferir o programa.</em></figcaption>
-</figure>
-</div>
-<ol start="5" type="1">
-<li><strong>Selecionar as propriedades da CPU para configurar o tempo de execução:</strong></li>
-</ol>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="./images/select-your-CPU-properties-to-configure-the-execution-time.webp" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption"><em>Configurar o tempo de execução.</em></figcaption>
-</figure>
-</div>
-<ol start="6" type="1">
-<li><strong>Escrever o programa conforme mostrado na próxima figura.:</strong></li>
-</ol>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="./images/Cyclic-Interrupts-in-TIA-Portal-1920x1043.webp" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption"><em>Escrever o programa.</em></figcaption>
-</figure>
-</div>
-</section>
-</section>
-<section id="obs-de-erros" class="level2">
-<h2 class="anchored" data-anchor-id="obs-de-erros">OBs de Erros</h2>
-<section id="ob121---erro-de-programação" class="level3">
-<h3 class="anchored" data-anchor-id="ob121---erro-de-programação"><strong>OB121 - Erro de programação</strong></h3>
-</section>
-<section id="ob122---erro-de-acesso-perférico" class="level3">
-<h3 class="anchored" data-anchor-id="ob122---erro-de-acesso-perférico"><strong>OB122 - Erro de acesso perférico</strong></h3>
-<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/KclkwMxb2kg?si=M8Iw_S6YUakvydhw" title="OB’s usados ​​para solução de problemas, OB 122 - MOD_ERR - Erro de acesso periférico" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
-</section>
-</section>
-<section id="references" class="level2 page-columns page-full">
-<h2 class="anchored" data-anchor-id="references">References</h2>
-<p><span class="citation" data-cites="intCiclicaOB30">(<a href="#ref-intCiclicaOB30" role="doc-biblioref">Ghareb 2021</a>)</span></p>
+<section id="references" class="level1 unnumbered">
+<h1 class="unnumbered">References</h1>
 
 
-<div class="no-row-height column-margin column-container"><div id="ref-intCiclicaOB30" class="csl-entry" role="listitem">
-Ghareb, Hussien. 2021. <span>“Configuração e Uso de Interrupções Cíclicas Portal TIA (OB 30+).”</span> In. <a href="https://instrumentationtools.com/configuring-and-usage-of-cyclic-interrupts-tia-portal/">https://instrumentationtools.com/configuring-and-usage-of-cyclic-interrupts-tia-portal/</a>.
-</div></div>
-</section>
+
 </section>
 
 </main> <!-- /main -->
