@@ -241,7 +241,7 @@ window.document.addEventListener("DOMContentLoaded", function () {
       if (href) {
         sharingLink.setAttribute(
           "href",
-          href.replace("https://ictinus.com.br/index.html", window.location.href)
+          href.replace("|url|", window.location.href)
         );
       }
     }
