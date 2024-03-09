@@ -14,43 +14,43 @@
     "text": "A todos os jovens que se interessam por tecnologia e tenham a curiosidade de entender como as coisas funcionam. Mantenham essa chama acesa em seus corações para toda sempre."
   },
   {
-    "objectID": "contents/introduction.html#visão-geral",
-    "href": "contents/introduction.html#visão-geral",
+    "objectID": "contents/bms/bms.html#visão-geral",
+    "href": "contents/bms/bms.html#visão-geral",
     "title": "1  Introdução",
     "section": "1.1 Visão geral",
     "text": "1.1 Visão geral\nBem-vindo a esta jornada abrangente em sistemas de automação indústrial com uso de técnica Grafcet. Este livro foi elaborado para fornecer uma compreensão completa dos conceitos de Grafcet e sua implementação em projetos de programação de processos indústriais. Quer você seja um iniciante, um especialista do setor ou um pesquisador acadêmico, oferecemos uma exploração detalhada de sistemas de automação, usando o Grafcet como exemplo prático para ilustrar os princípios básicos e as aplicações em um formato compacto e eficiente."
   },
   {
-    "objectID": "contents/introduction.html#o-que-há-dentro",
-    "href": "contents/introduction.html#o-que-há-dentro",
+    "objectID": "contents/bms/bms.html#o-que-há-dentro",
+    "href": "contents/bms/bms.html#o-que-há-dentro",
     "title": "1  Introdução",
     "section": "1.2 O que há dentro",
     "text": "1.2 O que há dentro\nComeçamos introduzindo conceitos fundamentais em sistemas de automação, contextualizando-os no escopo mais amplo do design de sistemas. Enfatizamos a eficácia dos métodos de Grafcet em diversas aplicações. À medida que avançamos, é apresentado um passo a passo abrangente do fluxo de trabalho de estrutura de programa de PLC, detalhando tudo, desde os meandros dos elementos de campo até as complexidades da integração do PLC com os diversos sistemas.\nUm aspecto único deste livro procura preencher a lacuna entre os materiais pedagógicos e as melhores praticas de estruturação de programas de PLC, oferecendo um guia abrangente que está em sintonia com o campo em evolução da automação indústrial."
   },
   {
-    "objectID": "contents/introduction.html#divisão-do-capítulo",
-    "href": "contents/introduction.html#divisão-do-capítulo",
+    "objectID": "contents/bms/bms.html#divisão-do-capítulo",
+    "href": "contents/bms/bms.html#divisão-do-capítulo",
     "title": "1  Introdução",
     "section": "1.3 Divisão do Capítulo",
     "text": "1.3 Divisão do Capítulo\nAqui está uma visão mais detalhada do que cada capítulo cobre:\nCapítulo 1: Introdução Este capítulo prepara o cenário, fornecendo uma visão geral do livro e estabelecendo as bases para os capítulos que se seguem."
   },
   {
-    "objectID": "contents/introduction.html#como-navegar-neste-livro",
-    "href": "contents/introduction.html#como-navegar-neste-livro",
+    "objectID": "contents/bms/bms.html#como-navegar-neste-livro",
+    "href": "contents/bms/bms.html#como-navegar-neste-livro",
     "title": "1  Introdução",
     "section": "1.4 Como navegar neste livro",
     "text": "1.4 Como navegar neste livro\nPara aproveitar ao máximo este livro, considere a seguinte abordagem estruturada:\n\nConhecimento Básico (Capítulos 1-4): Comece construindo uma base sólida com os capítulos iniciais, que fornecem uma introdução à automação indústrial e cobrem tópicos centrais como a técnica de Grafcet.\n\nAo adotar essa abordagem estruturada, porém flexível, você está preparando o terreno para uma experiência de aprendizado gratificante e enriquecedor."
   },
   {
-    "objectID": "contents/introduction.html#o-caminho-a-seguir",
-    "href": "contents/introduction.html#o-caminho-a-seguir",
+    "objectID": "contents/bms/bms.html#o-caminho-a-seguir",
+    "href": "contents/bms/bms.html#o-caminho-a-seguir",
     "title": "1  Introdução",
     "section": "1.5 O caminho a seguir",
     "text": "1.5 O caminho a seguir\nÀ medida que navegamos no mundo dos sistemas de automação, cobriremos uma ampla gama de tópicos, desde princípios de engenharia até considerações éticas e aplicações inovadoras. Cada capítulo revelará uma peça desse quebra-cabeça expansivo dos sistemas de automação indústrial, convidando você a criar novas conexões, iniciar discussões e alimentar sua curiosidade sobre PLCs e técnicas de Grafcet."
   },
   {
-    "objectID": "contents/introduction.html#contribuir-de-volta",
-    "href": "contents/introduction.html#contribuir-de-volta",
+    "objectID": "contents/bms/bms.html#contribuir-de-volta",
+    "href": "contents/bms/bms.html#contribuir-de-volta",
     "title": "1  Introdução",
     "section": "1.6 Contribuir de volta",
     "text": "1.6 Contribuir de volta\nEste livro tem como objetivo nutrir uma comunidade vibrante de alunos, inovadores e colaboradores. À medida que você explora os conceitos e se envolve nos exercícios, incentivamos você a compartilhar seus insights e experiências. Quer se trate de uma abordagem inovadora, de uma aplicação interessante ou de uma pergunta instigante, suas contribuições podem enriquecer o ecossistema de aprendizagem. Participe de discussões, ofereça e busque orientação e colabore em projetos para promover uma cultura de crescimento e aprendizagem mútuos. Ao compartilhar conhecimento, você desempenha um papel importante na promoção de uma comunidade globalmente conectada, informada e capacitada."
