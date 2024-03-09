@@ -8,7 +8,7 @@
 
 <meta name="keywords" content="grafcet, PLC, STL, ICTINUS, ladder, Simatic, TIA Portal, OOP">
 
-<title>Grafcet do Básico ao Avançado - Planta CIP</title>
+<title>Grafcet do Básico ao Avançado - 12&nbsp; Defeitos e Diagnóstico</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -31,7 +31,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
-<link href="../../contents/ax_Fontes.html" rel="next">
+<link href="../../contents/I_parte/analógicos.html" rel="next">
+<link href="../../contents/I_parte/tiposElementares.html" rel="prev">
 <link href="../../ictinus.png" rel="icon" type="image/png">
 <script src="../../site_libs/quarto-html/quarto.js"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
@@ -160,7 +161,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../contents/ex_plantaCIP/plantaCIP.html">EXERCÍCIOS</a></li><li class="breadcrumb-item"><a href="../../contents/ex_plantaCIP/plantaCIP.html">Planta CIP</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../contents/I_parte.html">PART I - Nivelamento</a></li><li class="breadcrumb-item"><a href="../../contents/I_parte/Diagnostico.html"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Defeitos e Diagnóstico</span></a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -317,7 +318,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../contents/I_parte/Diagnostico.html" class="sidebar-item-text sidebar-link">
+  <a href="../../contents/I_parte/Diagnostico.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Defeitos e Diagnóstico</span></span></a>
   </div>
 </li>
@@ -371,7 +372,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../contents/ex_plantaCIP/plantaCIP.html" class="sidebar-item-text sidebar-link active">
+  <a href="../../contents/ex_plantaCIP/plantaCIP.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Planta CIP</span></a>
   </div>
 </li>
@@ -439,10 +440,17 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#objetivo" id="toc-objetivo" class="nav-link active" data-scroll-target="#objetivo">Objetivo</a></li>
-  <li><a href="#descrição-do-processo" id="toc-descrição-do-processo" class="nav-link" data-scroll-target="#descrição-do-processo">Descrição do Processo</a></li>
-  <li><a href="#restrições" id="toc-restrições" class="nav-link" data-scroll-target="#restrições">Restrições</a></li>
-  <li><a href="#exceções" id="toc-exceções" class="nav-link" data-scroll-target="#exceções">Exceções</a></li>
+  <li><a href="#categoria-de-erros" id="toc-categoria-de-erros" class="nav-link active" data-scroll-target="#categoria-de-erros"><span class="header-section-number">12.1</span> Categoria de Erros</a></li>
+  <li><a href="#ferramentas-de-análise" id="toc-ferramentas-de-análise" class="nav-link" data-scroll-target="#ferramentas-de-análise"><span class="header-section-number">12.2</span> Ferramentas de análise</a></li>
+  <li><a href="#diagnóstico-do-sistema" id="toc-diagnóstico-do-sistema" class="nav-link" data-scroll-target="#diagnóstico-do-sistema"><span class="header-section-number">12.3</span> Diagnóstico do sistema</a></li>
+  <li><a href="#informações-dos-módulos" id="toc-informações-dos-módulos" class="nav-link" data-scroll-target="#informações-dos-módulos"><span class="header-section-number">12.4</span> Informações dos Módulos</a></li>
+  <li><a href="#depurando-o-programa" id="toc-depurando-o-programa" class="nav-link" data-scroll-target="#depurando-o-programa"><span class="header-section-number">12.5</span> Depurando o programa</a></li>
+  <li><a href="#dados-de-referência" id="toc-dados-de-referência" class="nav-link" data-scroll-target="#dados-de-referência"><span class="header-section-number">12.6</span> Dados de referência</a></li>
+  <li><a href="#estrutura-do-programa" id="toc-estrutura-do-programa" class="nav-link" data-scroll-target="#estrutura-do-programa"><span class="header-section-number">12.7</span> Estrutura do programa</a></li>
+  <li><a href="#referência-cruzada" id="toc-referência-cruzada" class="nav-link" data-scroll-target="#referência-cruzada"><span class="header-section-number">12.8</span> Referência cruzada</a></li>
+  <li><a href="#localização-de-instruções" id="toc-localização-de-instruções" class="nav-link" data-scroll-target="#localização-de-instruções"><span class="header-section-number">12.9</span> Localização de instruções</a></li>
+  <li><a href="#atribuições" id="toc-atribuições" class="nav-link" data-scroll-target="#atribuições"><span class="header-section-number">12.10</span> Atribuições</a></li>
+  <li><a href="#exercícios" id="toc-exercícios" class="nav-link" data-scroll-target="#exercícios"><span class="header-section-number">12.11</span> Exercícios</a></li>
   </ul>
 <div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/ICTINUS-Engenharia/ictinus/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
     </div>
@@ -451,7 +459,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Planta CIP</h1>
+<h1 class="title"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Defeitos e Diagnóstico</span></h1>
 </div>
 
 
@@ -466,26 +474,49 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/png/plantaCIP.png" class="img-fluid figure-img" style="width:6.5in"></p>
-<figcaption class="figure-caption"><em>Exemplo de uma planta de CIP de fornecimento de água, soda e detergente para limpeza de máquinas ou planta industriais, que deve obedecer uma determinada sequência pré-estabelecida, conforme descrito abaixo.</em></figcaption>
-</figure>
-</div>
-<section id="objetivo" class="level2">
-<h2 class="anchored" data-anchor-id="objetivo">Objetivo</h2>
+<p><strong><em><span style="color:red">Em Construção</span></em></strong></p>
+<section id="categoria-de-erros" class="level2" data-number="12.1">
+<h2 data-number="12.1" class="anchored" data-anchor-id="categoria-de-erros"><span class="header-section-number">12.1</span> Categoria de Erros</h2>
 <p><strong><em><span style="color:red">Em Construção</span></em></strong></p>
 </section>
-<section id="descrição-do-processo" class="level2">
-<h2 class="anchored" data-anchor-id="descrição-do-processo">Descrição do Processo</h2>
+<section id="ferramentas-de-análise" class="level2" data-number="12.2">
+<h2 data-number="12.2" class="anchored" data-anchor-id="ferramentas-de-análise"><span class="header-section-number">12.2</span> Ferramentas de análise</h2>
 <p><strong><em><span style="color:red">Em Construção</span></em></strong></p>
 </section>
-<section id="restrições" class="level2">
-<h2 class="anchored" data-anchor-id="restrições">Restrições</h2>
+<section id="diagnóstico-do-sistema" class="level2" data-number="12.3">
+<h2 data-number="12.3" class="anchored" data-anchor-id="diagnóstico-do-sistema"><span class="header-section-number">12.3</span> Diagnóstico do sistema</h2>
 <p><strong><em><span style="color:red">Em Construção</span></em></strong></p>
 </section>
-<section id="exceções" class="level2">
-<h2 class="anchored" data-anchor-id="exceções">Exceções</h2>
+<section id="informações-dos-módulos" class="level2" data-number="12.4">
+<h2 data-number="12.4" class="anchored" data-anchor-id="informações-dos-módulos"><span class="header-section-number">12.4</span> Informações dos Módulos</h2>
+<p><strong><em><span style="color:red">Em Construção</span></em></strong></p>
+</section>
+<section id="depurando-o-programa" class="level2" data-number="12.5">
+<h2 data-number="12.5" class="anchored" data-anchor-id="depurando-o-programa"><span class="header-section-number">12.5</span> Depurando o programa</h2>
+<p><strong><em><span style="color:red">Em Construção</span></em></strong></p>
+</section>
+<section id="dados-de-referência" class="level2" data-number="12.6">
+<h2 data-number="12.6" class="anchored" data-anchor-id="dados-de-referência"><span class="header-section-number">12.6</span> Dados de referência</h2>
+<p><strong><em><span style="color:red">Em Construção</span></em></strong></p>
+</section>
+<section id="estrutura-do-programa" class="level2" data-number="12.7">
+<h2 data-number="12.7" class="anchored" data-anchor-id="estrutura-do-programa"><span class="header-section-number">12.7</span> Estrutura do programa</h2>
+<p><strong><em><span style="color:red">Em Construção</span></em></strong></p>
+</section>
+<section id="referência-cruzada" class="level2" data-number="12.8">
+<h2 data-number="12.8" class="anchored" data-anchor-id="referência-cruzada"><span class="header-section-number">12.8</span> Referência cruzada</h2>
+<p><strong><em><span style="color:red">Em Construção</span></em></strong></p>
+</section>
+<section id="localização-de-instruções" class="level2" data-number="12.9">
+<h2 data-number="12.9" class="anchored" data-anchor-id="localização-de-instruções"><span class="header-section-number">12.9</span> Localização de instruções</h2>
+<p><strong><em><span style="color:red">Em Construção</span></em></strong></p>
+</section>
+<section id="atribuições" class="level2" data-number="12.10">
+<h2 data-number="12.10" class="anchored" data-anchor-id="atribuições"><span class="header-section-number">12.10</span> Atribuições</h2>
+<p><strong><em><span style="color:red">Em Construção</span></em></strong></p>
+</section>
+<section id="exercícios" class="level2" data-number="12.11">
+<h2 data-number="12.11" class="anchored" data-anchor-id="exercícios"><span class="header-section-number">12.11</span> Exercícios</h2>
 <p><strong><em><span style="color:red">Em Construção</span></em></strong></p>
 
 
@@ -844,10 +875,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
+      <a href="../../contents/I_parte/tiposElementares.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Tipos Elementares</span></span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../contents/ax_Fontes.html" class="pagination-link">
-        <span class="nav-page-text">Arquivos Fonte</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../../contents/I_parte/analógicos.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Módulo analógicos</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

@@ -8,7 +8,7 @@
 
 <meta name="keywords" content="grafcet, PLC, STL, ICTINUS, ladder, Simatic, TIA Portal, OOP">
 
-<title>Grafcet do Básico ao Avançado - Planta CIP</title>
+<title>Grafcet do Básico ao Avançado - 6&nbsp; Configuração</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -31,7 +31,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
-<link href="../../contents/ax_Fontes.html" rel="next">
+<link href="../../contents/I_parte/Programação.html" rel="next">
+<link href="../../contents/I_parte/Endereçamento.html" rel="prev">
 <link href="../../ictinus.png" rel="icon" type="image/png">
 <script src="../../site_libs/quarto-html/quarto.js"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
@@ -160,7 +161,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../contents/ex_plantaCIP/plantaCIP.html">EXERCÍCIOS</a></li><li class="breadcrumb-item"><a href="../../contents/ex_plantaCIP/plantaCIP.html">Planta CIP</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../contents/I_parte.html">PART I - Nivelamento</a></li><li class="breadcrumb-item"><a href="../../contents/I_parte/Configuração.html"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Configuração</span></a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -281,7 +282,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../contents/I_parte/Configuração.html" class="sidebar-item-text sidebar-link">
+  <a href="../../contents/I_parte/Configuração.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Configuração</span></span></a>
   </div>
 </li>
@@ -371,7 +372,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../contents/ex_plantaCIP/plantaCIP.html" class="sidebar-item-text sidebar-link active">
+  <a href="../../contents/ex_plantaCIP/plantaCIP.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Planta CIP</span></a>
   </div>
 </li>
@@ -439,10 +440,25 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#objetivo" id="toc-objetivo" class="nav-link active" data-scroll-target="#objetivo">Objetivo</a></li>
-  <li><a href="#descrição-do-processo" id="toc-descrição-do-processo" class="nav-link" data-scroll-target="#descrição-do-processo">Descrição do Processo</a></li>
-  <li><a href="#restrições" id="toc-restrições" class="nav-link" data-scroll-target="#restrições">Restrições</a></li>
-  <li><a href="#exceções" id="toc-exceções" class="nav-link" data-scroll-target="#exceções">Exceções</a></li>
+  <li><a href="#configuração-de-hardware" id="toc-configuração-de-hardware" class="nav-link active" data-scroll-target="#configuração-de-hardware"><span class="header-section-number">6.1</span> Configuração de hardware</a></li>
+  <li><a href="#endereçamento-dos-módulos-s7-300" id="toc-endereçamento-dos-módulos-s7-300" class="nav-link" data-scroll-target="#endereçamento-dos-módulos-s7-300"><span class="header-section-number">6.2</span> Endereçamento dos módulos S7-300</a></li>
+  <li><a href="#configuração-multi-rack" id="toc-configuração-multi-rack" class="nav-link" data-scroll-target="#configuração-multi-rack"><span class="header-section-number">6.3</span> Configuração Multi-rack</a></li>
+  <li><a href="#propriedades-da-cpu" id="toc-propriedades-da-cpu" class="nav-link" data-scroll-target="#propriedades-da-cpu"><span class="header-section-number">6.4</span> Propriedades da CPU</a>
+  <ul>
+  <li><a href="#cycle-clock-memory" id="toc-cycle-clock-memory" class="nav-link" data-scroll-target="#cycle-clock-memory"><span class="header-section-number">6.4.1</span> Cycle / Clock Memory</a></li>
+  <li><a href="#geral-endereço-mpi" id="toc-geral-endereço-mpi" class="nav-link" data-scroll-target="#geral-endereço-mpi"><span class="header-section-number">6.4.2</span> Geral ( Endereço MPI )</a></li>
+  </ul></li>
+  <li><a href="#salvar-e-download-da-configuração" id="toc-salvar-e-download-da-configuração" class="nav-link" data-scroll-target="#salvar-e-download-da-configuração"><span class="header-section-number">6.5</span> Salvar e Download da configuração</a></li>
+  <li><a href="#upload-da-configuração-para-a-cpu" id="toc-upload-da-configuração-para-a-cpu" class="nav-link" data-scroll-target="#upload-da-configuração-para-a-cpu"><span class="header-section-number">6.6</span> Upload da configuração para a CPU</a></li>
+  <li><a href="#propriedades-da-cpu-1" id="toc-propriedades-da-cpu-1" class="nav-link" data-scroll-target="#propriedades-da-cpu-1"><span class="header-section-number">6.7</span> Propriedades da CPU</a>
+  <ul>
+  <li><a href="#startup-inicialização" id="toc-startup-inicialização" class="nav-link" data-scroll-target="#startup-inicialização"><span class="header-section-number">6.7.1</span> Startup ( Inicialização )</a></li>
+  <li><a href="#memória-retentiva" id="toc-memória-retentiva" class="nav-link" data-scroll-target="#memória-retentiva"><span class="header-section-number">6.7.2</span> Memória retentiva</a></li>
+  <li><a href="#protection" id="toc-protection" class="nav-link" data-scroll-target="#protection"><span class="header-section-number">6.7.3</span> Protection</a></li>
+  <li><a href="#diagnóstico-relógio" id="toc-diagnóstico-relógio" class="nav-link" data-scroll-target="#diagnóstico-relógio"><span class="header-section-number">6.7.4</span> Diagnóstico / Relógio</a></li>
+  <li><a href="#comunicação" id="toc-comunicação" class="nav-link" data-scroll-target="#comunicação"><span class="header-section-number">6.7.5</span> Comunicação</a></li>
+  </ul></li>
+  <li><a href="#exercícios" id="toc-exercícios" class="nav-link" data-scroll-target="#exercícios"><span class="header-section-number">6.8</span> Exercícios</a></li>
   </ul>
 <div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/ICTINUS-Engenharia/ictinus/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
     </div>
@@ -451,7 +467,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Planta CIP</h1>
+<h1 class="title"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Configuração</span></h1>
 </div>
 
 
@@ -466,26 +482,65 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/png/plantaCIP.png" class="img-fluid figure-img" style="width:6.5in"></p>
-<figcaption class="figure-caption"><em>Exemplo de uma planta de CIP de fornecimento de água, soda e detergente para limpeza de máquinas ou planta industriais, que deve obedecer uma determinada sequência pré-estabelecida, conforme descrito abaixo.</em></figcaption>
-</figure>
-</div>
-<section id="objetivo" class="level2">
-<h2 class="anchored" data-anchor-id="objetivo">Objetivo</h2>
+<p><strong><em><span style="color:red">Em Construção</span></em></strong></p>
+<section id="configuração-de-hardware" class="level2" data-number="6.1">
+<h2 data-number="6.1" class="anchored" data-anchor-id="configuração-de-hardware"><span class="header-section-number">6.1</span> Configuração de hardware</h2>
 <p><strong><em><span style="color:red">Em Construção</span></em></strong></p>
 </section>
-<section id="descrição-do-processo" class="level2">
-<h2 class="anchored" data-anchor-id="descrição-do-processo">Descrição do Processo</h2>
+<section id="endereçamento-dos-módulos-s7-300" class="level2" data-number="6.2">
+<h2 data-number="6.2" class="anchored" data-anchor-id="endereçamento-dos-módulos-s7-300"><span class="header-section-number">6.2</span> Endereçamento dos módulos S7-300</h2>
 <p><strong><em><span style="color:red">Em Construção</span></em></strong></p>
 </section>
-<section id="restrições" class="level2">
-<h2 class="anchored" data-anchor-id="restrições">Restrições</h2>
+<section id="configuração-multi-rack" class="level2" data-number="6.3">
+<h2 data-number="6.3" class="anchored" data-anchor-id="configuração-multi-rack"><span class="header-section-number">6.3</span> Configuração Multi-rack</h2>
 <p><strong><em><span style="color:red">Em Construção</span></em></strong></p>
 </section>
-<section id="exceções" class="level2">
-<h2 class="anchored" data-anchor-id="exceções">Exceções</h2>
+<section id="propriedades-da-cpu" class="level2" data-number="6.4">
+<h2 data-number="6.4" class="anchored" data-anchor-id="propriedades-da-cpu"><span class="header-section-number">6.4</span> Propriedades da CPU</h2>
+<p><strong><em><span style="color:red">Em Construção</span></em></strong></p>
+<section id="cycle-clock-memory" class="level3" data-number="6.4.1">
+<h3 data-number="6.4.1" class="anchored" data-anchor-id="cycle-clock-memory"><span class="header-section-number">6.4.1</span> Cycle / Clock Memory</h3>
+<p><strong><em><span style="color:red">Em Construção</span></em></strong></p>
+</section>
+<section id="geral-endereço-mpi" class="level3" data-number="6.4.2">
+<h3 data-number="6.4.2" class="anchored" data-anchor-id="geral-endereço-mpi"><span class="header-section-number">6.4.2</span> Geral ( Endereço MPI )</h3>
+<p><strong><em><span style="color:red">Em Construção</span></em></strong></p>
+</section>
+</section>
+<section id="salvar-e-download-da-configuração" class="level2" data-number="6.5">
+<h2 data-number="6.5" class="anchored" data-anchor-id="salvar-e-download-da-configuração"><span class="header-section-number">6.5</span> Salvar e Download da configuração</h2>
+<p><strong><em><span style="color:red">Em Construção</span></em></strong></p>
+</section>
+<section id="upload-da-configuração-para-a-cpu" class="level2" data-number="6.6">
+<h2 data-number="6.6" class="anchored" data-anchor-id="upload-da-configuração-para-a-cpu"><span class="header-section-number">6.6</span> Upload da configuração para a CPU</h2>
+<p><strong><em><span style="color:red">Em Construção</span></em></strong></p>
+</section>
+<section id="propriedades-da-cpu-1" class="level2" data-number="6.7">
+<h2 data-number="6.7" class="anchored" data-anchor-id="propriedades-da-cpu-1"><span class="header-section-number">6.7</span> Propriedades da CPU</h2>
+<p><strong><em><span style="color:red">Em Construção</span></em></strong></p>
+<section id="startup-inicialização" class="level3" data-number="6.7.1">
+<h3 data-number="6.7.1" class="anchored" data-anchor-id="startup-inicialização"><span class="header-section-number">6.7.1</span> Startup ( Inicialização )</h3>
+<p><strong><em><span style="color:red">Em Construção</span></em></strong></p>
+</section>
+<section id="memória-retentiva" class="level3" data-number="6.7.2">
+<h3 data-number="6.7.2" class="anchored" data-anchor-id="memória-retentiva"><span class="header-section-number">6.7.2</span> Memória retentiva</h3>
+<p><strong><em><span style="color:red">Em Construção</span></em></strong></p>
+</section>
+<section id="protection" class="level3" data-number="6.7.3">
+<h3 data-number="6.7.3" class="anchored" data-anchor-id="protection"><span class="header-section-number">6.7.3</span> Protection</h3>
+<p><strong><em><span style="color:red">Em Construção</span></em></strong></p>
+</section>
+<section id="diagnóstico-relógio" class="level3" data-number="6.7.4">
+<h3 data-number="6.7.4" class="anchored" data-anchor-id="diagnóstico-relógio"><span class="header-section-number">6.7.4</span> Diagnóstico / Relógio</h3>
+<p><strong><em><span style="color:red">Em Construção</span></em></strong></p>
+</section>
+<section id="comunicação" class="level3" data-number="6.7.5">
+<h3 data-number="6.7.5" class="anchored" data-anchor-id="comunicação"><span class="header-section-number">6.7.5</span> Comunicação</h3>
+<p><strong><em><span style="color:red">Em Construção</span></em></strong></p>
+</section>
+</section>
+<section id="exercícios" class="level2" data-number="6.8">
+<h2 data-number="6.8" class="anchored" data-anchor-id="exercícios"><span class="header-section-number">6.8</span> Exercícios</h2>
 <p><strong><em><span style="color:red">Em Construção</span></em></strong></p>
 
 
@@ -844,10 +899,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
+      <a href="../../contents/I_parte/Endereçamento.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Endereçamento</span></span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../contents/ax_Fontes.html" class="pagination-link">
-        <span class="nav-page-text">Arquivos Fonte</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../../contents/I_parte/Programação.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Programação</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

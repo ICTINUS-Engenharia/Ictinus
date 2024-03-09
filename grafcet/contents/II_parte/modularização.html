@@ -8,7 +8,7 @@
 
 <meta name="keywords" content="grafcet, PLC, STL, ICTINUS, ladder, Simatic, TIA Portal, OOP">
 
-<title>Grafcet do Básico ao Avançado - Planta CIP</title>
+<title>Grafcet do Básico ao Avançado - 15&nbsp; Modularização</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -31,7 +31,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
-<link href="../../contents/ax_Fontes.html" rel="next">
+<link href="../../contents/II_parte/Organização.html" rel="next">
+<link href="../../contents/II_parte/introdução.html" rel="prev">
 <link href="../../ictinus.png" rel="icon" type="image/png">
 <script src="../../site_libs/quarto-html/quarto.js"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
@@ -160,7 +161,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../contents/ex_plantaCIP/plantaCIP.html">EXERCÍCIOS</a></li><li class="breadcrumb-item"><a href="../../contents/ex_plantaCIP/plantaCIP.html">Planta CIP</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../contents/II_parte.html">PART II - GRAFCET</a></li><li class="breadcrumb-item"><a href="../../contents/II_parte/modularização.html"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Modularização</span></a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -347,7 +348,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../contents/II_parte/modularização.html" class="sidebar-item-text sidebar-link">
+  <a href="../../contents/II_parte/modularização.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Modularização</span></span></a>
   </div>
 </li>
@@ -371,7 +372,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../contents/ex_plantaCIP/plantaCIP.html" class="sidebar-item-text sidebar-link active">
+  <a href="../../contents/ex_plantaCIP/plantaCIP.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Planta CIP</span></a>
   </div>
 </li>
@@ -439,10 +440,25 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#objetivo" id="toc-objetivo" class="nav-link active" data-scroll-target="#objetivo">Objetivo</a></li>
-  <li><a href="#descrição-do-processo" id="toc-descrição-do-processo" class="nav-link" data-scroll-target="#descrição-do-processo">Descrição do Processo</a></li>
-  <li><a href="#restrições" id="toc-restrições" class="nav-link" data-scroll-target="#restrições">Restrições</a></li>
-  <li><a href="#exceções" id="toc-exceções" class="nav-link" data-scroll-target="#exceções">Exceções</a></li>
+  <li><a href="#gestão-de-io" id="toc-gestão-de-io" class="nav-link active" data-scroll-target="#gestão-de-io"><span class="header-section-number">15.1</span> Gestão de I/O</a>
+  <ul>
+  <li><a href="#arquivos-gerais-externos-dos-programas" id="toc-arquivos-gerais-externos-dos-programas" class="nav-link" data-scroll-target="#arquivos-gerais-externos-dos-programas"><span class="header-section-number">15.1.1</span> Arquivos gerais externos dos programas</a></li>
+  <li><a href="#gestor-de-indicação-de-status-entrada-digitais-do-plc" id="toc-gestor-de-indicação-de-status-entrada-digitais-do-plc" class="nav-link" data-scroll-target="#gestor-de-indicação-de-status-entrada-digitais-do-plc"><span class="header-section-number">15.1.2</span> Gestor de indicação de status / entrada digitais do PLC</a></li>
+  <li><a href="#gestor-de-cartas-analógicas-de-entrada-e-saída" id="toc-gestor-de-cartas-analógicas-de-entrada-e-saída" class="nav-link" data-scroll-target="#gestor-de-cartas-analógicas-de-entrada-e-saída"><span class="header-section-number">15.1.3</span> Gestor de cartas analógicas de entrada e saída</a></li>
+  </ul></li>
+  <li><a href="#gestão-de-programa" id="toc-gestão-de-programa" class="nav-link" data-scroll-target="#gestão-de-programa"><span class="header-section-number">15.2</span> Gestão de programa</a>
+  <ul>
+  <li><a href="#gestor-de-mensagens-para-supervisório" id="toc-gestor-de-mensagens-para-supervisório" class="nav-link" data-scroll-target="#gestor-de-mensagens-para-supervisório"><span class="header-section-number">15.2.1</span> Gestor de mensagens para Supervisório</a></li>
+  <li><a href="#gestor-de-mensagens-para-supervisório-1" id="toc-gestor-de-mensagens-para-supervisório-1" class="nav-link" data-scroll-target="#gestor-de-mensagens-para-supervisório-1"><span class="header-section-number">15.2.2</span> Gestor de mensagens para Supervisório</a></li>
+  <li><a href="#gestor-de-interrupção-cadenciada" id="toc-gestor-de-interrupção-cadenciada" class="nav-link" data-scroll-target="#gestor-de-interrupção-cadenciada"><span class="header-section-number">15.2.3</span> Gestor de interrupção cadenciada</a></li>
+  </ul></li>
+  <li><a href="#distribuição-dos-arquivos-dos-programas-principais" id="toc-distribuição-dos-arquivos-dos-programas-principais" class="nav-link" data-scroll-target="#distribuição-dos-arquivos-dos-programas-principais"><span class="header-section-number">15.3</span> Distribuição dos Arquivos dos Programas Principais</a>
+  <ul>
+  <li><a href="#gestores-do-modo-dos-programas-principais" id="toc-gestores-do-modo-dos-programas-principais" class="nav-link" data-scroll-target="#gestores-do-modo-dos-programas-principais"><span class="header-section-number">15.3.1</span> Gestores do modo dos programas principais</a></li>
+  <li><a href="#gestor-de-intertravamento" id="toc-gestor-de-intertravamento" class="nav-link" data-scroll-target="#gestor-de-intertravamento"><span class="header-section-number">15.3.2</span> Gestor de intertravamento</a></li>
+  <li><a href="#gestor-de-acionamentos" id="toc-gestor-de-acionamentos" class="nav-link" data-scroll-target="#gestor-de-acionamentos"><span class="header-section-number">15.3.3</span> Gestor de acionamentos</a></li>
+  <li><a href="#gestor-de-defeitos" id="toc-gestor-de-defeitos" class="nav-link" data-scroll-target="#gestor-de-defeitos"><span class="header-section-number">15.3.4</span> Gestor de defeitos</a></li>
+  </ul></li>
   </ul>
 <div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/ICTINUS-Engenharia/ictinus/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
     </div>
@@ -451,7 +467,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Planta CIP</h1>
+<h1 class="title"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Modularização</span></h1>
 </div>
 
 
@@ -466,29 +482,78 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/png/plantaCIP.png" class="img-fluid figure-img" style="width:6.5in"></p>
-<figcaption class="figure-caption"><em>Exemplo de uma planta de CIP de fornecimento de água, soda e detergente para limpeza de máquinas ou planta industriais, que deve obedecer uma determinada sequência pré-estabelecida, conforme descrito abaixo.</em></figcaption>
-</figure>
-</div>
-<section id="objetivo" class="level2">
-<h2 class="anchored" data-anchor-id="objetivo">Objetivo</h2>
+<p><strong><em><span style="color:red">Em Construção</span></em></strong></p>
+<section id="gestão-de-io" class="level2" data-number="15.1">
+<h2 data-number="15.1" class="anchored" data-anchor-id="gestão-de-io"><span class="header-section-number">15.1</span> Gestão de I/O</h2>
+<section id="arquivos-gerais-externos-dos-programas" class="level3" data-number="15.1.1">
+<h3 data-number="15.1.1" class="anchored" data-anchor-id="arquivos-gerais-externos-dos-programas"><span class="header-section-number">15.1.1</span> Arquivos gerais externos dos programas</h3>
+<p>Assim como os dados gerais dos programas, existem os arquivos gerais de programa. Vamos voltar a análise da figura abaixo:</p>
+<p><strong><em><span style="color:red">Em Construção</span></em></strong></p>
+<p>Imagine as informações de forma modularizada.</p>
+<p>É muito mais fácil reunir todos os dados gerais do programa em arquivos gestores diferenciados por funções.</p>
+</section>
+<section id="gestor-de-indicação-de-status-entrada-digitais-do-plc" class="level3" data-number="15.1.2">
+<h3 data-number="15.1.2" class="anchored" data-anchor-id="gestor-de-indicação-de-status-entrada-digitais-do-plc"><span class="header-section-number">15.1.2</span> Gestor de indicação de status / entrada digitais do PLC</h3>
+<p>Normalmente não se configura o driver para ler as entradas digitais diretamente. O que se faz é tratar as entradas antes de usar no programa e <em>~~<span style="color:red">gerando …. transmitir</span></em> para o supervisório usar em arquivo de dados único.</p>
+<p>Assim podemos pensar que é uma boa forma de tratar os dados de entrada com um único arquivo gestor.</p>
+</section>
+<section id="gestor-de-cartas-analógicas-de-entrada-e-saída" class="level3" data-number="15.1.3">
+<h3 data-number="15.1.3" class="anchored" data-anchor-id="gestor-de-cartas-analógicas-de-entrada-e-saída"><span class="header-section-number">15.1.3</span> Gestor de cartas analógicas de entrada e saída</h3>
+<p>É comum termos que tratar os dados analógicos de entrada e saída do programa. Por exemplo, às vezes os cartões convertem os sinais analógicos para um número inteiro que pode ser representado em 12 bits, ou seja de 0 a 32767.</p>
+<p>Assim, às vezes são dados tratamentos a essas informações para escalarmos para a unidade de engenharia que se quer trabalhar.</p>
+</section>
+</section>
+<section id="gestão-de-programa" class="level2" data-number="15.2">
+<h2 data-number="15.2" class="anchored" data-anchor-id="gestão-de-programa"><span class="header-section-number">15.2</span> Gestão de programa</h2>
+<p><em><span style="color:red">Reúne os programas, ou seja os grafcets, do equipamento. Por exemplo, suas funcionalidades como, enchimento, agitação, esvaziamento, resfriamento e etc …</span></em></p>
+<p><strong><em><span style="color:red">Em Construção</span></em></strong></p>
+<section id="gestor-de-mensagens-para-supervisório" class="level3" data-number="15.2.1">
+<h3 data-number="15.2.1" class="anchored" data-anchor-id="gestor-de-mensagens-para-supervisório"><span class="header-section-number">15.2.1</span> Gestor de mensagens para Supervisório</h3>
+<p>Arquivo gestor utilizado para inicializar as variáveis para que garantir que as variáveis de programa tenham um valor inicial e o ressete do programa para a posição inicial sempre que o PLC é inicializado.</p>
+<p>Esta medida evita acidentes, ou seja, é uma forma de garantir a segurança da planta sempre que o PLC é iniciado.</p>
+<p>Este arquivo é executado apenas na primeira varredura do PLC.</p>
+</section>
+<section id="gestor-de-mensagens-para-supervisório-1" class="level3" data-number="15.2.2">
+<h3 data-number="15.2.2" class="anchored" data-anchor-id="gestor-de-mensagens-para-supervisório-1"><span class="header-section-number">15.2.2</span> Gestor de mensagens para Supervisório</h3>
+<p><em><span style="color:red">Responsável por encaminhar o resultado de um cálculo para o supervisório com o valor indicado em um instrumento de campo, e etc…</span></em></p>
 <p><strong><em><span style="color:red">Em Construção</span></em></strong></p>
 </section>
-<section id="descrição-do-processo" class="level2">
-<h2 class="anchored" data-anchor-id="descrição-do-processo">Descrição do Processo</h2>
+<section id="gestor-de-interrupção-cadenciada" class="level3" data-number="15.2.3">
+<h3 data-number="15.2.3" class="anchored" data-anchor-id="gestor-de-interrupção-cadenciada"><span class="header-section-number">15.2.3</span> Gestor de interrupção cadenciada</h3>
+<p>Arquivo utilizado para executar a parte do programa utilizada com as funções de interrupção disponíveis do PLC.</p>
+<p>Muitos PLC têm interrupções de hardware e/ou tempo. Logo é necessário prever arquivos gestores para a execução dessas partes do programa.</p>
+<p>As interrupções de hardware são conhecidas como PII e as de tempo são as STI ( selectable time interrupt ).</p>
+<p>Explicar o que é first scan em apêndice A.</p>
 <p><strong><em><span style="color:red">Em Construção</span></em></strong></p>
 </section>
-<section id="restrições" class="level2">
-<h2 class="anchored" data-anchor-id="restrições">Restrições</h2>
+</section>
+<section id="distribuição-dos-arquivos-dos-programas-principais" class="level2" data-number="15.3">
+<h2 data-number="15.3" class="anchored" data-anchor-id="distribuição-dos-arquivos-dos-programas-principais"><span class="header-section-number">15.3</span> Distribuição dos Arquivos dos Programas Principais</h2>
+<p>Os programas principais estão associados aos equipamentos e todos os equipamentos possuem gestores de modo, de programas, intertravamentos, acionamentos e defeitos.</p>
+<p>Podem existir outros, mas vamos trabalhar com eles.</p>
+<p><strong><em><span style="color:red">Em Construção</span></em></strong></p>
+<section id="gestores-do-modo-dos-programas-principais" class="level3" data-number="15.3.1">
+<h3 data-number="15.3.1" class="anchored" data-anchor-id="gestores-do-modo-dos-programas-principais"><span class="header-section-number">15.3.1</span> Gestores do modo dos programas principais</h3>
+<p>Os programas principais e/ou equipamentos possuem modos de operação manual / Automático, manutenção e defeito.</p>
+<p>Esses modos geram a execução dos programas do equipamento, acionamentos da plantam, nos intertravamentos de segurança e operacional.</p>
 <p><strong><em><span style="color:red">Em Construção</span></em></strong></p>
 </section>
-<section id="exceções" class="level2">
-<h2 class="anchored" data-anchor-id="exceções">Exceções</h2>
-<p><strong><em><span style="color:red">Em Construção</span></em></strong></p>
+<section id="gestor-de-intertravamento" class="level3" data-number="15.3.2">
+<h3 data-number="15.3.2" class="anchored" data-anchor-id="gestor-de-intertravamento"><span class="header-section-number">15.3.2</span> Gestor de intertravamento</h3>
+<p>Reúne os intertravamentos dos equipamentos que vão agir diretamente nos programas e garantir o correto funcionamento do mesmo e/ou segurança operacional da mesma.</p>
+</section>
+<section id="gestor-de-acionamentos" class="level3" data-number="15.3.3">
+<h3 data-number="15.3.3" class="anchored" data-anchor-id="gestor-de-acionamentos"><span class="header-section-number">15.3.3</span> Gestor de acionamentos</h3>
+<p>Reúne todos os acionamentos do equipamento. Reunidos em um único arquivo facilita o gerenciamento de acidentes.</p>
+<p>Por exemplo, vamos supor que alguém aperte a parada de emergência do equipamento, podemos desabilitar a varredura do arquivo de acionamento associado e garantir via programa que todos os acionamentos sejam desabilitados, evitando assim acidentes.</p>
+<p>Você verá como implementar isso mais a frente.</p>
+</section>
+<section id="gestor-de-defeitos" class="level3" data-number="15.3.4">
+<h3 data-number="15.3.4" class="anchored" data-anchor-id="gestor-de-defeitos"><span class="header-section-number">15.3.4</span> Gestor de defeitos</h3>
+<p>Reúne todos os defeitos do equipamento. Assim fica muito mais fácil gerir os defeitos do equipamento e mesmo realizar as manutenções do programa.</p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -844,10 +909,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
+      <a href="../../contents/II_parte/introdução.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Norma IEC 848</span></span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../contents/ax_Fontes.html" class="pagination-link">
-        <span class="nav-page-text">Arquivos Fonte</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../../contents/II_parte/Organização.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Organização</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

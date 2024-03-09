@@ -242,7 +242,7 @@ window.document.addEventListener("DOMContentLoaded", function () {
         sharingLink.setAttribute(
           "href",
           href.replace(
-            "https://ictinus.com.br/grafcet/.index.html",
+            "https://ictinus.com.br/grafcet/index.html",
             window.location.href
           )
         );

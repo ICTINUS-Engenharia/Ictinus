@@ -8,7 +8,7 @@
 
 <meta name="keywords" content="grafcet, PLC, STL, ICTINUS, ladder, Simatic, TIA Portal, OOP">
 
-<title>Grafcet do Básico ao Avançado - Planta CIP</title>
+<title>Grafcet do Básico ao Avançado - 1&nbsp; Introdução</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -31,7 +31,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
-<link href="../../contents/ax_Fontes.html" rel="next">
+<link href="../../contents/I_parte/hardware.html" rel="next">
+<link href="../../contents/I_parte.html" rel="prev">
 <link href="../../ictinus.png" rel="icon" type="image/png">
 <script src="../../site_libs/quarto-html/quarto.js"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
@@ -69,7 +70,7 @@ ul.task-list li input[type="checkbox"] {
 
 </head>
 
-<body class="nav-sidebar floating nav-fixed">
+<body class="nav-sidebar floating nav-fixed slimcontent">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -160,7 +161,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../contents/ex_plantaCIP/plantaCIP.html">EXERCÍCIOS</a></li><li class="breadcrumb-item"><a href="../../contents/ex_plantaCIP/plantaCIP.html">Planta CIP</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../contents/I_parte.html">PART I - Nivelamento</a></li><li class="breadcrumb-item"><a href="../../contents/I_parte/introdução.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introdução</span></a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -251,7 +252,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../contents/I_parte/introdução.html" class="sidebar-item-text sidebar-link">
+  <a href="../../contents/I_parte/introdução.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introdução</span></span></a>
   </div>
 </li>
@@ -371,7 +372,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../contents/ex_plantaCIP/plantaCIP.html" class="sidebar-item-text sidebar-link active">
+  <a href="../../contents/ex_plantaCIP/plantaCIP.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Planta CIP</span></a>
   </div>
 </li>
@@ -439,19 +440,26 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#objetivo" id="toc-objetivo" class="nav-link active" data-scroll-target="#objetivo">Objetivo</a></li>
-  <li><a href="#descrição-do-processo" id="toc-descrição-do-processo" class="nav-link" data-scroll-target="#descrição-do-processo">Descrição do Processo</a></li>
-  <li><a href="#restrições" id="toc-restrições" class="nav-link" data-scroll-target="#restrições">Restrições</a></li>
-  <li><a href="#exceções" id="toc-exceções" class="nav-link" data-scroll-target="#exceções">Exceções</a></li>
+  <li><a href="#arquitetura-do-sistema" id="toc-arquitetura-do-sistema" class="nav-link active" data-scroll-target="#arquitetura-do-sistema"><span class="header-section-number">1.1</span> Arquitetura do Sistema</a>
+  <ul>
+  <li><a href="#generalizando-a-arquitetura-do-sistema" id="toc-generalizando-a-arquitetura-do-sistema" class="nav-link" data-scroll-target="#generalizando-a-arquitetura-do-sistema"><span class="header-section-number">1.1.1</span> Generalizando a Arquitetura do Sistema</a></li>
+  </ul></li>
+  <li><a href="#definição-das-entidades" id="toc-definição-das-entidades" class="nav-link" data-scroll-target="#definição-das-entidades"><span class="header-section-number">1.2</span> Definição das Entidades</a>
+  <ul>
+  <li><a href="#plc" id="toc-plc" class="nav-link" data-scroll-target="#plc"><span class="header-section-number">1.2.1</span> PLC</a></li>
+  <li><a href="#driver" id="toc-driver" class="nav-link" data-scroll-target="#driver"><span class="header-section-number">1.2.2</span> Driver</a></li>
+  <li><a href="#scada" id="toc-scada" class="nav-link" data-scroll-target="#scada"><span class="header-section-number">1.2.3</span> SCADA</a></li>
+  </ul></li>
+  <li><a href="#diferença-entre-as-entidades-de-arquitetura-do-sistema" id="toc-diferença-entre-as-entidades-de-arquitetura-do-sistema" class="nav-link" data-scroll-target="#diferença-entre-as-entidades-de-arquitetura-do-sistema"><span class="header-section-number">1.3</span> Diferença entre as entidades de arquitetura do sistema</a></li>
   </ul>
 <div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/ICTINUS-Engenharia/ictinus/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content page-columns page-full" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Planta CIP</h1>
+<h1 class="title"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introdução</span></h1>
 </div>
 
 
@@ -466,30 +474,84 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
+<p>Para nosso estudo de estruturação de programas em sistemas de automação <del><span style="color:red">Grafcet</span></del>, vamos utilizar como ponto de partida, a partir do capitulo 2, uma planta de CIP como arquitetura de sistema proposta. A partir dessa planta proposta e supondo que o leitor esta sendo apresentado a automação industrial, vamos detalhar todos os passos de aplicação de estruturação de programas, desde o fluxograma de processo da planta à implementação do programa de controle do mesmo.</p>
+<p>Vamos utilizar como base o PLC Siemens e sempre que possível a correlação do que estiver sendo aplicado da técnica com seu par concorrente, Allan Bradley, afim de mostrar a eficácia da técnica de estruturação Grafcet, independente do tipo de hardware, logo a mesma poderá ser aplicadas a outros fabricantes.</p>
+<p>Vamos assumir ainda que o leitor está sendo apresentado a PLC pela primeira vez, logo para desenvolvimento do conteúdo apresentaremos as funções básicas e um mapa de memória e instruções reduzido, produzindo resultados estruturados e formatando o conceito proposto no consciência do mesmo.</p>
+<p>Fazendo uso de um exemplo prático, o leitor será colocado no lugar de um integrador e com isso será desafiado a desenvolver o raciocínio logico de forma a padronizar a solução encontrada e com isso reduzir os custos e tempos de suporte técnico. Questões tão perseguidas pela indústria moderna.</p>
+<p>Recomenda-se seguir os capítulos na sequência.</p>
+<p><strong><em><span style="color:red">Em Construção</span></em></strong></p>
+<section id="arquitetura-do-sistema" class="level2 page-columns page-full" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="arquitetura-do-sistema"><span class="header-section-number">1.1</span> Arquitetura do Sistema</h2>
+<p>Para se estruturar um sistema de automação para controle de uma planta ou máquina é importante entender a organização da plataforma escolhida para o desenvolvimento da aplicação.</p>
+<p>Observe a figura abaixo, a figura da esquerda representa a arquitetura de hardware, software e infra-estrutura que controlam a planta representada na figura da direita. Muitas vezes não é de escolha do desenvolvedor da aplicação a escolha da arquitetura, ou seja a mesma é imposta por inúmeras razões, pelo cliente, força de contrato, custos e etc.</p>
+<p><span style="color:red">Descrever as varias redes existentes em automação industrial e usadas pela Siemens comumente. Explorar a pagina 1 – 27 do manual da Siemens S7-TIA1 e o livro de Hans Berder para explicar um pouco sobre as redes usadas pela Siemens. Usar ainda a pagina 1 -28 para explicar sobre a linha de HMI da Siemens. Usar ainda a pagina 1 – 29. Usar ainda a pagina 1 – 30. Usar a pagina 1 -31 para explicar sobre os acionamentos de motores.</span></p>
+<p>São inúmeros os fabricantes de PLCs no mercado e cada um com sua própria linguagem e características, com exceção das comuns a todos os PLCs. Imagina o trabalho que não daria reprogramar toda uma aplicação, grande é claro, feita em um PLC Rockwell para um PLC Siemens. Devido as diferenças que abordaremos brevemente abaixo, o trabalho seria tão grande quanto o tamanho da aplicação.</p>
+<p>Adotando-se então um método de padronização do programa, ou melhor, desenvolvimento da aplicação, reduz o tempo de migrar a aplicação de uma plataforma para outra, focando esforços então em redesenhar as funcionalidades mais especificas da aplicação.</p>
+<p><del><span style="color:red">Antes de começarmos a detalhar as características dos PLC, quero fazer um breve exercício com você</span></del></p>
+<section id="generalizando-a-arquitetura-do-sistema" class="level3 page-columns page-full" data-number="1.1.1">
+<h3 data-number="1.1.1" class="anchored" data-anchor-id="generalizando-a-arquitetura-do-sistema"><span class="header-section-number">1.1.1</span> Generalizando a Arquitetura do Sistema</h3>
+<p>Imagine a mesma figura da arquitetura do sistema acima, porem agora vamos tirar os fabricantes e vamos utilizar o que vou tomar a liberdade de chamar de entidades, acrescentando um elemento que está implícito na figura acima, mas que é de muita importância, o driver.</p>
+<p>São três entidades, PLC, Driver e o sistema SCADA ou IHM.</p>
+<div class="page-columns page-full"><p>Como vimos existem vários fabricantes de PLC e de sistemas SCADA<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>. Cada fabricante de SCADA possui um driver<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> para cada tipo de PLC, como pode ser observado na figura acima. Pode-se usar ainda solução na arquitetura, OPC cliente/server<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a> na camada do driver para resolver a comunicabilidade entre fabricante. <del><span style="color:red">, enfim aonde quero chegar é, está escolha também pode ser imposta e com certeza vai gerar muita dor de cabeça para o desenvolvedor ou responsável pela manutenção.</span></del></p><div class="no-row-height column-margin column-container"><li id="fn1"><p><sup>1</sup>&nbsp;SCADA – Acrônimo para supervisory control and data acquisition. É um sistema computadorizado para monitoramento e controle de processos industriais e de infraestrutura.</p></li><li id="fn2"><p><sup>2</sup>&nbsp;Driver – Em nosso caso, software que permite o software supervisório acessar dados na memória do PLC. É o meio que o software supervisório faz uso para comunicar com o dispositivo do PLC.</p></li><li id="fn3"><p><sup>3</sup>&nbsp;OPC – Acrônimo para OLE for process control. São padrões abertos especificados para comunicação de dados entre dispositivos de controle de diferentes fabricantes.</p></li></div></div>
+<p><del><span style="color:red">Acho que você já deve estar compreendendo onde quero chegar. Para continuarmos esse assunto preciso esclarecer que diferenças são essas.</span></del></p>
+</section>
+</section>
+<section id="definição-das-entidades" class="level2" data-number="1.2">
+<h2 data-number="1.2" class="anchored" data-anchor-id="definição-das-entidades"><span class="header-section-number">1.2</span> Definição das Entidades</h2>
+<section id="plc" class="level3" data-number="1.2.1">
+<h3 data-number="1.2.1" class="anchored" data-anchor-id="plc"><span class="header-section-number">1.2.1</span> PLC</h3>
+<p>Antes, algumas características básicas do PLC entre fornecedores.</p>
+<p>É a unidade central de processamento, ou seja onde é executado o programa de controle da sua planta. Fazendo uma analogia, a unidade central de processamento dos programas que são executados no seu laptop ou desktop de casa é um Pentium ou Core i7, algo assim. O PLC é onde é executado o programa também e o resultado é apresentado na memória do mesmo, nas suas interfaces de entrada e saída, os cartões e/ou remotas.</p>
+<p>Abaixo, podemos ver o ciclo da CPU resumido, uma característica muito importante, até para depurar problemas de lógica e fundamental para compreender a construção estruturada de programas em PLC.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/png/plantaCIP.png" class="img-fluid figure-img" style="width:6.5in"></p>
-<figcaption class="figure-caption"><em>Exemplo de uma planta de CIP de fornecimento de água, soda e detergente para limpeza de máquinas ou planta industriais, que deve obedecer uma determinada sequência pré-estabelecida, conforme descrito abaixo.</em></figcaption>
+<p><img src="images/png/execuçãoCiclica.png" class="img-fluid figure-img" style="width:6.5in"></p>
+<figcaption class="figure-caption"><em>Diagrama de execução ciclica do programa do PLC procedural.</em></figcaption>
 </figure>
 </div>
-<section id="objetivo" class="level2">
-<h2 class="anchored" data-anchor-id="objetivo">Objetivo</h2>
-<p><strong><em><span style="color:red">Em Construção</span></em></strong></p>
+<p>Nos vamos retornar a essa figura varias vezes ao longo do livro, assim a compreensão da mesma se torna muito importante.</p>
+<p>Analisando a figura, primeiro o firmware da CPU lê as entradas, o que chamamos de PII ( process-image input ) atualiza a tabela dos cartões de entrada na memória, executa o programa, o resultado do programa que afeta uma saída física é atualizado na tabela de saída na memória e só então o PIQ ( process-image output ) atualiza as saídas físicas nos cartões de saída conforme o ultimo estado da tabela de imagem das saídas. Segue, abaixo, uma outra figura que procura retratar esse ciclo.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/png/imagemProcesso.png" class="img-fluid figure-img" style="width:6.5in"></p>
+<figcaption class="figure-caption"><em>Imagem do processo do PLC.</em></figcaption>
+</figure>
+</div>
+<p><del><span style="color:red">Isto não é uma verdade completa, alguns PLC mais atuais, Contrologix, se comportam diferente e também existe as aplicações especificas que utilizam recurso, funcionalidades, especificas para aplicações criticas. Prometo colocar algum caso mais para frente, mas esse não é nosso escopo.</span></del></p>
+<p>O ciclo da CPU é uma característica comum entre os diferentes fabricantes desta entidade, PLC. <del><span style="color:red">Essas são características comuns entre PLC</span></del>. Agora vejamos as diferenças entre dois fabricantes, Siemens e Rockwell, <del><span style="color:red">vamos estudar o caso de dois fabricantes desta mesma entidade, o PLC. Observe abaixo a tabela comparativa de diferenças entre o PLC da Rockwell e do PLC Siemens,</span></del> como exemplo.</p>
+<p>Tab 01, Mostrando o mapa de memória e endereçamento das mesmas.</p>
+<p><del><span style="color:red">Antes de iniciar qualquer observação, vamos continuar nossa analise das entidades da arquitetura do sistema exemplificada acima.</span></del>Por hora, destaco essa diferença como mais importante, que é o mapa de memória entre os fabricantes.</p>
 </section>
-<section id="descrição-do-processo" class="level2">
-<h2 class="anchored" data-anchor-id="descrição-do-processo">Descrição do Processo</h2>
+<section id="driver" class="level3" data-number="1.2.2">
+<h3 data-number="1.2.2" class="anchored" data-anchor-id="driver"><span class="header-section-number">1.2.2</span> Driver</h3>
+<p>Analisando a figura abaixo, podemos dizer que esta entidade da arquitetura do sistema é o software que coleta as informações da memória do PLC e disponibiliza para a entidade superior, que no nosso caso é o sistema SCADA, que vamos falar mais abaixo.</p>
 <p><strong><em><span style="color:red">Em Construção</span></em></strong></p>
+<p>As informações desejadas que são coletadas são pré-configuradas no driver pelo integrador conforme necessidade.</p>
+<p>Conforme dito acima, os n fabricantes de driver coletam as informações pré-configuradas nos PLCs e disponibilizam para o sistema de nível superior, como exemplo um sistema supervisório. O driver coleta as informações dos endereços de memória, ou melhor, faz acessos ao mapa de memória dos PLC, disponibilizando as informações em tabelas de dados então chamadas de base de dados, para operações de escrita e leitura.</p>
+<p>O que muda entre os fabricantes de driver é a forma como você configura o driver, ou seja seu uso, parametrização. Pode-se entender então que o driver é uma caixa preta para o integrador, o mesmo configura os endereços que quer acessar na memória do PLC e não se preocupa em como a coleta é realizada, apenas formata o tipo de dado que deseja coletar. O que você precisa saber são as diferenças nos mapas de memória entre os fabricantes de PLC e como a memória está sendo utilizada pela aplicação para que configure corretamente o driver, este ultimo sim, de responsabilidade do desenvolvedor, partilhada entre o integrador do PLC e do sistema supervisório.</p>
 </section>
-<section id="restrições" class="level2">
-<h2 class="anchored" data-anchor-id="restrições">Restrições</h2>
+<section id="scada" class="level3" data-number="1.2.3">
+<h3 data-number="1.2.3" class="anchored" data-anchor-id="scada"><span class="header-section-number">1.2.3</span> SCADA</h3>
+<p>Entende-se por estação supervisório e aquisição de dados. Ou seja, é o computador que coleta as informações do PLC, fazendo uso de um driver e disponibiliza as mesmas de forma gráfica, uma interface, para o usuário do equipamento através de um software supervisório.</p>
+<p>Vamos analisar a figura abaixo.</p>
 <p><strong><em><span style="color:red">Em Construção</span></em></strong></p>
+<p>Você precisa entender a diferença entre vista e scada, assim entenderá melhor o que é scada. A estação vista mostra as mesmas informações que o sistema SCADA, porem a diferença é que não possui driver, o vista coleta as informações do SCADA e este ultimo usa um driver para coletar as informações no PLC.</p>
+<p>A diferença entre sistemas SCADA é restrita ao software supervisório de cada fabricante. Quero dizer, suas funcionalidade de histórico, recursos de edição de telas, quantidade de penas para construção de históricos, dentre outras. A aplicação SCADA fala com o driver, que é basicamente uma caixa-preta que é configurada para acessar o mapa de memória dos diferentes tipos de PLC.</p>
 </section>
-<section id="exceções" class="level2">
-<h2 class="anchored" data-anchor-id="exceções">Exceções</h2>
+</section>
+<section id="diferença-entre-as-entidades-de-arquitetura-do-sistema" class="level2" data-number="1.3">
+<h2 data-number="1.3" class="anchored" data-anchor-id="diferença-entre-as-entidades-de-arquitetura-do-sistema"><span class="header-section-number">1.3</span> Diferença entre as entidades de arquitetura do sistema</h2>
+<p>Agora que já entendemos cada entidade separadamente, podemos perceber que o objeto central do desenvolvimento, o driver, tem a função de “traduzir” os n tipos de PLC para a aplicação de nível superior que em nossa arquitetura é um software supervisório, ou seja, ler e escrever as informações no mapa de memória do PLC.</p>
+<p>Esta observação por si só já aponta para o objeto central do escopo do livro que é o PLC. Já que o driver é uma entidade configurada de acordo com o mapa de memória do PLC, assim não tem influência em como o mesmo está distribuído. <del><span style="color:red">mas em nosso caso não é modificável pelo integrador, ou seja o desenvolvedor do controle automático de processo da aplicação.</span></del></p>
+<p>Agora imagine o PLC, se não for adotado nenhum tipo de organização para construção da aplicação de controle no PLC pelas pessoas que desenvolvem e realizam a manutenção da planta, cada desenvolvimento usaria uma distribuição diferente, confundindo as pessoas que viessem a realizar a manutenção e/ou suporte.</p>
+<p>Assim, nota-se a importância de se adotar algum tipo de metodologia para desenvolvimento e padronização para os diferentes tratamentos dados pelo programa as n funcionalidades do mesmo e com isso reduzir custos de manutenção e de futuras modificações de melhorias da planta.</p>
+<p>Logo o primeiro objeto de nosso estudo é o padrão de segmentação do mapa de memória do PLC.</p>
+<p>Você perceberá a importância do trabalho de segmentação de memória a medida que for apresentado a metodologia de construção do programa, Grafcet. A sequência dos passos do método são fundamentais para um bom desenvolvimento também. Gradualmente os passos serão utilizados ao longo do livro, empregando-se um projeto pratico, assim a compreensão da técnica se dará por completa.</p>
 <p><strong><em><span style="color:red">Em Construção</span></em></strong></p>
 
 
 </section>
+
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -844,10 +906,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
+      <a href="../../contents/I_parte.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">PART I - Nivelamento</span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../contents/ax_Fontes.html" class="pagination-link">
-        <span class="nav-page-text">Arquivos Fonte</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../../contents/I_parte/hardware.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Hardware Siemens</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

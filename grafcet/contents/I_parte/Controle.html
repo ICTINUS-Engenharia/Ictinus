@@ -8,7 +8,7 @@
 
 <meta name="keywords" content="grafcet, PLC, STL, ICTINUS, ladder, Simatic, TIA Portal, OOP">
 
-<title>Grafcet do Básico ao Avançado - Planta CIP</title>
+<title>Grafcet do Básico ao Avançado - 9&nbsp; Controle do Programa</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -31,7 +31,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
-<link href="../../contents/ax_Fontes.html" rel="next">
+<link href="../../contents/I_parte/tiposDados.html" rel="next">
+<link href="../../contents/I_parte/Operação.html" rel="prev">
 <link href="../../ictinus.png" rel="icon" type="image/png">
 <script src="../../site_libs/quarto-html/quarto.js"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
@@ -160,7 +161,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../contents/ex_plantaCIP/plantaCIP.html">EXERCÍCIOS</a></li><li class="breadcrumb-item"><a href="../../contents/ex_plantaCIP/plantaCIP.html">Planta CIP</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../contents/I_parte.html">PART I - Nivelamento</a></li><li class="breadcrumb-item"><a href="../../contents/I_parte/Controle.html"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Controle do Programa</span></a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -299,7 +300,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../contents/I_parte/Controle.html" class="sidebar-item-text sidebar-link">
+  <a href="../../contents/I_parte/Controle.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Controle do Programa</span></span></a>
   </div>
 </li>
@@ -371,7 +372,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../contents/ex_plantaCIP/plantaCIP.html" class="sidebar-item-text sidebar-link active">
+  <a href="../../contents/ex_plantaCIP/plantaCIP.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Planta CIP</span></a>
   </div>
 </li>
@@ -439,10 +440,9 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#objetivo" id="toc-objetivo" class="nav-link active" data-scroll-target="#objetivo">Objetivo</a></li>
-  <li><a href="#descrição-do-processo" id="toc-descrição-do-processo" class="nav-link" data-scroll-target="#descrição-do-processo">Descrição do Processo</a></li>
-  <li><a href="#restrições" id="toc-restrições" class="nav-link" data-scroll-target="#restrições">Restrições</a></li>
-  <li><a href="#exceções" id="toc-exceções" class="nav-link" data-scroll-target="#exceções">Exceções</a></li>
+  <li><a href="#jump-incondicional" id="toc-jump-incondicional" class="nav-link active" data-scroll-target="#jump-incondicional"><span class="header-section-number">9.1</span> Jump incondicional</a></li>
+  <li><a href="#jump-condicional" id="toc-jump-condicional" class="nav-link" data-scroll-target="#jump-condicional"><span class="header-section-number">9.2</span> Jump condicional</a></li>
+  <li><a href="#exercícios" id="toc-exercícios" class="nav-link" data-scroll-target="#exercícios"><span class="header-section-number">9.3</span> Exercícios</a></li>
   </ul>
 <div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/ICTINUS-Engenharia/ictinus/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
     </div>
@@ -451,7 +451,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Planta CIP</h1>
+<h1 class="title"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Controle do Programa</span></h1>
 </div>
 
 
@@ -466,26 +466,17 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/png/plantaCIP.png" class="img-fluid figure-img" style="width:6.5in"></p>
-<figcaption class="figure-caption"><em>Exemplo de uma planta de CIP de fornecimento de água, soda e detergente para limpeza de máquinas ou planta industriais, que deve obedecer uma determinada sequência pré-estabelecida, conforme descrito abaixo.</em></figcaption>
-</figure>
-</div>
-<section id="objetivo" class="level2">
-<h2 class="anchored" data-anchor-id="objetivo">Objetivo</h2>
+<p><strong><em><span style="color:red">Em Construção</span></em></strong></p>
+<section id="jump-incondicional" class="level2" data-number="9.1">
+<h2 data-number="9.1" class="anchored" data-anchor-id="jump-incondicional"><span class="header-section-number">9.1</span> Jump incondicional</h2>
 <p><strong><em><span style="color:red">Em Construção</span></em></strong></p>
 </section>
-<section id="descrição-do-processo" class="level2">
-<h2 class="anchored" data-anchor-id="descrição-do-processo">Descrição do Processo</h2>
+<section id="jump-condicional" class="level2" data-number="9.2">
+<h2 data-number="9.2" class="anchored" data-anchor-id="jump-condicional"><span class="header-section-number">9.2</span> Jump condicional</h2>
 <p><strong><em><span style="color:red">Em Construção</span></em></strong></p>
 </section>
-<section id="restrições" class="level2">
-<h2 class="anchored" data-anchor-id="restrições">Restrições</h2>
-<p><strong><em><span style="color:red">Em Construção</span></em></strong></p>
-</section>
-<section id="exceções" class="level2">
-<h2 class="anchored" data-anchor-id="exceções">Exceções</h2>
+<section id="exercícios" class="level2" data-number="9.3">
+<h2 data-number="9.3" class="anchored" data-anchor-id="exercícios"><span class="header-section-number">9.3</span> Exercícios</h2>
 <p><strong><em><span style="color:red">Em Construção</span></em></strong></p>
 
 
@@ -844,10 +835,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
+      <a href="../../contents/I_parte/Operação.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Lógicas Binárias</span></span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../contents/ax_Fontes.html" class="pagination-link">
-        <span class="nav-page-text">Arquivos Fonte</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../../contents/I_parte/tiposDados.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Tipos de Dados</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

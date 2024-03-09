@@ -1,254 +1,107 @@
 [
   {
-    "objectID": "references.html",
-    "href": "references.html",
-    "title": "References",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "ROCHE",
     "section": "",
-    "text": "References"
-  },
-  {
-    "objectID": "contents/tools.html",
-    "href": "contents/tools.html",
-    "title": "Ferramentas",
-    "section": "",
-    "text": "Esta é uma lista de ferramentas e hardwares utilizadas em automação industrial.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo\nHardware\nProcessor\nCaracteristicas\nCompatibilidade\n\n\n\n\n1\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo\nFerramentas\nDescrição\nCasos de Uso\n\n\n\n\n1\nCloneZilla\nPrograma de clonagem/imagem de partição e disco semelhante ao True Image® ou Norton Ghost®.\nAjuda fazer implantação do sistema, backup e recuperação bare metal.\n\n\n2\nHirens CD\nFerramentas utilizadas para resolver vários problemas relacionados ao computador. Notavelmente, não inclui nenhum software pirateado; em vez disso, contém exclusivamente software gratuito e legal.\nDiagnóstico & Recuperação de PC\n\n\n3\nMedicat USB\nSeleção de ferramentas de diagnóstico e recuperação de computador fácil de usar.\nDiagnóstico & Recuperação de PC\n\n\n4\nVenloy\nFerramenta de código aberto para criar uma unidade USB inicializável para arquivos ISO/WIM/IMG/VHD(x)/EFI.\nSolução USB inicializável\n\n\n\n\n\n\n\n\n\n\nNo\nIDE/Ambientes de Desenvolvimento\nDescrição\nCaracteristicas\n\n\n\n\n1\nTIA Portal\nPortal de Automação Totalmente Integrado. Ele oferece acesso irrestrito à gama completa de serviços de automação digitalizada, desde planejamento digital até engenharia integrada e operação transparente.\nAmbiente de desenvolvimento de Automação para plataforma de PLC Siemens"
-  },
-  {
-    "objectID": "contents/tools.html#hardware-kits",
-    "href": "contents/tools.html#hardware-kits",
-    "title": "Ferramentas",
-    "section": "",
-    "text": "No\nHardware\nProcessor\nCaracteristicas\nCompatibilidade\n\n\n\n\n1"
-  },
-  {
-    "objectID": "contents/tools.html#ferramentas-de-software",
-    "href": "contents/tools.html#ferramentas-de-software",
-    "title": "Ferramentas",
-    "section": "",
-    "text": "No\nFerramentas\nDescrição\nCasos de Uso\n\n\n\n\n1\nCloneZilla\nPrograma de clonagem/imagem de partição e disco semelhante ao True Image® ou Norton Ghost®.\nAjuda fazer implantação do sistema, backup e recuperação bare metal.\n\n\n2\nHirens CD\nFerramentas utilizadas para resolver vários problemas relacionados ao computador. Notavelmente, não inclui nenhum software pirateado; em vez disso, contém exclusivamente software gratuito e legal.\nDiagnóstico & Recuperação de PC\n\n\n3\nMedicat USB\nSeleção de ferramentas de diagnóstico e recuperação de computador fácil de usar.\nDiagnóstico & Recuperação de PC\n\n\n4\nVenloy\nFerramenta de código aberto para criar uma unidade USB inicializável para arquivos ISO/WIM/IMG/VHD(x)/EFI.\nSolução USB inicializável"
-  },
-  {
-    "objectID": "contents/tools.html#ides-e-ambientes-de-desenvolvimento",
-    "href": "contents/tools.html#ides-e-ambientes-de-desenvolvimento",
-    "title": "Ferramentas",
-    "section": "",
-    "text": "No\nIDE/Ambientes de Desenvolvimento\nDescrição\nCaracteristicas\n\n\n\n\n1\nTIA Portal\nPortal de Automação Totalmente Integrado. Ele oferece acesso irrestrito à gama completa de serviços de automação digitalizada, desde planejamento digital até engenharia integrada e operação transparente.\nAmbiente de desenvolvimento de Automação para plataforma de PLC Siemens"
-  },
-  {
-    "objectID": "contents/reconhecimentos.html",
-    "href": "contents/reconhecimentos.html",
-    "title": "Reconhecimentos",
-    "section": "",
-    "text": "Reconhecimentos\nMontar este livro foi uma jornada incrível, abrangendo vários anos de trabalho árduo. A ideia inicial deste livro surgiu da falta de material didático sobre Grafcet, em português. Estamos profundamente gratos aos pioneiros neste assunto cujo trabalho inovador lançou as bases para este livro.\nAgradecimentos especiais ao Engenheiro Luciano Cardoso Vasconcelos, cuja crença no poder transformador das comunidades de código aberto e na orientação, e força de vontade para se dedicar a esse projeto.\nTambém devemos muito à equipe do GitHub. Você revolucionou a forma como as pessoas colaboram, e este livro é um testemunho do que pode ser alcançado quando as barreiras à cooperação global são removidas.\nA todos que se interessaram por este livro – obrigado! Escrevemos o mesmo pensando em você, na esperança de provocar reflexão, inspirar perguntas e talvez até acender uma centelha de inspiração. Afinal, de que adianta escrever se ninguém está lendo?\nPor último, mas certamente não menos importante, nossos mais profundos agradecimentos aos nossos amigos, familiares, mentores e todas as almas gentis que nos apoiaram emocional e intelectualmente enquanto este livro se concretizava."
-  },
-  {
-    "objectID": "contents/foreword.html",
-    "href": "contents/foreword.html",
-    "title": "Foreword",
-    "section": "",
-    "text": "Foreword"
+    "text": "Prefácio\nBem-vindo ao Suporte à Roche. Este livro é a sua porta de entrada para o mundo acelerado dos sistemas de automação industrial através do uso de PLCs.\nNosso objetivo é fazer deste livro de código aberto um esforço colaborativo que reúna insights de estudantes, profissionais e da comunidade mais ampla de profissionais da industria. Queremos criar um guia completo que se aprofunde nos detalhes básicos dos sistemas de automação industrial e seus muitos usos.\n\n“Se você quer ir rápido, vá sozinho. Se você quer ir longe, vá junto.” – Provérbio Africano\n\nEste não é um livro estático, mas dinâmico, um documento vivo. Estamos tornando-o continuamente atualizado para atender às necessidades em constante mudança deste campo dinâmico. Espere uma rica combinação de conhecimento especializado que o guiará pela complexa interação entre algoritmos e os princípios fundamentais que os fazem funcionar. Que este projeto seja uma fonte continua para a comunidade.\n\n\nPor que escrevemos este livro\nEstamos em uma época em que a tecnologia está sempre evoluindo. A colaboração aberta e o compartilhamento de conhecimento são os alicerces da verdadeira inovação. Esse é o espírito por trás do Suporte à Roche. Estamos indo além do modelo tradicional de livro didático para criar um centro de conhecimento vivo.\nO livro cobre princípios, algoritmos e estudos de caso de aplicações do mundo real, com o objetivo de fornecer uma compreensão profunda que o ajudará a navegar no cenário em constante mudança da industria. Ao mantê-lo aberto, não estamos apenas tornando o aprendizado acessível; estamos convidando novas ideias e melhorias contínuas. Em suma, estamos construindo uma comunidade onde o conhecimento é livre para crescer e iluminar o caminho a seguir na tecnologia global de automação industrial.\n\n\nO que você precisa saber\nVocê não precisa ser um especialista em automação industrial para mergulhar neste livro. Tudo o que você realmente precisa é de um conhecimento básico de sistemas de automaão industrial e uma curiosidade para explorar como hardware, software e linguagem de programação se unem. É aqui que a inovação acontece, e uma compreensão básica de como os sistemas funcionam será a sua bússola.\nA proposta é desenvolver um projeto básico , aplicando o conhecimento compartilhado no livro , afim de desmistificar para o leitor os metodos de desenvolvimento de aplicações em automação industrial utilizado quaisquer plataformas de PLC, independente do fabricante.\nPretendemos que esta seja uma experiência de aprendizado rica e gratificante.\n\n\nConvenções de livros\nPara obter detalhes sobre as convenções usadas neste livro, consulte a seção Convenções.\n\n\nQuer ajudar?\nSe você estiver interessado em contribuir, você pode encaminhar um e-mail para Eng. Luciano Vasconcelos.\n\n\nContato\nTem dúvidas ou comentários? Sinta-se à vontade para enviar um e-mail diretamente para Eng. Luciano Vasconcelos.\n\n\nColaboradores\nUm grande obrigado a todos que ajudaram a tornar este livro o que ele é! Junte-se a nós como colaborador!"
   },
   {
     "objectID": "contents/dedication.html",
     "href": "contents/dedication.html",
     "title": "Dedicação",
     "section": "",
-    "text": "Dedicação\nA todos os jovens que se interessam por tecnologia e tenham a curiosidade de entender como as coisas funcionam. Mantenham essa chama acesa em seus corações para toda sempre."
-  },
-  {
-    "objectID": "contents/conventions.html",
-    "href": "contents/conventions.html",
-    "title": "Convenções",
-    "section": "",
-    "text": "Convenções\nConvenções adotadas para o para este livro on-line:\n\nEstrutura e organização claras:\n\nEsboços dos capítulos: Cada capítulo inicia com um esboço que fornece uma visão geral dos tópicos abordados.\nNumeração sequencial: Numeração sequencial para capítulos, seções e subseções para facilitar a referência.\n\nIdioma acessível:\n\nGlossário: Inclui um glossário que define termos técnicos e jargões\nTerminologia Consistente: Terminologia ao longo do livro para evitar confusão.\n\nAuxiliares de aprendizagem:\n\nDiagramas e Figuras: Uso de diagramas, figuras e tabelas para transmitir visualmente conceitos complexos.\nBarras laterais: Barras laterais para informações adicionais, e notas para fornecer contexto do mundo real ao conteúdo teórico.\n\nElementos interativos:\n\nExercícios e Projetos: Exercícios e projetos ao final de cada capítulo para estimular o aprendizado ativo e a aplicação prática dos conceitos.\nEstudos de caso: Estudos de caso para fornecer uma compreensão mais profunda de como os princípios são aplicados em situações do mundo real.\n\nReferências e leituras adicionais:\n\nBibliografia: Incluir uma bibliografia ao final de cada capítulo para leitores que desejam se aprofundar em temas específicos.\nCitações: Estilo consistente para citações, aderindo a padrões acadêmicos reconhecidos como APA, MLA ou Chicago.\n\nMateriais de suporte:\n\nRecursos on-line complementares: Links para recursos on-line complementares, como palestras em vídeo, webinars ou módulos interativos.\nConjuntos de dados e repositórios de código: compartilhe conjuntos de dados e repositórios de código para prática, especialmente para seções que tratam de algoritmos e aplicativos.\n\nFeedback e envolvimento da comunidade:\n\nFóruns e grupos de discussão: Fóruns ou grupos de discussão onde os leitores possam interagir, fazer perguntas e compartilhar conhecimentos.\nProcesso de revisão aberto: Processo de revisão aberto, solicitando feedback da comunidade para melhorar continuamente o conteúdo.\n\nInclusão e acessibilidade:\n\nFormatos Acessíveis: Garantir todo uso de mídia, recursos da web como, Youtube, QR code e outros recursos, para adaptar o livro a diferentes formatos.\n\nÍndice:\n\nÍndice abrangente: Índice abrangente no final do livro para ajudar os leitores a localizar rapidamente informações específicas.\n\n\nA implementação destas convenções contribui para a criação de um livro didático que seja abrangente, acessível e propício a uma aprendizagem eficaz."
-  },
-  {
-    "objectID": "contents/bms/bms.html",
-    "href": "contents/bms/bms.html",
-    "title": "BMS (Insifht 3.15)",
-    "section": "",
-    "text": "Bem-vindo a esta jornada abrangente em sistemas de automação indústrial com uso de técnica Grafcet. Este livro foi elaborado para fornecer uma compreensão completa dos conceitos de Grafcet e sua implementação em projetos de programação de processos indústriais. Quer você seja um iniciante, um especialista do setor ou um pesquisador acadêmico, oferecemos uma exploração detalhada de sistemas de automação, usando o Grafcet como exemplo prático para ilustrar os princípios básicos e as aplicações em um formato compacto e eficiente.\n\n\n\nComeçamos introduzindo conceitos fundamentais em sistemas de automação, contextualizando-os no escopo mais amplo do design de sistemas. Enfatizamos a eficácia dos métodos de Grafcet em diversas aplicações. À medida que avançamos, é apresentado um passo a passo abrangente do fluxo de trabalho de estrutura de programa de PLC, detalhando tudo, desde os meandros dos elementos de campo até as complexidades da integração do PLC com os diversos sistemas.\nUm aspecto único deste livro procura preencher a lacuna entre os materiais pedagógicos e as melhores praticas de estruturação de programas de PLC, oferecendo um guia abrangente que está em sintonia com o campo em evolução da automação indústrial.\n\n\n\nAqui está uma visão mais detalhada do que cada capítulo cobre:\nCapítulo 1: Introdução Este capítulo prepara o cenário, fornecendo uma visão geral do livro e estabelecendo as bases para os capítulos que se seguem.\n\n\n\nPara aproveitar ao máximo este livro, considere a seguinte abordagem estruturada:\n\nConhecimento Básico (Capítulos 1-4): Comece construindo uma base sólida com os capítulos iniciais, que fornecem uma introdução à automação indústrial e cobrem tópicos centrais como a técnica de Grafcet.\n\nAo adotar essa abordagem estruturada, porém flexível, você está preparando o terreno para uma experiência de aprendizado gratificante e enriquecedor.\n\n\n\nÀ medida que navegamos no mundo dos sistemas de automação, cobriremos uma ampla gama de tópicos, desde princípios de engenharia até considerações éticas e aplicações inovadoras. Cada capítulo revelará uma peça desse quebra-cabeça expansivo dos sistemas de automação indústrial, convidando você a criar novas conexões, iniciar discussões e alimentar sua curiosidade sobre PLCs e técnicas de Grafcet.\n\n\n\nEste livro tem como objetivo nutrir uma comunidade vibrante de alunos, inovadores e colaboradores. À medida que você explora os conceitos e se envolve nos exercícios, incentivamos você a compartilhar seus insights e experiências. Quer se trate de uma abordagem inovadora, de uma aplicação interessante ou de uma pergunta instigante, suas contribuições podem enriquecer o ecossistema de aprendizagem. Participe de discussões, ofereça e busque orientação e colabore em projetos para promover uma cultura de crescimento e aprendizagem mútuos. Ao compartilhar conhecimento, você desempenha um papel importante na promoção de uma comunidade globalmente conectada, informada e capacitada."
+    "text": "A todos os jovens que se interessam por tecnologia e tenham a curiosidade de entender como as coisas funcionam. Mantenham essa chama acesa em seus corações para toda sempre."
   },
   {
     "objectID": "contents/bms/bms.html#visão-geral",
     "href": "contents/bms/bms.html#visão-geral",
-    "title": "BMS (Insifht 3.15)",
-    "section": "",
-    "text": "Bem-vindo a esta jornada abrangente em sistemas de automação indústrial com uso de técnica Grafcet. Este livro foi elaborado para fornecer uma compreensão completa dos conceitos de Grafcet e sua implementação em projetos de programação de processos indústriais. Quer você seja um iniciante, um especialista do setor ou um pesquisador acadêmico, oferecemos uma exploração detalhada de sistemas de automação, usando o Grafcet como exemplo prático para ilustrar os princípios básicos e as aplicações em um formato compacto e eficiente."
+    "title": "1  BMS (Insight 3.15)",
+    "section": "1.1 Visão geral",
+    "text": "1.1 Visão geral\nBem-vindo a esta jornada abrangente em sistemas de automação indústrial com uso de técnica Grafcet. Este livro foi elaborado para fornecer uma compreensão completa dos conceitos de Grafcet e sua implementação em projetos de programação de processos indústriais. Quer você seja um iniciante, um especialista do setor ou um pesquisador acadêmico, oferecemos uma exploração detalhada de sistemas de automação, usando o Grafcet como exemplo prático para ilustrar os princípios básicos e as aplicações em um formato compacto e eficiente."
   },
   {
     "objectID": "contents/bms/bms.html#o-que-há-dentro",
     "href": "contents/bms/bms.html#o-que-há-dentro",
-    "title": "BMS (Insifht 3.15)",
-    "section": "",
-    "text": "Começamos introduzindo conceitos fundamentais em sistemas de automação, contextualizando-os no escopo mais amplo do design de sistemas. Enfatizamos a eficácia dos métodos de Grafcet em diversas aplicações. À medida que avançamos, é apresentado um passo a passo abrangente do fluxo de trabalho de estrutura de programa de PLC, detalhando tudo, desde os meandros dos elementos de campo até as complexidades da integração do PLC com os diversos sistemas.\nUm aspecto único deste livro procura preencher a lacuna entre os materiais pedagógicos e as melhores praticas de estruturação de programas de PLC, oferecendo um guia abrangente que está em sintonia com o campo em evolução da automação indústrial."
+    "title": "1  BMS (Insight 3.15)",
+    "section": "1.2 O que há dentro",
+    "text": "1.2 O que há dentro\nComeçamos introduzindo conceitos fundamentais em sistemas de automação, contextualizando-os no escopo mais amplo do design de sistemas. Enfatizamos a eficácia dos métodos de Grafcet em diversas aplicações. À medida que avançamos, é apresentado um passo a passo abrangente do fluxo de trabalho de estrutura de programa de PLC, detalhando tudo, desde os meandros dos elementos de campo até as complexidades da integração do PLC com os diversos sistemas.\nUm aspecto único deste livro procura preencher a lacuna entre os materiais pedagógicos e as melhores praticas de estruturação de programas de PLC, oferecendo um guia abrangente que está em sintonia com o campo em evolução da automação indústrial."
   },
   {
     "objectID": "contents/bms/bms.html#divisão-do-capítulo",
     "href": "contents/bms/bms.html#divisão-do-capítulo",
-    "title": "BMS (Insifht 3.15)",
-    "section": "",
-    "text": "Aqui está uma visão mais detalhada do que cada capítulo cobre:\nCapítulo 1: Introdução Este capítulo prepara o cenário, fornecendo uma visão geral do livro e estabelecendo as bases para os capítulos que se seguem."
+    "title": "1  BMS (Insight 3.15)",
+    "section": "1.3 Divisão do Capítulo",
+    "text": "1.3 Divisão do Capítulo\nAqui está uma visão mais detalhada do que cada capítulo cobre:\nCapítulo 1: Introdução Este capítulo prepara o cenário, fornecendo uma visão geral do livro e estabelecendo as bases para os capítulos que se seguem."
   },
   {
     "objectID": "contents/bms/bms.html#como-navegar-neste-livro",
     "href": "contents/bms/bms.html#como-navegar-neste-livro",
-    "title": "BMS (Insifht 3.15)",
-    "section": "",
-    "text": "Para aproveitar ao máximo este livro, considere a seguinte abordagem estruturada:\n\nConhecimento Básico (Capítulos 1-4): Comece construindo uma base sólida com os capítulos iniciais, que fornecem uma introdução à automação indústrial e cobrem tópicos centrais como a técnica de Grafcet.\n\nAo adotar essa abordagem estruturada, porém flexível, você está preparando o terreno para uma experiência de aprendizado gratificante e enriquecedor."
+    "title": "1  BMS (Insight 3.15)",
+    "section": "1.4 Como navegar neste livro",
+    "text": "1.4 Como navegar neste livro\nPara aproveitar ao máximo este livro, considere a seguinte abordagem estruturada:\n\nConhecimento Básico (Capítulos 1-4): Comece construindo uma base sólida com os capítulos iniciais, que fornecem uma introdução à automação indústrial e cobrem tópicos centrais como a técnica de Grafcet.\n\nAo adotar essa abordagem estruturada, porém flexível, você está preparando o terreno para uma experiência de aprendizado gratificante e enriquecedor."
   },
   {
     "objectID": "contents/bms/bms.html#o-caminho-a-seguir",
     "href": "contents/bms/bms.html#o-caminho-a-seguir",
-    "title": "BMS (Insifht 3.15)",
-    "section": "",
-    "text": "À medida que navegamos no mundo dos sistemas de automação, cobriremos uma ampla gama de tópicos, desde princípios de engenharia até considerações éticas e aplicações inovadoras. Cada capítulo revelará uma peça desse quebra-cabeça expansivo dos sistemas de automação indústrial, convidando você a criar novas conexões, iniciar discussões e alimentar sua curiosidade sobre PLCs e técnicas de Grafcet."
+    "title": "1  BMS (Insight 3.15)",
+    "section": "1.5 O caminho a seguir",
+    "text": "1.5 O caminho a seguir\nÀ medida que navegamos no mundo dos sistemas de automação, cobriremos uma ampla gama de tópicos, desde princípios de engenharia até considerações éticas e aplicações inovadoras. Cada capítulo revelará uma peça desse quebra-cabeça expansivo dos sistemas de automação indústrial, convidando você a criar novas conexões, iniciar discussões e alimentar sua curiosidade sobre PLCs e técnicas de Grafcet."
   },
   {
     "objectID": "contents/bms/bms.html#contribuir-de-volta",
     "href": "contents/bms/bms.html#contribuir-de-volta",
-    "title": "BMS (Insifht 3.15)",
-    "section": "",
-    "text": "Este livro tem como objetivo nutrir uma comunidade vibrante de alunos, inovadores e colaboradores. À medida que você explora os conceitos e se envolve nos exercícios, incentivamos você a compartilhar seus insights e experiências. Quer se trate de uma abordagem inovadora, de uma aplicação interessante ou de uma pergunta instigante, suas contribuições podem enriquecer o ecossistema de aprendizagem. Participe de discussões, ofereça e busque orientação e colabore em projetos para promover uma cultura de crescimento e aprendizagem mútuos. Ao compartilhar conhecimento, você desempenha um papel importante na promoção de uma comunidade globalmente conectada, informada e capacitada."
-  },
-  {
-    "objectID": "contents/anxFontes.html",
-    "href": "contents/anxFontes.html",
-    "title": "Arquivos Fonte",
-    "section": "",
-    "text": "Arquivos fonte dos exercicios e exemplos propostos no Livro.\n\n\n\n\n\n\n\n\n\n\n\nNo\nArquivo\nDescrição\nEspecificação\n\n\n\n\n1"
+    "title": "1  BMS (Insight 3.15)",
+    "section": "1.6 Contribuir de volta",
+    "text": "1.6 Contribuir de volta\nEste livro tem como objetivo nutrir uma comunidade vibrante de alunos, inovadores e colaboradores. À medida que você explora os conceitos e se envolve nos exercícios, incentivamos você a compartilhar seus insights e experiências. Quer se trate de uma abordagem inovadora, de uma aplicação interessante ou de uma pergunta instigante, suas contribuições podem enriquecer o ecossistema de aprendizagem. Participe de discussões, ofereça e busque orientação e colabore em projetos para promover uma cultura de crescimento e aprendizagem mútuos. Ao compartilhar conhecimento, você desempenha um papel importante na promoção de uma comunidade globalmente conectada, informada e capacitada."
   },
   {
     "objectID": "contents/anxFontes.html#fontes-dos-exercícios",
     "href": "contents/anxFontes.html#fontes-dos-exercícios",
     "title": "Arquivos Fonte",
-    "section": "",
-    "text": "No\nArquivo\nDescrição\nEspecificação\n\n\n\n\n1"
+    "section": "Fontes dos Exercícios",
+    "text": "Fontes dos Exercícios\n\n\n\n\n\n\n\n\n\nNo\nArquivo\nDescrição\nEspecificação\n\n\n\n\n1"
   },
   {
-    "objectID": "contents/about.html",
-    "href": "contents/about.html",
-    "title": "Sobre o Livro",
-    "section": "",
-    "text": "Bem-vindo a este projeto colaborativo iniciado pelo Engenheiro Luciano Cardoso Vasconcelos. O objetivo é tornar este livro um recurso comunitário que ajude educadores e alunos a compreender o Grafcet. O livro será atualizado regularmente para refletir novos insights sobre Grafcet e métodos de ensino eficazes.\n\n\n\nEste livro oferece uma visão abrangente de vários aspectos do método Grafcet. Os tópicos que nos aprofundamos incluem:\n\nNivelamento das entidades de Automação Industrial\nIntrodução ao método de Grafcet aplicado em PLC\nSegmentação de dados em PLC\nBlocos de Função\n\nAo terminar este livro, você terá uma compreensão básica de Grafcet. Você ganhará experiência prática por meio de tarefas baseadas em projetos.\n\n\n\nEste livro foi feito sob medida para aqueles que são novos em automação industrial, controle de máquina e processos usando PLC. Começa com os conceitos básicos de Grafcet e avança para tópicos mais avançados relevantes para a comunidade de engenheiros e técnicos que trabalham na industria. O livro é particularmente benéfico para:\n\nEngenheiros de sistemas embarcados: Para engenheiros no domínio de sistemas embarcados, este livro serve como um excelente guia de automação industrial ( OT ), ajudando-os a criar aplicativos programas estruturados em PLCs.\nEstudantes de Ciência da Computação e Engenharia Elétrica: Este livro é um recurso útil para estudantes que estudam ciência da computação e engenharia elétrica. Ele apresenta os métodos, algoritmos e técnicas usadondo Grafcet, preparando-os para desafios do mundo real para construção de sistemas estruturados em PLCs.\nPesquisadores e acadêmicos: Aqueles envolvidos em pesquisas em automação indústrial, IoT, sistemas embarcados acharão este livro esclarecedor.\nProfissionais da Indústria: Se você trabalha em áreas como IoT, robótica, tecnologia vestível ou dispositivos inteligentes, este livro fornecerá o conhecimento necessário de chão de fábrica.\n\n\n\n\nOs leitores adquirirão habilidades na estruturação de programas em controladores lógicos programáveis, PLC, desenvolvimento e implantação. Especificamente, você aprenderá sobre:\n\nConceitos fundamentais de PLCs\nFundamentos de Grafcet\nTécnicas de estruturação de programas de PLCs\n\nNosso objetivo é fazer deste livro um recurso abrangente para qualquer pessoa interessada no desenvolvimento de aplicações em PLCs. Ao concluir o livro, você estará bem equipado para projetar e implementar seus próprios projetos para controle de processos e máquinas indústriais.\n\n\n\n\nHabilidades básicas de programação: Recomendamos que você tenha alguma experiência anterior em programação de PLCs, de preferência em PLCs Siemens S7. Uma compreensão de variáveis, tipos de dados e estruturas de controle facilitará o envolvimento com o livro.\nDisposição para aprender: O livro foi elaborado para ser acessível a um público amplo, com diversos níveis de conhecimento técnico. A disposição de se desafiar e de se envolver em exercícios práticos o ajudará a tirar o máximo proveito disso.\nDisponibilidade de recursos: Para os aspectos práticos, você precisará de um computador com Simatic Manager ou TIA Portal.\n\nAo atender a esses pré-requisitos, você estará bem posicionado para aprofundar sua compreensão de Grafcet, participar de exercícios e até mesmo implementar aplicativos práticos."
+    "objectID": "contents/tools.html#hardware-kits",
+    "href": "contents/tools.html#hardware-kits",
+    "title": "Apêndice A: Ferramentas",
+    "section": "A.1 Hardware Kits",
+    "text": "A.1 Hardware Kits\n\nA.1.1 Utilitários de Hardware\n\n\n\n\n\n\n\n\n\n\nNo\nHardware\nProcessor\nCaracteristicas\nCompatibilidade\n\n\n\n\n1"
   },
   {
-    "objectID": "contents/about.html#visão-geral",
-    "href": "contents/about.html#visão-geral",
-    "title": "Sobre o Livro",
-    "section": "",
-    "text": "Bem-vindo a este projeto colaborativo iniciado pelo Engenheiro Luciano Cardoso Vasconcelos. O objetivo é tornar este livro um recurso comunitário que ajude educadores e alunos a compreender o Grafcet. O livro será atualizado regularmente para refletir novos insights sobre Grafcet e métodos de ensino eficazes."
+    "objectID": "contents/tools.html#ferramentas-de-software",
+    "href": "contents/tools.html#ferramentas-de-software",
+    "title": "Apêndice A: Ferramentas",
+    "section": "A.2 Ferramentas de Software",
+    "text": "A.2 Ferramentas de Software\n\nA.2.1 Kits de Diagnóstico e Recuperação\n\n\n\nNo\nFerramentas\nDescrição\nCasos de Uso\n\n\n\n\n1\nCloneZilla\nPrograma de clonagem/imagem de partição e disco semelhante ao True Image® ou Norton Ghost®.\nAjuda fazer implantação do sistema, backup e recuperação bare metal.\n\n\n2\nHirens CD\nFerramentas utilizadas para resolver vários problemas relacionados ao computador. Notavelmente, não inclui nenhum software pirateado; em vez disso, contém exclusivamente software gratuito e legal.\nDiagnóstico & Recuperação de PC\n\n\n3\nMedicat USB\nSeleção de ferramentas de diagnóstico e recuperação de computador fácil de usar.\nDiagnóstico & Recuperação de PC\n\n\n4\nVenloy\nFerramenta de código aberto para criar uma unidade USB inicializável para arquivos ISO/WIM/IMG/VHD(x)/EFI.\nSolução USB inicializável"
   },
   {
-    "objectID": "contents/about.html#tópicos-explorados",
-    "href": "contents/about.html#tópicos-explorados",
-    "title": "Sobre o Livro",
-    "section": "",
-    "text": "Este livro oferece uma visão abrangente de vários aspectos do método Grafcet. Os tópicos que nos aprofundamos incluem:\n\nNivelamento das entidades de Automação Industrial\nIntrodução ao método de Grafcet aplicado em PLC\nSegmentação de dados em PLC\nBlocos de Função\n\nAo terminar este livro, você terá uma compreensão básica de Grafcet. Você ganhará experiência prática por meio de tarefas baseadas em projetos."
-  },
-  {
-    "objectID": "contents/about.html#quem-deveria-ler-isto",
-    "href": "contents/about.html#quem-deveria-ler-isto",
-    "title": "Sobre o Livro",
-    "section": "",
-    "text": "Este livro foi feito sob medida para aqueles que são novos em automação industrial, controle de máquina e processos usando PLC. Começa com os conceitos básicos de Grafcet e avança para tópicos mais avançados relevantes para a comunidade de engenheiros e técnicos que trabalham na industria. O livro é particularmente benéfico para:\n\nEngenheiros de sistemas embarcados: Para engenheiros no domínio de sistemas embarcados, este livro serve como um excelente guia de automação industrial ( OT ), ajudando-os a criar aplicativos programas estruturados em PLCs.\nEstudantes de Ciência da Computação e Engenharia Elétrica: Este livro é um recurso útil para estudantes que estudam ciência da computação e engenharia elétrica. Ele apresenta os métodos, algoritmos e técnicas usadondo Grafcet, preparando-os para desafios do mundo real para construção de sistemas estruturados em PLCs.\nPesquisadores e acadêmicos: Aqueles envolvidos em pesquisas em automação indústrial, IoT, sistemas embarcados acharão este livro esclarecedor.\nProfissionais da Indústria: Se você trabalha em áreas como IoT, robótica, tecnologia vestível ou dispositivos inteligentes, este livro fornecerá o conhecimento necessário de chão de fábrica."
-  },
-  {
-    "objectID": "contents/about.html#principais-resultados-de-aprendizagem",
-    "href": "contents/about.html#principais-resultados-de-aprendizagem",
-    "title": "Sobre o Livro",
-    "section": "",
-    "text": "Os leitores adquirirão habilidades na estruturação de programas em controladores lógicos programáveis, PLC, desenvolvimento e implantação. Especificamente, você aprenderá sobre:\n\nConceitos fundamentais de PLCs\nFundamentos de Grafcet\nTécnicas de estruturação de programas de PLCs\n\nNosso objetivo é fazer deste livro um recurso abrangente para qualquer pessoa interessada no desenvolvimento de aplicações em PLCs. Ao concluir o livro, você estará bem equipado para projetar e implementar seus próprios projetos para controle de processos e máquinas indústriais."
-  },
-  {
-    "objectID": "contents/about.html#pré-requisitos-para-leitores",
-    "href": "contents/about.html#pré-requisitos-para-leitores",
-    "title": "Sobre o Livro",
-    "section": "",
-    "text": "Habilidades básicas de programação: Recomendamos que você tenha alguma experiência anterior em programação de PLCs, de preferência em PLCs Siemens S7. Uma compreensão de variáveis, tipos de dados e estruturas de controle facilitará o envolvimento com o livro.\nDisposição para aprender: O livro foi elaborado para ser acessível a um público amplo, com diversos níveis de conhecimento técnico. A disposição de se desafiar e de se envolver em exercícios práticos o ajudará a tirar o máximo proveito disso.\nDisponibilidade de recursos: Para os aspectos práticos, você precisará de um computador com Simatic Manager ou TIA Portal.\n\nAo atender a esses pré-requisitos, você estará bem posicionado para aprofundar sua compreensão de Grafcet, participar de exercícios e até mesmo implementar aplicativos práticos."
-  },
-  {
-    "objectID": "contents/bConfiguração/bConfiguração.html",
-    "href": "contents/bConfiguração/bConfiguração.html",
-    "title": "Configuração",
-    "section": "",
-    "text": "Coletânea de informações sobre configuração de PLC, necessário para otimizar os recusrsos do PLC afim de atender as necessidades do projeto.\n\n\n\n\n\nÁrvore de Interrupções: Ilustração da arvore de interrupções da Siemens, como exemplo.\n\n\nEsta palavra não é exclusividade da Siemens, interrupções cíclicas são algumas rotinas específicas e críticas que o programador deseja que sejam executadas em um determinado horário e evento, por (Ghareb 2021).\nAs interrupções não esperam que o programa principal termine seu ciclo. Uma vez que as interrupções ocorrem, ele para o OB principal ( OB1 ) no ponto de interrupção e executa sua rotina, então o OB principal retoma o programa do ponto de interrupção novamente.\nDominar o uso do recurso de interrupção é importante para solucionar problemas práticos que somente o uso das mesmas resulta em solução confiável e eficiente.\n\n\nExistem quatro tipos de interrupção OB usados, listados abaixo:\n\nInterrupção Cíclica: OB30, OB38\nInterrupção de Erro de Hardware: OB40\nInterrupção da Hora do Dia: OB20\nInterrupção de Inicialização: OB100\n\n\n\n\nNo CLP Siemens , para executar os programas do CLP é utilizado o Bloco Organizacional. No OB1 que é utilizado para executar lógica e chamamos outros blocos de programação deste OB1.Em muitas aplicações pequenas requer apenas o bloco OB1. Mas na aplicação grande, você também precisa usar outros blocos de organização que a Siemens oferece no software de programação.\n\n\n\n\n\nA interrupção cíclica é usada quando há um requisito de execução cíclica.A ideia por trás dessa interrupção é que você pode configurar uma delas para ser executada com determinados tempos cíclicos que independem do tempo do ciclo de varredura do seu programa principal.\nAs interrupções cíclicas no portal TIA geralmente têm a prioridade de (30: 38) que depende da CPU que você possui. Nem todas têm a mesma interrupção cíclica, algumas CPUs têm apenas (32: 35) outras CPUs podem ter outro grupo de interrupções do ciclo.\nO programa principal OB1 para sua execução toda vez que uma interrupção cíclica é executada, e o programa volta ao ponto da chamada da interrupção no bloco principal ao final da execução da interrupção cíclica.\nAplicações de interrupções cíclicas\n\nControladores PID: O tempo do ciclo de varredura principal pode afetar a precisão de suas ações PID, então você não deseja relacionar suas ações com o tempo do ciclo de varredura, então você empurra suas instruções PID para uma interrupção cíclica para ser executado periodicamente com determinados tempos cíclicos.\nSegurança: Segurança está em primeiro lugar , portanto durante o seu processo você pode precisar de algumas ações de segurança que devem ser verificadas periodicamente em determinados horários.\n\nO tempo de interrupção padrão no PLC S7 é de 100 milissegundos. Mas você pode alterá-lo na visualização de Hardware.\nPara adicionar interrupção cíclica ao OB, abra o portal TIA e siga os passos abaixo.\nPasso 1:\n\n\n\ncrie um novo projeto e selecione o tipo de CPU. Clique em “visualização do projeto”.\n\n\nPasso 2:\n\n\n\nNa janela seguinte expanda “bloco de programa” e clique duas vezes em “Adicionar novo bloco”.\n\n\nPasso 3:\n\n\n\nUma nova janela aparecerá. Selecione “bloco organizacional” e você encontrará todos os tipos de interrupção de hardware disponíveis. Clique duas vezes em qualquer um para acessar o ambiente de programação.\n\n\n\n\n\nEste tipo de interrupção OB é executada quando a CPU detecta algum erro no módulo de entrada, ou devido a circuitos residentes no módulo de entrada. É preciso que o módulo de entrada contenha o recurso de interrupção de hardware e o mesmo, OB40, seja configurado.\n\n\n\nEste tipo de interrupção será executado com base em um determinado horário do dia para realizar uma tarefa.\nÉ necessário configurar o OB20 para usar a interrupção por tempo. Neste bloco você pode especificar um tempo e escrever a lógica de execução da interrupção por atraso de tempo.\n\n\n\nExemplos de chamada da interrupão de inicialização são, falha de energia, se o PLC entrar no modo de parada quando a energia estiver disponível, a transição da CPU de parada para operação será executada. O OB100 de inicialização será executado, o que redefinirá a entrada para não iniciar o equipamento automaticamente.\nEste tipo de interrupção é utilizado para realizar uma inicialização da CPU de forma mais suave.\n\n\n\nUma observação muito importante que você deve estar ciente disso é a prioridade da interrupção que você está usando.\nCada interrupção no portal TIA possui um número denominado prioridade que se refere à disposição daquela interrupção entre todas as interrupções, supondo que duas interrupções ocorram ao mesmo tempo.\nO PLC executará primeiro a maior prioridade e depois a Segunda interrupção (que tem menor prioridade) e depois voltará novamente para o OB Principal.\n\n\n\nExemplo de interrupção do programa cíclico, OB1.\n\n\n\n\n\nUma observação muito importante que você deve estar ciente disso é a prioridade da interrupção que você está usando.\n\nSelecione a CPU desejada:\n\n\n\n\nConfigurar um novo dispositivo.\n\n\n\nSelecione adicionar novo bloco organizacional:\n\n\n\n\nSelecionar adicionar novo bloco organizacional.\n\n\n\nSelecione qualquer interrupção e pressione OK:\n\n\n\n\nSelecionar a interrupção desejada.\n\n\n\nDepois de selecionar o desejado, ele será mostrado nos blocos do programa:\n\n\n\n\nConferir o programa.\n\n\n\nSelecionar as propriedades da CPU para configurar o tempo de execução:\n\n\n\n\nConfigurar o tempo de execução.\n\n\n\nEscrever o programa conforme mostrado na próxima figura.:\n\n\n\n\nEscrever o programa.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n(Ghareb 2021)\n\n\n\nGhareb, Hussien. 2021. “Configuração e Uso de Interrupções Cíclicas Portal TIA (OB 30+).” In. https://instrumentationtools.com/configuring-and-usage-of-cyclic-interrupts-tia-portal/."
+    "objectID": "contents/tools.html#ides-e-ambientes-de-desenvolvimento",
+    "href": "contents/tools.html#ides-e-ambientes-de-desenvolvimento",
+    "title": "Apêndice A: Ferramentas",
+    "section": "A.3 IDEs e ambientes de desenvolvimento",
+    "text": "A.3 IDEs e ambientes de desenvolvimento\n\n\n\nNo\nIDE/Ambientes de Desenvolvimento\nDescrição\nCaracteristicas\n\n\n\n\n1\nTIA Portal\nPortal de Automação Totalmente Integrado. Ele oferece acesso irrestrito à gama completa de serviços de automação digitalizada, desde planejamento digital até engenharia integrada e operação transparente.\nAmbiente de desenvolvimento de Automação para plataforma de PLC Siemens"
   },
   {
     "objectID": "contents/bConfiguração/bConfiguração.html#obs-de-interrupção",
     "href": "contents/bConfiguração/bConfiguração.html#obs-de-interrupção",
-    "title": "Configuração",
-    "section": "",
-    "text": "Árvore de Interrupções: Ilustração da arvore de interrupções da Siemens, como exemplo.\n\n\nEsta palavra não é exclusividade da Siemens, interrupções cíclicas são algumas rotinas específicas e críticas que o programador deseja que sejam executadas em um determinado horário e evento, por (Ghareb 2021).\nAs interrupções não esperam que o programa principal termine seu ciclo. Uma vez que as interrupções ocorrem, ele para o OB principal ( OB1 ) no ponto de interrupção e executa sua rotina, então o OB principal retoma o programa do ponto de interrupção novamente.\nDominar o uso do recurso de interrupção é importante para solucionar problemas práticos que somente o uso das mesmas resulta em solução confiável e eficiente.\n\n\nExistem quatro tipos de interrupção OB usados, listados abaixo:\n\nInterrupção Cíclica: OB30, OB38\nInterrupção de Erro de Hardware: OB40\nInterrupção da Hora do Dia: OB20\nInterrupção de Inicialização: OB100\n\n\n\n\nNo CLP Siemens , para executar os programas do CLP é utilizado o Bloco Organizacional. No OB1 que é utilizado para executar lógica e chamamos outros blocos de programação deste OB1.Em muitas aplicações pequenas requer apenas o bloco OB1. Mas na aplicação grande, você também precisa usar outros blocos de organização que a Siemens oferece no software de programação.\n\n\n\n\n\nA interrupção cíclica é usada quando há um requisito de execução cíclica.A ideia por trás dessa interrupção é que você pode configurar uma delas para ser executada com determinados tempos cíclicos que independem do tempo do ciclo de varredura do seu programa principal.\nAs interrupções cíclicas no portal TIA geralmente têm a prioridade de (30: 38) que depende da CPU que você possui. Nem todas têm a mesma interrupção cíclica, algumas CPUs têm apenas (32: 35) outras CPUs podem ter outro grupo de interrupções do ciclo.\nO programa principal OB1 para sua execução toda vez que uma interrupção cíclica é executada, e o programa volta ao ponto da chamada da interrupção no bloco principal ao final da execução da interrupção cíclica.\nAplicações de interrupções cíclicas\n\nControladores PID: O tempo do ciclo de varredura principal pode afetar a precisão de suas ações PID, então você não deseja relacionar suas ações com o tempo do ciclo de varredura, então você empurra suas instruções PID para uma interrupção cíclica para ser executado periodicamente com determinados tempos cíclicos.\nSegurança: Segurança está em primeiro lugar , portanto durante o seu processo você pode precisar de algumas ações de segurança que devem ser verificadas periodicamente em determinados horários.\n\nO tempo de interrupção padrão no PLC S7 é de 100 milissegundos. Mas você pode alterá-lo na visualização de Hardware.\nPara adicionar interrupção cíclica ao OB, abra o portal TIA e siga os passos abaixo.\nPasso 1:\n\n\n\ncrie um novo projeto e selecione o tipo de CPU. Clique em “visualização do projeto”.\n\n\nPasso 2:\n\n\n\nNa janela seguinte expanda “bloco de programa” e clique duas vezes em “Adicionar novo bloco”.\n\n\nPasso 3:\n\n\n\nUma nova janela aparecerá. Selecione “bloco organizacional” e você encontrará todos os tipos de interrupção de hardware disponíveis. Clique duas vezes em qualquer um para acessar o ambiente de programação.\n\n\n\n\n\nEste tipo de interrupção OB é executada quando a CPU detecta algum erro no módulo de entrada, ou devido a circuitos residentes no módulo de entrada. É preciso que o módulo de entrada contenha o recurso de interrupção de hardware e o mesmo, OB40, seja configurado.\n\n\n\nEste tipo de interrupção será executado com base em um determinado horário do dia para realizar uma tarefa.\nÉ necessário configurar o OB20 para usar a interrupção por tempo. Neste bloco você pode especificar um tempo e escrever a lógica de execução da interrupção por atraso de tempo.\n\n\n\nExemplos de chamada da interrupão de inicialização são, falha de energia, se o PLC entrar no modo de parada quando a energia estiver disponível, a transição da CPU de parada para operação será executada. O OB100 de inicialização será executado, o que redefinirá a entrada para não iniciar o equipamento automaticamente.\nEste tipo de interrupção é utilizado para realizar uma inicialização da CPU de forma mais suave.\n\n\n\nUma observação muito importante que você deve estar ciente disso é a prioridade da interrupção que você está usando.\nCada interrupção no portal TIA possui um número denominado prioridade que se refere à disposição daquela interrupção entre todas as interrupções, supondo que duas interrupções ocorram ao mesmo tempo.\nO PLC executará primeiro a maior prioridade e depois a Segunda interrupção (que tem menor prioridade) e depois voltará novamente para o OB Principal.\n\n\n\nExemplo de interrupção do programa cíclico, OB1.\n\n\n\n\n\nUma observação muito importante que você deve estar ciente disso é a prioridade da interrupção que você está usando.\n\nSelecione a CPU desejada:\n\n\n\n\nConfigurar um novo dispositivo.\n\n\n\nSelecione adicionar novo bloco organizacional:\n\n\n\n\nSelecionar adicionar novo bloco organizacional.\n\n\n\nSelecione qualquer interrupção e pressione OK:\n\n\n\n\nSelecionar a interrupção desejada.\n\n\n\nDepois de selecionar o desejado, ele será mostrado nos blocos do programa:\n\n\n\n\nConferir o programa.\n\n\n\nSelecionar as propriedades da CPU para configurar o tempo de execução:\n\n\n\n\nConfigurar o tempo de execução.\n\n\n\nEscrever o programa conforme mostrado na próxima figura.:\n\n\n\n\nEscrever o programa."
+    "title": "Apêndice B: Configuração",
+    "section": "B.1 OBs de Interrupção",
+    "text": "B.1 OBs de Interrupção\n\n\n\nÁrvore de Interrupções: Ilustração da arvore de interrupções da Siemens, como exemplo.\n\n\nEsta palavra não é exclusividade da Siemens, interrupções cíclicas são algumas rotinas específicas e críticas que o programador deseja que sejam executadas em um determinado horário e evento, por (Ghareb 2021).\nAs interrupções não esperam que o programa principal termine seu ciclo. Uma vez que as interrupções ocorrem, ele para o OB principal ( OB1 ) no ponto de interrupção e executa sua rotina, então o OB principal retoma o programa do ponto de interrupção novamente.\nDominar o uso do recurso de interrupção é importante para solucionar problemas práticos que somente o uso das mesmas resulta em solução confiável e eficiente.\n\nB.1.1 Tipos de Interrupção OB\nExistem quatro tipos de interrupção OB usados, listados abaixo:\n\nInterrupção Cíclica: OB30, OB38\nInterrupção de Erro de Hardware: OB40\nInterrupção da Hora do Dia: OB20\nInterrupção de Inicialização: OB100\n\n\n\n\nNo CLP Siemens , para executar os programas do CLP é utilizado o Bloco Organizacional. No OB1 que é utilizado para executar lógica e chamamos outros blocos de programação deste OB1.Em muitas aplicações pequenas requer apenas o bloco OB1. Mas na aplicação grande, você também precisa usar outros blocos de organização que a Siemens oferece no software de programação.\n\n\n\n\nB.1.2 Interrupção Cíclica (OB30, OB38)\nA interrupção cíclica é usada quando há um requisito de execução cíclica.A ideia por trás dessa interrupção é que você pode configurar uma delas para ser executada com determinados tempos cíclicos que independem do tempo do ciclo de varredura do seu programa principal.\nAs interrupções cíclicas no portal TIA geralmente têm a prioridade de (30: 38) que depende da CPU que você possui. Nem todas têm a mesma interrupção cíclica, algumas CPUs têm apenas (32: 35) outras CPUs podem ter outro grupo de interrupções do ciclo.\nO programa principal OB1 para sua execução toda vez que uma interrupção cíclica é executada, e o programa volta ao ponto da chamada da interrupção no bloco principal ao final da execução da interrupção cíclica.\nAplicações de interrupções cíclicas\n\nControladores PID: O tempo do ciclo de varredura principal pode afetar a precisão de suas ações PID, então você não deseja relacionar suas ações com o tempo do ciclo de varredura, então você empurra suas instruções PID para uma interrupção cíclica para ser executado periodicamente com determinados tempos cíclicos.\nSegurança: Segurança está em primeiro lugar , portanto durante o seu processo você pode precisar de algumas ações de segurança que devem ser verificadas periodicamente em determinados horários.\n\nO tempo de interrupção padrão no PLC S7 é de 100 milissegundos. Mas você pode alterá-lo na visualização de Hardware.\nPara adicionar interrupção cíclica ao OB, abra o portal TIA e siga os passos abaixo.\nPasso 1:\n\n\n\ncrie um novo projeto e selecione o tipo de CPU. Clique em “visualização do projeto”.\n\n\nPasso 2:\n\n\n\nNa janela seguinte expanda “bloco de programa” e clique duas vezes em “Adicionar novo bloco”.\n\n\nPasso 3:\n\n\n\nUma nova janela aparecerá. Selecione “bloco organizacional” e você encontrará todos os tipos de interrupção de hardware disponíveis. Clique duas vezes em qualquer um para acessar o ambiente de programação.\n\n\n\n\nB.1.3 Interrupção de Hardware (OB40)\nEste tipo de interrupção OB é executada quando a CPU detecta algum erro no módulo de entrada, ou devido a circuitos residentes no módulo de entrada. É preciso que o módulo de entrada contenha o recurso de interrupção de hardware e o mesmo, OB40, seja configurado.\n\n\nB.1.4 Interrupção por Tempo (OB20)\nEste tipo de interrupção será executado com base em um determinado horário do dia para realizar uma tarefa.\nÉ necessário configurar o OB20 para usar a interrupção por tempo. Neste bloco você pode especificar um tempo e escrever a lógica de execução da interrupção por atraso de tempo.\n\n\nB.1.5 Interrupção de Inicializção (OB100)\nExemplos de chamada da interrupão de inicialização são, falha de energia, se o PLC entrar no modo de parada quando a energia estiver disponível, a transição da CPU de parada para operação será executada. O OB100 de inicialização será executado, o que redefinirá a entrada para não iniciar o equipamento automaticamente.\nEste tipo de interrupção é utilizado para realizar uma inicialização da CPU de forma mais suave.\n\n\nB.1.6 Prioridade das Interrupções\nUma observação muito importante que você deve estar ciente disso é a prioridade da interrupção que você está usando.\nCada interrupção no portal TIA possui um número denominado prioridade que se refere à disposição daquela interrupção entre todas as interrupções, supondo que duas interrupções ocorram ao mesmo tempo.\nO PLC executará primeiro a maior prioridade e depois a Segunda interrupção (que tem menor prioridade) e depois voltará novamente para o OB Principal.\n\n\n\nExemplo de interrupção do programa cíclico, OB1.\n\n\n\n\nB.1.7 Interrupções cíclicas no Portal TIA\nUma observação muito importante que você deve estar ciente disso é a prioridade da interrupção que você está usando.\n\nSelecione a CPU desejada:\n\n\n\n\nConfigurar um novo dispositivo.\n\n\n\nSelecione adicionar novo bloco organizacional:\n\n\n\n\nSelecionar adicionar novo bloco organizacional.\n\n\n\nSelecione qualquer interrupção e pressione OK:\n\n\n\n\nSelecionar a interrupção desejada.\n\n\n\nDepois de selecionar o desejado, ele será mostrado nos blocos do programa:\n\n\n\n\nConferir o programa.\n\n\n\nSelecionar as propriedades da CPU para configurar o tempo de execução:\n\n\n\n\nConfigurar o tempo de execução.\n\n\n\nEscrever o programa conforme mostrado na próxima figura.:\n\n\n\n\nEscrever o programa."
+  },
+  {
+    "objectID": "contents/bConfiguração/bConfiguração.html#obs-de-erros",
+    "href": "contents/bConfiguração/bConfiguração.html#obs-de-erros",
+    "title": "Apêndice B: Configuração",
+    "section": "B.2 OBs de Erros",
+    "text": "B.2 OBs de Erros\n\nB.2.1 OB121 - Erro de programação\n\n\nB.2.2 OB122 - Erro de acesso perférico"
   },
   {
     "objectID": "contents/bConfiguração/bConfiguração.html#references",
     "href": "contents/bConfiguração/bConfiguração.html#references",
-    "title": "Configuração",
-    "section": "",
-    "text": "(Ghareb 2021)\n\n\n\nGhareb, Hussien. 2021. “Configuração e Uso de Interrupções Cíclicas Portal TIA (OB 30+).” In. https://instrumentationtools.com/configuring-and-usage-of-cyclic-interrupts-tia-portal/."
-  },
-  {
-    "objectID": "contents/contributors.html",
-    "href": "contents/contributors.html",
-    "title": "Colaboradores",
-    "section": "",
-    "text": "Colaboradores\nEstendemos nossos sinceros agradecimentos à todos os indivíduos que generosamente contribuíram com sua experiência, insights e tempo para aprimorar o conteúdo esse projeto.\nAbaixo você encontrará uma lista de todos os colaboradores. Se você gostaria de contribuir com este projeto, consulte nossa página GitHub.\n\n\n\n\n\n\n\n\n\n\nICTINUS-Engenharia"
-  },
-  {
-    "objectID": "contents/copyright.html",
-    "href": "contents/copyright.html",
-    "title": "Direitos",
-    "section": "",
-    "text": "Direitos\nEste livro é de código aberto e desenvolvido de forma colaborativa por meio do GitHub.\nTodas as marcas comerciais e marcas registradas mencionadas neste livro são de propriedade de seus respectivos proprietários.\nAs informações fornecidas neste livro são consideradas precisas e confiáveis. No entanto, os autores, editores e editores não podem ser responsabilizados por quaisquer danos causados ​​ou supostamente causados, direta ou indiretamente, pelas informações contidas neste livro."
-  },
-  {
-    "objectID": "contents/ethics.html",
-    "href": "contents/ethics.html",
-    "title": "Ethical AI",
-    "section": "",
-    "text": "Learning Objectives\n\n\n\n\ncoming soon.\n\n\n\n\n\ncoming soon.\n\n\n\ncoming soon."
-  },
-  {
-    "objectID": "contents/ethics.html#responsible-ai",
-    "href": "contents/ethics.html#responsible-ai",
-    "title": "Ethical AI",
-    "section": "",
-    "text": "coming soon."
-  },
-  {
-    "objectID": "contents/ethics.html#ai-safety",
-    "href": "contents/ethics.html#ai-safety",
-    "title": "Ethical AI",
-    "section": "",
-    "text": "coming soon."
-  },
-  {
-    "objectID": "contents/front.html",
-    "href": "contents/front.html",
-    "title": "FRONT MATTER",
-    "section": "",
-    "text": "FRONT MATTER"
-  },
-  {
-    "objectID": "contents/summary.html",
-    "href": "contents/summary.html",
-    "title": "Summary",
-    "section": "",
-    "text": "Summary\nIn summary, this book has no content whatsoever."
-  },
-  {
-    "objectID": "contents/toc.html",
-    "href": "contents/toc.html",
-    "title": "Table of Contents",
-    "section": "",
-    "text": "Table of Contents"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Prefácio",
-    "section": "",
-    "text": "Prefácio\nBem-vindo ao Suporte à Roche. Este livro é a sua porta de entrada para o mundo acelerado dos sistemas de automação industrial através do uso de PLCs.\nNosso objetivo é fazer deste livro de código aberto um esforço colaborativo que reúna insights de estudantes, profissionais e da comunidade mais ampla de profissionais da industria. Queremos criar um guia completo que se aprofunde nos detalhes básicos dos sistemas de automação industrial e seus muitos usos.\n\n“Se você quer ir rápido, vá sozinho. Se você quer ir longe, vá junto.” – Provérbio Africano\n\nEste não é um livro estático, mas dinâmico, um documento vivo. Estamos tornando-o continuamente atualizado para atender às necessidades em constante mudança deste campo dinâmico. Espere uma rica combinação de conhecimento especializado que o guiará pela complexa interação entre algoritmos e os princípios fundamentais que os fazem funcionar. Que este projeto seja uma fonte continua para a comunidade.\n\n\nPor que escrevemos este livro\nEstamos em uma época em que a tecnologia está sempre evoluindo. A colaboração aberta e o compartilhamento de conhecimento são os alicerces da verdadeira inovação. Esse é o espírito por trás do Suporte à Roche. Estamos indo além do modelo tradicional de livro didático para criar um centro de conhecimento vivo.\nO livro cobre princípios, algoritmos e estudos de caso de aplicações do mundo real, com o objetivo de fornecer uma compreensão profunda que o ajudará a navegar no cenário em constante mudança da industria. Ao mantê-lo aberto, não estamos apenas tornando o aprendizado acessível; estamos convidando novas ideias e melhorias contínuas. Em suma, estamos construindo uma comunidade onde o conhecimento é livre para crescer e iluminar o caminho a seguir na tecnologia global de automação industrial.\n\n\nO que você precisa saber\nVocê não precisa ser um especialista em automação industrial para mergulhar neste livro. Tudo o que você realmente precisa é de um conhecimento básico de sistemas de automaão industrial e uma curiosidade para explorar como hardware, software e linguagem de programação se unem. É aqui que a inovação acontece, e uma compreensão básica de como os sistemas funcionam será a sua bússola.\nA proposta é desenvolver um projeto básico , aplicando o conhecimento compartilhado no livro , afim de desmistificar para o leitor os metodos de desenvolvimento de aplicações em automação industrial utilizado quaisquer plataformas de PLC, independente do fabricante.\nPretendemos que esta seja uma experiência de aprendizado rica e gratificante.\n\n\nConvenções de livros\nPara obter detalhes sobre as convenções usadas neste livro, consulte a seção Convenções.\n\n\nQuer ajudar?\nSe você estiver interessado em contribuir, você pode encaminhar um e-mail para Eng. Luciano Vasconcelos.\n\n\nContato\nTem dúvidas ou comentários? Sinta-se à vontade para enviar um e-mail diretamente para Eng. Luciano Vasconcelos.\n\n\nColaboradores\nUm grande obrigado a todos que ajudaram a tornar este livro o que ele é! Junte-se a nós como colaborador!"
+    "title": "Apêndice B: Configuração",
+    "section": "B.3 References",
+    "text": "B.3 References\n(Ghareb 2021)\n\n\n\nGhareb, Hussien. 2021. “Configuração e Uso de Interrupções Cíclicas Portal TIA (OB 30+).” In. https://instrumentationtools.com/configuring-and-usage-of-cyclic-interrupts-tia-portal/."
   }
 ]

@@ -8,7 +8,7 @@
 
 <meta name="keywords" content="grafcet, PLC, STL, ICTINUS, ladder, Simatic, TIA Portal, OOP">
 
-<title>Grafcet do Básico ao Avançado - Planta CIP</title>
+<title>Grafcet do Básico ao Avançado - 16&nbsp; Organização</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -31,7 +31,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
-<link href="../../contents/ax_Fontes.html" rel="next">
+<link href="../../contents/II_parte/modularização.html" rel="prev">
 <link href="../../ictinus.png" rel="icon" type="image/png">
 <script src="../../site_libs/quarto-html/quarto.js"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
@@ -160,7 +160,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../contents/ex_plantaCIP/plantaCIP.html">EXERCÍCIOS</a></li><li class="breadcrumb-item"><a href="../../contents/ex_plantaCIP/plantaCIP.html">Planta CIP</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../contents/II_parte.html">PART II - GRAFCET</a></li><li class="breadcrumb-item"><a href="../../contents/II_parte/Organização.html"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Organização</span></a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -353,7 +353,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../contents/II_parte/Organização.html" class="sidebar-item-text sidebar-link">
+  <a href="../../contents/II_parte/Organização.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Organização</span></span></a>
   </div>
 </li>
@@ -371,7 +371,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../contents/ex_plantaCIP/plantaCIP.html" class="sidebar-item-text sidebar-link active">
+  <a href="../../contents/ex_plantaCIP/plantaCIP.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Planta CIP</span></a>
   </div>
 </li>
@@ -439,10 +439,11 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#objetivo" id="toc-objetivo" class="nav-link active" data-scroll-target="#objetivo">Objetivo</a></li>
-  <li><a href="#descrição-do-processo" id="toc-descrição-do-processo" class="nav-link" data-scroll-target="#descrição-do-processo">Descrição do Processo</a></li>
-  <li><a href="#restrições" id="toc-restrições" class="nav-link" data-scroll-target="#restrições">Restrições</a></li>
-  <li><a href="#exceções" id="toc-exceções" class="nav-link" data-scroll-target="#exceções">Exceções</a></li>
+  <li><a href="#chamadas-dos-blocos-do-programa" id="toc-chamadas-dos-blocos-do-programa" class="nav-link active" data-scroll-target="#chamadas-dos-blocos-do-programa"><span class="header-section-number">16.1</span> Chamadas dos blocos do programa</a>
+  <ul>
+  <li><a href="#chamadas-dos-programas-principais" id="toc-chamadas-dos-programas-principais" class="nav-link" data-scroll-target="#chamadas-dos-programas-principais"><span class="header-section-number">16.1.1</span> Chamadas dos programas principais</a></li>
+  </ul></li>
+  <li><a href="#quiz" id="toc-quiz" class="nav-link" data-scroll-target="#quiz"><span class="header-section-number">16.2</span> Quiz</a></li>
   </ul>
 <div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/ICTINUS-Engenharia/ictinus/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
     </div>
@@ -451,7 +452,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Planta CIP</h1>
+<h1 class="title"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Organização</span></h1>
 </div>
 
 
@@ -466,27 +467,58 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/png/plantaCIP.png" class="img-fluid figure-img" style="width:6.5in"></p>
-<figcaption class="figure-caption"><em>Exemplo de uma planta de CIP de fornecimento de água, soda e detergente para limpeza de máquinas ou planta industriais, que deve obedecer uma determinada sequência pré-estabelecida, conforme descrito abaixo.</em></figcaption>
-</figure>
-</div>
-<section id="objetivo" class="level2">
-<h2 class="anchored" data-anchor-id="objetivo">Objetivo</h2>
+<p><strong><em><span style="color:red">Em Construção</span></em></strong></p>
+<section id="chamadas-dos-blocos-do-programa" class="level2" data-number="16.1">
+<h2 data-number="16.1" class="anchored" data-anchor-id="chamadas-dos-blocos-do-programa"><span class="header-section-number">16.1</span> Chamadas dos blocos do programa</h2>
+<p>Vamos analisar novamente a figura abaixo:</p>
+<p><strong><em><span style="color:red">Em Construção</span></em></strong></p>
+<p>O programa do PLC é dividido em arquivos que por sua vez possuem programas que manipulam a memória do mesmo.</p>
+<p>Estamos estruturando o programa de forma modularizada. Logo, vamos rever aos poucos o que vimos no capítulo 3.</p>
+<p>Vimos que ao ligar o PLC existe um arquivo, na estruturação que estamos fazendo, que inicializa as variáveis do programa que são importantes para garantir uma posição inicial de partida do programa ou ressete de alarmes, enfim todo e qualquer dado que seja importante ser inicializado.</p>
+<p>É correto pensar que poderíamos pensar na figura assim como :</p>
+<p><strong><em><span style="color:red">Em Construção</span></em></strong></p>
+<p>Seguindo o mesmo raciocínio, todas as informações importantes para a execução do mesmo devem ser executadas antes dos grafcets de controle da planta. Continuando a mesma linha de raciocínio, se um valor de cartão analógico não for tratado antes da execução dos grafcet, isto poderia causar o funcionamento errado das evoluções dos programas. Logo este também é um arquivo gestor que deve ser tratado antes dos arquivos gestores de programa, assim todo e qualquer arquivo gestor que incorra na mesma situação.</p>
+<p>Assim, analise a mesma estrutura de chamada de arquivos com a sequência que iremos trabalhar.</p>
+<p><strong><em><span style="color:red">Em Construção</span></em></strong></p>
+<p>Observe o quadrado em separado do gestor de interrupção. Este não faz parte da execução procedural do programa por motivos óbvios. O mesmo é executado apenas quando ocorre a interrupção.</p>
+<p>A outra parte em destaque é o gestor dos programas principais. Este deve ser analisado em separado conforme veremos.</p>
+<p>Até aqui já conseguimos rascunhar as chamadas dos arquivos gestores de dados gerais do programa.</p>
+<p>Esta organização não depende do programa, pois a organização é você quem constroi no PLC escolhido. É muito mais fácil dar manutenção em um programa modularizado por funcionalidade conforme acabamos de fazer, duvida ?</p>
+<p>Bom, suponha que um valor analógico esteja mostrando um valor duvidoso ou diferente do que está sendo mostrado no campo, onde você vai procurá-lo no programa ? Onde ele está sendo escalado no programa ?</p>
+<p>Com as informações que acabamos de estudar, você tem condições de responder essa pergunta, mas vamos te dar uma ajuda, está no arquivo gestor de cartas analógicas do programa.</p>
+<section id="chamadas-dos-programas-principais" class="level3" data-number="16.1.1">
+<h3 data-number="16.1.1" class="anchored" data-anchor-id="chamadas-dos-programas-principais"><span class="header-section-number">16.1.1</span> Chamadas dos programas principais</h3>
+<p>Volte ao capítulo 3, item 3.2.2. Quais são os gestores do programa principal ?</p>
+<p>São:</p>
+<ul>
+<li>Gestores de condições iniciais;</li>
+<li>Gestores de programas;</li>
+<li>Gestores de intertravamentos;</li>
+<li>Gestores de acionamentos;</li>
+<li>Gestores de defeitos.</li>
+</ul>
+<p>Vamos focar na organização das chamadas desses gestores.</p>
+<p>Seguindo o mesmo princípio de organização de chamadas apresentado acima, devemos chamar todos os gestores que são condições iniciais antes dos gestores de programa. Logo :</p>
+<p><strong><em><span style="color:red">Em Construção</span></em></strong></p>
+<p>Após a verificação das condições iniciais, os gestores de programa podem ser chamados e os gestores de intertravamentos da planta podem ser chamados após os gestores de programa. Os gestores de acionamentos do equipamento dependem do estado do programa e dos intertravamentos da planta, logo devem ser chamados após os gestores de intertravamentos.</p>
+<p>Por fim, os gestores de defeito do equipamento devem ser chamados por último como resultado de todas as operações anteriores.</p>
+<p>Nosso diagrama de chamadas de arquivos fica assim :</p>
+<p><strong><em><span style="color:red">Em Construção</span></em></strong></p>
+<p>Até o momento não estamos em Grafcet propriamente dito, mas estamos modularizando as chamadas de arquivo de programa. Modularização aplicada a PLC e de forma amigável, gráfica, de fácil compreensão.</p>
+<p>Esta técnica ajuda nas implementações dos programas no PLC, ou seja na construção e manutenção do mesmo. Grafcet faz uso dessa mesma técnica para um melhor entendimento e padronização dos programas.</p>
+<p>Perceba que a estrutura dos chamados dos arquivos nada tem a haver com o PLC em que estamos estudando.</p>
+<p>A sequência dos chamados modularizados conforme fizemos facilita a organização da estruturação geral do programa e a modularização que acabamos de ver pode ser aplicada para solucionar qualquer caso real em qualquer modelo de PLC.</p>
+<p><em><span style="color:red">Agora já temos subsídios para começar a aplicar essa estrutura de forma prática no PLC em que estamos estudando e quando descrevemos a técnica grafcet, verá como fica fácil …</span></em></p>
 <p><strong><em><span style="color:red">Em Construção</span></em></strong></p>
 </section>
-<section id="descrição-do-processo" class="level2">
-<h2 class="anchored" data-anchor-id="descrição-do-processo">Descrição do Processo</h2>
-<p><strong><em><span style="color:red">Em Construção</span></em></strong></p>
 </section>
-<section id="restrições" class="level2">
-<h2 class="anchored" data-anchor-id="restrições">Restrições</h2>
-<p><strong><em><span style="color:red">Em Construção</span></em></strong></p>
-</section>
-<section id="exceções" class="level2">
-<h2 class="anchored" data-anchor-id="exceções">Exceções</h2>
-<p><strong><em><span style="color:red">Em Construção</span></em></strong></p>
+<section id="quiz" class="level2" data-number="16.2">
+<h2 data-number="16.2" class="anchored" data-anchor-id="quiz"><span class="header-section-number">16.2</span> Quiz</h2>
+<p>Como fazer uma simulação de sinal, enganando o PLC na estrutura que acabamos de realizar?</p>
+<p><em><span style="color:red">A diferença principal é o plc, explicar o opc e voltar a questão da padronização com o estudo do principal no plc que é a memória do mesmo.</span></em></p>
+<p><em><span style="color:red">Observar que não necessariamente o supervisório tem que existir, pode ser uma IHM ou outro tipo de recurso, sinóptico talvez.</span></em></p>
+<p><em><span style="color:red">Falar sobre os diferentes tipos de processos de batelada, dinâmico e fases e equipamentos.</span></em></p>
+<p><em><span style="color:red">Comentar sobre a aplicabilidades do grafcet, para o que ele serve, as novas aplicações.</span></em></p>
 
 
 </section>
@@ -844,11 +876,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
+      <a href="../../contents/II_parte/modularização.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Modularização</span></span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../contents/ax_Fontes.html" class="pagination-link">
-        <span class="nav-page-text">Arquivos Fonte</span> <i class="bi bi-arrow-right-short"></i>
-      </a>
   </div>
 </nav>
 </div> <!-- /content -->
