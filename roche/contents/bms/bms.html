@@ -234,12 +234,10 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#visão-geral" id="toc-visão-geral" class="nav-link active" data-scroll-target="#visão-geral"><span class="header-section-number">1.1</span> Visão geral</a></li>
-  <li><a href="#o-que-há-dentro" id="toc-o-que-há-dentro" class="nav-link" data-scroll-target="#o-que-há-dentro"><span class="header-section-number">1.2</span> O que há dentro</a></li>
-  <li><a href="#divisão-do-capítulo" id="toc-divisão-do-capítulo" class="nav-link" data-scroll-target="#divisão-do-capítulo"><span class="header-section-number">1.3</span> Divisão do Capítulo</a></li>
-  <li><a href="#como-navegar-neste-livro" id="toc-como-navegar-neste-livro" class="nav-link" data-scroll-target="#como-navegar-neste-livro"><span class="header-section-number">1.4</span> Como navegar neste livro</a></li>
-  <li><a href="#o-caminho-a-seguir" id="toc-o-caminho-a-seguir" class="nav-link" data-scroll-target="#o-caminho-a-seguir"><span class="header-section-number">1.5</span> O caminho a seguir</a></li>
-  <li><a href="#contribuir-de-volta" id="toc-contribuir-de-volta" class="nav-link" data-scroll-target="#contribuir-de-volta"><span class="header-section-number">1.6</span> Contribuir de volta</a></li>
+  <li><a href="#f.q.a---perguntas-frequentes" id="toc-f.q.a---perguntas-frequentes" class="nav-link active" data-scroll-target="#f.q.a---perguntas-frequentes"><span class="header-section-number">1.1</span> F.Q.A - Perguntas Frequentes</a>
+  <ul>
+  <li><a href="#as-telas-apresentam-um-delay-na-atualização" id="toc-as-telas-apresentam-um-delay-na-atualização" class="nav-link" data-scroll-target="#as-telas-apresentam-um-delay-na-atualização"><span class="header-section-number">1.1.1</span> As telas apresentam um delay na atualização</a></li>
+  </ul></li>
   </ul>
 <div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/ICTINUS-Engenharia/ictinus/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
     </div>
@@ -263,37 +261,21 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<section id="visão-geral" class="level2" data-number="1.1">
-<h2 data-number="1.1" class="anchored" data-anchor-id="visão-geral"><span class="header-section-number">1.1</span> Visão geral</h2>
-<p>Bem-vindo a esta jornada abrangente em sistemas de automação indústrial com uso de técnica Grafcet. Este livro foi elaborado para fornecer uma compreensão completa dos conceitos de Grafcet e sua implementação em projetos de programação de processos indústriais. Quer você seja um iniciante, um especialista do setor ou um pesquisador acadêmico, oferecemos uma exploração detalhada de sistemas de automação, usando o Grafcet como exemplo prático para ilustrar os princípios básicos e as aplicações em um formato compacto e eficiente.</p>
-</section>
-<section id="o-que-há-dentro" class="level2" data-number="1.2">
-<h2 data-number="1.2" class="anchored" data-anchor-id="o-que-há-dentro"><span class="header-section-number">1.2</span> O que há dentro</h2>
-<p>Começamos introduzindo conceitos fundamentais em sistemas de automação, contextualizando-os no escopo mais amplo do design de sistemas. Enfatizamos a eficácia dos métodos de Grafcet em diversas aplicações. À medida que avançamos, é apresentado um passo a passo abrangente do fluxo de trabalho de estrutura de programa de PLC, detalhando tudo, desde os meandros dos elementos de campo até as complexidades da integração do PLC com os diversos sistemas.</p>
-<p>Um aspecto único deste livro procura preencher a lacuna entre os materiais pedagógicos e as melhores praticas de estruturação de programas de PLC, oferecendo um guia abrangente que está em sintonia com o campo em evolução da automação indústrial.</p>
-</section>
-<section id="divisão-do-capítulo" class="level2" data-number="1.3">
-<h2 data-number="1.3" class="anchored" data-anchor-id="divisão-do-capítulo"><span class="header-section-number">1.3</span> Divisão do Capítulo</h2>
-<p>Aqui está uma visão mais detalhada do que cada capítulo cobre:</p>
-<p><strong>Capítulo 1: Introdução</strong> Este capítulo prepara o cenário, fornecendo uma visão geral do livro e estabelecendo as bases para os capítulos que se seguem.</p>
-</section>
-<section id="como-navegar-neste-livro" class="level2" data-number="1.4">
-<h2 data-number="1.4" class="anchored" data-anchor-id="como-navegar-neste-livro"><span class="header-section-number">1.4</span> Como navegar neste livro</h2>
-<p>Para aproveitar ao máximo este livro, considere a seguinte abordagem estruturada:</p>
+<section id="f.q.a---perguntas-frequentes" class="level2" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="f.q.a---perguntas-frequentes"><span class="header-section-number">1.1</span> F.Q.A - Perguntas Frequentes</h2>
+<section id="as-telas-apresentam-um-delay-na-atualização" class="level3" data-number="1.1.1">
+<h3 data-number="1.1.1" class="anchored" data-anchor-id="as-telas-apresentam-um-delay-na-atualização"><span class="header-section-number">1.1.1</span> As telas apresentam um delay na atualização</h3>
+<p>Identificamos que as variáveis nas telas do BMS, apresentavam um delay ou lag, demorando em torno de 1h para atualizar os valores.</p>
+<p>Verificamos o DST e horário de verão porem não identificamos nenhum problema.</p>
+<p>Quando puxamos um relatório do ponto, o mesmo esta com a hora certa, porém na tela ou em um trend do ponto, notamos 1h de atraso.</p>
+<p><strong>Ações:</strong></p>
 <ol type="1">
-<li><strong>Conhecimento Básico (Capítulos 1-4)</strong>: Comece construindo uma base sólida com os capítulos iniciais, que fornecem uma introdução à automação indústrial e cobrem tópicos centrais como a técnica de Grafcet.</li>
+<li>Fernando nos orientou que deveriamos rodar um conjunto de comandos que ele passou para Yuri, para fazer um Async comando.</li>
+<li>Em um domingo, trocamos do nó #1 para o nó #2 e notamos uma melhora na atualização de dados das telas.</li>
 </ol>
-<p>Ao adotar essa abordagem estruturada, porém flexível, você está preparando o terreno para uma experiência de aprendizado gratificante e enriquecedor.</p>
-</section>
-<section id="o-caminho-a-seguir" class="level2" data-number="1.5">
-<h2 data-number="1.5" class="anchored" data-anchor-id="o-caminho-a-seguir"><span class="header-section-number">1.5</span> O caminho a seguir</h2>
-<p>À medida que navegamos no mundo dos sistemas de automação, cobriremos uma ampla gama de tópicos, desde princípios de engenharia até considerações éticas e aplicações inovadoras. Cada capítulo revelará uma peça desse quebra-cabeça expansivo dos sistemas de automação indústrial, convidando você a criar novas conexões, iniciar discussões e alimentar sua curiosidade sobre PLCs e técnicas de Grafcet.</p>
-</section>
-<section id="contribuir-de-volta" class="level2" data-number="1.6">
-<h2 data-number="1.6" class="anchored" data-anchor-id="contribuir-de-volta"><span class="header-section-number">1.6</span> Contribuir de volta</h2>
-<p>Este livro tem como objetivo nutrir uma comunidade vibrante de alunos, inovadores e colaboradores. À medida que você explora os conceitos e se envolve nos exercícios, incentivamos você a compartilhar seus insights e experiências. Quer se trate de uma abordagem inovadora, de uma aplicação interessante ou de uma pergunta instigante, suas contribuições podem enriquecer o ecossistema de aprendizagem. Participe de discussões, ofereça e busque orientação e colabore em projetos para promover uma cultura de crescimento e aprendizagem mútuos. Ao compartilhar conhecimento, você desempenha um papel importante na promoção de uma comunidade globalmente conectada, informada e capacitada.</p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
