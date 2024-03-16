@@ -1714,52 +1714,16 @@
                 href="https://ictinus.com.br/grafcet/contents/ap_tools.html#kits-de-diagn%C3%B3stico-e-recupera%C3%A7%C3%A3o"
                 ><strong>Splunk</strong></a
               >, é possivel utilizar comandos do <strong>PowerShell</strong>,
-              como o cmdlet <strong>Test-NetConnection</strong> para verificar
-              se uma porta está disponível (aberta) em um computador remoto.
+              como o cmdlet
+              <strong
+                ><a
+                  href="https://learn.microsoft.com/en-us/powershell/module/nettcpip/test-netconnection?view=windowsserver2022-ps"
+                  >Test-NetConnection</a
+                ></strong
+              >
+              para verificar se uma porta está disponível (aberta) em um
+              computador remoto.
             </p>
-            <p>
-              Você pode usar este cmdlet para verificar a resposta e a
-              disponibilidade de um servidor remoto ou serviço de rede,
-              <span style="background-color: yellow"
-                ><strong
-                  >testar se a porta TCP está bloqueada por um firewall</strong
-                ></span
-              >, verificar a disponibilidade do ICMP e o roteamento.
-            </p>
-            <p>
-              Este comando, substitui várias ferramentas populares de
-              administração de Test-NetConnectionrede, como ping, scanner de
-              porta TCP, tracert, telnet e pathping
-            </p>
-            <div
-              class="callout callout-style-default callout-important callout-titled"
-              title="Notas do comando Test-NetConnection"
-            >
-              <div class="callout-header d-flex align-content-center">
-                <div class="callout-icon-container">
-                  <i class="callout-icon"></i>
-                </div>
-                <div class="callout-title-container flex-fill">
-                  Notas do comando Test-NetConnection
-                </div>
-              </div>
-              <div class="callout-body-container callout-body">
-                <ul>
-                  <li>
-                    <strong>Restrição do comando:</strong> comando usado para
-                    testar apenas a conectividade de uma porta TCP. Logo, não é
-                    possível usar o cmdlet para verificar a disponibilidade das
-                    portas UDP remotas.
-                  </li>
-                  <li>
-                    <strong
-                      >Versão abreviada do comando Test-NetConnection:</strong
-                    >
-                    TNC é a versão abreviada do mesmo.
-                  </li>
-                </ul>
-              </div>
-            </div>
             <section
               id="exemplo-1-comando-para-verificar-se-porta-remota-esta-aberta"
               class="level4 page-columns page-full"
@@ -1803,6 +1767,50 @@
 #Versão abreviada
 
 TNC ny-msg01 -Port 25</code></pre>
+              <div
+                class="callout callout-style-default callout-important callout-titled"
+                title="Notas do comando Test-NetConnection"
+              >
+                <div class="callout-header d-flex align-content-center">
+                  <div class="callout-icon-container">
+                    <i class="callout-icon"></i>
+                  </div>
+                  <div class="callout-title-container flex-fill">
+                    Notas do comando Test-NetConnection
+                  </div>
+                </div>
+                <div class="callout-body-container callout-body">
+                  <ul>
+                    <li>
+                      <strong>Restrição do comando:</strong> comando usado para
+                      testar apenas a conectividade de uma porta TCP. Logo, não
+                      é possível usar o cmdlet para verificar a disponibilidade
+                      das portas UDP remotas.
+                    </li>
+                    <li>
+                      <strong
+                        >Versão abreviada do comando Test-NetConnection:</strong
+                      >
+                      TNC é a versão abreviada do mesmo.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <p>
+                Você pode usar este cmdlet para verificar a resposta e a
+                disponibilidade de um servidor remoto ou serviço de rede,
+                <span style="background-color: yellow"
+                  ><strong
+                    >testar se a porta TCP está bloqueada por um
+                    firewall</strong
+                  ></span
+                >, verificar a disponibilidade do ICMP e o roteamento.
+              </p>
+              <p>
+                Este comando Test-NetConnection, substitui várias ferramentas
+                populares de administração de rede, como ping, scanner de porta
+                TCP, tracert, telnet e pathping
+              </p>
               <p>
                 <strong
                   ><em

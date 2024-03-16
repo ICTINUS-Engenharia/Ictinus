@@ -1151,17 +1151,6 @@
               <span class="header-section-number">2.1.1</span> Módulos do
               Siemens - S7-300
             </h3>
-            <p>
-              <del
-                ><span style="color: red"
-                  >- Usar o manual da Siemens S7-TIA 1 página 1-9 para explicar
-                  cada módulo em especial. - Usar ainda o livro de automação de
-                  Hans Berger e outros manuais da Siemens para explicar os
-                  módulos e suas diferenças, essa aula serve para que o aluno
-                  compreenda o que cada módulo faz e ao que se destinam.</span
-                ></del
-              >
-            </p>
             <div class="quarto-figure quarto-figure-center">
               <figure class="figure">
                 <p>
@@ -1177,9 +1166,69 @@
               </figure>
             </div>
             <p>
-              <strong
-                ><em><span style="color: red">Em Construção</span></em></strong
-              >
+              Os tipos principais de módulos usados no rack de um S7-300 são os
+              seguintes:
+            </p>
+            <ul>
+              <li>
+                <strong>Módulo de CPU</strong>: Este é o cérebro do sistema. O
+                módulo de CPU é responsável por processar todas as instruções do
+                programa de controle. Ele executa as operações lógicas e
+                matemáticas, monitora os sinais de entrada e controla os sinais
+                de saída. Além disso, o módulo de CPU também gerencia a
+                comunicação entre os diferentes módulos no rack.
+              </li>
+              <li>
+                <strong>Módulos de entrada/saída (SM)</strong>: Estes módulos
+                permitem que a CPU se comunique com dispositivos externos, como
+                sensores e atuadores. Os módulos de E/S recebem informações dos
+                sensores (entradas) e enviam comandos para os atuadores
+                (saídas). Existem dois tipos principais de módulos de E/S:
+                módulos de E/S digital e módulos de E/S analógico. Os módulos de
+                E/S digital são usados para dispositivos on/off, enquanto os
+                módulos de E/S analógico são usados para dispositivos que operam
+                dentro de uma faixa de valores.
+              </li>
+              <li>
+                <strong>Módulos de comunicação (CP)</strong>: Estes módulos
+                permitem que a CPU se comunique com outros sistemas de automação
+                e redes industriais. Eles são usados para a troca de dados entre
+                o PLC e outros dispositivos, como computadores, outros PLCs e
+                sistemas de supervisão. Com esses módulos, é possível realizar
+                uma série de tarefas, desde a transmissão simples de dados até a
+                implementação de redes de comunicação complexas.
+              </li>
+              <li>
+                <strong>Módulos de função (FM)</strong>: Estes módulos fornecem
+                funcionalidades adicionais que vão além das capacidades básicas
+                de um PLC. Eles são usados para realizar tarefas específicas que
+                não podem ser realizadas pelos módulos de CPU, E/S ou
+                comunicação. Alguns exemplos de módulos de função incluem
+                módulos de contagem rápida, que são usados para contar eventos
+                em altas velocidades, módulos de controle de posição, que são
+                usados para controlar dispositivos como servomotores e sistemas
+                de eixo, e módulos de controle de temperatura, que são usados
+                para monitorar e controlar processos de aquecimento e
+                resfriamento.
+              </li>
+              <li>
+                <strong>Módulo de Interface (IM)</strong>: É utilizado em
+                sistemas de controladores programáveis, como o Siemens Simatic
+                S7-300. Este módulo tem a função de conectar diferentes racks de
+                um sistema de automação. Ele permite a comunicação e troca de
+                dados entre os módulos de CPU em diferentes racks, basicamente
+                atuando como um “ponte” para a transferência de dados. Isso é
+                particularmente útil em sistemas complexos que envolvem
+                múltiplas CPUs ou em situações em que é necessário estender o
+                sistema com módulos adicionais que estão localizados em um rack
+                separado.
+              </li>
+            </ul>
+            <p>
+              Em resumo, o rack de um S7-300 é composto por uma variedade de
+              módulos que trabalham juntos para executar uma ampla gama de
+              tarefas de automação. A combinação exata de módulos em um rack
+              dependerá das necessidades específicas de cada aplicação.
             </p>
           </section>
           <section id="cpu---s7-300" class="level3" data-number="2.1.2">
