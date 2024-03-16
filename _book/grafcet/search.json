@@ -1,0 +1,968 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Grafcet do Básico ao Avançado",
+    "section": "",
+    "text": "Prefácio\nBem-vindo ao Grafcet Básico com Simatic S7 & TIA Portal. Este livro é a sua porta de entrada para o mundo acelerado dos sistemas de automação industrial através do uso de PLCs.\nNosso objetivo é fazer deste livro de código aberto um esforço colaborativo que reúna insights de estudantes, profissionais e da comunidade mais ampla de profissionais da industria. Queremos criar um guia completo que se aprofunde nos detalhes básicos dos sistemas de automação industrial e seus muitos usos.\n\n“Sabedoria é aplicar o conhecimento de forma sensata, com benevolência e comportamento ético.”\n\nEste não é um livro estático, mas dinâmico, um documento vivo. Estamos tornando-o continuamente atualizado para atender às necessidades em constante mudança deste campo dinâmico. Espere uma rica combinação de conhecimento especializado que o guiará pela complexa interação entre algoritmos e os princípios fundamentais que os fazem funcionar. Que este projeto seja uma fonte continua para a comunidade.\n\n\nPor que escrevemos este livro\nEstamos em uma época em que a tecnologia está sempre evoluindo. A colaboração aberta e o compartilhamento de conhecimento são os alicerces da verdadeira inovação. Esse é o espírito por trás do Grafcet Básico com Simatic S7 & TIA Portal. Estamos indo além do modelo tradicional de livro didático para criar um centro de conhecimento vivo.\nO livro cobre princípios, algoritmos e estudos de caso de aplicações do mundo real, com o objetivo de fornecer uma compreensão profunda que o ajudará a navegar no cenário em constante mudança da industria. Ao mantê-lo aberto, não estamos apenas tornando o aprendizado acessível; estamos convidando novas ideias e melhorias contínuas. Em suma, estamos construindo uma comunidade onde o conhecimento é livre para crescer e iluminar o caminho a seguir na tecnologia global de automação industrial.\n\n\nO que você precisa saber\nVocê não precisa ser um especialista em automação industrial para mergulhar neste livro. Tudo o que você realmente precisa é de um conhecimento básico de sistemas de automaão industrial e uma curiosidade para explorar como hardware, software e linguagem de programação se unem. É aqui que a inovação acontece, e uma compreensão básica de como os sistemas funcionam será a sua bússola.\nA proposta é desenvolver um projeto básico , aplicando o conhecimento compartilhado no livro , afim de desmistificar para o leitor os metodos de desenvolvimento de aplicações em automação industrial utilizado quaisquer plataformas de PLC, independente do fabricante.\nPretendemos que esta seja uma experiência de aprendizado rica e gratificante.\n\n\nConvenções de livros\nPara obter detalhes sobre as convenções usadas neste livro, consulte a seção Convenções.\n\n\nQuer ajudar?\nSe você estiver interessado em contribuir, você pode encaminhar um e-mail para Eng. Luciano Vasconcelos.\n\n\nContato\nTem dúvidas ou comentários? Sinta-se à vontade para enviar um e-mail diretamente para Eng. Luciano Vasconcelos.\n\n\nColaboradores\nUm grande obrigado a todos que ajudaram a tornar este livro o que ele é! Junte-se a nós como colaborador!"
+  },
+  {
+    "objectID": "contents/apresentação.html#visão-geral",
+    "href": "contents/apresentação.html#visão-geral",
+    "title": "APRESENTAÇÃO",
+    "section": "Visão geral",
+    "text": "Visão geral\nBem-vindo a esta jornada abrangente em sistemas de automação indústrial com uso de técnica Grafcet. Este livro foi elaborado para fornecer uma compreensão completa dos conceitos de Grafcet e sua implementação em projetos de programação de processos indústriais. Quer você seja um iniciante, um especialista do setor ou um pesquisador acadêmico, oferecemos uma exploração detalhada de sistemas de automação, usando o Grafcet como exemplo prático para ilustrar os princípios básicos e as aplicações em um formato compacto e eficiente."
+  },
+  {
+    "objectID": "contents/apresentação.html#o-que-há-dentro",
+    "href": "contents/apresentação.html#o-que-há-dentro",
+    "title": "APRESENTAÇÃO",
+    "section": "O que há dentro",
+    "text": "O que há dentro\nComeçamos introduzindo conceitos fundamentais em sistemas de automação, contextualizando-os no escopo mais amplo do design de sistemas. Enfatizamos a eficácia dos métodos de Grafcet em diversas aplicações. À medida que avançamos, é apresentado um passo a passo abrangente do fluxo de trabalho de estrutura de programa de PLC, detalhando tudo, desde os meandros dos elementos de campo até as complexidades da integração do PLC com os diversos sistemas.\nUm aspecto único deste livro procura preencher a lacuna entre os materiais pedagógicos e as melhores praticas de estruturação de programas de PLC, oferecendo um guia abrangente que está em sintonia com o campo em evolução da automação indústrial."
+  },
+  {
+    "objectID": "contents/apresentação.html#divisão-do-capítulo",
+    "href": "contents/apresentação.html#divisão-do-capítulo",
+    "title": "APRESENTAÇÃO",
+    "section": "Divisão do Capítulo",
+    "text": "Divisão do Capítulo\nAqui está uma visão mais detalhada do que cada capítulo cobre:\nCapítulo 1: Introdução Este capítulo prepara o cenário, fornecendo uma visão geral do livro e estabelecendo as bases para os capítulos que se seguem."
+  },
+  {
+    "objectID": "contents/apresentação.html#como-navegar-neste-livro",
+    "href": "contents/apresentação.html#como-navegar-neste-livro",
+    "title": "APRESENTAÇÃO",
+    "section": "Como navegar neste livro",
+    "text": "Como navegar neste livro\nPara aproveitar ao máximo este livro, considere a seguinte abordagem estruturada:\n\nConhecimento Básico (Capítulos 1-4): Comece construindo uma base sólida com os capítulos iniciais, que fornecem uma introdução à automação indústrial e cobrem tópicos centrais como a técnica de Grafcet.\n\nAo adotar essa abordagem estruturada, porém flexível, você está preparando o terreno para uma experiência de aprendizado gratificante e enriquecedor."
+  },
+  {
+    "objectID": "contents/apresentação.html#o-caminho-a-seguir",
+    "href": "contents/apresentação.html#o-caminho-a-seguir",
+    "title": "APRESENTAÇÃO",
+    "section": "O caminho a seguir",
+    "text": "O caminho a seguir\nÀ medida que navegamos no mundo dos sistemas de automação, cobriremos uma ampla gama de tópicos, desde princípios de engenharia até considerações éticas e aplicações inovadoras. Cada capítulo revelará uma peça desse quebra-cabeça expansivo dos sistemas de automação indústrial, convidando você a criar novas conexões, iniciar discussões e alimentar sua curiosidade sobre PLCs e técnicas de Grafcet."
+  },
+  {
+    "objectID": "contents/apresentação.html#contribuir-de-volta",
+    "href": "contents/apresentação.html#contribuir-de-volta",
+    "title": "APRESENTAÇÃO",
+    "section": "Contribuir de volta",
+    "text": "Contribuir de volta\nEste livro tem como objetivo nutrir uma comunidade vibrante de alunos, inovadores e colaboradores. À medida que você explora os conceitos e se envolve nos exercícios, incentivamos você a compartilhar seus insights e experiências. Quer se trate de uma abordagem inovadora, de uma aplicação interessante ou de uma pergunta instigante, suas contribuições podem enriquecer o ecossistema de aprendizagem. Participe de discussões, ofereça e busque orientação e colabore em projetos para promover uma cultura de crescimento e aprendizagem mútuos. Ao compartilhar conhecimento, você desempenha um papel importante na promoção de uma comunidade globalmente conectada, informada e capacitada.\nEm Construção"
+  },
+  {
+    "objectID": "contents/dedication.html",
+    "href": "contents/dedication.html",
+    "title": "Dedicação",
+    "section": "",
+    "text": "A todos os jovens que se interessam por tecnologia e tenham a curiosidade de entender como as coisas funcionam. Mantenham essa chama acesa em seus corações para toda sempre."
+  },
+  {
+    "objectID": "contents/reconhecimentos.html",
+    "href": "contents/reconhecimentos.html",
+    "title": "Reconhecimentos",
+    "section": "",
+    "text": "É uma jornada incrível montar este livro, abrangendo vários anos de trabalho árduo. A ideia inicial deste livro surgiu da falta de material didático sobre Grafcet, em português. Estamos profundamente gratos aos pioneiros neste assunto cujo trabalho inovador lançou as bases para este livro.\nEm especial ao engenheiro Luciano Cardoso Vasconcelos, cuja crença no poder transformador das comunidades de código aberto e na orientação, e força de vontade para se dedicar a esse projeto.\nTambém devemos muito à equipe do GitHub. Vocês revolucionaram a forma como as pessoas colaboram, e este livro é um testemunho do que pode ser alcançado quando as barreiras à cooperação global são removidas.\nA todos que se interessaram por este livro – obrigado! Escrevemos o mesmo pensando em vocês, na esperança de provocar reflexão, inspirar perguntas e talvez até acender uma centelha de inspiração. Afinal, de que adianta escrever se ninguém está lendo?\nPor último, mas certamente não menos importante, nossos mais profundos agradecimentos aos nossos amigos, familiares, mentores e todas as almas gentis que nos apoiaram emocional e intelectualmente enquanto este livro se concretizava."
+  },
+  {
+    "objectID": "contents/contributors.html",
+    "href": "contents/contributors.html",
+    "title": "Colaboradores",
+    "section": "",
+    "text": "Estendemos nossos sinceros agradecimentos à todos os indivíduos que generosamente contribuíram com sua experiência, insights e tempo para aprimorar o conteúdo esse projeto.\nAbaixo você encontrará uma lista de todos os colaboradores. Se você gostaria de contribuir com este projeto, consulte nossa página GitHub.\n\n\n\n\n\n\n\n\n\n\nICTINUS-Engenharia"
+  },
+  {
+    "objectID": "contents/conventions.html",
+    "href": "contents/conventions.html",
+    "title": "Convenções",
+    "section": "",
+    "text": "Convenções adotadas para o para este livro on-line:\n\nEstrutura e organização claras:\n\nEsboços dos capítulos: Cada capítulo inicia com um esboço que fornece uma visão geral dos tópicos abordados.\nNumeração sequencial: Numeração sequencial para capítulos, seções e subseções para facilitar a referência.\n\nIdioma acessível:\n\nGlossário: Inclui um glossário que define termos técnicos e jargões\nTerminologia Consistente: Terminologia ao longo do livro para evitar confusão.\n\nAuxiliares de aprendizagem:\n\nDiagramas e Figuras: Uso de diagramas, figuras e tabelas para transmitir visualmente conceitos complexos.\nBarras laterais: Barras laterais para informações adicionais, e notas para fornecer contexto do mundo real ao conteúdo teórico.\n\nElementos interativos:\n\nExercícios e Projetos: Exercícios e projetos ao final de cada capítulo para estimular o aprendizado ativo e a aplicação prática dos conceitos.\nEstudos de caso: Estudos de caso para fornecer uma compreensão mais profunda de como os princípios são aplicados em situações do mundo real.\n\nReferências e leituras adicionais:\n\nBibliografia: Incluir uma bibliografia ao final de cada capítulo para leitores que desejam se aprofundar em temas específicos.\nCitações: Estilo consistente para citações, aderindo a padrões acadêmicos reconhecidos como APA, MLA ou Chicago.\n\nMateriais de suporte:\n\nRecursos on-line complementares: Links para recursos on-line complementares, como palestras em vídeo, webinars ou módulos interativos.\nConjuntos de dados e repositórios de código: compartilhe conjuntos de dados e repositórios de código para prática, especialmente para seções que tratam de algoritmos e aplicativos.\n\nFeedback e envolvimento da comunidade:\n\nFóruns e grupos de discussão: Fóruns ou grupos de discussão onde os leitores possam interagir, fazer perguntas e compartilhar conhecimentos.\nProcesso de revisão aberto: Processo de revisão aberto, solicitando feedback da comunidade para melhorar continuamente o conteúdo.\n\nInclusão e acessibilidade:\n\nFormatos Acessíveis: Garantir todo uso de mídia, recursos da web como, Youtube, QR code e outros recursos, para adaptar o livro a diferentes formatos.\n\nÍndice:\n\nÍndice abrangente: Índice abrangente no final do livro para ajudar os leitores a localizar rapidamente informações específicas.\n\n\nA implementação destas convenções contribui para a criação de um livro didático que seja abrangente, acessível e propício a uma aprendizagem eficaz."
+  },
+  {
+    "objectID": "contents/copyright.html",
+    "href": "contents/copyright.html",
+    "title": "Direitos",
+    "section": "",
+    "text": "Este livro é de código aberto e desenvolvido de forma colaborativa por meio do GitHub.\nTodas as marcas comerciais e marcas registradas mencionadas neste livro são de propriedade de seus respectivos proprietários.\nAs informações fornecidas neste livro são consideradas precisas e confiáveis. No entanto, os autores, editores e editores não podem ser responsabilizados por quaisquer danos causados ​​ou supostamente causados, direta ou indiretamente, pelas informações contidas neste livro."
+  },
+  {
+    "objectID": "contents/about.html#visão-geral",
+    "href": "contents/about.html#visão-geral",
+    "title": "Sobre o Livro",
+    "section": "Visão Geral",
+    "text": "Visão Geral\nBem-vindo a este projeto colaborativo iniciado pelo Engenheiro Luciano Cardoso Vasconcelos. O objetivo é tornar este livro um recurso comunitário que ajude educadores e alunos a compreender a técnica de Grafcet. O livro será atualizado regularmente para refletir novos insights sobre Grafcet e métodos de ensino eficazes."
+  },
+  {
+    "objectID": "contents/about.html#tópicos-explorados",
+    "href": "contents/about.html#tópicos-explorados",
+    "title": "Sobre o Livro",
+    "section": "Tópicos explorados",
+    "text": "Tópicos explorados\nEste livro oferece uma visão abrangente de vários aspectos do método Grafcet. Os tópicos que nos aprofundamos incluem:\n\nNivelamento das entidades de Automação Industrial\nIntrodução ao método de Grafcet aplicado em PLC\nSegmentação de dados em PLC\nBlocos de Função\n\nAo terminar este livro, você terá uma compreensão básica de Grafcet. Você ganhará experiência prática por meio de tarefas baseadas em projetos."
+  },
+  {
+    "objectID": "contents/about.html#quem-deveria-ler-isto",
+    "href": "contents/about.html#quem-deveria-ler-isto",
+    "title": "Sobre o Livro",
+    "section": "Quem deveria ler isto",
+    "text": "Quem deveria ler isto\nEste livro foi feito sob medida para aqueles que são novos em automação industrial, controle de máquina e processos usando PLC. Começa com os conceitos básicos de Grafcet e avança para tópicos mais avançados relevantes para a comunidade de engenheiros e técnicos que trabalham na industria. O livro é particularmente benéfico para:\n\nEngenheiros de sistemas embarcados: Para engenheiros no domínio de sistemas embarcados, este livro serve como um excelente guia de automação industrial ( OT ), ajudando-os a criar aplicativos programas estruturados em PLCs.\nEstudantes de Ciência da Computação e Engenharia Elétrica: Este livro é um recurso útil para estudantes que estudam ciência da computação e engenharia elétrica. Ele apresenta os métodos, algoritmos e técnicas usadondo Grafcet, preparando-os para desafios do mundo real para construção de sistemas estruturados em PLCs.\nPesquisadores e acadêmicos: Aqueles envolvidos em pesquisas em automação indústrial, IoT, sistemas embarcados acharão este livro esclarecedor.\nProfissionais da Indústria: Se você trabalha em áreas como IoT, robótica, tecnologia vestível ou dispositivos inteligentes, este livro fornecerá o conhecimento necessário de chão de fábrica."
+  },
+  {
+    "objectID": "contents/about.html#principais-resultados-de-aprendizagem",
+    "href": "contents/about.html#principais-resultados-de-aprendizagem",
+    "title": "Sobre o Livro",
+    "section": "Principais resultados de aprendizagem",
+    "text": "Principais resultados de aprendizagem\nOs leitores adquirirão habilidades na estruturação de programas em controladores lógicos programáveis, PLC, desenvolvimento e implantação. Especificamente, você aprenderá sobre:\n\nConceitos fundamentais de PLCs\nFundamentos de Grafcet\nTécnicas de estruturação de programas de PLCs\n\nNosso objetivo é fazer deste livro um recurso abrangente para qualquer pessoa interessada no desenvolvimento de aplicações em PLCs. Ao concluir o livro, você estará bem equipado para projetar e implementar seus próprios projetos para controle de processos e máquinas indústriais."
+  },
+  {
+    "objectID": "contents/about.html#pré-requisitos-para-leitores",
+    "href": "contents/about.html#pré-requisitos-para-leitores",
+    "title": "Sobre o Livro",
+    "section": "Pré-requisitos para leitores",
+    "text": "Pré-requisitos para leitores\n\nHabilidades básicas de programação: Recomendamos que você tenha alguma experiência anterior em programação de PLCs, de preferência em PLCs Siemens S7. Uma compreensão de variáveis, tipos de dados e estruturas de controle facilitará o envolvimento com o livro.\nDisposição para aprender: O livro foi elaborado para ser acessível a um público amplo, com diversos níveis de conhecimento técnico. A disposição de se desafiar e de se envolver em exercícios práticos o ajudará a tirar o máximo proveito disso.\nDisponibilidade de recursos: Para os aspectos práticos, você precisará de um computador com Simatic Manager ou TIA Portal.\n\nAo atender a esses pré-requisitos, você estará bem posicionado para aprofundar sua compreensão de Grafcet, participar de exercícios e até mesmo implementar aplicativos práticos."
+  },
+  {
+    "objectID": "contents/I_parte.html#norma-iec-61131",
+    "href": "contents/I_parte.html#norma-iec-61131",
+    "title": "PART I - Nivelamento",
+    "section": "Norma IEC 61131",
+    "text": "Norma IEC 61131\nA IEC 1131 / IEC 61131 é uma norma internacional que estabelece as especificações para Controladores Lógicos Programáveis (PLCs). Esta norma foi desenvolvida pela Comissão Eletrotécnica Internacional (IEC) e tem sido amplamente adotada em todo o mundo para padronizar sistemas de controle baseados em PLCs. A norma IEC 61131 é dividida em várias partes, cada uma abordando um aspecto específico dos PLCs:\n\nParte 1: IEC 61131-1, Geral - Esta seção fornece uma visão geral dos PLCs. Ela define o que constitui um PLC, as funções que ele deve ser capaz de desempenhar e a terminologia básica associada aos PLCs. Isso ajuda a garantir que todos os envolvidos na indústria de automação tenham uma compreensão comum do que é um PLC e do que ele é capaz de fazer.\nParte 2: IEC 61131-2, Requisitos de hardware - Esta seção da norma define os requisitos de hardware para PLCs. Ela estabelece padrões para coisas como resistência a condições adversas, segurança elétrica e compatibilidade eletromagnética. Estes requisitos garantem que os PLCs são robustos e seguros para uso em ambientes industriais.\nParte 3: IEC 61131-3, Linguagens de programação - A terceira parte da norma é talvez a mais conhecida, pois define as linguagens de programação que podem ser usadas com PLCs. As linguagens incluem Diagrama de Escada (LD), Diagrama de Blocos de Função (FBD), Texto Estruturado (ST), Lista de Instruções (IL) e Gráfico de Funções Sequenciais (SFC). Estas linguagens fornecem aos programadores uma variedade de ferramentas para criar programas de PLC eficazes e fáceis de entender.\nParte 4: IEC 61131-4, Diretrizes para a realização de testes - Esta seção da norma define regras para a realização de testes em PLCs. Estas diretrizes garantem que os PLCs funcionam como esperado e são seguros para uso em ambientes industriais.\nParte 5: IEC 61131-5, Identificação e uso de símbolos - Esta parte fornece orientações sobre como os símbolos e identificadores devem ser usados nos programas do PLC. Isso ajuda a garantir que os programas são fáceis de ler e entender.\nParte 6: IEC 61131-6, Metodologia de programação orientada a objetos e Linguagem de Modelagem Unificada (UML) - A última parte da norma aborda a metodologia de programação orientada a objetos e a linguagem de modelagem unificada (UML) para PLCs. Isso permite uma abordagem mais moderna e modular para a programação de PLCs, facilitando a reutilização do código e a manutenção do programa.\n\nEm resumo, a norma IEC 61131 fornece uma estrutura completa para a implementação e operação de PLCs. Ela garante que os PLCs são seguros e confiáveis, além de serem fáceis de programar e modificar. Isso torna possível a criação de sistemas de automação mais confiáveis e eficientes, permitindo que as indústrias operem de maneira mais eficiente e segura.\nA norma IEC 61131 é a atualização da norma IEC 1131, inclui algumas atualizações e melhorias para refletir as mudanças tecnológicas e as melhores práticas na indústria de controle e automação.\nEm Construção"
+  },
+  {
+    "objectID": "contents/I_parte/introdução.html#arquitetura-do-sistema",
+    "href": "contents/I_parte/introdução.html#arquitetura-do-sistema",
+    "title": "1  Introdução",
+    "section": "1.1 Arquitetura do Sistema",
+    "text": "1.1 Arquitetura do Sistema\nPara se estruturar um sistema de automação para controle de uma planta ou máquina é importante entender a organização da plataforma escolhida para o desenvolvimento da aplicação.\nObserve a figura abaixo, a figura da esquerda representa a arquitetura de hardware, software e infra-estrutura que controlam a planta representada na figura da direita. Muitas vezes não é de escolha do desenvolvedor da aplicação a escolha da arquitetura, ou seja a mesma é imposta por inúmeras razões, pelo cliente, força de contrato, custos e etc.\nDescrever as varias redes existentes em automação industrial e usadas pela Siemens comumente. Explorar a pagina 1 – 27 do manual da Siemens S7-TIA1 e o livro de Hans Berder para explicar um pouco sobre as redes usadas pela Siemens. Usar ainda a pagina 1 -28 para explicar sobre a linha de HMI da Siemens. Usar ainda a pagina 1 – 29. Usar ainda a pagina 1 – 30. Usar a pagina 1 -31 para explicar sobre os acionamentos de motores.\nSão inúmeros os fabricantes de PLCs no mercado e cada um com sua própria linguagem e características, com exceção das comuns a todos os PLCs. Imagina o trabalho que não daria reprogramar toda uma aplicação, grande é claro, feita em um PLC Rockwell para um PLC Siemens. Devido as diferenças que abordaremos brevemente abaixo, o trabalho seria tão grande quanto o tamanho da aplicação.\nAdotando-se então um método de padronização do programa, ou melhor, desenvolvimento da aplicação, reduz o tempo de migrar a aplicação de uma plataforma para outra, focando esforços então em redesenhar as funcionalidades mais especificas da aplicação.\nAntes de começarmos a detalhar as características dos PLC, quero fazer um breve exercício com você\n\n1.1.1 Generalizando a Arquitetura do Sistema\nImagine a mesma figura da arquitetura do sistema acima, porem agora vamos tirar os fabricantes e vamos utilizar o que vou tomar a liberdade de chamar de entidades, acrescentando um elemento que está implícito na figura acima, mas que é de muita importância, o driver.\nSão três entidades, PLC, Driver e o sistema SCADA ou IHM.\nComo vimos existem vários fabricantes de PLC e de sistemas SCADA1. Cada fabricante de SCADA possui um driver2 para cada tipo de PLC, como pode ser observado na figura acima. Pode-se usar ainda solução na arquitetura, OPC cliente/server3 na camada do driver para resolver a comunicabilidade entre fabricante. , enfim aonde quero chegar é, está escolha também pode ser imposta e com certeza vai gerar muita dor de cabeça para o desenvolvedor ou responsável pela manutenção.1 SCADA – Acrônimo para supervisory control and data acquisition. É um sistema computadorizado para monitoramento e controle de processos industriais e de infraestrutura.2 Driver – Em nosso caso, software que permite o software supervisório acessar dados na memória do PLC. É o meio que o software supervisório faz uso para comunicar com o dispositivo do PLC.3 OPC – Acrônimo para OLE for process control. São padrões abertos especificados para comunicação de dados entre dispositivos de controle de diferentes fabricantes.\nAcho que você já deve estar compreendendo onde quero chegar. Para continuarmos esse assunto preciso esclarecer que diferenças são essas."
+  },
+  {
+    "objectID": "contents/I_parte/introdução.html#definição-das-entidades",
+    "href": "contents/I_parte/introdução.html#definição-das-entidades",
+    "title": "1  Introdução",
+    "section": "1.2 Definição das Entidades",
+    "text": "1.2 Definição das Entidades\n\n1.2.1 PLC\nAntes, algumas características básicas do PLC entre fornecedores.\nÉ a unidade central de processamento, ou seja onde é executado o programa de controle da sua planta. Fazendo uma analogia, a unidade central de processamento dos programas que são executados no seu laptop ou desktop de casa é um Pentium ou Core i7, algo assim. O PLC é onde é executado o programa também e o resultado é apresentado na memória do mesmo, nas suas interfaces de entrada e saída, os cartões e/ou remotas.\nAbaixo, podemos ver o ciclo da CPU resumido, uma característica muito importante, até para depurar problemas de lógica e fundamental para compreender a construção estruturada de programas em PLC.\n\n\n\nDiagrama de execução ciclica do programa do PLC procedural. Nos vamos retornar a essa figura varias vezes ao longo do livro, assim a compreensão da mesma se torna muito importante.\n\n\nAnalisando a figura, primeiro o firmware da CPU lê as entradas, o que chamamos de PII (process-image input) atualiza a tabela dos cartões de entrada na memória, executa o programa, o resultado do programa que afeta uma saída física é atualizado na tabela de saída na memória e só então o PIQ (process-image output) atualiza as saídas físicas nos cartões de saída conforme o ultimo estado da tabela de imagem das saídas. Segue, abaixo, uma outra figura que procura retratar esse ciclo.\n\n\n\nImagem do processo do PLC.\n\n\nIsto não é uma verdade completa, alguns PLC mais atuais, Contrologix, se comportam diferente e também existe as aplicações especificas que utilizam recurso, funcionalidades, especificas para aplicações criticas. Prometo colocar algum caso mais para frente, mas esse não é nosso escopo.\nO ciclo da CPU é uma característica comum entre os diferentes fabricantes desta entidade, PLC. Essas são características comuns entre PLC. Agora vejamos as diferenças entre dois fabricantes, Siemens e Rockwell, vamos estudar o caso de dois fabricantes desta mesma entidade, o PLC. Observe abaixo a tabela comparativa de diferenças entre o PLC da Rockwell e do PLC Siemens, como exemplo.\nTab 01, Mostrando o mapa de memória e endereçamento das mesmas.\nAntes de iniciar qualquer observação, vamos continuar nossa analise das entidades da arquitetura do sistema exemplificada acima.Por hora, destaco essa diferença como mais importante, que é o mapa de memória entre os fabricantes.\n\n\n1.2.2 Driver\nAnalisando a figura abaixo, podemos dizer que esta entidade da arquitetura do sistema é o software que coleta as informações da memória do PLC e disponibiliza para a entidade superior, que no nosso caso é o sistema SCADA, que vamos falar mais abaixo.\nEm Construção\nAs informações desejadas que são coletadas são pré-configuradas no driver pelo integrador conforme necessidade.\nConforme dito acima, os n fabricantes de driver coletam as informações pré-configuradas nos PLCs e disponibilizam para o sistema de nível superior, como exemplo um sistema supervisório. O driver coleta as informações dos endereços de memória, ou melhor, faz acessos ao mapa de memória dos PLC, disponibilizando as informações em tabelas de dados então chamadas de base de dados, para operações de escrita e leitura.\nO que muda entre os fabricantes de driver é a forma como você configura o driver, ou seja seu uso, parametrização. Pode-se entender então que o driver é uma caixa preta para o integrador, o mesmo configura os endereços que quer acessar na memória do PLC e não se preocupa em como a coleta é realizada, apenas formata o tipo de dado que deseja coletar. O que você precisa saber são as diferenças nos mapas de memória entre os fabricantes de PLC e como a memória está sendo utilizada pela aplicação para que configure corretamente o driver, este ultimo sim, de responsabilidade do desenvolvedor, partilhada entre o integrador do PLC e do sistema supervisório.\n\n\n1.2.3 SCADA\nEntende-se por estação supervisório e aquisição de dados. Ou seja, é o computador que coleta as informações do PLC, fazendo uso de um driver e disponibiliza as mesmas de forma gráfica, uma interface, para o usuário do equipamento através de um software supervisório.\nVamos analisar a figura abaixo.\nEm Construção\nVocê precisa entender a diferença entre vista e scada, assim entenderá melhor o que é scada. A estação vista mostra as mesmas informações que o sistema SCADA, porem a diferença é que não possui driver, o vista coleta as informações do SCADA e este ultimo usa um driver para coletar as informações no PLC.\nA diferença entre sistemas SCADA é restrita ao software supervisório de cada fabricante. Quero dizer, suas funcionalidade de histórico, recursos de edição de telas, quantidade de penas para construção de históricos, dentre outras. A aplicação SCADA fala com o driver, que é basicamente uma caixa-preta que é configurada para acessar o mapa de memória dos diferentes tipos de PLC."
+  },
+  {
+    "objectID": "contents/I_parte/introdução.html#diferença-entre-as-entidades-de-arquitetura-do-sistema",
+    "href": "contents/I_parte/introdução.html#diferença-entre-as-entidades-de-arquitetura-do-sistema",
+    "title": "1  Introdução",
+    "section": "1.3 Diferença entre as entidades de arquitetura do sistema",
+    "text": "1.3 Diferença entre as entidades de arquitetura do sistema\nAgora que já entendemos cada entidade separadamente, podemos perceber que o objeto central do desenvolvimento, o driver, tem a função de “traduzir” os n tipos de PLC para a aplicação de nível superior que em nossa arquitetura é um software supervisório, ou seja, ler e escrever as informações no mapa de memória do PLC.\nEsta observação por si só já aponta para o objeto central do escopo do livro que é o PLC. Já que o driver é uma entidade configurada de acordo com o mapa de memória do PLC, assim não tem influência em como o mesmo está distribuído. mas em nosso caso não é modificável pelo integrador, ou seja o desenvolvedor do controle automático de processo da aplicação.\nAgora imagine o PLC, se não for adotado nenhum tipo de organização para construção da aplicação de controle no PLC pelas pessoas que desenvolvem e realizam a manutenção da planta, cada desenvolvimento usaria uma distribuição diferente, confundindo as pessoas que viessem a realizar a manutenção e/ou suporte.\nAssim, nota-se a importância de se adotar algum tipo de metodologia para desenvolvimento e padronização para os diferentes tratamentos dados pelo programa as n funcionalidades do mesmo e com isso reduzir custos de manutenção e de futuras modificações de melhorias da planta.\nLogo o primeiro objeto de nosso estudo é o padrão de segmentação do mapa de memória do PLC.\nVocê perceberá a importância do trabalho de segmentação de memória a medida que for apresentado a metodologia de construção do programa, Grafcet. A sequência dos passos do método são fundamentais para um bom desenvolvimento também. Gradualmente os passos serão utilizados ao longo do livro, empregando-se um projeto pratico, assim a compreensão da técnica se dará por completa.\nEm Construção"
+  },
+  {
+    "objectID": "contents/I_parte/hardware.html#hardware-de-estudo-simatic-s7-300",
+    "href": "contents/I_parte/hardware.html#hardware-de-estudo-simatic-s7-300",
+    "title": "2  Hardware Siemens",
+    "section": "2.1 Hardware de estudo (Simatic S7-300)",
+    "text": "2.1 Hardware de estudo (Simatic S7-300)\nPara uma melhor compreensão de como é o método de estruturação do programa, precisamos adotar uma configuração de hardware básica e seguir o estudo com base nessa configuração.\nO método em si, compreendido, pode ser aplicado a qualquer arquitetura de sistema e fabricante de hardware, conforme especificação de memória de cada um.\nPara nosso estudo, faremos toda a análise com base no PLC Siemens e faremos analogia, sempre que possível, com o PLC de médio porte da Allan Bradley. A família do hardware não importa muito, em geral a características dos PLCs de pequeno, médio e grande porte das famílias de cada fornecedor é muito parecida. Refiro-me principalmente ao mapa de memória e ao set de instruções.\nColocar a figura da página do S7-TIA1 – página 1-8 aqui e explicar resumidamente como funciona o hardware. Comentar as características que estão no slide do manual.\n\n\n\nHardware S7-300\n\n\n\n2.1.1 Módulos do Siemens - S7-300\n- Usar o manual da Siemens S7-TIA 1 página 1-9 para explicar cada módulo em especial. - Usar ainda o livro de automação de Hans Berger e outros manuais da Siemens para explicar os módulos e suas diferenças, essa aula serve para que o aluno compreenda o que cada módulo faz e ao que se destinam.\n\n\n\nMódulos do S7-300\n\n\nEm Construção\n\n\n2.1.2 CPU - S7-300\n- Utilizar o manual da Siemens S7-TIA1 – página 1-10 e o livro de Hans Berger para explicar resumidamente cada CPU..\n\n\n\nCPU do S7-300"
+  },
+  {
+    "objectID": "contents/I_parte/hardware.html#ferramentas-de-programação",
+    "href": "contents/I_parte/hardware.html#ferramentas-de-programação",
+    "title": "2  Hardware Siemens",
+    "section": "2.2 Ferramentas de programação",
+    "text": "2.2 Ferramentas de programação\nComentar sobre a ferramenta de programação Simatic manager S7, usar o manual da Siemens S7-TIA1 páginas 1-14, 1-17, 1-18, 1-16, 1-19.\n\n2.2.1 Tipos de línguagens\nComentar sobre os tipos de linguagens usando as páginas 1-20, 1-21, 1-22, 1-23.\n\n\n2.2.2 Diagnóstico do processo\nComentar sobre o diagnóstico do processo usando as páginas 1 – 24, 1 -25."
+  },
+  {
+    "objectID": "contents/I_parte/hardware.html#distribuição-dos-dados-do-programa",
+    "href": "contents/I_parte/hardware.html#distribuição-dos-dados-do-programa",
+    "title": "2  Hardware Siemens",
+    "section": "2.3 Distribuição dos dados do programa",
+    "text": "2.3 Distribuição dos dados do programa\n\n2.3.1 Dados externos\nPrimeiro, precisamos entender como é uma distribuição básica de dados do programa que provavelmente o desenvolvedor necessitará para realizar a integração do projeto.\nEste é o primeiro passo para desenvolver uma boa solução usando grafcet. Veja as duas figuras abaixo, são as mesmas que você viu anteriormente, porém com mas detalhes para tratarmos o assunto de distribuição de dados.\nEm Construção\nUma boa indicação de que dados poderíamos considerar como geral de programa está indicado na figura xa. Perceba que todo dado que é trocado entre o PLC e o supervisório e/ou IHM pode ser considerado como informação geral. Que informações seriam essas ?\n\nEntradas Digitais: A indicação do status de chaves de fluxo, pressostatos, switch, ou mesmo das entradas dos cartões digitais do CLP.\nAlarmes: Toda planta possui defeito, como exemplo, o térmico de uma bomba.\nParametros de receita: É comum nos depararmos com a necessidade de uma receita para operarmos uma planta industrial. Normalmente, são parâmetros de receita, setpoint de temperatura, de vazão, de temporizadores, dentre outras necessidades.\nEntradas e saídas analógica: Uma planta industrial e/ou máquina muitas vezes possui transmissores de pressão, vazão, temperatura e outras. Essas informações normalmente são valores inteiros, como os indicados na figura da planta acima.\nSaídas digitais: Existem também os comandos da planta, como comandos de acionamento de motores, válvulas, partida e parada de máquina e etc.\n\nPor fim, observe a tabela de fluxo de dados abaixo.\nEm Construção\nAcabamos de identificar que dados gerais do programa, básicos, teremos que tratar quando formos segmentar o mapa de memória do PLC.\n\n\n2.3.2 Dados internos\nPara que você entenda o que podemos considerar como dados internos gerais, analise os dados novos que foram adicionados na figura abaixo.\nEm Construção\nPodemos concluir que são os dados cujo o escopo de uso é apenas interno ao programa e de uso comum no programa.\nContadores, temporizadores, bits de controle ( auxiliares ) são exemplos de dados comuns internos do programa.\nUm dado interno pode sim ser transmitido para um dado exterior, para isso, por padrão, na técnica grafcet, seria necessário apenas copiar a informação do dado interno para a palavra externa, como a ilustração abaixo.\nEm Construção\n\n\n2.3.3 Dados especificos internos\nPodemos dividir esses dados em dois tipos, basicamente.\nOs dados que estão relacionados ao PLC que está sendo construído o programa e dados que estão relacionados com o método grafcet, que vamos detalhar mais para frente.\nComo estamos detalhando todo o processo de estruturação de programa passo a passo, vou me limitar a mencionar, por enquanto, que existem dados específicos relacionados com o método grafcet.\nJá que consideramos que estamos tratando o assunto com o PLC5 da Allan Bradley, podemos considerar dados específicos às palavras de controle tipo R, PD, MG e BT por exemplo. Essas palavras estão relacionadas com blocos de funções específicas disponíveis no set de instruções do PLC Allan Bradley.\nComo disse antes, o livro é dedicado para como estruturar o programa. Estamos aprendendo o passo a passo para aplicar a técnica de estruturação grafcet, não o PLC necessariamente, logo recomendo que baixe os manuais do PLC5, por exemplo, e estude o mesmo.\nApenas para esclarecer a curiosidade, no PLC AB, tipos de dados MG são aqueles que estão relacionados com funções de transferência de dados ( MSG ), por exemplo transferência entre PLC em rede. Um PLC transfere informações para outro usando blocos que usam esse tipo de dados para configurá-los.\nDados tipos BT, são muito usados em funções usadas entre dispositivos AB, como um PLC e uma IHM AB.\nDados tipo PD são usados para configurar blocos PID.\nEnfim, como pode perceber, teríamos que dedicar o livro a esse assunto. Você encontra fartos manuais para esclarecer dúvidas sobre PLC AB no site da Rockwell (www.ab.com). Se baixar os manuais do set de instruções do PLC5, entenderá para que serve cada tipo de dados. Voltaremos a mencionar os tipos de dados quando iniciarmos a rascunhar o grafcet propriamente dito."
+  },
+  {
+    "objectID": "contents/I_parte/hardware.html#resumo",
+    "href": "contents/I_parte/hardware.html#resumo",
+    "title": "2  Hardware Siemens",
+    "section": "2.4 Resumo",
+    "text": "2.4 Resumo\nO que realizamos nos itens anteriores foi o que chamamos de modularização.\nIdentificamos que existem indicação de status de chaves, pressostatos, informações de receita, indicação de variáveis de campo, alarmes, comandos e etc…\nIdentificamos também que esses são dados gerais de programa e que são encaminhadas para um supervisório ou mesmo uma IHM.\nApós identificar essas informações o passo seguinte é modularizar o mapa de memória do PLC em que estamos trabalhando para estruturarmos o programa.\nIgualmente importante, os dados gerais internos do programa são necessários devido a características específicas de cada PLC.\nAntes de começarmos a trabalhar com o mapa de memória do PLC, precisamos entender como se divide os arquivos do PLC. Assim como os dados, os arquivos precisam ser estruturados de forma a padronizarmos a estrutura de chamadas e organização dos programas. Isto facilita a construção do mesmo e a manutenção do programa."
+  },
+  {
+    "objectID": "contents/I_parte/modularização.html",
+    "href": "contents/I_parte/modularização.html",
+    "title": "3  Modularização",
+    "section": "",
+    "text": "Em Construção"
+  },
+  {
+    "objectID": "contents/I_parte/Organização.html",
+    "href": "contents/I_parte/Organização.html",
+    "title": "4  Organização",
+    "section": "",
+    "text": "Em Construção"
+  },
+  {
+    "objectID": "contents/I_parte/Endereçamento.html#absoluto",
+    "href": "contents/I_parte/Endereçamento.html#absoluto",
+    "title": "5  Endereçamento",
+    "section": "5.1 Absoluto",
+    "text": "5.1 Absoluto\nEntende-se por endereçamento absoluto, quando utilizamos ou melhor referenciamos o endereço de uma instrução diretamente a uma posição na memória do PLC, ou seja, não usando símbolos, porém a leitura e entendimento do programa torna-se de difícil leitura à medida que o mesmo aumenta em tamanho.\nVeja abaixo exemplos de endereçamento absoluto.\n\n\n\nEndereçamento Absoluto\n\n\nEm Construção"
+  },
+  {
+    "objectID": "contents/I_parte/Endereçamento.html#simbólico",
+    "href": "contents/I_parte/Endereçamento.html#simbólico",
+    "title": "5  Endereçamento",
+    "section": "5.2 Simbólico",
+    "text": "5.2 Simbólico\nOrienta-se a utilização de comentários e símbolos em endereços absolutos de forma a tornar mais fácil o entendimento do programa por outras pessoas. Todas as informações textuais acrescentadas aos endereços absolutos de entrada e saída, temporizadores, contadores, bit de memória, blocos de função e IO de periferia são armazenados dentro de uma tabela de símbolos administrada pelo próprio Simatic Manager.\n\n\n\nEndereçamento Simbólico\n\n\nEm Construção\nCompare a linha acima, agora com símbolos e comentários de endereçamento. Acrescentando informações como símbolos, comentário de linha, título e comentário de instruções facilita o entendimento da lógica em análise, seja para a melhoria da mesma ou para a solução de problemas de manutenção.\n\n\n\nEndereçamento Simbólico representado no Ladder"
+  },
+  {
+    "objectID": "contents/I_parte/Endereçamento.html#tabela-de-símbolos",
+    "href": "contents/I_parte/Endereçamento.html#tabela-de-símbolos",
+    "title": "5  Endereçamento",
+    "section": "5.3 Tabela de Símbolos",
+    "text": "5.3 Tabela de Símbolos\nPara se ter acesso a tabela de símbolos do projeto deve-se clicar em “S7 Program” na árvore do projeto conforme ilustrado abaixo. A tabela de símbolos é guardada pelo Simatic dentro desse diretório com o nome “Symbols”. Um clique duplo sobre este ícone abre a tabela de símbolos do projeto.\nQualquer alteração nessa tabela reflete automaticamente na atualização do programa.\nA medida que os símbolos são digitados no editor LAD/STL/FBD, o Simatic atualiza automaticamente esta tabela, sem a interferência do programador, logo este é um repositório com as informações de comentários e símbolos do projeto.\n\n\n\nTabela de Símbolos\n\n\nEm Construção\n\n\n\n\n\n\nBoas práticas na utilização de comentários\n\n\n\nComentar sobre a necessidade de se colocar o cabeçalho antes da primeira linha de cada bloco. Documentar principalmente as avaliações que houver no corpo de cada bloco.\n\n\n\nBoas práticas: comentário de programa"
+  },
+  {
+    "objectID": "contents/I_parte/Configuração.html#configuração-de-hardware",
+    "href": "contents/I_parte/Configuração.html#configuração-de-hardware",
+    "title": "6  Configuração",
+    "section": "6.1 Configuração de hardware",
+    "text": "6.1 Configuração de hardware\nEm Construção"
+  },
+  {
+    "objectID": "contents/I_parte/Configuração.html#endereçamento-dos-módulos-s7-300",
+    "href": "contents/I_parte/Configuração.html#endereçamento-dos-módulos-s7-300",
+    "title": "6  Configuração",
+    "section": "6.2 Endereçamento dos módulos S7-300",
+    "text": "6.2 Endereçamento dos módulos S7-300\nEm Construção"
+  },
+  {
+    "objectID": "contents/I_parte/Configuração.html#configuração-multi-rack",
+    "href": "contents/I_parte/Configuração.html#configuração-multi-rack",
+    "title": "6  Configuração",
+    "section": "6.3 Configuração Multi-rack",
+    "text": "6.3 Configuração Multi-rack\nEm Construção"
+  },
+  {
+    "objectID": "contents/I_parte/Configuração.html#propriedades-da-cpu",
+    "href": "contents/I_parte/Configuração.html#propriedades-da-cpu",
+    "title": "6  Configuração",
+    "section": "6.4 Propriedades da CPU",
+    "text": "6.4 Propriedades da CPU\nEm Construção\n\n6.4.1 Cycle / Clock Memory\nEm Construção\n\n\n6.4.2 Geral ( Endereço MPI )\nEm Construção"
+  },
+  {
+    "objectID": "contents/I_parte/Configuração.html#salvar-e-download-da-configuração",
+    "href": "contents/I_parte/Configuração.html#salvar-e-download-da-configuração",
+    "title": "6  Configuração",
+    "section": "6.5 Salvar e Download da configuração",
+    "text": "6.5 Salvar e Download da configuração\nEm Construção"
+  },
+  {
+    "objectID": "contents/I_parte/Configuração.html#upload-da-configuração-para-a-cpu",
+    "href": "contents/I_parte/Configuração.html#upload-da-configuração-para-a-cpu",
+    "title": "6  Configuração",
+    "section": "6.6 Upload da configuração para a CPU",
+    "text": "6.6 Upload da configuração para a CPU\nEm Construção"
+  },
+  {
+    "objectID": "contents/I_parte/Configuração.html#propriedades-da-cpu-1",
+    "href": "contents/I_parte/Configuração.html#propriedades-da-cpu-1",
+    "title": "6  Configuração",
+    "section": "6.7 Propriedades da CPU",
+    "text": "6.7 Propriedades da CPU\nEm Construção\n\n6.7.1 Startup ( Inicialização )\nEm Construção\n\n\n6.7.2 Memória retentiva\nEm Construção\n\n\n6.7.3 Protection\nEm Construção\n\n\n6.7.4 Diagnóstico / Relógio\nEm Construção\n\n\n6.7.5 Comunicação\nEm Construção"
+  },
+  {
+    "objectID": "contents/I_parte/Configuração.html#exercícios",
+    "href": "contents/I_parte/Configuração.html#exercícios",
+    "title": "6  Configuração",
+    "section": "6.8 Exercícios",
+    "text": "6.8 Exercícios\nEm Construção"
+  },
+  {
+    "objectID": "contents/I_parte/Programação.html#arquitetura-de-blocos",
+    "href": "contents/I_parte/Programação.html#arquitetura-de-blocos",
+    "title": "7  Programação",
+    "section": "7.1 Arquitetura de Blocos",
+    "text": "7.1 Arquitetura de Blocos\nEm Construção"
+  },
+  {
+    "objectID": "contents/I_parte/Programação.html#tipos-de-blocos-de-programa",
+    "href": "contents/I_parte/Programação.html#tipos-de-blocos-de-programa",
+    "title": "7  Programação",
+    "section": "7.2 Tipos de Blocos de Programa",
+    "text": "7.2 Tipos de Blocos de Programa\nEm Construção"
+  },
+  {
+    "objectID": "contents/I_parte/Programação.html#estrutura-do-programa",
+    "href": "contents/I_parte/Programação.html#estrutura-do-programa",
+    "title": "7  Programação",
+    "section": "7.3 Estrutura do Programa",
+    "text": "7.3 Estrutura do Programa\nEm Construção"
+  },
+  {
+    "objectID": "contents/I_parte/Programação.html#imagens-de-processo",
+    "href": "contents/I_parte/Programação.html#imagens-de-processo",
+    "title": "7  Programação",
+    "section": "7.4 Imagens de Processo",
+    "text": "7.4 Imagens de Processo\nEm Construção"
+  },
+  {
+    "objectID": "contents/I_parte/Programação.html#execução-cíclica-do-programa",
+    "href": "contents/I_parte/Programação.html#execução-cíclica-do-programa",
+    "title": "7  Programação",
+    "section": "7.5 Execução Cíclica do Programa",
+    "text": "7.5 Execução Cíclica do Programa\nEm Construção"
+  },
+  {
+    "objectID": "contents/I_parte/Programação.html#linguagens-de-programação-lad-fbd-e-stl",
+    "href": "contents/I_parte/Programação.html#linguagens-de-programação-lad-fbd-e-stl",
+    "title": "7  Programação",
+    "section": "7.6 Linguagens de programação ( LAD, FBD e STL )",
+    "text": "7.6 Linguagens de programação ( LAD, FBD e STL )\nEm Construção\n\n7.6.1 Editores\nEm Construção\n\n\n7.6.2 Personalização dos editores\nEm Construção\n\n\n7.6.3 Criando um bloco no OB1\nEm Construção"
+  },
+  {
+    "objectID": "contents/I_parte/Programação.html#operações-com-os-blocos",
+    "href": "contents/I_parte/Programação.html#operações-com-os-blocos",
+    "title": "7  Programação",
+    "section": "7.7 Operações com os blocos",
+    "text": "7.7 Operações com os blocos\nEm Construção"
+  },
+  {
+    "objectID": "contents/I_parte/Programação.html#funções",
+    "href": "contents/I_parte/Programação.html#funções",
+    "title": "7  Programação",
+    "section": "7.8 Funções",
+    "text": "7.8 Funções\nEm Construção"
+  },
+  {
+    "objectID": "contents/I_parte/Programação.html#tipos-de-chamadas-de-blocos",
+    "href": "contents/I_parte/Programação.html#tipos-de-chamadas-de-blocos",
+    "title": "7  Programação",
+    "section": "7.9 Tipos de chamadas de Blocos",
+    "text": "7.9 Tipos de chamadas de Blocos\nEm Construção"
+  },
+  {
+    "objectID": "contents/I_parte/Programação.html#exercícios",
+    "href": "contents/I_parte/Programação.html#exercícios",
+    "title": "7  Programação",
+    "section": "7.10 Exercícios",
+    "text": "7.10 Exercícios\nEm Construção"
+  },
+  {
+    "objectID": "contents/I_parte/Operação.html#and-or",
+    "href": "contents/I_parte/Operação.html#and-or",
+    "title": "8  Lógicas Binárias",
+    "section": "8.1 AND, OR",
+    "text": "8.1 AND, OR\nEm Construção"
+  },
+  {
+    "objectID": "contents/I_parte/Operação.html#ou-exclusivo",
+    "href": "contents/I_parte/Operação.html#ou-exclusivo",
+    "title": "8  Lógicas Binárias",
+    "section": "8.2 OU Exclusivo",
+    "text": "8.2 OU Exclusivo\nEm Construção"
+  },
+  {
+    "objectID": "contents/I_parte/Operação.html#sensores-e-símbolos",
+    "href": "contents/I_parte/Operação.html#sensores-e-símbolos",
+    "title": "8  Lógicas Binárias",
+    "section": "8.3 Sensores e símbolos",
+    "text": "8.3 Sensores e símbolos\nEm Construção"
+  },
+  {
+    "objectID": "contents/I_parte/Operação.html#set-e-reset",
+    "href": "contents/I_parte/Operação.html#set-e-reset",
+    "title": "8  Lógicas Binárias",
+    "section": "8.4 Set e Reset",
+    "text": "8.4 Set e Reset\nEm Construção"
+  },
+  {
+    "objectID": "contents/I_parte/Operação.html#flip-flop",
+    "href": "contents/I_parte/Operação.html#flip-flop",
+    "title": "8  Lógicas Binárias",
+    "section": "8.5 Flip-Flop",
+    "text": "8.5 Flip-Flop\nEm Construção"
+  },
+  {
+    "objectID": "contents/I_parte/Operação.html#bobina-de-atribuição-intermediária",
+    "href": "contents/I_parte/Operação.html#bobina-de-atribuição-intermediária",
+    "title": "8  Lógicas Binárias",
+    "section": "8.6 Bobina de atribuição intermediária",
+    "text": "8.6 Bobina de atribuição intermediária\nEm Construção"
+  },
+  {
+    "objectID": "contents/I_parte/Operação.html#detecção-de-flanco-positivo-e-negativo",
+    "href": "contents/I_parte/Operação.html#detecção-de-flanco-positivo-e-negativo",
+    "title": "8  Lógicas Binárias",
+    "section": "8.7 Detecção de flanco positivo e negativo",
+    "text": "8.7 Detecção de flanco positivo e negativo\nEm Construção"
+  },
+  {
+    "objectID": "contents/I_parte/Operação.html#detalhamentos-dos-registradores-internos",
+    "href": "contents/I_parte/Operação.html#detalhamentos-dos-registradores-internos",
+    "title": "8  Lógicas Binárias",
+    "section": "8.8 Detalhamentos dos registradores internos",
+    "text": "8.8 Detalhamentos dos registradores internos\nEm Construção\n\n8.8.1 Instruções que afetam o RLO\nEm Construção"
+  },
+  {
+    "objectID": "contents/I_parte/Operação.html#exercícios",
+    "href": "contents/I_parte/Operação.html#exercícios",
+    "title": "8  Lógicas Binárias",
+    "section": "8.9 Exercícios",
+    "text": "8.9 Exercícios\nEm Construção"
+  },
+  {
+    "objectID": "contents/I_parte/Controle.html#jump-incondicional",
+    "href": "contents/I_parte/Controle.html#jump-incondicional",
+    "title": "9  Controle do Programa",
+    "section": "9.1 Jump incondicional",
+    "text": "9.1 Jump incondicional\nEm Construção"
+  },
+  {
+    "objectID": "contents/I_parte/Controle.html#jump-condicional",
+    "href": "contents/I_parte/Controle.html#jump-condicional",
+    "title": "9  Controle do Programa",
+    "section": "9.2 Jump condicional",
+    "text": "9.2 Jump condicional\nEm Construção"
+  },
+  {
+    "objectID": "contents/I_parte/Controle.html#exercícios",
+    "href": "contents/I_parte/Controle.html#exercícios",
+    "title": "9  Controle do Programa",
+    "section": "9.3 Exercícios",
+    "text": "9.3 Exercícios\nEm Construção"
+  },
+  {
+    "objectID": "contents/I_parte/tiposDados.html#inteiro",
+    "href": "contents/I_parte/tiposDados.html#inteiro",
+    "title": "10  Tipos de Dados",
+    "section": "10.1 Inteiro",
+    "text": "10.1 Inteiro\nEm Construção"
+  },
+  {
+    "objectID": "contents/I_parte/tiposDados.html#duplo-inteiro",
+    "href": "contents/I_parte/tiposDados.html#duplo-inteiro",
+    "title": "10  Tipos de Dados",
+    "section": "10.2 Duplo inteiro",
+    "text": "10.2 Duplo inteiro\nEm Construção"
+  },
+  {
+    "objectID": "contents/I_parte/tiposDados.html#real",
+    "href": "contents/I_parte/tiposDados.html#real",
+    "title": "10  Tipos de Dados",
+    "section": "10.3 Real",
+    "text": "10.3 Real\nEm Construção"
+  },
+  {
+    "objectID": "contents/I_parte/tiposDados.html#bcd",
+    "href": "contents/I_parte/tiposDados.html#bcd",
+    "title": "10  Tipos de Dados",
+    "section": "10.4 BCD",
+    "text": "10.4 BCD\nEm Construção"
+  },
+  {
+    "objectID": "contents/I_parte/tiposDados.html#formatos-numéricos",
+    "href": "contents/I_parte/tiposDados.html#formatos-numéricos",
+    "title": "10  Tipos de Dados",
+    "section": "10.5 Formatos Numéricos",
+    "text": "10.5 Formatos Numéricos\nEm Construção"
+  },
+  {
+    "objectID": "contents/I_parte/tiposDados.html#armazenamento-de-dados",
+    "href": "contents/I_parte/tiposDados.html#armazenamento-de-dados",
+    "title": "10  Tipos de Dados",
+    "section": "10.6 Armazenamento de dados",
+    "text": "10.6 Armazenamento de dados\nEm Construção"
+  },
+  {
+    "objectID": "contents/I_parte/tiposDados.html#operações-de-carga-e-transferência",
+    "href": "contents/I_parte/tiposDados.html#operações-de-carga-e-transferência",
+    "title": "10  Tipos de Dados",
+    "section": "10.7 Operações de carga e transferência",
+    "text": "10.7 Operações de carga e transferência\nEm Construção"
+  },
+  {
+    "objectID": "contents/I_parte/tiposDados.html#operações-lógicas-digitais",
+    "href": "contents/I_parte/tiposDados.html#operações-lógicas-digitais",
+    "title": "10  Tipos de Dados",
+    "section": "10.8 Operações lógicas digitais",
+    "text": "10.8 Operações lógicas digitais\nEm Construção"
+  },
+  {
+    "objectID": "contents/I_parte/tiposDados.html#funções-de-contador",
+    "href": "contents/I_parte/tiposDados.html#funções-de-contador",
+    "title": "10  Tipos de Dados",
+    "section": "10.9 Funções de contador",
+    "text": "10.9 Funções de contador\nEm Construção\n\n10.9.1 Instruções básicas de contagem\nEm Construção"
+  },
+  {
+    "objectID": "contents/I_parte/tiposDados.html#funções-de-temporizador",
+    "href": "contents/I_parte/tiposDados.html#funções-de-temporizador",
+    "title": "10  Tipos de Dados",
+    "section": "10.10 Funções de temporizador",
+    "text": "10.10 Funções de temporizador\nEm Construção\n\n10.10.1 Formatos de tempo S5\nEm Construção\n\n\n10.10.2 Instruções básicas de temporização\nEm Construção"
+  },
+  {
+    "objectID": "contents/I_parte/tiposDados.html#operações-de-comparação",
+    "href": "contents/I_parte/tiposDados.html#operações-de-comparação",
+    "title": "10  Tipos de Dados",
+    "section": "10.11 Operações de comparação",
+    "text": "10.11 Operações de comparação\nEm Construção"
+  },
+  {
+    "objectID": "contents/I_parte/tiposDados.html#funções-aritméticas-básicas",
+    "href": "contents/I_parte/tiposDados.html#funções-aritméticas-básicas",
+    "title": "10  Tipos de Dados",
+    "section": "10.12 Funções aritméticas Básicas",
+    "text": "10.12 Funções aritméticas Básicas\nEm Construção"
+  },
+  {
+    "objectID": "contents/I_parte/tiposDados.html#operações-de-conversão",
+    "href": "contents/I_parte/tiposDados.html#operações-de-conversão",
+    "title": "10  Tipos de Dados",
+    "section": "10.13 Operações de conversão",
+    "text": "10.13 Operações de conversão\nEm Construção\n\n10.13.1 Inteiro para Real ( I -&gt; DI )\nEm Construção"
+  },
+  {
+    "objectID": "contents/I_parte/tiposDados.html#exercícios",
+    "href": "contents/I_parte/tiposDados.html#exercícios",
+    "title": "10  Tipos de Dados",
+    "section": "10.14 Exercícios",
+    "text": "10.14 Exercícios\nEm Construção"
+  },
+  {
+    "objectID": "contents/I_parte/tiposElementares.html#inteiro",
+    "href": "contents/I_parte/tiposElementares.html#inteiro",
+    "title": "11  Tipos Elementares",
+    "section": "11.1 Inteiro",
+    "text": "11.1 Inteiro\nEm Construção"
+  },
+  {
+    "objectID": "contents/I_parte/tiposElementares.html#duplo-inteiro",
+    "href": "contents/I_parte/tiposElementares.html#duplo-inteiro",
+    "title": "11  Tipos Elementares",
+    "section": "11.2 Duplo inteiro",
+    "text": "11.2 Duplo inteiro\nEm Construção"
+  },
+  {
+    "objectID": "contents/I_parte/tiposElementares.html#real",
+    "href": "contents/I_parte/tiposElementares.html#real",
+    "title": "11  Tipos Elementares",
+    "section": "11.3 Real",
+    "text": "11.3 Real\nEm Construção"
+  },
+  {
+    "objectID": "contents/I_parte/tiposElementares.html#bcd",
+    "href": "contents/I_parte/tiposElementares.html#bcd",
+    "title": "11  Tipos Elementares",
+    "section": "11.4 BCD",
+    "text": "11.4 BCD\nEm Construção"
+  },
+  {
+    "objectID": "contents/I_parte/tiposElementares.html#formatos-numéricos",
+    "href": "contents/I_parte/tiposElementares.html#formatos-numéricos",
+    "title": "11  Tipos Elementares",
+    "section": "11.5 Formatos Numéricos",
+    "text": "11.5 Formatos Numéricos\nEm Construção"
+  },
+  {
+    "objectID": "contents/I_parte/tiposElementares.html#armazenamento-de-dados",
+    "href": "contents/I_parte/tiposElementares.html#armazenamento-de-dados",
+    "title": "11  Tipos Elementares",
+    "section": "11.6 Armazenamento de dados",
+    "text": "11.6 Armazenamento de dados\nEm Construção"
+  },
+  {
+    "objectID": "contents/I_parte/tiposElementares.html#operações-de-carga-e-transferência",
+    "href": "contents/I_parte/tiposElementares.html#operações-de-carga-e-transferência",
+    "title": "11  Tipos Elementares",
+    "section": "11.7 Operações de carga e transferência",
+    "text": "11.7 Operações de carga e transferência\nEm Construção"
+  },
+  {
+    "objectID": "contents/I_parte/tiposElementares.html#operações-lógicas-digitais",
+    "href": "contents/I_parte/tiposElementares.html#operações-lógicas-digitais",
+    "title": "11  Tipos Elementares",
+    "section": "11.8 Operações lógicas digitais",
+    "text": "11.8 Operações lógicas digitais\nEm Construção"
+  },
+  {
+    "objectID": "contents/I_parte/tiposElementares.html#funções-de-contador",
+    "href": "contents/I_parte/tiposElementares.html#funções-de-contador",
+    "title": "11  Tipos Elementares",
+    "section": "11.9 Funções de contador",
+    "text": "11.9 Funções de contador\nEm Construção\n\n11.9.1 Instruções básicas de contagem\nEm Construção"
+  },
+  {
+    "objectID": "contents/I_parte/tiposElementares.html#funções-de-temporizador",
+    "href": "contents/I_parte/tiposElementares.html#funções-de-temporizador",
+    "title": "11  Tipos Elementares",
+    "section": "11.10 Funções de temporizador",
+    "text": "11.10 Funções de temporizador\nEm Construção\n\n11.10.1 Formatos de tempo S5\nEm Construção\n\n\n11.10.2 Instruções básicas de temporização\nEm Construção"
+  },
+  {
+    "objectID": "contents/I_parte/tiposElementares.html#operações-de-comparação",
+    "href": "contents/I_parte/tiposElementares.html#operações-de-comparação",
+    "title": "11  Tipos Elementares",
+    "section": "11.11 Operações de comparação",
+    "text": "11.11 Operações de comparação\nEm Construção"
+  },
+  {
+    "objectID": "contents/I_parte/tiposElementares.html#funções-aritméticas-básicas",
+    "href": "contents/I_parte/tiposElementares.html#funções-aritméticas-básicas",
+    "title": "11  Tipos Elementares",
+    "section": "11.12 Funções aritméticas Básicas",
+    "text": "11.12 Funções aritméticas Básicas\nEm Construção"
+  },
+  {
+    "objectID": "contents/I_parte/tiposElementares.html#operações-de-conversão",
+    "href": "contents/I_parte/tiposElementares.html#operações-de-conversão",
+    "title": "11  Tipos Elementares",
+    "section": "11.13 Operações de conversão",
+    "text": "11.13 Operações de conversão\nEm Construção\n\n11.13.1 Inteiro para Real ( I -&gt; DI )\nEm Construção"
+  },
+  {
+    "objectID": "contents/I_parte/tiposElementares.html#tipos-de-dados-complexos",
+    "href": "contents/I_parte/tiposElementares.html#tipos-de-dados-complexos",
+    "title": "11  Tipos Elementares",
+    "section": "11.14 Tipos de dados complexos",
+    "text": "11.14 Tipos de dados complexos\nEm Construção"
+  },
+  {
+    "objectID": "contents/I_parte/tiposElementares.html#exercícios",
+    "href": "contents/I_parte/tiposElementares.html#exercícios",
+    "title": "11  Tipos Elementares",
+    "section": "11.15 Exercícios",
+    "text": "11.15 Exercícios\nEm Construção"
+  },
+  {
+    "objectID": "contents/I_parte/Diagnostico.html#categoria-de-erros",
+    "href": "contents/I_parte/Diagnostico.html#categoria-de-erros",
+    "title": "12  Defeitos e Diagnóstico",
+    "section": "12.1 Categoria de Erros",
+    "text": "12.1 Categoria de Erros\nEm Construção"
+  },
+  {
+    "objectID": "contents/I_parte/Diagnostico.html#ferramentas-de-análise",
+    "href": "contents/I_parte/Diagnostico.html#ferramentas-de-análise",
+    "title": "12  Defeitos e Diagnóstico",
+    "section": "12.2 Ferramentas de análise",
+    "text": "12.2 Ferramentas de análise\nEm Construção"
+  },
+  {
+    "objectID": "contents/I_parte/Diagnostico.html#diagnóstico-do-sistema",
+    "href": "contents/I_parte/Diagnostico.html#diagnóstico-do-sistema",
+    "title": "12  Defeitos e Diagnóstico",
+    "section": "12.3 Diagnóstico do sistema",
+    "text": "12.3 Diagnóstico do sistema\nEm Construção"
+  },
+  {
+    "objectID": "contents/I_parte/Diagnostico.html#informações-dos-módulos",
+    "href": "contents/I_parte/Diagnostico.html#informações-dos-módulos",
+    "title": "12  Defeitos e Diagnóstico",
+    "section": "12.4 Informações dos Módulos",
+    "text": "12.4 Informações dos Módulos\nEm Construção"
+  },
+  {
+    "objectID": "contents/I_parte/Diagnostico.html#depurando-o-programa",
+    "href": "contents/I_parte/Diagnostico.html#depurando-o-programa",
+    "title": "12  Defeitos e Diagnóstico",
+    "section": "12.5 Depurando o programa",
+    "text": "12.5 Depurando o programa\nEm Construção"
+  },
+  {
+    "objectID": "contents/I_parte/Diagnostico.html#dados-de-referência",
+    "href": "contents/I_parte/Diagnostico.html#dados-de-referência",
+    "title": "12  Defeitos e Diagnóstico",
+    "section": "12.6 Dados de referência",
+    "text": "12.6 Dados de referência\nEm Construção"
+  },
+  {
+    "objectID": "contents/I_parte/Diagnostico.html#estrutura-do-programa",
+    "href": "contents/I_parte/Diagnostico.html#estrutura-do-programa",
+    "title": "12  Defeitos e Diagnóstico",
+    "section": "12.7 Estrutura do programa",
+    "text": "12.7 Estrutura do programa\nEm Construção"
+  },
+  {
+    "objectID": "contents/I_parte/Diagnostico.html#referência-cruzada",
+    "href": "contents/I_parte/Diagnostico.html#referência-cruzada",
+    "title": "12  Defeitos e Diagnóstico",
+    "section": "12.8 Referência cruzada",
+    "text": "12.8 Referência cruzada\nEm Construção"
+  },
+  {
+    "objectID": "contents/I_parte/Diagnostico.html#localização-de-instruções",
+    "href": "contents/I_parte/Diagnostico.html#localização-de-instruções",
+    "title": "12  Defeitos e Diagnóstico",
+    "section": "12.9 Localização de instruções",
+    "text": "12.9 Localização de instruções\nEm Construção"
+  },
+  {
+    "objectID": "contents/I_parte/Diagnostico.html#atribuições",
+    "href": "contents/I_parte/Diagnostico.html#atribuições",
+    "title": "12  Defeitos e Diagnóstico",
+    "section": "12.10 Atribuições",
+    "text": "12.10 Atribuições\nEm Construção"
+  },
+  {
+    "objectID": "contents/I_parte/Diagnostico.html#exercícios",
+    "href": "contents/I_parte/Diagnostico.html#exercícios",
+    "title": "12  Defeitos e Diagnóstico",
+    "section": "12.11 Exercícios",
+    "text": "12.11 Exercícios\nEm Construção"
+  },
+  {
+    "objectID": "contents/I_parte/analógicos.html#módulos-analógicos",
+    "href": "contents/I_parte/analógicos.html#módulos-analógicos",
+    "title": "13  Módulo analógicos",
+    "section": "13.1 Módulos analógicos",
+    "text": "13.1 Módulos analógicos\nEm Construção"
+  },
+  {
+    "objectID": "contents/I_parte/analógicos.html#entrada-analógica",
+    "href": "contents/I_parte/analógicos.html#entrada-analógica",
+    "title": "13  Módulo analógicos",
+    "section": "13.2 Entrada analógica",
+    "text": "13.2 Entrada analógica\nEm Construção"
+  },
+  {
+    "objectID": "contents/I_parte/analógicos.html#saída-analógica",
+    "href": "contents/I_parte/analógicos.html#saída-analógica",
+    "title": "13  Módulo analógicos",
+    "section": "13.3 Saída analógica",
+    "text": "13.3 Saída analógica\nEm Construção"
+  },
+  {
+    "objectID": "contents/I_parte/analógicos.html#tipos-de-medição",
+    "href": "contents/I_parte/analógicos.html#tipos-de-medição",
+    "title": "13  Módulo analógicos",
+    "section": "13.4 Tipos de medição",
+    "text": "13.4 Tipos de medição\nEm Construção"
+  },
+  {
+    "objectID": "contents/I_parte/analógicos.html#propriedades-dos-módulos-analógicos",
+    "href": "contents/I_parte/analógicos.html#propriedades-dos-módulos-analógicos",
+    "title": "13  Módulo analógicos",
+    "section": "13.5 Propriedades dos módulos analógicos",
+    "text": "13.5 Propriedades dos módulos analógicos\nEm Construção"
+  },
+  {
+    "objectID": "contents/I_parte/analógicos.html#resolução-do-valor-analógico",
+    "href": "contents/I_parte/analógicos.html#resolução-do-valor-analógico",
+    "title": "13  Módulo analógicos",
+    "section": "13.6 Resolução do valor analógico",
+    "text": "13.6 Resolução do valor analógico\nEm Construção"
+  },
+  {
+    "objectID": "contents/I_parte/analógicos.html#endereçamento-dos-módulos-analógicos",
+    "href": "contents/I_parte/analógicos.html#endereçamento-dos-módulos-analógicos",
+    "title": "13  Módulo analógicos",
+    "section": "13.7 Endereçamento dos módulos analógicos",
+    "text": "13.7 Endereçamento dos módulos analógicos\nEm Construção"
+  },
+  {
+    "objectID": "contents/I_parte/analógicos.html#convertendo-os-valores-analógicos",
+    "href": "contents/I_parte/analógicos.html#convertendo-os-valores-analógicos",
+    "title": "13  Módulo analógicos",
+    "section": "13.8 Convertendo os valores analógicos",
+    "text": "13.8 Convertendo os valores analógicos\nEm Construção"
+  },
+  {
+    "objectID": "contents/I_parte/analógicos.html#entrada-analógico",
+    "href": "contents/I_parte/analógicos.html#entrada-analógico",
+    "title": "13  Módulo analógicos",
+    "section": "13.9 Entrada analógico",
+    "text": "13.9 Entrada analógico\nEm Construção"
+  },
+  {
+    "objectID": "contents/I_parte/analógicos.html#saída-analógica-1",
+    "href": "contents/I_parte/analógicos.html#saída-analógica-1",
+    "title": "13  Módulo analógicos",
+    "section": "13.10 Saída analógica",
+    "text": "13.10 Saída analógica\nEm Construção"
+  },
+  {
+    "objectID": "contents/I_parte/analógicos.html#exercícios",
+    "href": "contents/I_parte/analógicos.html#exercícios",
+    "title": "13  Módulo analógicos",
+    "section": "13.11 Exercícios",
+    "text": "13.11 Exercícios\nEm Construção"
+  },
+  {
+    "objectID": "contents/II_parte.html#norma-iec-848",
+    "href": "contents/II_parte.html#norma-iec-848",
+    "title": "PART II - GRAFCET",
+    "section": "Norma IEC 848",
+    "text": "Norma IEC 848\nA norma IEC 848/IEC 60848 é composta por várias partes, cada uma abordando um aspecto específico da aplicação e uso do Grafcet em sistemas de controle.\n\nParte 1: Definições e regras gerais - Esta parte da norma se concentra em estabelecer um entendimento comum sobre o Grafcet. Ela fornece definições de termos relacionados ao Grafcet, o que ajuda a garantir que todos os usuários da linguagem tenham um entendimento comum sobre seus diferentes componentes. Além disso, esta parte da norma também estabelece regras gerais para o uso da linguagem Grafcet, fornecendo orientações sobre como a linguagem deve ser aplicada na prática.\nParte 2: Linguagem de descrição funcional para sistemas de controle - A segunda parte da norma aprofunda a linguagem Grafcet em si. Ela detalha a estrutura e a sintaxe da linguagem Grafcet, explicando como os diferentes elementos gráficos que compõem a linguagem (como etapas, transições e conexões) devem ser usados. Esta parte da norma também estabelece as regras para a utilização da linguagem, garantindo que os sistemas de controle que utilizam Grafcet sejam projetados e implementados de forma consistente e eficaz.\nParte 3: Diretrizes para a implementação do Grafcet em controladores programáveis - A terceira e última parte da norma fornece diretrizes práticas para a implementação da linguagem Grafcet em sistemas de controle, com foco especial nos Controladores Lógicos Programáveis (PLCs). Ela fornece orientações sobre como traduzir as descrições Grafcet em programas de controle que podem ser executados por PLCs. Isso ajuda a garantir que os programas de controle sejam precisos, eficientes e confiáveis.\n\nÉ importante ressaltar que, embora a norma ainda seja frequentemente referida como IEC 848, ela foi oficialmente substituída pela norma IEC 60848. A norma atualizada mantém o mesmo foco na linguagem Grafcet, mas inclui algumas atualizações e melhorias para refletir as mudanças tecnológicas e as melhores práticas na indústria de controle e automação.\nEm Construção"
+  },
+  {
+    "objectID": "contents/II_parte/introdução.html#exemplos-de-grafcet",
+    "href": "contents/II_parte/introdução.html#exemplos-de-grafcet",
+    "title": "14  Introdução",
+    "section": "14.1 Exemplos de Grafcet",
+    "text": "14.1 Exemplos de Grafcet\nAbaixo, exemplos de representação de grafcets de gestão de modo de operação, bem como de controle do processo de uma planta de solvente e resina.\n\n14.1.1 “G7” de modo de operação\n\n\n\nG7 de gestão de modo de operação, automático, manual e manutenção de uma planta de solvente e resina.\n\n\n\n\n14.1.2 “G7” gestor do processo\n\n\n\nG7 do programa gestor de controle da linha de enchimento de solvente.\n\n\n\n\n\nContinuação do programa gestor de controle de enchimento de solvente.\n\n\n\n\n\nG7 do programa gestor de controle da linha de enchimento de resina.\n\n\n\n\n\n\n\n\nConfidencialidade\n\n\n\nMantemos uma tarja preta em cima do nome do cliente atendido pela ICTINUS, afim de manter a confidencialidade do mesmo.\nUsamos essa figura apenas como um exemplo de representação do grafcet de uma planta real."
+  },
+  {
+    "objectID": "contents/II_parte/modularização.html#gestão-de-io",
+    "href": "contents/II_parte/modularização.html#gestão-de-io",
+    "title": "15  Modularização",
+    "section": "15.1 Gestão de I/O",
+    "text": "15.1 Gestão de I/O\n\n15.1.1 Arquivos gerais externos dos programas\nAssim como os dados gerais dos programas, existem os arquivos gerais de programa. Vamos voltar a análise da figura abaixo:\nEm Construção\nImagine as informações de forma modularizada.\nÉ muito mais fácil reunir todos os dados gerais do programa em arquivos gestores diferenciados por funções.\n\n\n15.1.2 Gestor de indicação de status / entrada digitais do PLC\nNormalmente não se configura o driver para ler as entradas digitais diretamente. O que se faz é tratar as entradas antes de usar no programa e ~~gerando …. transmitir para o supervisório usar em arquivo de dados único.\nAssim podemos pensar que é uma boa forma de tratar os dados de entrada com um único arquivo gestor.\n\n\n15.1.3 Gestor de cartas analógicas de entrada e saída\nÉ comum termos que tratar os dados analógicos de entrada e saída do programa. Por exemplo, às vezes os cartões convertem os sinais analógicos para um número inteiro que pode ser representado em 12 bits, ou seja de 0 a 32767.\nAssim, às vezes são dados tratamentos a essas informações para escalarmos para a unidade de engenharia que se quer trabalhar."
+  },
+  {
+    "objectID": "contents/II_parte/modularização.html#gestão-de-programa",
+    "href": "contents/II_parte/modularização.html#gestão-de-programa",
+    "title": "15  Modularização",
+    "section": "15.2 Gestão de programa",
+    "text": "15.2 Gestão de programa\nReúne os programas, ou seja os grafcets, do equipamento. Por exemplo, suas funcionalidades como, enchimento, agitação, esvaziamento, resfriamento e etc …\nEm Construção\n\n15.2.1 Gestor de mensagens para Supervisório\nArquivo gestor utilizado para inicializar as variáveis para que garantir que as variáveis de programa tenham um valor inicial e o ressete do programa para a posição inicial sempre que o PLC é inicializado.\nEsta medida evita acidentes, ou seja, é uma forma de garantir a segurança da planta sempre que o PLC é iniciado.\nEste arquivo é executado apenas na primeira varredura do PLC.\n\n\n15.2.2 Gestor de mensagens para Supervisório\nResponsável por encaminhar o resultado de um cálculo para o supervisório com o valor indicado em um instrumento de campo, e etc…\nEm Construção\n\n\n15.2.3 Gestor de interrupção cadenciada\nArquivo utilizado para executar a parte do programa utilizada com as funções de interrupção disponíveis do PLC.\nMuitos PLC têm interrupções de hardware e/ou tempo. Logo é necessário prever arquivos gestores para a execução dessas partes do programa.\nAs interrupções de hardware são conhecidas como PII e as de tempo são as STI ( selectable time interrupt ).\nExplicar o que é first scan em apêndice A.\nEm Construção"
+  },
+  {
+    "objectID": "contents/II_parte/modularização.html#distribuição-dos-arquivos-dos-programas-principais",
+    "href": "contents/II_parte/modularização.html#distribuição-dos-arquivos-dos-programas-principais",
+    "title": "15  Modularização",
+    "section": "15.3 Distribuição dos Arquivos dos Programas Principais",
+    "text": "15.3 Distribuição dos Arquivos dos Programas Principais\nOs programas principais estão associados aos equipamentos e todos os equipamentos possuem gestores de modo, de programas, intertravamentos, acionamentos e defeitos.\nPodem existir outros, mas vamos trabalhar com eles.\nEm Construção\n\n15.3.1 Gestores do modo dos programas principais\nOs programas principais e/ou equipamentos possuem modos de operação manual / Automático, manutenção e defeito.\nEsses modos geram a execução dos programas do equipamento, acionamentos da plantam, nos intertravamentos de segurança e operacional.\nEm Construção\n\n\n15.3.2 Gestor de intertravamento\nReúne os intertravamentos dos equipamentos que vão agir diretamente nos programas e garantir o correto funcionamento do mesmo e/ou segurança operacional da mesma.\n\n\n15.3.3 Gestor de acionamentos\nReúne todos os acionamentos do equipamento. Reunidos em um único arquivo facilita o gerenciamento de acidentes.\nPor exemplo, vamos supor que alguém aperte a parada de emergência do equipamento, podemos desabilitar a varredura do arquivo de acionamento associado e garantir via programa que todos os acionamentos sejam desabilitados, evitando assim acidentes.\nVocê verá como implementar isso mais a frente.\n\n\n15.3.4 Gestor de defeitos\nReúne todos os defeitos do equipamento. Assim fica muito mais fácil gerir os defeitos do equipamento e mesmo realizar as manutenções do programa."
+  },
+  {
+    "objectID": "contents/II_parte/Organização.html#chamadas-dos-blocos-do-programa",
+    "href": "contents/II_parte/Organização.html#chamadas-dos-blocos-do-programa",
+    "title": "16  Organização",
+    "section": "16.1 Chamadas dos blocos do programa",
+    "text": "16.1 Chamadas dos blocos do programa\nVamos analisar novamente a figura abaixo:\nEm Construção\nO programa do PLC é dividido em arquivos que por sua vez possuem programas que manipulam a memória do mesmo.\nEstamos estruturando o programa de forma modularizada. Logo, vamos rever aos poucos o que vimos no capítulo 3.\nVimos que ao ligar o PLC existe um arquivo, na estruturação que estamos fazendo, que inicializa as variáveis do programa que são importantes para garantir uma posição inicial de partida do programa ou ressete de alarmes, enfim todo e qualquer dado que seja importante ser inicializado.\nÉ correto pensar que poderíamos pensar na figura assim como :\nEm Construção\nSeguindo o mesmo raciocínio, todas as informações importantes para a execução do mesmo devem ser executadas antes dos grafcets de controle da planta. Continuando a mesma linha de raciocínio, se um valor de cartão analógico não for tratado antes da execução dos grafcet, isto poderia causar o funcionamento errado das evoluções dos programas. Logo este também é um arquivo gestor que deve ser tratado antes dos arquivos gestores de programa, assim todo e qualquer arquivo gestor que incorra na mesma situação.\nAssim, analise a mesma estrutura de chamada de arquivos com a sequência que iremos trabalhar.\nEm Construção\nObserve o quadrado em separado do gestor de interrupção. Este não faz parte da execução procedural do programa por motivos óbvios. O mesmo é executado apenas quando ocorre a interrupção.\nA outra parte em destaque é o gestor dos programas principais. Este deve ser analisado em separado conforme veremos.\nAté aqui já conseguimos rascunhar as chamadas dos arquivos gestores de dados gerais do programa.\nEsta organização não depende do programa, pois a organização é você quem constroi no PLC escolhido. É muito mais fácil dar manutenção em um programa modularizado por funcionalidade conforme acabamos de fazer, duvida ?\nBom, suponha que um valor analógico esteja mostrando um valor duvidoso ou diferente do que está sendo mostrado no campo, onde você vai procurá-lo no programa ? Onde ele está sendo escalado no programa ?\nCom as informações que acabamos de estudar, você tem condições de responder essa pergunta, mas vamos te dar uma ajuda, está no arquivo gestor de cartas analógicas do programa.\n\n16.1.1 Chamadas dos programas principais\nVolte ao capítulo 3, item 3.2.2. Quais são os gestores do programa principal ?\nSão:\n\nGestores de condições iniciais;\nGestores de programas;\nGestores de intertravamentos;\nGestores de acionamentos;\nGestores de defeitos.\n\nVamos focar na organização das chamadas desses gestores.\nSeguindo o mesmo princípio de organização de chamadas apresentado acima, devemos chamar todos os gestores que são condições iniciais antes dos gestores de programa. Logo :\nEm Construção\nApós a verificação das condições iniciais, os gestores de programa podem ser chamados e os gestores de intertravamentos da planta podem ser chamados após os gestores de programa. Os gestores de acionamentos do equipamento dependem do estado do programa e dos intertravamentos da planta, logo devem ser chamados após os gestores de intertravamentos.\nPor fim, os gestores de defeito do equipamento devem ser chamados por último como resultado de todas as operações anteriores.\nNosso diagrama de chamadas de arquivos fica assim :\nEm Construção\nAté o momento não estamos em Grafcet propriamente dito, mas estamos modularizando as chamadas de arquivo de programa. Modularização aplicada a PLC e de forma amigável, gráfica, de fácil compreensão.\nEsta técnica ajuda nas implementações dos programas no PLC, ou seja na construção e manutenção do mesmo. Grafcet faz uso dessa mesma técnica para um melhor entendimento e padronização dos programas.\nPerceba que a estrutura dos chamados dos arquivos nada tem a haver com o PLC em que estamos estudando.\nA sequência dos chamados modularizados conforme fizemos facilita a organização da estruturação geral do programa e a modularização que acabamos de ver pode ser aplicada para solucionar qualquer caso real em qualquer modelo de PLC.\nAgora já temos subsídios para começar a aplicar essa estrutura de forma prática no PLC em que estamos estudando e quando descrevemos a técnica grafcet, verá como fica fácil …\nEm Construção"
+  },
+  {
+    "objectID": "contents/II_parte/Organização.html#quiz",
+    "href": "contents/II_parte/Organização.html#quiz",
+    "title": "16  Organização",
+    "section": "16.2 Quiz",
+    "text": "16.2 Quiz\nComo fazer uma simulação de sinal, enganando o PLC na estrutura que acabamos de realizar?\nA diferença principal é o plc, explicar o opc e voltar a questão da padronização com o estudo do principal no plc que é a memória do mesmo.\nObservar que não necessariamente o supervisório tem que existir, pode ser uma IHM ou outro tipo de recurso, sinóptico talvez.\nFalar sobre os diferentes tipos de processos de batelada, dinâmico e fases e equipamentos.\nComentar sobre a aplicabilidades do grafcet, para o que ele serve, as novas aplicações."
+  },
+  {
+    "objectID": "contents/ex_plantaCIP/plantaCIP.html#objetivo",
+    "href": "contents/ex_plantaCIP/plantaCIP.html#objetivo",
+    "title": "Planta CIP",
+    "section": "Objetivo",
+    "text": "Objetivo\nAutomatizar a planta de fornecimento de CIP, ou seja, água, soda e detergente, em uma sequencia pre-estabelecida, conforme descrição de processo abaixo.\nA planta deve ter 3 modos de operação, sendo:\n\nModo Automático: Neste modo, o programa controla os acionamentos da planta, obedecendo a sequencia abaixo, uma vez recebido um pedido de CIP. Ainda neste modo, caso um dos equipamentos entre em falha, ou se o operador mudar o modo de operação, os acionamentos devem ser retirados da planta.\nModo Manual: A planta deve obedecer comando do operador vindos de uma IHM ou Supervisório, como exemplo. Mesmo nesse modo, caso ocorra um alarme, devido ao não funcionamento de algum elemento final, o mesmo deve ser apresentado na IHM / Supervisório.\nModo Manutenção: Modo utilizado pela departamento de manutenção da planta para fazer testes de acionamento da planta. Assumiremos que o mesmo não causa alarmes na planta.\n\nEm Construção"
+  },
+  {
+    "objectID": "contents/ex_plantaCIP/plantaCIP.html#descrição-do-processo",
+    "href": "contents/ex_plantaCIP/plantaCIP.html#descrição-do-processo",
+    "title": "Planta CIP",
+    "section": "Descrição do Processo",
+    "text": "Descrição do Processo\nUma explicação resumida do funcionamento da planta de CIP, e que serve como proposta de exercício para aplicação de grafcet e seu entendimento prático.\n\nRepouso: Assumir que inicialmente, a planta de CIP encontra-se em repouso. Neste estado, todos os equipamento, incluindo válvulas encontram-se desligados e o programa de controle de fornecimento de CIP está em sua posição de repouso, aguardando um pedido de fornecimento de CIP, vido de outro equipamento, ou seja, o mesmo aguarda um sinal externo;\n1st Etapa - Primeiro fornecimento de água: A primeira etapa do programa, primeiro fornecimento de água potavél, uma vez acionado após um pedido de CIP externo. Nesta etapa, assumiremos que as válvulas V101, V102 e a bomba B001, serão acionados. O programa fica nesta etapa por 1 min, tempo este que deve ser parametrizado, antes de passar para a etapa seguinte. Ver nota abaixo.\n2nd Etapa - Fornecimento de Soda: Segunda etapa do processo, fornecimento de soda, devem ser acionados somente as válvulas V201, V202 e a Bomba B001. O programa fica nesta etapa por um tempo determinado por receita, como sugestão 1 min.\n3rd Etapa - Fornecimento de Detergente: Passo utilizado para neutralizar a soda em um caso real. Neste passo, somente a válvula V301, V302 e a Bomda B001 devem ser acionados. A fase obedece também um tempo minimo de 1 min, parametrizável.\n4th Etapa - Fornecimento de água: Segundo fornecimento de água, repetindo os acionamento da primeira etapa e obedecendo o tempo minimo de 1 min, conforme condições anteriores.\n\nApós a execução do tempo da ultima fase de água, o programa deve retornar para a posição de retorno e aguardar um novo pedido de CIP.\nEm Construção: considerar fazer um vídeo explicando o projeto"
+  },
+  {
+    "objectID": "contents/ex_plantaCIP/plantaCIP.html#premissas-e-exceção-do-projeto",
+    "href": "contents/ex_plantaCIP/plantaCIP.html#premissas-e-exceção-do-projeto",
+    "title": "Planta CIP",
+    "section": "Premissas e Exceção do projeto",
+    "text": "Premissas e Exceção do projeto\n\n\n\n\n\n\nPremissas e exceções do projeto\n\n\n\nAfim de simplificar o programa de controle e descomplicar a implementação do mesmo, vamos assumir as seguintes premissas abaixo:\n\nGolpe de aríete: Vamos assumir que a planta não tem golpe de aríete.\nCondutivimetro: Neste exercício, não vamos considerar um condutivimetro para fazer as viradas do retorno para o tanque correspondente.\nEmergência: Caso seja batida a emergência da planta, ou seja, botoeira de emergência no campo por algum motivo, o programa deve parar sua execução no passo que estiver, desligar todas as saídas e sinalizar na IHM / Supervisório.\nTempo das fases / etapas: O tempo de 1 min proposto no desafio do projeto é apenas uma sugestão, já que a ideia é rodar o programa simuladamente, e não é objetivo do projeto um tempo suficiente para garantir a limpeza de um equipamento real.\nVálvula Dreno: Esta proposta de projeto inicial não fará uso da válvula de dreno, uma vez que a lógica da mesma depende do uso do condutivimetro.\n\n\n\nEm Construção"
+  },
+  {
+    "objectID": "contents/ax_Fontes.html#fontes-dos-exercícios",
+    "href": "contents/ax_Fontes.html#fontes-dos-exercícios",
+    "title": "Arquivos Fonte",
+    "section": "Fontes dos Exercícios",
+    "text": "Fontes dos Exercícios\n\n\n\n\n\n\n\n\n\nNo\nArquivo\nDescrição\nEspecificação\n\n\n\n\n1"
+  },
+  {
+    "objectID": "contents/ap_Configuração/ap_Configuração.html#obs-de-interrupção",
+    "href": "contents/ap_Configuração/ap_Configuração.html#obs-de-interrupção",
+    "title": "Apêndice A: Configuração",
+    "section": "A.1 OBs de Interrupção",
+    "text": "A.1 OBs de Interrupção\n\n\n\nÁrvore de Interrupções: Ilustração da arvore de interrupções da Siemens, como exemplo.\n\n\nEsta palavra não é exclusividade da Siemens, interrupções cíclicas são algumas rotinas específicas e críticas que o programador deseja que sejam executadas em um determinado horário e evento, por (Ghareb 2021).\nAs interrupções não esperam que o programa principal termine seu ciclo. Uma vez que as interrupções ocorrem, ele para o OB principal ( OB1 ) no ponto de interrupção e executa sua rotina, então o OB principal retoma o programa do ponto de interrupção novamente.\nDominar o uso do recurso de interrupção é importante para solucionar problemas práticos que somente o uso das mesmas resulta em solução confiável e eficiente.\n\nA.1.1 Tipos de Interrupção OB\nExistem quatro tipos de interrupção OB usados, listados abaixo:\n\nInterrupção Cíclica: OB30, OB38\nInterrupção de Erro de Hardware: OB40\nInterrupção da Hora do Dia: OB20\nInterrupção de Inicialização: OB100\n\n\n\n\nNo CLP Siemens , para executar os programas do CLP é utilizado o Bloco Organizacional. No OB1 que é utilizado para executar lógica e chamamos outros blocos de programação deste OB1.Em muitas aplicações pequenas requer apenas o bloco OB1. Mas na aplicação grande, você também precisa usar outros blocos de organização que a Siemens oferece no software de programação.\n\n\n\n\nA.1.2 Interrupção Cíclica (OB30, OB38)\nA interrupção cíclica é usada quando há um requisito de execução cíclica.A ideia por trás dessa interrupção é que você pode configurar uma delas para ser executada com determinados tempos cíclicos que independem do tempo do ciclo de varredura do seu programa principal.\nAs interrupções cíclicas no portal TIA geralmente têm a prioridade de (30: 38) que depende da CPU que você possui. Nem todas têm a mesma interrupção cíclica, algumas CPUs têm apenas (32: 35) outras CPUs podem ter outro grupo de interrupções do ciclo.\nO programa principal OB1 para sua execução toda vez que uma interrupção cíclica é executada, e o programa volta ao ponto da chamada da interrupção no bloco principal ao final da execução da interrupção cíclica.\nAplicações de interrupções cíclicas\n\nControladores PID: O tempo do ciclo de varredura principal pode afetar a precisão de suas ações PID, então você não deseja relacionar suas ações com o tempo do ciclo de varredura, então você empurra suas instruções PID para uma interrupção cíclica para ser executado periodicamente com determinados tempos cíclicos.\nSegurança: Segurança está em primeiro lugar , portanto durante o seu processo você pode precisar de algumas ações de segurança que devem ser verificadas periodicamente em determinados horários.\n\nO tempo de interrupção padrão no PLC S7 é de 100 milissegundos. Mas você pode alterá-lo na visualização de Hardware.\nPara adicionar interrupção cíclica ao OB, abra o portal TIA e siga os passos abaixo.\nPasso 1:\n\n\n\ncrie um novo projeto e selecione o tipo de CPU. Clique em “visualização do projeto”.\n\n\nPasso 2:\n\n\n\nNa janela seguinte expanda “bloco de programa” e clique duas vezes em “Adicionar novo bloco”.\n\n\nPasso 3:\n\n\n\nUma nova janela aparecerá. Selecione “bloco organizacional” e você encontrará todos os tipos de interrupção de hardware disponíveis. Clique duas vezes em qualquer um para acessar o ambiente de programação.\n\n\n\n\nA.1.3 Interrupção de Hardware (OB40)\nEste tipo de interrupção OB é executada quando a CPU detecta algum erro no módulo de entrada, ou devido a circuitos residentes no módulo de entrada. É preciso que o módulo de entrada contenha o recurso de interrupção de hardware e o mesmo, OB40, seja configurado.\n\n\nA.1.4 Interrupção por Tempo (OB20)\nEste tipo de interrupção será executado com base em um determinado horário do dia para realizar uma tarefa.\nÉ necessário configurar o OB20 para usar a interrupção por tempo. Neste bloco você pode especificar um tempo e escrever a lógica de execução da interrupção por atraso de tempo.\n\n\nA.1.5 Interrupção de Inicializção (OB100)\nExemplos de chamada da interrupão de inicialização são, falha de energia, se o PLC entrar no modo de parada quando a energia estiver disponível, a transição da CPU de parada para operação será executada. O OB100 de inicialização será executado, o que redefinirá a entrada para não iniciar o equipamento automaticamente.\nEste tipo de interrupção é utilizado para realizar uma inicialização da CPU de forma mais suave.\n\n\nA.1.6 Prioridade das Interrupções\nUma observação muito importante que você deve estar ciente disso é a prioridade da interrupção que você está usando.\nCada interrupção no portal TIA possui um número denominado prioridade que se refere à disposição daquela interrupção entre todas as interrupções, supondo que duas interrupções ocorram ao mesmo tempo.\nO PLC executará primeiro a maior prioridade e depois a Segunda interrupção (que tem menor prioridade) e depois voltará novamente para o OB Principal.\n\n\n\nExemplo de interrupção do programa cíclico, OB1.\n\n\n\n\nA.1.7 Interrupções cíclicas no Portal TIA\nUma observação muito importante que você deve estar ciente disso é a prioridade da interrupção que você está usando.\n\nSelecione a CPU desejada:\n\n\n\n\nConfigurar um novo dispositivo.\n\n\n\nSelecione adicionar novo bloco organizacional:\n\n\n\n\nSelecionar adicionar novo bloco organizacional.\n\n\n\nSelecione qualquer interrupção e pressione OK:\n\n\n\n\nSelecionar a interrupção desejada.\n\n\n\nDepois de selecionar o desejado, ele será mostrado nos blocos do programa:\n\n\n\n\nConferir o programa.\n\n\n\nSelecionar as propriedades da CPU para configurar o tempo de execução:\n\n\n\n\nConfigurar o tempo de execução.\n\n\n\nEscrever o programa conforme mostrado na próxima figura.:\n\n\n\n\nEscrever o programa."
+  },
+  {
+    "objectID": "contents/ap_Configuração/ap_Configuração.html#obs-de-erros",
+    "href": "contents/ap_Configuração/ap_Configuração.html#obs-de-erros",
+    "title": "Apêndice A: Configuração",
+    "section": "A.2 OBs de Erros",
+    "text": "A.2 OBs de Erros\n\nA.2.1 OB121 - Erro de programação\n\n\nA.2.2 OB122 - Erro de acesso perférico"
+  },
+  {
+    "objectID": "contents/ap_Configuração/ap_Configuração.html#references",
+    "href": "contents/ap_Configuração/ap_Configuração.html#references",
+    "title": "Apêndice A: Configuração",
+    "section": "A.3 References",
+    "text": "A.3 References\n(Ghareb 2021)\n\nGhareb, Hussien. 2021. “Configuração e Uso de Interrupções Cíclicas Portal TIA (OB 30+).” In. https://instrumentationtools.com/configuring-and-usage-of-cyclic-interrupts-tia-portal/."
+  },
+  {
+    "objectID": "contents/ap_tools.html#hardware-kits",
+    "href": "contents/ap_tools.html#hardware-kits",
+    "title": "Apêndice B: Ferramentas",
+    "section": "B.1 Hardware Kits",
+    "text": "B.1 Hardware Kits\n\nB.1.1 Utilitários de Hardware\n\n\n\n\n\n\n\n\n\n\nNo\nHardware\nProcessor\nCaracteristicas\nCompatibilidade\n\n\n\n\n1"
+  },
+  {
+    "objectID": "contents/ap_tools.html#ferramentas-de-diagnóstico",
+    "href": "contents/ap_tools.html#ferramentas-de-diagnóstico",
+    "title": "Apêndice B: Ferramentas",
+    "section": "B.2 Ferramentas de Diagnóstico",
+    "text": "B.2 Ferramentas de Diagnóstico\n\nB.2.1 Kits de Diagnóstico e Recuperação\n\n\n\nNo\nFerramentas\nDescrição\nCasos de Uso\n\n\n\n\n1\nCloneZilla\nPrograma de clonagem/imagem de partição e disco semelhante ao True Image® ou Norton Ghost®.\nAjuda fazer implantação do sistema, backup e recuperação bare metal.\n\n\n2\nHirens CD\nFerramentas utilizadas para resolver vários problemas relacionados ao computador. Notavelmente, não inclui nenhum software pirateado; em vez disso, contém exclusivamente software gratuito e legal.\nDiagnóstico & Recuperação de PC\n\n\n3\nMedicat USB\nSeleção de ferramentas de diagnóstico e recuperação de computador fácil de usar.\nDiagnóstico & Recuperação de PC\n\n\n4\nVenloy\nFerramenta de código aberto para criar uma unidade USB inicializável para arquivos ISO/WIM/IMG/VHD(x)/EFI.\nSolução USB inicializável\n\n\n5\nSplunk\nSoftware para pesquisar, monitorar e analisar dados gerados por máquina por meio de uma interface estilo web.\nDiagnóstico de rede"
+  },
+  {
+    "objectID": "contents/ap_tools.html#ides-e-ambientes-de-desenvolvimento",
+    "href": "contents/ap_tools.html#ides-e-ambientes-de-desenvolvimento",
+    "title": "Apêndice B: Ferramentas",
+    "section": "B.3 IDEs e ambientes de desenvolvimento",
+    "text": "B.3 IDEs e ambientes de desenvolvimento\n\n\n\nNo\nIDE/Ambientes de Desenvolvimento\nDescrição\nCaracteristicas\n\n\n\n\n1\nTIA Portal\nPortal de Automação Totalmente Integrado. Ele oferece acesso irrestrito à gama completa de serviços de automação digitalizada, desde planejamento digital até engenharia integrada e operação transparente.\nAmbiente de desenvolvimento de Automação para plataforma de PLC Siemens"
+  },
+  {
+    "objectID": "contents/ap_instrumentation/ap_instrumentation.html#sistemas-instrumentados-de-segurança-sis",
+    "href": "contents/ap_instrumentation/ap_instrumentation.html#sistemas-instrumentados-de-segurança-sis",
+    "title": "Apêndice C: Instrumentação",
+    "section": "C.1 Sistemas instrumentados de segurança (SIS)",
+    "text": "C.1 Sistemas instrumentados de segurança (SIS)\nExistem lógicas de votação 1oo1, 1oo2, 2oo2, 2oo3 etc1. na arquitetura do sistema instrumentado de segurança.1 Em construção, https://instrumentationtools.com/voting-logic-safety-instrumented-system/\nA arquitetura lógica de votação normalmente utilizada no instrumento de campo e/ou elementos de controle finais para atingir determinado nível de integridade de segurança (SIL) ou para atingir determinada redução de custos devido ao desligamento da plataforma. Em geral, quando devemos usar a arquitetura lógica de votação 1oo1, 1oo2, 2oo2 ou 2oo3?\n\n\n\nExemplo de SIS.\n\n\nEm Construção\n\nC.1.1 Lógica de votação\n\n\n\nlógica de votação.\n\n\nConforme mencionado acima, há dois propósitos pelos quais determinadas arquiteturas lógicas de votação foram escolhidas: o primeiro é atingir determinado SIL e, em segundo lugar, alcançar certa redução de custos devido ao desligamento espúrio da plataforma.\nEm Construção"
+  },
+  {
+    "objectID": "contents/ap_Networking/ap_Networking.html#endereços-ip-privados-redes-locais",
+    "href": "contents/ap_Networking/ap_Networking.html#endereços-ip-privados-redes-locais",
+    "title": "Apêndice D: Network",
+    "section": "D.1 Endereços IP Privados ( Redes Locais )",
+    "text": "D.1 Endereços IP Privados ( Redes Locais )\nOs endereços reservados para redes locais, também conhecidos como endereços IP privados, são:\n\n10.0.0.0 a 10.255.255.255\n172.16.0.0 a 172.31.255.255\n192.168.0.0 a 192.168.255.255\n\n(RFC1918 2024; Moskowitz et al. 1996)\nAs classes de endereços IP são diferentes em termos de quantidade de redes e hosts que podem acomodar:\n\nClasse A: Este é o maior tipo de rede, pois pode acomodar mais de 16 milhões de hosts. Os endereços de Classe A variam de 1.0.0.0 a 126.0.0.0.\nClasse B: Estas redes podem acomodar até aproximadamente 65.000 hosts. Os endereços de Classe B variam de 128.0.0.0 a 191.255.0.0.\nClasse C: Estas redes são menores, acomodando até 254 hosts. Os endereços de Classe C variam de 192.0.0.0 a 223.255.255.0.\nClasse D: Esta classe é reservada para multicast. Os endereços variam de 224.0.0.0 a 239.255.255.255.\nClasse E: Esta classe é reservada para uso futuro ou experiências de pesquisa. Os endereços variam de 240.0.0.0 a 255.255.255.255.\n\n\nD.1.1 Loopback - 127.0.0.0\nO range 127.0.0.0 é reservado para comunicações de loopback. Isso significa que é usado para testar a rede de um computador. Qualquer tráfego enviado para um endereço dentro deste range é redirecionado de volta para o próprio computador.\nExemplo, uma forma de testar se a porta Ethernet esta ok é fazer um loopback nela, conforme abaixo:11 Usar o CMD do Windows\nping 127.0.0.1"
+  },
+  {
+    "objectID": "contents/ap_Networking/ap_Networking.html#entidades-de-rede",
+    "href": "contents/ap_Networking/ap_Networking.html#entidades-de-rede",
+    "title": "Apêndice D: Network",
+    "section": "D.2 Entidades de Rede",
+    "text": "D.2 Entidades de Rede\n\nD.2.1 Roteadores\nRoteadores, também conhecidos como routers, são dispositivos que encaminham pacotes de dados entre redes de computadores. Eles têm a capacidade de “rotear” informações de um lugar para outro, fazendo conexões eficientes entre diferentes redes. Isso é crucial para a internet, onde os pacotes de dados podem ter que passar por várias redes antes de chegar ao seu destino final.\n\n\nD.2.2 Switches\nSwitches, também conhecidos como comutadores, são dispositivos de rede que conectam vários dispositivos em uma rede de computadores. Eles usam endereços MAC para encaminhar dados para o dispositivo de destino, permitindo a comunicação de dados de alta velocidade entre os dispositivos conectados. Ao contrário dos roteadores, que encaminham os dados para redes diferentes, os switches operam principalmente dentro de uma única rede.\n\n\nD.2.3 Default Gateway\nO Default Gateway, ou Gateway Padrão, é um dispositivo de rede que serve como um ponto de acesso ou IP que os dispositivos usam para enviar informações para redes fora da sua rede local. Em geral, é o endereço do seu roteador na rede."
+  },
+  {
+    "objectID": "contents/ap_Networking/ap_Networking.html#comandos-úteis",
+    "href": "contents/ap_Networking/ap_Networking.html#comandos-úteis",
+    "title": "Apêndice D: Network",
+    "section": "D.3 Comandos úteis",
+    "text": "D.3 Comandos úteis\n\nD.3.1 ipconfig ( Windows )\nO ipconfig é um comando disponível em muitos sistemas operacionais baseados em Unix e em sistemas Microsoft Windows. Ele é usado para exibir as configurações atuais de rede do sistema, como endereços IP, máscaras de sub-rede, gateways padrão e muito mais.\n\n\n\n\n\n\nifconfig ( Linux )\n\n\n\nO comando ifconfig é uma ferramenta de linha de comando que é usada para configurar, gerenciar e consultar as configurações de rede em sistemas operacionais Unix/Linux. Ele permite configurar (ou exibir) as interfaces de rede do sistema, como endereços IP, máscaras de sub-rede, entre outros."
+  },
+  {
+    "objectID": "contents/ap_Networking/ap_Networking.html#subnetting-ipv4",
+    "href": "contents/ap_Networking/ap_Networking.html#subnetting-ipv4",
+    "title": "Apêndice D: Network",
+    "section": "D.4 Subnetting IPv4",
+    "text": "D.4 Subnetting IPv4\n\nD.4.1 Subnet Mask\nÉ a máscara de sub-rede, é um número que define a separação entre a parte da rede e a parte do host em um endereço IP. Ela é usada para identificar a sub-rede a qual um endereço IP pertence.(Systems, n.d.)\n\n\n\nSubnetting\n\n\n\n\n\n\n\n\nResumo CIDR do IPv4\n\n\n\n    MASK        &gt;  128  |  64  |  32  |  16  |  8   |  4  |  2  |  1 \n    HOST.NET    &gt;  256  | 128  |  64  |  32  |  16  |  8  |  4  |  2 \n\n    INCREMENTO: É o ultimo bit roubado.\n\n    /25 &gt; .128\n    /26 &gt; .192\n    /27 &gt; .224\n    /28 &gt; .240\n    /29 &gt; .248\n    /30 &gt; .252\n    /31 &gt; .254\n    /32 &gt; .255\n\n\n\n\nD.4.2 Endereços Reservados\nOs dois endereços IP reservados em cada sub-rede são o endereço de rede (primeiro) e o endereço de broadcast (ultimo).\n\n\n\n\n\n\nEndereços disponíveis\n\n\n\nLogo a quantidade de endereços disponíveis são o total de endereços, menos 2 endereços, de rede e broadcast. Lembrando que um endereço, normalmente o primeiro é o endereço usado para o default gateway da rede.\nAssim a quantidade disponível será o total da rede, menos 3 endereços."
+  },
+  {
+    "objectID": "contents/ap_Networking/ap_Networking.html#ipv6",
+    "href": "contents/ap_Networking/ap_Networking.html#ipv6",
+    "title": "Apêndice D: Network",
+    "section": "D.5 IPv6",
+    "text": "D.5 IPv6\n\nEm Construção"
+  },
+  {
+    "objectID": "contents/ap_Networking/ap_Networking.html#troubleshooting",
+    "href": "contents/ap_Networking/ap_Networking.html#troubleshooting",
+    "title": "Apêndice D: Network",
+    "section": "D.6 Troubleshooting",
+    "text": "D.6 Troubleshooting\n\nD.6.1 TCP/UDP open ports\nCaso não tenha a sua disposição ferramentas de diagnostico de rede como Splunk, é possivel utilizar comandos do PowerShell, como o cmdlet Test-NetConnection para verificar se uma porta está disponível (aberta) em um computador remoto.\nVocê pode usar este cmdlet para verificar a resposta e a disponibilidade de um servidor remoto ou serviço de rede, testar se a porta TCP está bloqueada por um firewall, verificar a disponibilidade do ICMP e o roteamento.\nEste comando, substitui várias ferramentas populares de administração de Test-NetConnectionrede, como ping, scanner de porta TCP, tracert, telnet e pathping\n\n\n\n\n\n\nNotas do comando Test-NetConnection\n\n\n\n\nRestrição do comando: comando usado para testar apenas a conectividade de uma porta TCP. Logo, não é possível usar o cmdlet para verificar a disponibilidade das portas UDP remotas.\nVersão abreviada do comando Test-NetConnection: TNC é a versão abreviada do mesmo.\n\n\n\n\nExemplo #1: Comando para verificar se porta remota esta aberta\n\nComo exemplo, segue abaixo, comando2 para verificar se a porta 253 está aberta no servidor remoto ny-msg01, e sua versão abreviada:\n\n2 Executar no powershell3 TCP 25: Protocolo SMTPTest-NetConnection -ComputerName ny-msg01 -Port 25\n\n#Versão abreviada\n\nTNC ny-msg01 -Port 25\nEm Construção"
+  },
+  {
+    "objectID": "contents/ap_Networking/ap_Networking.html#fontes-de-informação",
+    "href": "contents/ap_Networking/ap_Networking.html#fontes-de-informação",
+    "title": "Apêndice D: Network",
+    "section": "D.7 Fontes de informação",
+    "text": "D.7 Fontes de informação\n\nD.7.1 Playlist - Your suck at subnetting"
+  },
+  {
+    "objectID": "contents/ap_Networking/ap_Networking.html#f.q.a---perguntas-frequentes",
+    "href": "contents/ap_Networking/ap_Networking.html#f.q.a---perguntas-frequentes",
+    "title": "Apêndice D: Network",
+    "section": "D.8 F.Q.A - Perguntas frequentes",
+    "text": "D.8 F.Q.A - Perguntas frequentes\n\nD.8.1 Como você encontra o endereço IP dos seus dispositivos?\n\n\nD.8.2 Como saber seu endereço IP\n\n\nD.8.3 Desmistificando sub-redes\n\n\nD.8.4 Gateway padrão\n\n\nD.8.5 Desafio\n\n\nD.8.6 Solução do desafio\n\n\nD.8.7 Recapitulando\n\n\nD.8.8 O que aconteceu com todos os endereços IP?\n\n\nD.8.9 Quais são os intervalos das classes?\n\n\nD.8.10 Quem divulgou todos esses endereços?\n\n\nD.8.11 O que são redes sem classes\n\n\nD.8.12 Isso me deixa louco (Classe D e E)\n\n\nD.8.13 O que é loopback\n\n\nD.8.14 O que é o Ping?"
+  },
+  {
+    "objectID": "contents/ap_Networking/ap_Networking.html#references",
+    "href": "contents/ap_Networking/ap_Networking.html#references",
+    "title": "Apêndice D: Network",
+    "section": "D.9 References",
+    "text": "D.9 References\n(Systems, n.d.)\n\nSystems, Cisco. n.d. “Basic IP Addressing and Troubleshooting Guide.” In. http://penta2.ufrgs.br/trouble/ts_ip.htm.\n\nMoskowitz, Robert, Daniel Karrenberg, Yakov Rekhter, Eliot Lear, and Geert Jan de Groot. 1996. “Address Allocation for Private Internets.” Request for Comments. RFC 1918; RFC Editor. https://doi.org/10.17487/RFC1918.\n(Moskowitz et al. 1996)\n(RFC1918 2024)\n\n\n\nRFC1918. 2024. “Rede Privada - RFC 1918.” Wikipédia. https://pt.wikipedia.org/wiki/Rede_privada."
+  }
+]
