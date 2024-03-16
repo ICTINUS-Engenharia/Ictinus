@@ -729,7 +729,7 @@
                     >
                       <span class="menu-text"
                         ><span class="chapter-number">14</span>&nbsp;
-                        <span class="chapter-title">Norma IEC 848</span></span
+                        <span class="chapter-title">Introdução</span></span
                       ></a
                     >
                   </div>
@@ -1027,55 +1027,11 @@
         </header>
 
         <p>
-          Para nosso estudo de estruturação de programas em sistemas de
-          automação <del><span style="color: red">Grafcet</span></del
-          >, vamos utilizar como ponto de partida, a partir do capitulo 2, uma
-          planta de CIP como arquitetura de sistema proposta. A partir dessa
-          planta proposta e supondo que o leitor esta sendo apresentado a
-          automação industrial, vamos detalhar todos os passos de aplicação de
-          estruturação de programas, desde o fluxograma de processo da planta à
-          implementação do programa de controle do mesmo.
-        </p>
-        <div class="page-columns page-full">
-          <p>
-            <span style="color: red"
-              >Vamos utilizar como base o PLC Siemens e sempre que possível a
-              correlação do que estiver sendo aplicado da técnica com seu par
-              concorrente, Allan Bradley, afim de mostrar a eficácia da técnica
-              de estruturação Grafcet, independente do tipo de hardware, logo a
-              mesma poderá ser aplicadas a outros fabricantes.</span
-            ><a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"
-              ><sup>1</sup></a
-            >
-          </p>
-          <div class="no-row-height column-margin column-container">
-            <li id="fn1">
-              <p>
-                <sup>1</sup>&nbsp;Revisar esse paragrafo e citar a norma IEC
-                61131, um esforço de padronizar a linguagem de programação
-              </p>
-            </li>
-          </div>
-        </div>
-        <p>
-          Vamos assumir ainda que o leitor está sendo apresentado a PLC pela
-          primeira vez, logo para desenvolvimento do conteúdo apresentaremos as
-          funções básicas e um mapa de memória e instruções reduzido, produzindo
-          resultados estruturados e formatando o conceito proposto no
-          consciência do mesmo.
-        </p>
-        <p>
-          Fazendo uso de um exemplo prático, o leitor será colocado no lugar de
-          um integrador e com isso será desafiado a desenvolver o raciocínio
-          logico de forma a padronizar a solução encontrada e com isso reduzir
-          os custos e tempos de suporte técnico. Questões tão perseguidas pela
-          indústria moderna.
-        </p>
-        <p>Recomenda-se seguir os capítulos na sequência.</p>
-        <p>
-          <strong
-            ><em><span style="color: red">Em Construção</span></em></strong
-          >
+          O matérial a seguir basea-se no material didático de treinamento da
+          <a
+            href="https://www.siemens.com/br/pt/produtos/servicos/industria/servicos-treinamentos/sitrain.html"
+            ><strong>Sitrain</strong></a
+          >.
         </p>
         <section
           id="arquitetura-do-sistema"
@@ -1161,25 +1117,25 @@
               <p>
                 Como vimos existem vários fabricantes de PLC e de sistemas
                 SCADA<a
+                  href="#fn1"
+                  class="footnote-ref"
+                  id="fnref1"
+                  role="doc-noteref"
+                  ><sup>1</sup></a
+                >. Cada fabricante de SCADA possui um driver<a
                   href="#fn2"
                   class="footnote-ref"
                   id="fnref2"
                   role="doc-noteref"
                   ><sup>2</sup></a
-                >. Cada fabricante de SCADA possui um driver<a
+                >
+                para cada tipo de PLC, como pode ser observado na figura acima.
+                Pode-se usar ainda solução na arquitetura, OPC cliente/server<a
                   href="#fn3"
                   class="footnote-ref"
                   id="fnref3"
                   role="doc-noteref"
                   ><sup>3</sup></a
-                >
-                para cada tipo de PLC, como pode ser observado na figura acima.
-                Pode-se usar ainda solução na arquitetura, OPC cliente/server<a
-                  href="#fn4"
-                  class="footnote-ref"
-                  id="fnref4"
-                  role="doc-noteref"
-                  ><sup>4</sup></a
                 >
                 na camada do driver para resolver a comunicabilidade entre
                 fabricante.
@@ -1192,25 +1148,25 @@
                 >
               </p>
               <div class="no-row-height column-margin column-container">
-                <li id="fn2">
+                <li id="fn1">
                   <p>
-                    <sup>2</sup>&nbsp;SCADA – Acrônimo para supervisory control
+                    <sup>1</sup>&nbsp;SCADA – Acrônimo para supervisory control
                     and data acquisition. É um sistema computadorizado para
                     monitoramento e controle de processos industriais e de
                     infraestrutura.
                   </p>
                 </li>
-                <li id="fn3">
+                <li id="fn2">
                   <p>
-                    <sup>3</sup>&nbsp;Driver – Em nosso caso, software que
+                    <sup>2</sup>&nbsp;Driver – Em nosso caso, software que
                     permite o software supervisório acessar dados na memória do
                     PLC. É o meio que o software supervisório faz uso para
                     comunicar com o dispositivo do PLC.
                   </p>
                 </li>
-                <li id="fn4">
+                <li id="fn3">
                   <p>
-                    <sup>4</sup>&nbsp;OPC – Acrônimo para OLE for process
+                    <sup>3</sup>&nbsp;OPC – Acrônimo para OLE for process
                     control. São padrões abertos especificados para comunicação
                     de dados entre dispositivos de controle de diferentes
                     fabricantes.

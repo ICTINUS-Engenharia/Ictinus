@@ -14,7 +14,7 @@
       content="grafcet, PLC, STL, ICTINUS, ladder, Simatic, TIA Portal, OOP"
     />
 
-    <title>Grafcet do Básico ao Avançado - 14&nbsp; Norma IEC 848</title>
+    <title>Grafcet do Básico ao Avançado - 14&nbsp; Introdução</title>
     <style>
       code {
         white-space: pre-wrap;
@@ -327,7 +327,7 @@
               <li class="breadcrumb-item">
                 <a href="../../contents/II_parte/introdução.html"
                   ><span class="chapter-number">14</span>&nbsp;
-                  <span class="chapter-title">Norma IEC 848</span></a
+                  <span class="chapter-title">Introdução</span></a
                 >
               </li>
             </ol>
@@ -729,7 +729,7 @@
                     >
                       <span class="menu-text"
                         ><span class="chapter-number">14</span>&nbsp;
-                        <span class="chapter-title">Norma IEC 848</span></span
+                        <span class="chapter-title">Introdução</span></span
                       ></a
                     >
                   </div>
@@ -922,14 +922,65 @@
         data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"
       ></div>
       <!-- margin-sidebar -->
-      <div id="quarto-margin-sidebar" class="sidebar margin-sidebar"></div>
+      <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+          <h2 id="toc-title">Table of contents</h2>
+
+          <ul>
+            <li>
+              <a
+                href="#exemplos-de-grafcet"
+                id="toc-exemplos-de-grafcet"
+                class="nav-link active"
+                data-scroll-target="#exemplos-de-grafcet"
+                ><span class="header-section-number">14.1</span> Exemplos de
+                Grafcet</a
+              >
+              <ul>
+                <li>
+                  <a
+                    href="#g7-de-modo-de-operação"
+                    id="toc-g7-de-modo-de-operação"
+                    class="nav-link"
+                    data-scroll-target="#g7-de-modo-de-operação"
+                    ><span class="header-section-number">14.1.1</span> “G7” de
+                    modo de operação</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#g7-gestor-do-processo"
+                    id="toc-g7-gestor-do-processo"
+                    class="nav-link"
+                    data-scroll-target="#g7-gestor-do-processo"
+                    ><span class="header-section-number">14.1.2</span> “G7”
+                    gestor do processo</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <div class="toc-actions">
+            <div><i class="bi bi-github"></i></div>
+            <div class="action-links">
+              <p>
+                <a
+                  href="https://github.com/ICTINUS-Engenharia/ictinus/issues/new"
+                  class="toc-action"
+                  >Report an issue</a
+                >
+              </p>
+            </div>
+          </div>
+        </nav>
+      </div>
       <!-- main -->
       <main class="content" id="quarto-document-content">
         <header id="title-block-header" class="quarto-title-block default">
           <div class="quarto-title">
             <h1 class="title">
               <span class="chapter-number">14</span>&nbsp;
-              <span class="chapter-title">Norma IEC 848</span>
+              <span class="chapter-title">Introdução</span>
             </h1>
           </div>
 
@@ -937,10 +988,172 @@
         </header>
 
         <p>
+          Inicialmente, detalharemos um pouco da história, algumas partes da
+          norma IEC 848, como simbologia, sua representação em
+          <strong
+            ><a href="https://pt.wikipedia.org/wiki/Linguagem_ladder"
+              >LADDER</a
+            ></strong
+          >
+          ou
+          <strong
+            ><a
+              href="https://pt.wikipedia.org/wiki/Lista_de_instru%C3%A7%C3%B5es"
+              >STL</a
+            ></strong
+          >, regras que recomenda-se obdecer para evitar erros na execução do
+          programa. Detalharemos ainda, boas práticas de construção de programa.
+        </p>
+        <p>
+          Após este nivelamento, um projeto básico de uma planta de CIP será
+          utilizado como proposta de desafio de construção do mesmo, seguindo as
+          premissas apresentadas nesta parte II.
+        </p>
+        <p>
+          Importante ressaltar que os métodos de conversão de grafcet em seu
+          equivalente LADDER ou STL aqui apresentados, não é a única forma de
+          conversão. A linguagem STL do Siemens tem recursos suficientes para
+          permitir a construção da lógica de diferentes formas.
+        </p>
+        <p>
           <strong
             ><em><span style="color: red">Em Construção</span></em></strong
           >
         </p>
+        <section id="exemplos-de-grafcet" class="level2" data-number="14.1">
+          <h2
+            data-number="14.1"
+            class="anchored"
+            data-anchor-id="exemplos-de-grafcet"
+          >
+            <span class="header-section-number">14.1</span> Exemplos de Grafcet
+          </h2>
+          <p>
+            Abaixo, exemplos de representação de grafcets de gestão de modo de
+            operação, bem como de controle do processo de uma planta de solvente
+            e resina.
+          </p>
+          <section
+            id="g7-de-modo-de-operação"
+            class="level3"
+            data-number="14.1.1"
+          >
+            <h3
+              data-number="14.1.1"
+              class="anchored"
+              data-anchor-id="g7-de-modo-de-operação"
+            >
+              <span class="header-section-number">14.1.1</span> “G7” de modo de
+              operação
+            </h3>
+            <div class="quarto-figure quarto-figure-center">
+              <figure class="figure">
+                <p>
+                  <img
+                    src="images/png/g7modosubconjunto.png"
+                    class="img-fluid figure-img"
+                    style="width: 6.5in"
+                  />
+                </p>
+                <figcaption class="figure-caption">
+                  <em
+                    >G7 de gestão de modo de operação, automático, manual e
+                    manutenção de uma planta de solvente e resina.</em
+                  >
+                </figcaption>
+              </figure>
+            </div>
+          </section>
+          <section
+            id="g7-gestor-do-processo"
+            class="level3"
+            data-number="14.1.2"
+          >
+            <h3
+              data-number="14.1.2"
+              class="anchored"
+              data-anchor-id="g7-gestor-do-processo"
+            >
+              <span class="header-section-number">14.1.2</span> “G7” gestor do
+              processo
+            </h3>
+            <div class="quarto-figure quarto-figure-center">
+              <figure class="figure">
+                <p>
+                  <img
+                    src="images/png/g7programagestordoprocesso.png"
+                    class="img-fluid figure-img"
+                    style="width: 6.5in"
+                  />
+                </p>
+                <figcaption class="figure-caption">
+                  <em
+                    >G7 do programa gestor de controle da linha de enchimento de
+                    solvente.</em
+                  >
+                </figcaption>
+              </figure>
+            </div>
+            <div class="quarto-figure quarto-figure-center">
+              <figure class="figure">
+                <p>
+                  <img
+                    src="images/png/g7prog2continuação.png"
+                    class="img-fluid figure-img"
+                    style="width: 6.5in"
+                  />
+                </p>
+                <figcaption class="figure-caption">
+                  <em
+                    >Continuação do programa gestor de controle de enchimento de
+                    solvente.</em
+                  >
+                </figcaption>
+              </figure>
+            </div>
+            <div class="quarto-figure quarto-figure-center">
+              <figure class="figure">
+                <p>
+                  <img
+                    src="images/png/g7gestorResina.png"
+                    class="img-fluid figure-img"
+                    style="width: 6.5in"
+                  />
+                </p>
+                <figcaption class="figure-caption">
+                  <em
+                    >G7 do programa gestor de controle da linha de enchimento de
+                    resina.</em
+                  >
+                </figcaption>
+              </figure>
+            </div>
+            <div
+              class="callout callout-style-default callout-important callout-titled"
+              title="Confidencialidade"
+            >
+              <div class="callout-header d-flex align-content-center">
+                <div class="callout-icon-container">
+                  <i class="callout-icon"></i>
+                </div>
+                <div class="callout-title-container flex-fill">
+                  Confidencialidade
+                </div>
+              </div>
+              <div class="callout-body-container callout-body">
+                <p>
+                  Mantemos uma tarja preta em cima do nome do cliente atendido
+                  pela <strong>ICTINUS</strong>, afim de manter a
+                  confidencialidade do mesmo.
+                </p>
+                <p>
+                  Usamos essa figura apenas como um exemplo de representação do
+                  grafcet de uma planta real.
+                </p>
+              </div>
+            </div>
+          </section>
+        </section>
       </main>
       <!-- /main -->
       <script id="quarto-html-after-body" type="application/javascript">
@@ -1376,18 +1589,6 @@
               <a class="nav-link" href="https://quarto.org/">Quarto</a>
             </li>
           </ul>
-          <div class="toc-actions">
-            <div><i class="bi bi-github"></i></div>
-            <div class="action-links">
-              <p>
-                <a
-                  href="https://github.com/ICTINUS-Engenharia/ictinus/issues/new"
-                  class="toc-action"
-                  >Report an issue</a
-                >
-              </p>
-            </div>
-          </div>
         </div>
         <div class="nav-footer-right">
           <ul class="footer-items list-unstyled">

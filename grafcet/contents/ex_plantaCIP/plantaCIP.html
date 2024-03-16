@@ -729,7 +729,7 @@
                     >
                       <span class="menu-text"
                         ><span class="chapter-number">14</span>&nbsp;
-                        <span class="chapter-title">Norma IEC 848</span></span
+                        <span class="chapter-title">Introdução</span></span
                       ></a
                     >
                   </div>
@@ -947,20 +947,11 @@
             </li>
             <li>
               <a
-                href="#restrições"
-                id="toc-restrições"
+                href="#premissas-e-exceção-do-projeto"
+                id="toc-premissas-e-exceção-do-projeto"
                 class="nav-link"
-                data-scroll-target="#restrições"
-                >Restrições</a
-              >
-            </li>
-            <li>
-              <a
-                href="#exceções"
-                id="toc-exceções"
-                class="nav-link"
-                data-scroll-target="#exceções"
-                >Exceções</a
+                data-scroll-target="#premissas-e-exceção-do-projeto"
+                >Premissas e Exceção do projeto</a
               >
             </li>
           </ul>
@@ -1010,6 +1001,33 @@
         <section id="objetivo" class="level2">
           <h2 class="anchored" data-anchor-id="objetivo">Objetivo</h2>
           <p>
+            Automatizar a planta de fornecimento de CIP, ou seja, água, soda e
+            detergente, em uma sequencia pre-estabelecida, conforme descrição de
+            processo abaixo.
+          </p>
+          <p>A planta deve ter 3 modos de operação, sendo:</p>
+          <ul>
+            <li>
+              <strong>Modo Automático:</strong> Neste modo, o programa controla
+              os acionamentos da planta, obedecendo a sequencia abaixo, uma vez
+              recebido um pedido de CIP. Ainda neste modo, caso um dos
+              equipamentos entre em falha, ou se o operador mudar o modo de
+              operação, os acionamentos devem ser retirados da planta.
+            </li>
+            <li>
+              <strong>Modo Manual:</strong> A planta deve obedecer comando do
+              operador vindos de uma IHM ou Supervisório, como exemplo. Mesmo
+              nesse modo, caso ocorra um alarme, devido ao não funcionamento de
+              algum elemento final, o mesmo deve ser apresentado na IHM /
+              Supervisório.
+            </li>
+            <li>
+              <strong>Modo Manutenção:</strong> Modo utilizado pela departamento
+              de manutenção da planta para fazer testes de acionamento da
+              planta. Assumiremos que o mesmo não causa alarmes na planta.
+            </li>
+          </ul>
+          <p>
             <strong
               ><em><span style="color: red">Em Construção</span></em></strong
             >
@@ -1020,21 +1038,115 @@
             Descrição do Processo
           </h2>
           <p>
-            <strong
-              ><em><span style="color: red">Em Construção</span></em></strong
-            >
+            Uma explicação resumida do funcionamento da planta de CIP, e que
+            serve como proposta de exercício para aplicação de grafcet e seu
+            entendimento prático.
           </p>
-        </section>
-        <section id="restrições" class="level2">
-          <h2 class="anchored" data-anchor-id="restrições">Restrições</h2>
+          <ul>
+            <li>
+              <strong>Repouso:</strong> Assumir que inicialmente, a planta de
+              CIP encontra-se em repouso. Neste estado, todos os equipamento,
+              incluindo válvulas encontram-se desligados e o programa de
+              controle de fornecimento de CIP está em sua posição de repouso,
+              aguardando um pedido de fornecimento de CIP, vido de outro
+              equipamento, ou seja, o mesmo aguarda um sinal externo;
+            </li>
+            <li>
+              <strong>1st Etapa - Primeiro fornecimento de água:</strong> A
+              primeira etapa do programa, primeiro fornecimento de água potavél,
+              uma vez acionado após um pedido de CIP externo. Nesta etapa,
+              assumiremos que as válvulas V101, V102 e a bomba B001, serão
+              acionados. O programa fica nesta etapa por 1 min, tempo este que
+              deve ser parametrizado, antes de passar para a etapa seguinte.
+              <strong><em>Ver nota abaixo.</em></strong>
+            </li>
+            <li>
+              <strong>2nd Etapa - Fornecimento de Soda:</strong> Segunda etapa
+              do processo, fornecimento de soda, devem ser acionados somente as
+              válvulas V201, V202 e a Bomba B001. O programa fica nesta etapa
+              por um tempo determinado por receita, como sugestão 1 min.
+            </li>
+            <li>
+              <strong>3rd Etapa - Fornecimento de Detergente:</strong> Passo
+              utilizado para neutralizar a soda em um caso real. Neste passo,
+              somente a válvula V301, V302 e a Bomda B001 devem ser acionados. A
+              fase obedece também um tempo minimo de 1 min, parametrizável.
+            </li>
+            <li>
+              <strong>4th Etapa - Fornecimento de água:</strong> Segundo
+              fornecimento de água, repetindo os acionamento da primeira etapa e
+              obedecendo o tempo minimo de 1 min, conforme condições anteriores.
+            </li>
+          </ul>
+          <p>
+            Após a execução do tempo da ultima fase de água, o programa deve
+            retornar para a posição de retorno e aguardar um novo pedido de CIP.
+          </p>
           <p>
             <strong
-              ><em><span style="color: red">Em Construção</span></em></strong
+              ><em
+                ><span style="color: red"
+                  >Em Construção: considerar fazer um vídeo explicando o
+                  projeto</span
+                ></em
+              ></strong
             >
           </p>
         </section>
-        <section id="exceções" class="level2">
-          <h2 class="anchored" data-anchor-id="exceções">Exceções</h2>
+        <section id="premissas-e-exceção-do-projeto" class="level2">
+          <h2 class="anchored" data-anchor-id="premissas-e-exceção-do-projeto">
+            Premissas e Exceção do projeto
+          </h2>
+          <div
+            class="callout callout-style-default callout-important callout-titled"
+            title="Premissas e exceções do projeto"
+          >
+            <div class="callout-header d-flex align-content-center">
+              <div class="callout-icon-container">
+                <i class="callout-icon"></i>
+              </div>
+              <div class="callout-title-container flex-fill">
+                Premissas e exceções do projeto
+              </div>
+            </div>
+            <div class="callout-body-container callout-body">
+              <p>
+                Afim de simplificar o programa de controle e descomplicar a
+                implementação do mesmo, vamos assumir as seguintes premissas
+                abaixo:
+              </p>
+              <ul>
+                <li>
+                  <strong>Golpe de aríete:</strong> Vamos assumir que a planta
+                  não tem golpe de aríete.
+                </li>
+                <li>
+                  <strong>Condutivimetro:</strong> Neste exercício, não vamos
+                  considerar um condutivimetro para fazer as viradas do retorno
+                  para o tanque correspondente.
+                </li>
+                <li>
+                  <strong>Emergência:</strong> Caso seja batida a emergência da
+                  planta, ou seja, botoeira de emergência no campo por algum
+                  motivo, o programa deve parar sua execução no passo que
+                  estiver, desligar todas as saídas e sinalizar na IHM /
+                  Supervisório.
+                </li>
+                <li>
+                  <strong>Tempo das fases / etapas:</strong> O tempo de 1 min
+                  proposto no desafio do projeto é apenas uma sugestão, já que a
+                  ideia é rodar o programa simuladamente, e não é objetivo do
+                  projeto um tempo suficiente para garantir a limpeza de um
+                  equipamento real.
+                </li>
+                <li>
+                  <strong>Válvula Dreno:</strong> Esta proposta de projeto
+                  inicial não fará uso da válvula de dreno, uma vez que a lógica
+                  da mesma depende do uso do condutivimetro.
+                </li>
+              </ul>
+            </div>
+          </div>
           <p>
             <strong
               ><em><span style="color: red">Em Construção</span></em></strong

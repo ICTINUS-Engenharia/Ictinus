@@ -719,7 +719,7 @@
                     >
                       <span class="menu-text"
                         ><span class="chapter-number">14</span>&nbsp;
-                        <span class="chapter-title">Norma IEC 848</span></span
+                        <span class="chapter-title">Introdução</span></span
                       ></a
                     >
                   </div>
@@ -912,7 +912,35 @@
         data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"
       ></div>
       <!-- margin-sidebar -->
-      <div id="quarto-margin-sidebar" class="sidebar margin-sidebar"></div>
+      <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+          <h2 id="toc-title">Table of contents</h2>
+
+          <ul>
+            <li>
+              <a
+                href="#norma-iec-61131"
+                id="toc-norma-iec-61131"
+                class="nav-link active"
+                data-scroll-target="#norma-iec-61131"
+                >Norma IEC 61131</a
+              >
+            </li>
+          </ul>
+          <div class="toc-actions">
+            <div><i class="bi bi-github"></i></div>
+            <div class="action-links">
+              <p>
+                <a
+                  href="https://github.com/ICTINUS-Engenharia/ictinus/issues/new"
+                  class="toc-action"
+                  >Report an issue</a
+                >
+              </p>
+            </div>
+          </div>
+        </nav>
+      </div>
       <!-- main -->
       <main class="content" id="quarto-document-content">
         <header id="title-block-header" class="quarto-title-block default">
@@ -924,38 +952,102 @@
         </header>
 
         <p>
-          <strong
-            ><em><span style="color: red">Em Construção</span></em></strong
-          >
+          A parte I objetiva apresentar as funcionalidades básicas da plataforma
+          Simatic S7 da Siemens, nivelando assim o entendimentos de todos que
+          lerem esse material, uma vez que esta foi a plataforma escolhida para
+          os exercícios do livro.
         </p>
         <p>
-          Bem-vindo ao Grafcet Básico com Simatic S7 &amp; TIA Portal. Este
-          livro é a sua porta de entrada para o mundo acelerado dos sistemas de
-          automação industrial através do uso de PLCs.
+          Caso já seja do seu conhecimento este material de introdução sobre PLC
+          da Siemens, o mesmo pode ser usado apenas como forma de consulta.
         </p>
-        <p>
-          Nosso objetivo é fazer deste livro de código aberto um esforço
-          colaborativo que reúna insights de estudantes, profissionais e da
-          comunidade mais ampla de profissionais da industria. Queremos criar um
-          guia completo que se aprofunde nos detalhes básicos dos sistemas de
-          automação industrial e seus muitos usos.
-        </p>
-        <blockquote class="blockquote">
+        <section id="norma-iec-61131" class="level2">
+          <h2 class="anchored" data-anchor-id="norma-iec-61131">
+            Norma IEC 61131
+          </h2>
           <p>
-            <em
-              >“Sabedoria é aplicar o conhecimento de forma sensata, com
-              benevolência e comportamento ético.”</em
+            A IEC 1131 / IEC 61131 é uma norma internacional que estabelece as
+            especificações para Controladores Lógicos Programáveis (PLCs). Esta
+            norma foi desenvolvida pela Comissão Eletrotécnica Internacional
+            (IEC) e tem sido amplamente adotada em todo o mundo para padronizar
+            sistemas de controle baseados em PLCs. A norma IEC 61131 é dividida
+            em várias partes, cada uma abordando um aspecto específico dos PLCs:
+          </p>
+          <ul>
+            <li>
+              <strong>Parte 1: IEC 61131-1, Geral</strong> - Esta seção fornece
+              uma visão geral dos PLCs. Ela define o que constitui um PLC, as
+              funções que ele deve ser capaz de desempenhar e a terminologia
+              básica associada aos PLCs. Isso ajuda a garantir que todos os
+              envolvidos na indústria de automação tenham uma compreensão comum
+              do que é um PLC e do que ele é capaz de fazer.
+            </li>
+            <li>
+              <strong>Parte 2: IEC 61131-2, Requisitos de hardware</strong> -
+              Esta seção da norma define os requisitos de hardware para PLCs.
+              Ela estabelece padrões para coisas como resistência a condições
+              adversas, segurança elétrica e compatibilidade eletromagnética.
+              Estes requisitos garantem que os PLCs são robustos e seguros para
+              uso em ambientes industriais.
+            </li>
+            <li>
+              <strong>Parte 3: IEC 61131-3, Linguagens de programação</strong> -
+              A terceira parte da norma é talvez a mais conhecida, pois define
+              as linguagens de programação que podem ser usadas com PLCs. As
+              linguagens incluem Diagrama de Escada (LD), Diagrama de Blocos de
+              Função (FBD), Texto Estruturado (ST), Lista de Instruções (IL) e
+              Gráfico de Funções Sequenciais (SFC). Estas linguagens fornecem
+              aos programadores uma variedade de ferramentas para criar
+              programas de PLC eficazes e fáceis de entender.
+            </li>
+            <li>
+              <strong
+                >Parte 4: IEC 61131-4, Diretrizes para a realização de
+                testes</strong
+              >
+              - Esta seção da norma define regras para a realização de testes em
+              PLCs. Estas diretrizes garantem que os PLCs funcionam como
+              esperado e são seguros para uso em ambientes industriais.
+            </li>
+            <li>
+              <strong
+                >Parte 5: IEC 61131-5, Identificação e uso de símbolos</strong
+              >
+              - Esta parte fornece orientações sobre como os símbolos e
+              identificadores devem ser usados nos programas do PLC. Isso ajuda
+              a garantir que os programas são fáceis de ler e entender.
+            </li>
+            <li>
+              <strong
+                >Parte 6: IEC 61131-6, Metodologia de programação orientada a
+                objetos e Linguagem de Modelagem Unificada (UML)</strong
+              >
+              - A última parte da norma aborda a metodologia de programação
+              orientada a objetos e a linguagem de modelagem unificada (UML)
+              para PLCs. Isso permite uma abordagem mais moderna e modular para
+              a programação de PLCs, facilitando a reutilização do código e a
+              manutenção do programa.
+            </li>
+          </ul>
+          <p>
+            Em resumo, a norma IEC 61131 fornece uma estrutura completa para a
+            implementação e operação de PLCs. Ela garante que os PLCs são
+            seguros e confiáveis, além de serem fáceis de programar e modificar.
+            Isso torna possível a criação de sistemas de automação mais
+            confiáveis e eficientes, permitindo que as indústrias operem de
+            maneira mais eficiente e segura.
+          </p>
+          <p>
+            A norma IEC 61131 é a atualização da norma IEC 1131, inclui algumas
+            atualizações e melhorias para refletir as mudanças tecnológicas e as
+            melhores práticas na indústria de controle e automação.
+          </p>
+          <p>
+            <strong
+              ><em><span style="color: red">Em Construção</span></em></strong
             >
           </p>
-        </blockquote>
-        <p>
-          Este não é um livro estático, mas dinâmico, um documento vivo. Estamos
-          tornando-o continuamente atualizado para atender às necessidades em
-          constante mudança deste campo dinâmico. Espere uma rica combinação de
-          conhecimento especializado que o guiará pela complexa interação entre
-          algoritmos e os princípios fundamentais que os fazem funcionar. Que
-          este projeto seja uma fonte continua para a comunidade.
-        </p>
+        </section>
       </main>
       <!-- /main -->
       <script id="quarto-html-after-body" type="application/javascript">
@@ -1383,18 +1475,6 @@
               <a class="nav-link" href="https://quarto.org/">Quarto</a>
             </li>
           </ul>
-          <div class="toc-actions">
-            <div><i class="bi bi-github"></i></div>
-            <div class="action-links">
-              <p>
-                <a
-                  href="https://github.com/ICTINUS-Engenharia/ictinus/issues/new"
-                  class="toc-action"
-                  >Report an issue</a
-                >
-              </p>
-            </div>
-          </div>
         </div>
         <div class="nav-footer-right">
           <ul class="footer-items list-unstyled">
