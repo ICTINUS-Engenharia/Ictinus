@@ -937,6 +937,67 @@
         </header>
 
         <p>
+          Os Siemens S7-300 PLCs utilizam diversos tipos de blocos para a
+          programação e operação. Aqui estão os principais blocos e uma
+          descrição mais detalhada de cada um:
+        </p>
+        <ul>
+          <li>
+            <strong>Blocos de Organização (OBs)</strong>: Esses são os blocos
+            que estruturam e controlam a execução do programa do usuário. Eles
+            organizam a execução dos blocos de funções e blocos de dados. Por
+            exemplo, o OB1 é o bloco principal que é chamado ciclicamente,
+            tornando-se a espinha dorsal da maior parte do programa. Outros
+            Blocos de Organização são automaticamente chamados em resposta a
+            determinados eventos, como falhas de programa, falhas de energia,
+            interrupções e inicialização do PLC.
+          </li>
+          <li>
+            <strong>Blocos de Funções (FBs)</strong>: Os blocos de funções
+            contêm uma sequência lógica ou algoritmo que é usado repetidamente
+            em todo o programa. Uma vez que um bloco de função é definido, ele
+            pode ser chamado de qualquer lugar do programa, permitindo a
+            reutilização de código e a modularidade. Os blocos de função também
+            possuem uma memória de instância, permitindo que eles armazenem
+            informações entre chamadas.
+          </li>
+          <li>
+            <strong>Blocos de Dados (DBs)</strong>: Os blocos de dados são
+            usados para armazenar informações de estado, configurações ou outros
+            dados que precisam ser mantidos entre as chamadas de blocos de
+            função. Eles agem como uma espécie de “memória” para o programa,
+            retendo informações mesmo quando o PLC é desligado e ligado
+            novamente. Eles podem armazenar uma variedade de tipos de dados,
+            incluindo bits, bytes, palavras, duplas palavras, inteiros, reais,
+            temporizadores e contadores.
+          </li>
+          <li>
+            <strong>Blocos de Função (FCs)</strong>: Semelhantes aos Blocos de
+            Funções, os Blocos de Função são usados para encapsular
+            funcionalidades específicas que são frequentemente usadas. No
+            entanto, os Blocos de Função não têm memória de instância, o que
+            significa que eles não mantêm um estado interno entre as chamadas.
+            Isso os torna mais leves e rápidos, mas também significa que os
+            valores das variáveis locais não são mantidos entre chamadas.
+          </li>
+          <li>
+            <strong>Blocos de Sistema (SFB / SFC)</strong>: Esses são blocos
+            fornecidos pelo fabricante do PLC que fornecem funcionalidades
+            específicas do sistema. Isso pode incluir coisas como comunicação de
+            rede, controle de interrupções, funções de diagnóstico e muito mais.
+            Eles fornecem funcionalidades que seriam muito complexas ou
+            demoradas para serem escritas manualmente e são testadas e
+            otimizadas pelo fabricante para garantir a confiabilidade e o
+            desempenho.
+          </li>
+        </ul>
+        <p>
+          Em resumo, um programa S7-300 é normalmente construído a partir de uma
+          combinação desses diferentes tipos de blocos. Cada bloco tem um papel
+          específico e juntos eles permitem a criação de programas complexos e
+          flexíveis para controlar uma ampla variedade de tarefas de automação.
+        </p>
+        <p>
           <strong
             ><em><span style="color: red">Em Construção</span></em></strong
           >
