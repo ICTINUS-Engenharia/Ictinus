@@ -42,6 +42,27 @@
         margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */
         vertical-align: middle;
       }
+      /* CSS for citations */
+      div.csl-bib-body {
+      }
+      div.csl-entry {
+        clear: both;
+      }
+      .hanging-indent div.csl-entry {
+        margin-left: 2em;
+        text-indent: -2em;
+      }
+      div.csl-left-margin {
+        min-width: 2em;
+        float: left;
+      }
+      div.csl-right-inline {
+        margin-left: 2em;
+        padding-left: 1em;
+      }
+      div.csl-indent {
+        margin-left: 2em;
+      }
     </style>
 
     <script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -126,7 +147,7 @@
     </script>
   </head>
 
-  <body class="nav-sidebar floating nav-fixed">
+  <body class="nav-sidebar floating nav-fixed slimcontent">
     <div id="quarto-search-results"></div>
     <header id="quarto-header" class="headroom fixed-top">
       <nav class="navbar navbar-expand-lg navbar-dark">
@@ -929,11 +950,70 @@
           <ul>
             <li>
               <a
+                href="#história-do-grafcet"
+                id="toc-história-do-grafcet"
+                class="nav-link active"
+                data-scroll-target="#história-do-grafcet"
+                ><span class="header-section-number">14.1</span> História do
+                GRAFCET</a
+              >
+            </li>
+            <li>
+              <a
+                href="#diagrama-funcional-sequencial"
+                id="toc-diagrama-funcional-sequencial"
+                class="nav-link"
+                data-scroll-target="#diagrama-funcional-sequencial"
+                ><span class="header-section-number">14.2</span> Diagrama
+                funcional sequencial</a
+              >
+            </li>
+            <li>
+              <a
+                href="#etapas"
+                id="toc-etapas"
+                class="nav-link"
+                data-scroll-target="#etapas"
+                ><span class="header-section-number">14.3</span> Etapas</a
+              >
+            </li>
+            <li>
+              <a
+                href="#etapa-ativa-e-etapa-inativa"
+                id="toc-etapa-ativa-e-etapa-inativa"
+                class="nav-link"
+                data-scroll-target="#etapa-ativa-e-etapa-inativa"
+                ><span class="header-section-number">14.4</span> Etapa ativa e
+                etapa inativa</a
+              >
+            </li>
+            <li>
+              <a
+                href="#etapa-inicial"
+                id="toc-etapa-inicial"
+                class="nav-link"
+                data-scroll-target="#etapa-inicial"
+                ><span class="header-section-number">14.5</span> Etapa
+                Inicial</a
+              >
+            </li>
+            <li>
+              <a
+                href="#aões-associadas-às-etapas"
+                id="toc-aões-associadas-às-etapas"
+                class="nav-link"
+                data-scroll-target="#aões-associadas-às-etapas"
+                ><span class="header-section-number">14.6</span> Aões associadas
+                às etapas</a
+              >
+            </li>
+            <li>
+              <a
                 href="#exemplos-de-grafcet"
                 id="toc-exemplos-de-grafcet"
-                class="nav-link active"
+                class="nav-link"
                 data-scroll-target="#exemplos-de-grafcet"
-                ><span class="header-section-number">14.1</span> Exemplos de
+                ><span class="header-section-number">14.7</span> Exemplos de
                 Grafcet</a
               >
               <ul>
@@ -943,7 +1023,7 @@
                     id="toc-g7-de-modo-de-operação"
                     class="nav-link"
                     data-scroll-target="#g7-de-modo-de-operação"
-                    ><span class="header-section-number">14.1.1</span> “G7” de
+                    ><span class="header-section-number">14.7.1</span> “G7” de
                     modo de operação</a
                   >
                 </li>
@@ -953,11 +1033,20 @@
                     id="toc-g7-gestor-do-processo"
                     class="nav-link"
                     data-scroll-target="#g7-gestor-do-processo"
-                    ><span class="header-section-number">14.1.2</span> “G7”
+                    ><span class="header-section-number">14.7.2</span> “G7”
                     gestor do processo</a
                   >
                 </li>
               </ul>
+            </li>
+            <li>
+              <a
+                href="#references"
+                id="toc-references"
+                class="nav-link"
+                data-scroll-target="#references"
+                ><span class="header-section-number">14.8</span> References</a
+              >
             </li>
           </ul>
           <div class="toc-actions">
@@ -975,7 +1064,7 @@
         </nav>
       </div>
       <!-- main -->
-      <main class="content" id="quarto-document-content">
+      <main class="content page-columns page-full" id="quarto-document-content">
         <header id="title-block-header" class="quarto-title-block default">
           <div class="quarto-title">
             <h1 class="title">
@@ -1020,13 +1109,305 @@
             ><em><span style="color: red">Em Construção</span></em></strong
           >
         </p>
-        <section id="exemplos-de-grafcet" class="level2" data-number="14.1">
+        <section
+          id="história-do-grafcet"
+          class="level2 page-columns page-full"
+          data-number="14.1"
+        >
           <h2
             data-number="14.1"
             class="anchored"
+            data-anchor-id="história-do-grafcet"
+          >
+            <span class="header-section-number">14.1</span> História do GRAFCET
+          </h2>
+          <p>
+            Em 1975, pesquisadores e gerentes industriais franceses envolvidos
+            em sistemas de controle discreto se reuniram para comparar e avaliar
+            modelos e métodos de construção de sistemas de controle sequencial.
+            Eles compartilharam suas experiências com dezessete técnicas
+            diferentes: alguns usavam questionários empíricos, outros modelos
+            tecnológicos e outros modelos teóricos puros, derivados de “Máquinas
+            de Estado” ou “Redes de Petri”.
+          </p>
+          <p>
+            Decidiram criar um modelo personalizado, chamado GRAFCET, que era
+            mais simples e adequado para sistemas complexos, especialmente
+            sistemas de manufatura. O nome deriva de Graph, pois o modelo tem
+            uma base gráfica, e
+            <strong
+              >AFCET (Association Française Pour La Cybernétique Économique et
+              Technique)</strong
+            >, a associação científica que financiou todo o trabalho.
+          </p>
+          <p>
+            Os conceitos básicos desse sistema de controle discreto eram claros
+            e simples: a “etapa”, a “ação associada à etapa”, a “transição” e a
+            condição associada à “transição”. A etapa representa um estado
+            parcial do sistema em que uma ação é realizada. A etapa pode estar
+            “ativa” ou “inativa” em um determinado momento. Para a transição de
+            uma etapa para outra, a etapa anterior deve estar ativa e a condição
+            de transição entre as duas etapas deve ser verdadeira.<span
+              class="citation"
+              data-cites="FERREIRA-1994"
+              >(<a
+                href="../ap_Configuração/ap_Configuração.html#ref-FERREIRA-1994"
+                role="doc-biblioref"
+                >FERREIRA 1995</a
+              >)</span
+            >
+          </p>
+          <div class="no-row-height column-margin column-container"></div>
+          <p>
+            A transição, que “conecta” a etapa anterior (uma ou várias etapas) à
+            etapa seguinte (uma ou várias etapas), representa uma decisão para
+            mudar o estado do sistema (a ação da etapa anterior é seguida pela
+            ação da etapa seguinte). Para efetuar uma transição, são necessárias
+            duas condições:
+            <span class="citation" data-cites="SARQUIS-ATTIÉ"
+              >(<a
+                href="../ap_Configuração/ap_Configuração.html#ref-SARQUIS-ATTIÉ"
+                role="doc-biblioref"
+                >SARQUIS ATTIÉ 1998</a
+              >)</span
+            >
+          </p>
+          <ul>
+            <li>
+              Todos os passos, cuja saída está ligada à entrada da transição,
+              estejam ativados;
+            </li>
+            <li>a condição associada à transição for satisfeita.</li>
+          </ul>
+          <p>
+            Ao ser efetuada a transição, a etapa precedente (uma ou várias
+            etapas) torna-se inativa e a etapa seguinte (uma ou várias etapas)
+            torna-se ativa. Conseqüentemente, a ação associada à etapa
+            precedente deixa de ser realizada, e a associada à etapa seguinte
+            passa a ser realizada. Na figura abaixo, ilustra-se um exemplo da
+            aplicação do GRAFCET para o acionamento de um motor.
+          </p>
+          <p>
+            Em 1988, a IEC (International Eletrotechnical Commission) adotou o
+            GRAFCET como Norma Internacional, sob o nome inglês Sequencial
+            Function Chart - SFC (Diagrama Funcional Sequencial). Esta norma foi
+            intitulada “Preparation of Function Charts for Control Systems”
+            (Preparação de Diagramas Funcionais para Sistemas de Controle), com
+            a referência IEC 848. Recentemente, a referência foi alterada para
+            IEC 60848.
+          </p>
+          <p>
+            Apesar de ter sido criada para aplicações eletrotécnicas, o GRAFCET
+            pode ser aplicado em sistemas não elétricos, como hidráulicos,
+            pneumáticos ou mecânicos. Ele descreve as funções de controle de um
+            sistema, independentemente do campo de aplicação. O método de
+            representação proposto atua como uma ‘ferramenta de comunicação’
+            entre as diferentes áreas envolvidas no desenvolvimento e uso de
+            sistemas automatizados.
+          </p>
+          <p>
+            A linguagem GRAFCET facilita a comunicação entre profissionais de
+            várias áreas envolvidas no processo de automação
+            <span class="citation" data-cites="ROMANO-GUIMARÃES"
+              >(<a
+                href="../ap_Configuração/ap_Configuração.html#ref-ROMANO-GUIMARÃES"
+                role="doc-biblioref"
+                >ROMANO 2001</a
+              >)</span
+            >. Os fabricantes de CLP adotam o GRAFCET como linguagem de
+            programação. O GRAFCET não substitui o Ladder/STL na programação,
+            mas facilita o programa, pois permite uma visualização lógica de
+            todas as etapas de funcionamento da automação.
+          </p>
+          <div class="no-row-height column-margin column-container"></div>
+        </section>
+        <section
+          id="diagrama-funcional-sequencial"
+          class="level2 page-columns page-full"
+          data-number="14.2"
+        >
+          <h2
+            data-number="14.2"
+            class="anchored"
+            data-anchor-id="diagrama-funcional-sequencial"
+          >
+            <span class="header-section-number">14.2</span> Diagrama funcional
+            sequencial
+          </h2>
+          <p>
+            Nas literaturas em português, o GRAFCET é conhecido pelo nome de
+            Diagrama Funcional Seqüencial
+            <span class="citation" data-cites="GEORGINE-Marcelo"
+              >(<a
+                href="../ap_Configuração/ap_Configuração.html#ref-GEORGINE-Marcelo"
+                role="doc-biblioref"
+                >GEORGINE 2000</a
+              >)</span
+            >. A seguir, são apresentados os elementos e as regras definidas na
+            Norma IEC 60848. Os elementos do Diagrama Funcional Seqüencial (SFC)
+            são:
+          </p>
+          <div class="no-row-height column-margin column-container"></div>
+          <ul>
+            <li>
+              <strong>etapas</strong> – associadas às <strong>ações</strong>.
+            </li>
+            <li>
+              <strong>transições</strong> – associadas às
+              <strong>condições</strong>.
+            </li>
+            <li>
+              <strong>ligações orientadas</strong> – conectam as etapas às
+              <strong>transições</strong>
+            </li>
+          </ul>
+          <p>
+            <strong
+              ><em><span style="color: red">Em Construção</span></em></strong
+            >
+          </p>
+        </section>
+        <section id="etapas" class="level2" data-number="14.3">
+          <h2 data-number="14.3" class="anchored" data-anchor-id="etapas">
+            <span class="header-section-number">14.3</span> Etapas
+          </h2>
+          <p>
+            Uma etapa é um estado no qual o comportamento do circuito de comando
+            não muda em resposta às entradas e saídas. A eficiência e precisão
+            de um Diagrama Funcional Sequencial estão diretamente ligadas ao
+            número de etapas usadas para descrever um sistema. Portanto, quanto
+            mais etapas puderem ser divididas, mais eficiente e preciso será o
+            diagrama.
+          </p>
+          <p>
+            A simbologia para representar uma etapa é mostrada na Figura abaixo.
+            As etapas são referenciadas por caracteres alfanuméricos, como
+            mostrado. A referência pode ser arbitrária, sem a necessidade de
+            sequência ou ordem numérica (crescente ou decrescente).
+          </p>
+          <div class="quarto-figure quarto-figure-center">
+            <figure class="figure">
+              <p>
+                <img
+                  src="./images/png/coverGrafcet.png"
+                  class="img-fluid figure-img"
+                />
+              </p>
+              <figcaption class="figure-caption">
+                <em>Exemlo de aplocação do GRAFCET</em>
+              </figcaption>
+            </figure>
+          </div>
+          <p>
+            <strong
+              ><em><span style="color: red">Em Construção</span></em></strong
+            >
+          </p>
+        </section>
+        <section
+          id="etapa-ativa-e-etapa-inativa"
+          class="level2 page-columns page-full"
+          data-number="14.4"
+        >
+          <h2
+            data-number="14.4"
+            class="anchored"
+            data-anchor-id="etapa-ativa-e-etapa-inativa"
+          >
+            <span class="header-section-number">14.4</span> Etapa ativa e etapa
+            inativa
+          </h2>
+          <p>
+            Em determinado instante, uma etapa pode estar ativa ou inativa.Uma
+            etapa é ativa até que a sua receptividade seguinte seja verdadeira,
+            sendo que a situação de um sistema é determinada pelo conjunto de
+            etapas ativas naquele momento.
+            <span class="citation" data-cites="BITTAR-rita"
+              >(<a
+                href="../ap_Configuração/ap_Configuração.html#ref-BITTAR-rita"
+                role="doc-biblioref"
+                >BITTAR 1993</a
+              >)</span
+            >
+          </p>
+          <div class="no-row-height column-margin column-container"></div>
+          <p>
+            A representação do estado de uma etapa pode ser feita pelos valores
+            lógicos « 0 » (inativa) ou “1” (ativa) de uma variável binária “X”.
+            Por exemplo, X2 – 0 (etapa 2 inativa).
+          </p>
+          <div class="quarto-figure quarto-figure-center">
+            <figure class="figure">
+              <p>
+                <img
+                  src="./images/png/etapaAtiva%26Inativa.png"
+                  class="img-fluid figure-img"
+                />
+              </p>
+              <figcaption class="figure-caption">
+                <em>Ilustração da transição de uma etapa ativa para inativa</em>
+              </figcaption>
+            </figure>
+          </div>
+        </section>
+        <section id="etapa-inicial" class="level2" data-number="14.5">
+          <h2
+            data-number="14.5"
+            class="anchored"
+            data-anchor-id="etapa-inicial"
+          >
+            <span class="header-section-number">14.5</span> Etapa Inicial
+          </h2>
+          <p>
+            A etapa inicial é aquela que se torna ativa logo após o início do
+            funcionamento do GRAFCET. Podem existir tantas etapas iniciais
+            quantas se fizerem necessárias, sendo que todas serão ativadas,
+            simultaneamente, no início do controle do sistema. A simbologia,
+            utilizada para representar uma etapa inicial, é exibida na figura
+            abaixo.
+          </p>
+          <p>
+            <strong
+              ><em><span style="color: red">Em Construção</span></em></strong
+            >
+          </p>
+        </section>
+        <section
+          id="aões-associadas-às-etapas"
+          class="level2"
+          data-number="14.6"
+        >
+          <h2
+            data-number="14.6"
+            class="anchored"
+            data-anchor-id="aões-associadas-às-etapas"
+          >
+            <span class="header-section-number">14.6</span> Aões associadas às
+            etapas
+          </h2>
+          <p>
+            As ações só são executadas se a etapa à qual estão vinculadas
+            estiver ativa. Caso contrário, são ignoradas. Durante a ativação da
+            etapa, as ações podem ser iniciadas, continuadas ou finalizadas.
+            Quando a etapa é desativada, as ações podem continuar ou terminar,
+            dependendo da definição utilizada. A ação, vinculada à etapa, é
+            representada por uma declaração textual ou simbólica, inserida em um
+            retângulo de qualquer tamanho, conectado ao lado direito da etapa
+            correspondente, conforme mostrado na Figura abaixo.
+          </p>
+          <p>
+            <strong
+              ><em><span style="color: red">Em Construção</span></em></strong
+            >
+          </p>
+        </section>
+        <section id="exemplos-de-grafcet" class="level2" data-number="14.7">
+          <h2
+            data-number="14.7"
+            class="anchored"
             data-anchor-id="exemplos-de-grafcet"
           >
-            <span class="header-section-number">14.1</span> Exemplos de Grafcet
+            <span class="header-section-number">14.7</span> Exemplos de Grafcet
           </h2>
           <p>
             Abaixo, exemplos de representação de grafcets de gestão de modo de
@@ -1036,14 +1417,14 @@
           <section
             id="g7-de-modo-de-operação"
             class="level3"
-            data-number="14.1.1"
+            data-number="14.7.1"
           >
             <h3
-              data-number="14.1.1"
+              data-number="14.7.1"
               class="anchored"
               data-anchor-id="g7-de-modo-de-operação"
             >
-              <span class="header-section-number">14.1.1</span> “G7” de modo de
+              <span class="header-section-number">14.7.1</span> “G7” de modo de
               operação
             </h3>
             <div class="quarto-figure quarto-figure-center">
@@ -1067,14 +1448,14 @@
           <section
             id="g7-gestor-do-processo"
             class="level3"
-            data-number="14.1.2"
+            data-number="14.7.2"
           >
             <h3
-              data-number="14.1.2"
+              data-number="14.7.2"
               class="anchored"
               data-anchor-id="g7-gestor-do-processo"
             >
-              <span class="header-section-number">14.1.2</span> “G7” gestor do
+              <span class="header-section-number">14.7.2</span> “G7” gestor do
               processo
             </h3>
             <div class="quarto-figure quarto-figure-center">
@@ -1153,6 +1534,106 @@
               </div>
             </div>
           </section>
+        </section>
+        <section
+          id="references"
+          class="level2 page-columns page-full"
+          data-number="14.8"
+        >
+          <h2 data-number="14.8" class="anchored" data-anchor-id="references">
+            <span class="header-section-number">14.8</span> References
+          </h2>
+          <p>
+            <span class="citation" data-cites="FERREIRA-1994"
+              >(<a
+                href="../ap_Configuração/ap_Configuração.html#ref-FERREIRA-1994"
+                role="doc-biblioref"
+                >FERREIRA 1995</a
+              >)</span
+            >
+          </p>
+          <div class="no-row-height column-margin column-container">
+            <div id="ref-FERREIRA-1994" class="csl-entry" role="listitem">
+              FERREIRA, Jorge Augusto Fernandes. 1995.
+              <span>“Virtualização de Autômatos Programáveis.”</span>
+              <em
+                >Dissertação (Mestrado Em Engenharia. Eletrônica e
+                Telecomunicações).</em
+              >
+            </div>
+            <div id="ref-SARQUIS-ATTIÉ" class="csl-entry" role="listitem">
+              SARQUIS ATTIÉ, Sérgio. 1998.
+              <span
+                >“Automação Hidráulica e Pneumática - Empregando a Teoria de
+                Sistemas a Eventos Discretos.”</span
+              >
+              <em>Dissertação (Mestrado Em Engenharia Mecânica)</em>.
+            </div>
+          </div>
+          <p>
+            <span class="citation" data-cites="SARQUIS-ATTIÉ"
+              >(<a
+                href="../ap_Configuração/ap_Configuração.html#ref-SARQUIS-ATTIÉ"
+                role="doc-biblioref"
+                >SARQUIS ATTIÉ 1998</a
+              >)</span
+            >
+          </p>
+          <p>
+            <span class="citation" data-cites="ROMANO-GUIMARÃES"
+              >(<a
+                href="../ap_Configuração/ap_Configuração.html#ref-ROMANO-GUIMARÃES"
+                role="doc-biblioref"
+                >ROMANO 2001</a
+              >)</span
+            >
+          </p>
+          <div class="no-row-height column-margin column-container">
+            <div id="ref-ROMANO-GUIMARÃES" class="csl-entry" role="listitem">
+              ROMANO, P. R. A, V. F.; GUIMARÃES. 2001.
+              <span
+                >“Projeto de Alimentador Pneumático Para Automação de Processo
+                de Alimentação de Chapas Em Prensas CNC.”</span
+              >
+              <em>Simpósio Brasileiro de Automação Inteligente</em>.
+            </div>
+            <div id="ref-GEORGINE-Marcelo" class="csl-entry" role="listitem">
+              GEORGINE, Marcelo. 2000.
+              <span
+                >“Automação Aplicada Descrição e Implementação de Sistemas
+                Seqüências Com PLCs.”</span
+              >
+            </div>
+          </div>
+          <p>
+            <span class="citation" data-cites="GEORGINE-Marcelo"
+              >(<a
+                href="../ap_Configuração/ap_Configuração.html#ref-GEORGINE-Marcelo"
+                role="doc-biblioref"
+                >GEORGINE 2000</a
+              >)</span
+            >
+          </p>
+          <p>
+            <span class="citation" data-cites="BITTAR-rita"
+              >(<a
+                href="../ap_Configuração/ap_Configuração.html#ref-BITTAR-rita"
+                role="doc-biblioref"
+                >BITTAR 1993</a
+              >)</span
+            >
+          </p>
+
+          <div class="no-row-height column-margin column-container">
+            <div id="ref-BITTAR-rita" class="csl-entry" role="listitem">
+              BITTAR, Rita. 1993.
+              <span
+                >“A Utilização Do GRAFCET Como Ferramenta Na Automação
+                Industrial.”</span
+              >
+              <em>Dissertação Mestrado</em>.
+            </div>
+          </div>
         </section>
       </main>
       <!-- /main -->
