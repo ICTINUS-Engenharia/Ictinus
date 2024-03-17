@@ -126,7 +126,7 @@
     </script>
   </head>
 
-  <body class="nav-sidebar floating nav-fixed">
+  <body class="nav-sidebar floating nav-fixed slimcontent">
     <div id="quarto-search-results"></div>
     <header id="quarto-header" class="headroom fixed-top">
       <nav class="navbar navbar-expand-lg navbar-dark">
@@ -1073,7 +1073,7 @@
         </nav>
       </div>
       <!-- main -->
-      <main class="content" id="quarto-document-content">
+      <main class="content page-columns page-full" id="quarto-document-content">
         <header id="title-block-header" class="quarto-title-block default">
           <div class="quarto-title">
             <h1 class="title">
@@ -1172,7 +1172,7 @@
         </section>
         <section
           id="linguagens-de-programação-lad-fbd-e-stl"
-          class="level2"
+          class="level2 page-columns page-full"
           data-number="7.6"
         >
           <h2
@@ -1183,6 +1183,111 @@
             <span class="header-section-number">7.6</span> Linguagens de
             programação ( LAD, FBD e STL )
           </h2>
+          <p>
+            O PLC S7-300 da Siemens suporta várias linguagens de programação
+            conforme definido pela norma IEC 61131-3. Aqui estão as principais
+            linguagens e suas características:
+          </p>
+          <ul>
+            <li>
+              <strong>Diagrama de Escada (Ladder Diagram - LD)</strong>: Esta
+              linguagem é muito semelhante aos diagramas elétricos usados por
+              eletricistas, tornando-a familiar para muitos técnicos e
+              engenheiros. É uma linguagem gráfica que usa símbolos que
+              representam contatos e bobinas. Exemplo do uso dessa linguagem:
+              <ul>
+                <li>
+                  Execução contínua ou paralela de múltiplas operações não
+                  sequenciais;
+                </li>
+                <li>Operações baseadas em bit ou em lógica booleana;</li>
+                <li>Operações lógicas complexas;</li>
+                <li>Processamento de mensagem e comunicação;</li>
+                <li>Intertravamento de máquinas;</li>
+                <li>
+                  Operações que o pessoal de manutenção deverá interpretar para
+                  resolver problemas em máquinas ou processos.
+                </li>
+              </ul>
+            </li>
+            <li>
+              <strong
+                >Diagrama de Blocos de Função (Function Block Diagram -
+                FBD)</strong
+              >: Esta é outra linguagem gráfica que usa blocos para representar
+              funções ou operações. Os blocos são conectados por linhas que
+              representam o fluxo de dados entre eles. Exemplos do uso dessa
+              linguagem:
+              <ul>
+                <li>Controle de drives e processos contínuos;</li>
+                <li>Loop de controle.</li>
+              </ul>
+            </li>
+            <li>
+              <strong>Texto Estruturado (Structured Text - ST)</strong>: É uma
+              linguagem de alto nível que se assemelha ao Pascal e é adequada
+              para operações complexas e cálculos matemáticos. Exemplos do uso
+              dessa linguagem:
+              <ul>
+                <li>Operações matemáticas complexas;</li>
+                <li>
+                  Processamento de protocolos ou manuseio de strings ASCII;
+                </li>
+                <li>
+                  Processamento de dados com loop´s em tabelas ou vetores de
+                  dados.
+                </li>
+              </ul>
+            </li>
+            <li>
+              <strong>Lista de Instruções (Instruction List - IL)</strong
+              ><a
+                href="#fn1"
+                class="footnote-ref"
+                id="fnref1"
+                role="doc-noteref"
+                ><sup>1</sup></a
+              >: Esta linguagem é semelhante à linguagem de montagem usada em
+              programação de computadores. É uma linguagem de baixo nível que é
+              muito eficiente, mas pode ser mais difícil de aprender e usar.
+            </li>
+            <li>
+              <strong
+                >Gráfico de Funções Sequenciais (Sequential Function Chart -
+                SFC)</strong
+              ><a
+                href="#fn2"
+                class="footnote-ref"
+                id="fnref2"
+                role="doc-noteref"
+                ><sup>2</sup></a
+              >: Esta linguagem é usada para representar a sequência de
+              operações em um sistema. Ela usa elementos gráficos para
+              representar etapas, transições e ligações entre eles. Exemplos do
+              uso dessa linguagem:
+              <ul>
+                <li>Gerenciamento de alto nível de múltiplas operações;</li>
+                <li>Sequências repetitivas de operações;</li>
+                <li>Processo por Batelada;</li>
+                <li>Controle tipo Motion (controle de movimento);</li>
+                <li>Operações do tipo máquina de estados.</li>
+              </ul>
+            </li>
+          </ul>
+          <div class="no-row-height column-margin column-container">
+            <li id="fn1">
+              <p><sup>1</sup>&nbsp;Também conhecido como STL</p>
+            </li>
+            <li id="fn2">
+              <p><sup>2</sup>&nbsp;Também conhecido como Grafcet</p>
+            </li>
+          </div>
+          <p>
+            Cada linguagem tem suas próprias vantagens e é adequada para
+            diferentes tipos de tarefas. A escolha da linguagem de programação
+            depende da aplicação específica, das habilidades do programador e
+            das preferências pessoais.
+          </p>
           <p>
             <strong
               ><em><span style="color: red">Em Construção</span></em></strong
